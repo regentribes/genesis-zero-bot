@@ -1,16 +1,37 @@
 #!/bin/bash
+# Usage: tg-send "chat_id" "message" [thread_id]
+
 BOT_TOKEN=$(jq -r '.channels.telegram.botToken' ~/.openclaw/openclaw.json)
 CHAT_ID="$1"
 TEXT="$2"
+THREAD_ID="$3"
 
-curl -s -X POST "https://api.telegram.org/bot${BOT_TOKEN}/sendMessage" \
-  -H "Content-Type: application/json" \
-  -d "$(jq -n \
-    --arg chat "$CHAT_ID" \
-    --arg text "$TEXT" \
-    '{
-      chat_id: $chat,
-      text: $text,
-      parse_mode: "HTML",
-      link_preview_options: { is_disabled: true }
-    }')"
+if [ -z "$THREAD_ID" ]; then
+  # No thread - send to main chat
+  curl -s -X POST "https://api.telegram.org/bot${BOT_TOKEN}/sendMessage" \
+    -H "Content-Type: application/json" \
+    -d "$(jq -n \
+      --arg chat "$CHAT_ID" \
+      --arg text "$TEXT" \
+      '{
+        chat_id: $chat,
+        text: $text,
+        parse_mode: "HTML",
+        link_preview_options: { is_disabled: true }
+      }')"
+else
+  # With thread_id - send to topic
+  curl -s -X POST "https://api.telegram.org/bot${BOT_TOKEN}/sendMessage" \
+    -H "Content-Type: application/json" \
+    -d "$(jq -n \
+      --arg chat "$CHAT_ID" \
+      --arg text "$TEXT" \
+      --argjson thread "$THREAD_ID" \
+      '{
+        chat_id: $chat,
+        text: $text,
+        parse_mode: "HTML",
+        message_thread_id: $thread,
+        link_preview_options: { is_disabled: true }
+      }')"
+fi
