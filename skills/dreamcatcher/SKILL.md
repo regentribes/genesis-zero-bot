@@ -19,8 +19,9 @@ You are an ideation partner who helps RegenTribes members transform raw ideas in
 1. **Capture** — Receive a seed idea (from chat, reply, or direct trigger)
 2. **Explore** — Ask questions to flesh out: purpose, users, features, constraints, stack, timeline
 3. **Synthesize** — Compile into a structured `.md` specification
-4. **Commit** — Push to `regentribes/genesis-zero-bot` repo under `specs/`
-5. **Flag** — Create a GitHub issue tagged for a coding agent to pick up
+4. **Create Repo** — Create a new repo under `regentribes/` org for this project
+5. **Push** — Push the spec to the new repo
+6. **Flag** — Create a GitHub issue tagged for a coding agent to pick up
 
 ---
 
@@ -45,7 +46,8 @@ If not → Create a new session.
 
 1. Ask: **What do you want to build?** (the seed idea)
 2. Ask: **Who is it for?** (target users)
-3. Create the session file:
+3. Capture member names — ask "Who's involved in this idea?" (can be multiple people)
+4. Create the session file:
 
 ```bash
 mkdir -p "$DREAMCATCHER_DIR/{telegram_user_id}"
@@ -68,6 +70,7 @@ jq -n \
     techStack: null,
     timeline: null,
     owner: null,
+    members: [],
     notes: ""
   }' > "$SESSION_FILE"
 ```
@@ -102,6 +105,11 @@ Use this flow — one question at a time, follow up on answers:
 - "Who's the owner? (you, a team, the community)"
 - "Who's responsible for what?"
 
+### 7. Members (Attribution)
+- "Who else is involved in this idea?" (capture all member names/telegram handles)
+- Store as array: `["@username1", "@username2"]`
+- This goes into the spec header for attribution
+
 ---
 
 ## Saving Answers
@@ -133,7 +141,7 @@ When you've gathered enough info (or the user says "done" / "I'm happy"), synthe
 
 ### Generate Specification
 
-Create a `specs/{project-slug}.md` file in the local repo:
+Create a `{project-slug}.md` file locally:
 
 ```markdown
 # {Project Name}
@@ -141,7 +149,7 @@ Create a `specs/{project-slug}.md` file in the local repo:
 **Status:** Specced & Ready for Build  
 **Owner:** {owner}  
 **Created:** {date}  
-**Telegram User:** @{telegram_handle}
+**Dream caught from:** {member1}, {member2} on the Regen Tribe Collective Network Telegram Group
 
 ---
 
@@ -206,25 +214,56 @@ Create a `specs/{project-slug}.md` file in the local repo:
 *Spec captured via Dreamcatcher for RegenTribes*
 ```
 
-### Commit & Push
+### Create New Repo & Push
 
 ```bash
-cd ~/.openclaw/workspace-genesis
+# Slugify project name for repo name
+PROJECT_SLUG=$(echo "{project_name}" | tr '[:upper:]' '[:lower:]' | sed 's/[^a-z0-9]/-/g' | sed 's/^-//;s/-$//')
 
-# Add the spec
-git add specs/
-git commit -m "Add spec: {project name}"
+# Create new repo under regentribes org
+gh repo create "regentribes/${PROJECT_SLUG}" \
+  --private \
+  --description "{project_name} - Dreamcatcher spec" \
+  --clone=false
 
-# Push to regentribes/genesis-zero-bot
-git push origin main
+# Initialize temp dir and push
+TMP_DIR=$(mktemp -d)
+cd "$TMP_DIR"
+git init
+git config user.email "genesis@regentribes.com"
+git config user.name "Genesis"
+
+# Create SPEC.md
+cat > SPEC.md << 'EOF'
+{full_spec_markdown}
+EOF
+
+git add .
+git commit -m "Dream caught: {project_name}
+
+Dreamed up by: {member1}, {member2}
+Owner: {owner}
+"
+git remote add origin "https://github.com/regentribes/${PROJECT_SLUG}.git"
+git branch -M main
+git push -u origin main
+
+# Cleanup
+rm -rf "$TMP_DIR"
 ```
 
 ### Create GitHub Issue
 
 ```bash
 gh issue create \
+  --repo "regentribes/${PROJECT_SLUG}" \
   --title "[SPEC] {Project Name}" \
-  --body "$(cat specs/{project-slug}.md)" \
+  --body "See SPEC.md for full specification.
+
+**Dream caught from:** {member1}, {member2} on Regen Tribe Collective Network Telegram Group
+**Owner:** {owner}
+
+Ready for coding agent execution." \
   --label "spec,ready-for-build"
 ```
 
