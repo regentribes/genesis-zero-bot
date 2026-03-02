@@ -4,7 +4,9 @@ memory/
 sessions/
 state/
 .openclaw/
+BOOTSTRAP.md
 BOOTSTRAP.md.done
+MEMORY.md
 
 # Local-only — not sent to server or committed
 sync-genesis.sh
