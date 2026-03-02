@@ -1,36 +1,40 @@
-# TOOLS.md — Local Notes
+# TOOLS.md - Local Notes
 
-Skills define HOW tools work. This file is for YOUR specifics —
-the stuff that's unique to your setup.
+Skills define _how_ tools work. This file is for _your_ specifics — the stuff that's unique to your setup.
 
 ## What Goes Here
 
 Things like:
+
+- Camera names and locations
 - SSH hosts and aliases
-- Device nicknames
 - Preferred voices for TTS
+- Speaker/room names
+- Device nicknames
 - Anything environment-specific
 
-## Built-in Tools
+## Examples
 
-- **shell** — Execute terminal commands
-- Use when: running local checks, build/test commands, or diagnostics.
-- Don't use when: a safer dedicated tool exists, or command is destructive without approval.
-- **file_read** — Read file contents
-- Use when: inspecting project files, configs, or logs.
-- Don't use when: you only need a quick string search (prefer targeted search first).
-- **file_write** — Write file contents
-- Use when: applying focused edits, scaffolding files, or updating docs/code.
-- Don't use when: unsure about side effects or when the file should remain user-owned.
-- **memory_store** — Save to memory
-- Use when: preserving durable preferences, decisions, or key context.
-- Don't use when: info is transient, noisy, or sensitive without explicit need.
-- **memory_recall** — Search memory
-- Use when: you need prior decisions, user preferences, or historical context.
-- Don't use when: the answer is already in current files/conversation.
-- **memory_forget** — Delete a memory entry
-- Use when: memory is incorrect, stale, or explicitly requested to be removed.
-- Don't use when: uncertain about impact; verify before deleting.
+```markdown
+### Cameras
+
+- living-room → Main area, 180° wide angle
+- front-door → Entrance, motion-triggered
+
+### SSH
+
+- home-server → 192.168.1.100, user: admin
+
+### TTS
+
+- Preferred voice: "Nova" (warm, slightly British)
+- Default speaker: Kitchen HomePod
+```
+
+## Why Separate?
+
+Skills are shared. Your setup is yours. Keeping them apart means you can update skills without losing your notes, and share skills without leaking your infrastructure.
 
 ---
-*Add whatever helps you do your job. This is your cheat sheet.*
+
+Add whatever helps you do your job. This is your cheat sheet.

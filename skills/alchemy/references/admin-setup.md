@@ -95,7 +95,7 @@ Add these to your ZeroClaw `.env` file (see section 3 below). The skill automati
 
 ## 3. Environment Variables Summary
 
-Set all of these in your ZeroClaw server environment before starting the bot:
+Set all of these in your OpenClaw server environment before starting the bot:
 
 | Variable | Required | Description |
 |---|---|---|
@@ -103,22 +103,22 @@ Set all of these in your ZeroClaw server environment before starting the bot:
 | `GOOGLE_CLIENT_ID` | Yes | OAuth client ID from Google Cloud Console |
 | `GOOGLE_CLIENT_SECRET` | Yes | OAuth client secret from Google Cloud Console |
 | `GOOGLE_REFRESH_TOKEN` | Yes | Long-lived refresh token from one-time browser flow |
-| `ALCHEMY_DATA_DIR` | No | Defaults to `$HOME/.zeroclaw/alchemy` |
+| `ALCHEMY_DATA_DIR` | No | Defaults to `$HOME/.openclaw/alchemy` |
 
-**Store secrets in `/home/ian/.zeroclaw/.env`** (never committed to git). ZeroClaw runs as a user systemd service — load the file via a drop-in config so it's always available at daemon start:
+**Store secrets in `/home/ian/.openclaw/.env`** (never committed to git). OpenClaw runs as a user systemd service — load the file via a drop-in config so it's always available at daemon start:
 
 ```bash
 # Create the drop-in directory and config
-mkdir -p ~/.config/systemd/user/zeroclaw.service.d
-cat > ~/.config/systemd/user/zeroclaw.service.d/env.conf << EOF
+mkdir -p ~/.config/systemd/user/openclaw.service.d
+cat > ~/.config/systemd/user/openclaw.service.d/env.conf << EOF
 [Service]
-EnvironmentFile=/home/ian/.zeroclaw/.env
+EnvironmentFile=/home/ian/.openclaw/.env
 EOF
 
 # Reload and restart
 systemctl --user daemon-reload
-systemctl --user restart zeroclaw.service
-systemctl --user status zeroclaw.service
+systemctl --user restart openclaw.service
+systemctl --user status openclaw.service
 ```
 
 Do **not** use `source` or `set -a` — systemd services don't read shell profiles.
@@ -132,7 +132,7 @@ The skill can send weekly Telegram nudges to users with incomplete guides.
 ```bash
 crontab -e
 # Add this line (runs every Monday at 9am server time):
-0 9 * * 1 bash -c 'set -a; source /home/ian/.zeroclaw/.env; set +a; exec bash /home/ian/.zeroclaw/workspace/scripts/weekly-nudge.sh'
+0 9 * * 1 bash -c 'set -a; source /home/ian/.openclaw/.env; set +a; exec bash /home/ian/.openclaw/workspace/skills/alchemy/scripts/weekly-nudge.sh'
 ```
 
 ---

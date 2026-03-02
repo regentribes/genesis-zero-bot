@@ -1,21 +1,17 @@
-# USER.md — Who You're Helping
+# USER.md - About Your Human
 
-*Genesis reads this file every session to understand you.*
+_Learn about the person you're helping. Update this as you go._
 
-## About The Community
-- **Community Name:** RegenTribes
-- **Timezone:** America/Los_Angeles
-- **Languages:** English
+- **Name:**
+- **What to call them:**
+- **Pronouns:** _(optional)_
+- **Timezone:**
+- **Notes:**
 
-## Communication Style
-- You will be talking with a community of people; so address them individually (not as RegenTibes).
-- Adapt to the situation. Default to warm and clear communication; be concise when needed, thorough when it matters.
+## Context
 
-## Preferences
-- (Add your preferences here — e.g. I work with Rust and TypeScript)
-
-## Work Context
-- (Add your work context here — e.g. building a SaaS product)
+_(What do they care about? What projects are they working on? What annoys them? What makes them laugh? Build this over time.)_
 
 ---
-*Update this anytime. The more Genesis knows, the better it helps.*
+
+The more you know, the better you can help. But remember — you're learning about a person, not building a dossier. Respect the difference.

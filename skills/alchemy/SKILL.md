@@ -1,8 +1,10 @@
 ---
 name: community-alchemy
+version: 1.0.0
+emoji: 🔺
 description: |
   Guide a RegenTribes community vision holder through the complete Community Alchemy Playbook — all 11 areas — helping them articulate and document their regenerative neighborhood vision section by section. Persists progress per user so sessions can span days, weeks, or months. Resumes where the user left off. Sends a weekly nudge to users with incomplete guides. Triggers on: "community alchemy", "help me plan my community", "guide me through the playbook", "community vision", "regenerative neighborhood", "/alchemy", "resume my guide", "continue alchemy", or any request to start or continue a community planning session.
-metadata: {"openclaw":{"emoji":"🔺","requires":{"bins":["curl","jq","bash","date"],"os":["linux","darwin"]},"network":["api.telegram.org","www.googleapis.com"]}}
+metadata: {"openclaw":{"requires":{"bins":["curl","jq","bash","date"],"env":["TELEGRAM_BOT_TOKEN","GOOGLE_CLIENT_ID","GOOGLE_CLIENT_SECRET","GOOGLE_REFRESH_TOKEN"],"os":["linux","darwin"]},"primaryEnv":"TELEGRAM_BOT_TOKEN","network":["api.telegram.org","www.googleapis.com","oauth2.googleapis.com"]}}
 user-invocable: true
 ---
 
@@ -13,7 +15,7 @@ You are a co-creation partner guiding RegenTribes vision holders through the **C
 **Key references — read before beginning any session:**
 - `{baseDir}/references/session-management.md` — identity, persistence, data schema
 - `{baseDir}/references/playbook-guide.md` — facilitation questions for every section
-- `{baseDir}/references/admin-setup.md` — bot admin setup: Telegram token, Google Drive service account, env vars, cron
+- `{baseDir}/references/admin-setup.md` — bot admin setup: Telegram token, Google Drive OAuth, env vars, cron
 
 ---
 
@@ -157,7 +159,7 @@ For each area:
 4. **Summarise** — reflect their answers in 3–5 sentences at area end.
 5. **Rebuild draft** — run compile script after each area:
    ```bash
-   bash $HOME/.zeroclaw/workspace/scripts/compile-draft.sh \
+   bash {baseDir}/scripts/compile-draft.sh \
      "$PROGRESS_FILE" \
      "$ALCHEMY_DATA_DIR/{telegram_user_id}/draft.md"
    ```
@@ -188,7 +190,7 @@ After Area 11: **Action Plan** (milestones, timeline & tasks, checklist review).
 
 Any time a user asks to see their current document:
 ```bash
-bash $HOME/.zeroclaw/workspace/scripts/compile-draft.sh \
+bash {baseDir}/scripts/compile-draft.sh \
   "$PROGRESS_FILE" \
   "$ALCHEMY_DATA_DIR/{telegram_user_id}/draft.md"
 ```
@@ -208,7 +210,7 @@ echo "$UPDATED" > "$PROGRESS_FILE"
 
 # Build final document
 FINAL_FILE="$ALCHEMY_DATA_DIR/{telegram_user_id}/Community-Alchemy-Playbook-for-{communitySlug}.md"
-bash $HOME/.zeroclaw/workspace/scripts/compile-draft.sh "$PROGRESS_FILE" "$FINAL_FILE"
+bash {baseDir}/scripts/compile-draft.sh "$PROGRESS_FILE" "$FINAL_FILE"
 ```
 
 ### Telegram — file attachment
