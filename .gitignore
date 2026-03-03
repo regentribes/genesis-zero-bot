@@ -14,7 +14,6 @@ sync-genesis.sh
 
 # Third-party skills (installed via clawhub, not maintained here)
 skills/deep-research-pro/
-skills/dreamcatcher/
 skills/find-skills/
 skills/gog/
 skills/summarize/
