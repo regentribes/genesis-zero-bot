@@ -28,10 +28,16 @@ from pathlib import Path
 from typing import Any
 
 import kreuzberg
-from surrealdb import Surreal
+from surrealdb import RecordID
 
 from grammar_triangle import chunk_text
-from subagent_parser import extract_chunks
+from llm_parser import extract_chunks
+
+
+def _rid(table_id: str) -> RecordID:
+    """Convert 'table:key' string to RecordID."""
+    table, key = table_id.split(":", 1)
+    return RecordID(table, key)
 
 # ── NARS revision formula ─────────────────────────────────────────────────────
 
@@ -75,9 +81,11 @@ class GraphExtractor:
         namespace: str = "semantic_graph",
         database: str = "main",
         username: str = "root",
-        password: str = os.environ.get("SURREAL_PASS", "root"),
+        password: str | None = None,
     ) -> "GraphExtractor":
         from surrealdb import AsyncSurreal
+        if password is None:
+            password = os.environ.get("SURREAL_PASS", "root")
         db = AsyncSurreal(url=url)
         await db.connect()
         await db.signin({"username": username, "password": password})
@@ -168,10 +176,10 @@ class GraphExtractor:
                 quality: $quality,
                 metadata: $metadata,
                 created_at: time::now()
-            };
+            }
             """,
             {
-                "id": doc_id,
+                "id": _rid(doc_id),
                 "source": str(title),
                 "mime_type": mime_type,
                 "title": title,
@@ -207,10 +215,10 @@ class GraphExtractor:
                     qualia: $qualia,
                     causality: $causality,
                     dominant_mode: $dominant_mode
-                };
+                }
                 """,
                 {
-                    "id": chunk_id,
+                    "id": _rid(chunk_id),
                     "text": chunk["text"],
                     "index": chunk["index"],
                     "char_start": chunk["char_start"],
@@ -225,8 +233,8 @@ class GraphExtractor:
 
             # document → chunk edge
             await self._db.query(
-                "RELATE $doc_id->contains->$chunk_id;",
-                {"doc_id": doc_id, "chunk_id": chunk_id},
+                "RELATE $doc_id->contains->$chunk_id",
+                {"doc_id": _rid(doc_id), "chunk_id": _rid(chunk_id)},
             )
 
             chunk_ids.append(chunk_id)
@@ -240,7 +248,7 @@ class GraphExtractor:
                 file=sys.stderr,
             )
 
-        parsed = extract_chunks(chunks, batch_size=batch_size)
+        parsed = extract_chunks(chunks, doc_id=doc_id, batch_size=batch_size)
 
         # ── Step 5: Store concepts (with NARS deduplication) ──────────────
         concept_id_map: dict[str, str] = {}  # name → SurrealDB ID
@@ -257,14 +265,12 @@ class GraphExtractor:
 
             # Fetch existing for NARS merge
             existing = await self._db.query(
-                "SELECT nars_frequency, nars_confidence, evidence_count FROM $id;",
-                {"id": cid},
+                "SELECT nars_frequency, nars_confidence, evidence_count FROM $id",
+                {"id": _rid(cid)},
             )
-            ex = None
-            if existing and existing[0].get("result"):
-                ex = existing[0]["result"][0]
+            ex = existing[0] if existing else None
 
-            if ex:
+            if ex and isinstance(ex, dict):
                 f, c, n = nars_revise(
                     ex["nars_frequency"], ex["nars_confidence"], ex.get("evidence_count", 1),
                     concept["nars_frequency"], concept["nars_confidence"], 1,
@@ -287,10 +293,10 @@ class GraphExtractor:
                     evidence_count: $evidence_count,
                     source_doc: $source_doc,
                     first_seen_in: $source_doc
-                };
+                }
                 """,
                 {
-                    "id": cid,
+                    "id": _rid(cid),
                     "name": name,
                     "type": concept["type"],
                     "description": concept["description"],
@@ -301,15 +307,15 @@ class GraphExtractor:
                     "nars_frequency": f,
                     "nars_confidence": c,
                     "evidence_count": n,
-                    "source_doc": doc_id,
+                    "source_doc": _rid(doc_id),
                 },
             )
 
             # chunk → concept mention edges
-            for chunk_id in concept.get("source_chunks", chunk_ids[:1]):
+            for src_chunk_id in concept.get("source_chunks", chunk_ids[:1]):
                 await self._db.query(
-                    "RELATE $chunk_id->mentions->$concept_id SET weight = $conf;",
-                    {"chunk_id": chunk_id, "concept_id": cid, "conf": c},
+                    "RELATE $chunk_id->mentions->$concept_id SET weight = $conf",
+                    {"chunk_id": _rid(src_chunk_id), "concept_id": _rid(cid), "conf": c},
                 )
 
         # ── Step 6: Store relations ───────────────────────────────────────
@@ -332,14 +338,12 @@ class GraphExtractor:
 
             # NARS merge for existing relation
             ex_rel = await self._db.query(
-                "SELECT nars_frequency, nars_confidence, evidence_count FROM $id;",
-                {"id": rel_id},
+                "SELECT nars_frequency, nars_confidence, evidence_count FROM $id",
+                {"id": _rid(rel_id)},
             )
-            ex = None
-            if ex_rel and ex_rel[0].get("result"):
-                ex = ex_rel[0]["result"][0]
+            ex = ex_rel[0] if ex_rel else None
 
-            if ex:
+            if ex and isinstance(ex, dict):
                 f, c, n = nars_revise(
                     ex["nars_frequency"], ex["nars_confidence"], ex.get("evidence_count", 1),
                     rel["nars_frequency"], rel["nars_confidence"], 1,
@@ -347,27 +351,24 @@ class GraphExtractor:
             else:
                 f, c, n = rel["nars_frequency"], rel["nars_confidence"], 1
 
+            # Use RELATE for relation tables (SurrealDB v3 requires this)
             await self._db.query(
                 """
-                UPSERT $id MERGE {
-                    in: $subj,
-                    out: $obj,
-                    verb: $verb,
-                    verb_category: $verb_category,
-                    weight: $weight,
-                    evidence: $evidence,
-                    nars_frequency: $f,
-                    nars_confidence: $c,
-                    evidence_count: $n,
-                    source_doc: $source_doc,
-                    valid_from: $valid_from,
-                    valid_until: $valid_until
-                };
+                RELATE $subj->relates->$obj SET
+                    verb = $verb,
+                    verb_category = $verb_category,
+                    weight = $weight,
+                    evidence = $evidence,
+                    nars_frequency = $f,
+                    nars_confidence = $c,
+                    evidence_count = $n,
+                    source_doc = $source_doc,
+                    valid_from = $valid_from,
+                    valid_until = $valid_until
                 """,
                 {
-                    "id": rel_id,
-                    "subj": subj_id,
-                    "obj": obj_id,
+                    "subj": _rid(subj_id),
+                    "obj": _rid(obj_id),
                     "verb": verb,
                     "verb_category": rel["verb_category"],
                     "weight": c,
@@ -375,7 +376,7 @@ class GraphExtractor:
                     "f": f,
                     "c": c,
                     "n": n,
-                    "source_doc": doc_id,
+                    "source_doc": _rid(doc_id),
                     "valid_from": rel.get("valid_from"),
                     "valid_until": rel.get("valid_until"),
                 },
@@ -398,33 +399,29 @@ class GraphExtractor:
     async def concepts_for_doc(self, doc_id: str) -> list[dict]:
         """All concepts referenced in a document."""
         result = await self._db.query(
-            """
-            SELECT ->contains->(chunk)->mentions->(concept).*
-            FROM $doc_id;
-            """,
-            {"doc_id": doc_id},
+            "SELECT ->contains->(chunk)->mentions->(concept).* FROM $doc_id",
+            {"doc_id": _rid(doc_id)},
         )
-        return result[0].get("result", []) if result else []
+        return result if result else []
 
     async def relations_for_concept(self, concept_id: str, depth: int = 1) -> list[dict]:
         """Relations emanating from a concept up to `depth` hops."""
-        # Simple 1-hop for now; extend with recursive query for deeper
         result = await self._db.query(
-            "SELECT *, ->relates.* FROM $id;",
-            {"id": concept_id},
+            "SELECT *, ->relates.* FROM $id",
+            {"id": _rid(concept_id)},
         )
-        return result[0].get("result", []) if result else []
+        return result if result else []
 
     async def subgraph(self, concept_name: str) -> dict:
         """Return subgraph (nodes + edges) centred on a concept name."""
         result = await self._db.query(
             """
             LET $c = (SELECT id FROM concept WHERE name = $name LIMIT 1)[0].id;
-            SELECT *, ->relates->(concept).* AS neighbours FROM $c;
+            SELECT *, ->relates->(concept).* AS neighbours FROM $c
             """,
             {"name": concept_name},
         )
-        return result[0].get("result", {}) if result else {}
+        return result[0] if result else {}
 
 
 # ── CLI ───────────────────────────────────────────────────────────────────────
@@ -443,7 +440,7 @@ def _build_parser() -> argparse.ArgumentParser:
 
     # SurrealDB
     p.add_argument("--db", default="ws://localhost:8000", help="SurrealDB WebSocket URL")
-    p.add_argument("--ns", default="knowledge", help="SurrealDB namespace")
+    p.add_argument("--ns", default="semantic_graph", help="SurrealDB namespace")
     p.add_argument("--database", default="main", help="SurrealDB database name")
     p.add_argument("--user", default="root", help="SurrealDB username")
     p.add_argument("--pass", dest="password", default="root", help="SurrealDB password")

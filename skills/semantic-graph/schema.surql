@@ -9,10 +9,10 @@
 -- ============================================================================
 
 -- ── NAMESPACING ──────────────────────────────────────────────────────────────
-DEFINE NAMESPACE IF NOT EXISTS myproject;
-USE NS myproject;
-DEFINE DATABASE IF NOT EXISTS knowledge;
-USE DB knowledge;
+DEFINE NAMESPACE IF NOT EXISTS semantic_graph;
+USE NS semantic_graph;
+DEFINE DATABASE IF NOT EXISTS main;
+USE DB main;
 
 -- ── DOCUMENT ─────────────────────────────────────────────────────────────────
 -- Represents a source document in any format.

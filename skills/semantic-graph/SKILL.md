@@ -1,4 +1,7 @@
-# SKILL: Arbitrary Input → Semantic Knowledge Graph → SurrealDB
+# SKILL: Semantic Knowledge Graph — Backend Pipeline
+
+**⚠️ This is a backend pipeline, not a user-facing skill. Do NOT invoke directly.**
+**For knowledge graph interactions, use `genesis-brain` instead.**
 
 ## Purpose
 
@@ -12,15 +15,14 @@ truth values.
 
 ---
 
-## When to invoke this skill
+## Architecture
 
-- "Convert this document into a knowledge graph"
-- "Extract entities and relationships from…"
-- "Index this content into a graph database"
-- "Build a semantic graph from…"
-- "What concepts and connections are in this file?"
-- Any task requiring structured knowledge extraction to a graph store
-- Any task requiring multi-document synthesis with provenance tracking
+This skill is the **extraction engine** behind `genesis-brain`:
+- `genesis-brain` = user-facing interface (Telegram interactions, response formatting)
+- `semantic-graph` = backend pipeline (document parsing, LLM extraction, SurrealDB writes)
+- Genesis-brain scripts call `pipeline.py` commands from this skill
+
+**Do not invoke semantic-graph directly for user requests.** Use genesis-brain.
 
 ---
 

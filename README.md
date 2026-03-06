@@ -14,15 +14,14 @@ Modular skills that extend Genesis with specialised knowledge and workflows for 
 |-------|-------------|--------|--------|
 | [🔺 alchemy](skills/alchemy/) | Guides a community vision holder through the full Community Alchemy Playbook — all 11 areas — helping them articulate their regenerative neighbourhood vision. Persists progress across sessions, compiles a completed playbook, delivers via Telegram and Google Drive. | Ian | Testing |
 | [🌠 dreamcatcher](skills/dreamcatcher/) | Captures member ideas and helps flesh them out into full development specifications (.md), then commits to a new repo and creates a GitHub issue for a coding agent to execute. | Ian | In Development |
-| [open-brain](skills/open-brain/) | Knowledge capture from Telegram. Auto-captures @Genesis mentions in the Regen Tribes group, stores in SurrealDB with vector embeddings and graph relationships (people, topics). | Vitali | In Development |
+| [🧠 genesis-brain](skills/genesis-brain/) | Genesis' knowledge brain — ingests documents and links into a semantic knowledge graph, enriches responses with graph context, answers knowledge queries with evidence. Auto-captures @Genesis mentions in Regen Tribes. | Ian | Active |
 | [📜 telegram-history](skills/telegram-history/) | Versioned Telegram conversation archive with query capabilities — full-text search, topic extraction, member profiling, link cataloging. | Vitali | In Development |
 
 ### Knowledge Graph Pipeline
 
 | Skill | Description | Author | Status |
 |-------|-------------|--------|--------|
-| [semantic-graph](skills/semantic-graph/) | LLM-powered document-to-knowledge-graph extraction. Transforms any document (PDF, DOCX, HTML, Markdown, code, images via Kreuzberg) into a typed, traversable knowledge graph in SurrealDB with NARS truth values. Full provenance chain, 144-verb taxonomy, NARS revision. | Vitali | Archived / Needs Revival |
-| [xtract](skills/xtract/) | Lightweight zero-LLM document-to-graph extraction using regex patterns and Grammar Triangle fingerprinting. Faster but less capable than semantic-graph. | Vitali | Prototype |
+| [semantic-graph](skills/semantic-graph/) | Backend extraction engine for genesis-brain. LLM-powered document-to-knowledge-graph pipeline using Kreuzberg + Claude + SurrealDB with NARS truth values, vector embeddings, and HNSW semantic search. **Not user-facing — use genesis-brain instead.** | Vitali | Active |
 | [🌐 regen-viz](skills/regen-viz/) | 3D force-directed graph visualizations of RegenTribes knowledge structures. 19+ HTML variants, JSON datasets, pre-publish validation suite. Served via GitHub Pages. | Vitali | In Development |
 | [📦 regen-cas](skills/regen-cas/) | Content-addressable file storage in Rust. Store by content hash, retrieve by address, with LZ4 compression and OpenDAL backend abstraction (fs/s3/gcs). | Vitali | Prototype |
 

@@ -75,6 +75,39 @@ After sending, reply with the message_id on success or the error on failure. Do 
 
 **Omit the `Thread ID:` line only** if `MessageThreadId` is empty/absent (i.e. it's a DM or non-forum group).
 
+## Knowledge Graph (Genesis Brain)
+
+Genesis has a semantic knowledge graph stored in SurrealDB with 5,000+ concepts, vector embeddings, and NARS epistemic truth values.
+
+- **Pipeline:** `~/.openclaw/workspace-genesis/skills/semantic-graph/pipeline.py`
+- **Venv:** `~/.openclaw/workspace-genesis/skills/semantic-graph/.venv/`
+- **SurrealDB:** runs as `surrealdb.service` (user systemd), `ws://127.0.0.1:8000`, namespace `semantic_graph/main`
+- **Env vars needed:** `SURREAL_PASS`, `OPENROUTER_API_KEY` (both in `~/.openclaw/.env`)
+
+### Activation pattern (required before any pipeline command):
+```bash
+cd ~/.openclaw/workspace-genesis/skills/semantic-graph
+source .venv/bin/activate
+export $(grep -v "^#" ~/.openclaw/.env | xargs)
+```
+
+### Genesis Brain scripts (in `skills/genesis-brain/scripts/`):
+| Script | Usage | Purpose |
+|--------|-------|---------|
+| `ingest.sh <file>` | Ingest a document | Returns JSON: concepts, relations, connections |
+| `query.sh "<query>"` | Semantic search | Returns JSON: results, connections |
+| `relate.sh "<A>" "<B>"` | Find relationships | Returns JSON: direct, paths, shared neighbors |
+| `capture.sh "<text>"` | Capture text snippet | Returns JSON: doc_id, counts |
+| `stats.sh` | Knowledge graph stats | Returns JSON: counts, types, verbs |
+
+### When to use the knowledge graph:
+- **User sends a file/attachment** → Run `ingest.sh` to absorb into the graph
+- **User asks "what do you know about X"** → Run `query.sh` for semantic search
+- **User asks "how does X relate to Y"** → Run `relate.sh` for graph traversal
+- **User says "remember this"** → Run `capture.sh` to store in the graph
+- **@mention in Regen Tribes with substantive content** → Silently run `capture.sh`
+- **Any question that could benefit from graph context** → Run `query.sh` and include results in a `<blockquote expandable>` via telegram-compose
+
 ## Google Drive (Alchemy Skill)
 
 - Uses service account with domain-wide delegation (impersonates Drive owner for storage quota)

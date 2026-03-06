@@ -137,7 +137,8 @@ def transform_for_3d_force_graph(nodes, links):
     node_map = {}
     
     for node in nodes:
-        node_id = str(node.get("id", ""))
+        raw_id = node.get("id", "")
+        node_id = str(raw_id)  # handles both str and RecordID
         if not node_id:
             continue
             
@@ -171,18 +172,18 @@ def transform_for_3d_force_graph(nodes, links):
         source = link.get("in") or link.get("source")
         target = link.get("out") or link.get("target")
         
-        # Handle both string IDs and object IDs (SurrealDB record IDs)
-        if hasattr(source, 'get'):
+        # Handle both string IDs and object IDs (SurrealDB RecordID objects)
+        if hasattr(source, 'table_name'):
+            source = str(source)  # RecordID.__str__ gives "table:id"
+        elif hasattr(source, 'get'):
             source = str(source.get("id", ""))
-        elif hasattr(source, 'table_name'):
-            source = f"{source.table_name}:{source.record_id}"
         else:
             source = str(source) if source else ""
-            
-        if hasattr(target, 'get'):
+
+        if hasattr(target, 'table_name'):
+            target = str(target)
+        elif hasattr(target, 'get'):
             target = str(target.get("id", ""))
-        elif hasattr(target, 'table_name'):
-            target = f"{target.table_name}:{target.record_id}"
         else:
             target = str(target) if target else ""
         
@@ -856,6 +857,33 @@ def generate_html(graph_data, version="1.0.0", focus_name=None):
     return html
 
 
+async def export_json(
+    db_url=DEFAULT_DB_URL,
+    namespace=DEFAULT_NS,
+    database=DEFAULT_DB,
+    limit=0,
+    output_path=None,
+):
+    """Export graph data as JSON (regen-viz compatible format)."""
+    async with GraphVisualizer(db_url, namespace, database) as viz:
+        graph_data = await viz.get_full_graph(limit)
+        if not graph_data.get("nodes"):
+            print("No data found in database.")
+            return None
+
+        transformed = transform_for_3d_force_graph(
+            graph_data["nodes"], graph_data["links"]
+        )
+
+        if output_path is None:
+            output_path = ARTIFACTS_DIR / "semantic-graph.json"
+
+        Path(output_path).parent.mkdir(parents=True, exist_ok=True)
+        Path(output_path).write_text(json.dumps(transformed, indent=2))
+        print(f"Exported JSON: {output_path} ({len(transformed['nodes'])} nodes, {len(transformed['links'])} links)")
+        return str(output_path)
+
+
 async def generate_viz(
     db_url=DEFAULT_DB_URL,
     namespace=DEFAULT_NS,
@@ -863,46 +891,52 @@ async def generate_viz(
     focus=None,
     depth=2,
     limit=0,
-    export_only=False,
+    export_json_path=None,
 ):
     """Main function to generate visualization."""
-    
+
     ARTIFACTS_DIR.mkdir(parents=True, exist_ok=True)
-    
+
     async with GraphVisualizer(db_url, namespace, database) as viz:
         graph_data = await viz.get_full_graph(limit)
-        
+
         if not graph_data.get("nodes"):
             print("No data found in database.")
             return None
-        
+
         # Transform
         transformed = transform_for_3d_force_graph(
-            graph_data["nodes"], 
+            graph_data["nodes"],
             graph_data["links"]
         )
-        
+
+        # Export JSON alongside HTML if requested
+        if export_json_path:
+            Path(export_json_path).parent.mkdir(parents=True, exist_ok=True)
+            Path(export_json_path).write_text(json.dumps(transformed, indent=2))
+            print(f"Exported JSON: {export_json_path}")
+
         # Generate version
         timestamp = datetime.now().strftime("%Y%m%d-%H%M%S")
         version = "2.0.0"
-        
+
         # Generate HTML
         html_content = generate_html(transformed, version, focus)
-        
+
         # Save
         filename = f"semantic-graph-viz-{version}-{timestamp}.html"
         filepath = ARTIFACTS_DIR / filename
         filepath.write_text(html_content)
-        
+
         # Update latest symlink
         latest_link = ARTIFACTS_DIR / "latest.html"
         if latest_link.exists() or latest_link.is_symlink():
             latest_link.unlink()
         latest_link.symlink_to(filename)
-        
+
         print(f"Generated: {filepath}")
         print(f"Latest: {latest_link}")
-        
+
         return str(filepath)
 
 
@@ -914,24 +948,34 @@ def main():
     parser.add_argument("--focus")
     parser.add_argument("--depth", type=int, default=2)
     parser.add_argument("--limit", type=int, default=0)
-    parser.add_argument("--export-only", action="store_true")
-    
+    parser.add_argument("--export-json", metavar="PATH", help="Also export graph as JSON to this path")
+    parser.add_argument("--json-only", action="store_true", help="Export JSON only, skip HTML generation")
+
     args = parser.parse_args()
-    
-    result = asyncio.run(generate_viz(
-        db_url=args.db,
-        namespace=args.ns,
-        database=args.database,
-        focus=args.focus,
-        depth=args.depth,
-        limit=args.limit,
-        export_only=args.export_only,
-    ))
-    
-    if result:
-        print(f"\\nVisualization: {result}")
+
+    if args.json_only:
+        result = asyncio.run(export_json(
+            db_url=args.db,
+            namespace=args.ns,
+            database=args.database,
+            limit=args.limit,
+            output_path=args.export_json,
+        ))
     else:
-        print("No visualization generated.")
+        result = asyncio.run(generate_viz(
+            db_url=args.db,
+            namespace=args.ns,
+            database=args.database,
+            focus=args.focus,
+            depth=args.depth,
+            limit=args.limit,
+            export_json_path=args.export_json,
+        ))
+
+    if result:
+        print(f"\nOutput: {result}")
+    else:
+        print("No output generated.")
 
 
 if __name__ == "__main__":

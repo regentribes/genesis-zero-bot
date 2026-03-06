@@ -44,5 +44,5 @@ Each export contains: group name, type, ID, and messages array with sender, date
 
 1. Add automated export via Telegram API (tdlib or pyrogram)
 2. Incremental updates instead of full re-export
-3. Connect to open-brain for automatic knowledge capture from history
+3. Connect to genesis-brain for automatic knowledge capture from history
 4. Add structured output formats (CSV, JSON summary) for analysis pipelines

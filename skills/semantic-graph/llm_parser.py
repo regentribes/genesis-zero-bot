@@ -11,19 +11,28 @@ import json
 import os
 from typing import Any
 
-import anthropic
+from openai import OpenAI
 
 from verbs import category_prompt_hint, normalize_verb
 
-# ── Anthropic client ──────────────────────────────────────────────────────────
+# ── LLM client (OpenRouter-compatible) ───────────────────────────────────────
 
-_client: anthropic.Anthropic | None = None
+_client: OpenAI | None = None
+
+# Default model — can be overridden via EXTRACTION_MODEL env var
+DEFAULT_MODEL = os.environ.get("EXTRACTION_MODEL", "anthropic/claude-sonnet-4")
 
 
-def _get_client() -> anthropic.Anthropic:
+def _get_client() -> OpenAI:
     global _client
     if _client is None:
-        _client = anthropic.Anthropic(api_key=os.environ.get("ANTHROPIC_API_KEY"))
+        api_key = os.environ.get("OPENROUTER_API_KEY")
+        if not api_key:
+            raise RuntimeError("OPENROUTER_API_KEY env var is required")
+        _client = OpenAI(
+            base_url="https://openrouter.ai/api/v1",
+            api_key=api_key,
+        )
     return _client
 
 
@@ -95,13 +104,15 @@ Rules:
 # ── Batch extraction ──────────────────────────────────────────────────────────
 
 
-def extract_batch(chunks: list[dict], model: str = "claude-sonnet-4-20250514") -> dict:
+def extract_batch(chunks: list[dict], model: str | None = None) -> dict:
     """
-    Send a batch of chunks to Claude and return raw parsed JSON.
+    Send a batch of chunks to the LLM via OpenRouter and return raw parsed JSON.
 
     Returns:
         {"concepts": [...], "relations": [...]}
     """
+    model = model or DEFAULT_MODEL
+
     # Build user message: numbered chunk texts
     parts = []
     for i, chunk in enumerate(chunks):
@@ -111,14 +122,16 @@ def extract_batch(chunks: list[dict], model: str = "claude-sonnet-4-20250514") -
     user_msg = "\n\n---\n\n".join(parts)
 
     client = _get_client()
-    response = client.messages.create(
+    response = client.chat.completions.create(
         model=model,
         max_tokens=4096,
-        system=_SYSTEM_PROMPT,
-        messages=[{"role": "user", "content": user_msg}],
+        messages=[
+            {"role": "system", "content": _SYSTEM_PROMPT},
+            {"role": "user", "content": user_msg},
+        ],
     )
 
-    raw = response.content[0].text.strip()
+    raw = response.choices[0].message.content.strip()
 
     # Strip markdown fences if present
     if raw.startswith("```"):
@@ -184,7 +197,7 @@ def extract_chunks(
     chunks: list[dict],
     doc_id: str,
     batch_size: int = 4,
-    model: str = "claude-sonnet-4-20250514",
+    model: str | None = None,
 ) -> dict:
     """
     Extract concepts and relations from all chunks, batched.
