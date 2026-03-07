@@ -142,7 +142,7 @@ def _summarize_community(
         )
 
     client = OpenAI(base_url="https://openrouter.ai/api/v1", api_key=api_key)
-    model = os.environ.get("EXTRACTION_MODEL", "anthropic/claude-sonnet-4")
+    model = os.environ.get("EXTRACTION_MODEL", "google/gemini-3.1-flash-lite-preview")
 
     # Build context for the LLM
     concept_text = "\n".join(

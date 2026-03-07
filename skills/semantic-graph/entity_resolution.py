@@ -139,7 +139,7 @@ def confirm_merges_llm(candidates: list[tuple[dict, dict, float]]) -> list[tuple
         return auto_merges
 
     client = OpenAI(base_url="https://openrouter.ai/api/v1", api_key=api_key)
-    model = os.environ.get("EXTRACTION_MODEL", "anthropic/claude-sonnet-4")
+    model = os.environ.get("EXTRACTION_MODEL", "google/gemini-3.1-flash-lite-preview")
 
     llm_merges = []
     for batch_start in range(0, len(needs_llm), CLUSTER_BATCH_SIZE):

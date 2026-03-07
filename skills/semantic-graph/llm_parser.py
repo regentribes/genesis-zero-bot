@@ -20,7 +20,7 @@ from verbs import category_prompt_hint, normalize_verb
 _client: OpenAI | None = None
 
 # Default model — can be overridden via EXTRACTION_MODEL env var
-DEFAULT_MODEL = os.environ.get("EXTRACTION_MODEL", "anthropic/claude-sonnet-4")
+DEFAULT_MODEL = os.environ.get("EXTRACTION_MODEL", "google/gemini-3.1-flash-lite-preview")
 
 
 def _get_client() -> OpenAI:

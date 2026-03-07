@@ -116,7 +116,7 @@ The `retrieve()` function implements a 6-stage hybrid retrieval:
 OPENROUTER_API_KEY    # Required: LLM and embedding API access
 SURREALDB_URL         # Default: ws://127.0.0.1:8000
 SURREAL_PASS          # Default: root
-EXTRACTION_MODEL      # Default: anthropic/claude-sonnet-4
+EXTRACTION_MODEL      # Default: google/gemini-3.1-flash-lite-preview
 EMBEDDING_MODEL       # Default: openai/text-embedding-3-small
 ```
 
