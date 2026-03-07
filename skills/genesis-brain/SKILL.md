@@ -22,7 +22,7 @@ user-invocable: true
 
 # Genesis Brain — Knowledge Graph Interface
 
-Genesis' brain. Ingests documents, captures knowledge, answers questions using a semantic knowledge graph with 5,000+ concepts, vector embeddings, and NARS epistemic truth values.
+Genesis' brain. Ingests documents, captures knowledge, answers questions using a semantic knowledge graph with 1,500+ concepts, 1,500+ relations, 210 communities, vector embeddings, and NARS epistemic truth values. Uses hybrid retrieval (vector + graph traversal + community summaries + source chunks).
 
 ## Environment
 
@@ -115,41 +115,24 @@ Triggers: "what do you know about X", "how does X relate to Y", "search your bra
 
 **Workflow:**
 
-1. **Semantic search** for the query:
+1. **Hybrid search** — combines vector similarity + graph traversal + community summaries + source passages:
    ```bash
-   cd ~/.openclaw/workspace-genesis/skills/semantic-graph
-   source .venv/bin/activate
-   export $(grep -v "^#" ~/.openclaw/.env | xargs)
-   python pipeline.py search "${USER_QUERY}" --limit 10
+   bash {baseDir}/scripts/query.sh "${USER_QUERY}" 10
    ```
 
-2. **If asking about relationships between two things**, also run a graph traversal:
-   ```bash
-   python3 -c "
-   import asyncio, json
-   from surrealdb import AsyncSurreal
-   async def query():
-       db = AsyncSurreal(url='ws://127.0.0.1:8000')
-       await db.connect()
-       await db.signin({'username': 'root', 'password': '${SURREAL_PASS}'})
-       await db.use('semantic_graph', 'main')
+   This returns JSON with:
+   - `concepts` — ranked list with name, type, description, confidence, relevance score
+   - `relations` — graph connections (source → verb → target) with evidence quotes
+   - `communities` — thematic clusters matching the query
+   - `chunks` — source text passages from original documents
+   - `scores` — fused relevance scores per concept
+   - `formatted_text` — pre-formatted context string
 
-       # Find relations involving concept
-       results = await db.query('''
-           SELECT in.name as source, verb, out.name as target,
-                  evidence, nars_confidence
-           FROM relates
-           WHERE in.name = \$term OR out.name = \$term
-           ORDER BY nars_confidence DESC
-           LIMIT 10
-       ''', {'term': '${SEARCH_TERM}'})
-       print(json.dumps(results, default=str))
-       await db.close()
-   asyncio.run(query())
-   "
-   ```
+2. **Parse the JSON output.** Use `concepts` for the main answer, `relations` for connections,
+   `chunks` for source quotes, and `communities` for thematic context.
 
-3. **Compose the response** using the search results and any graph traversal data.
+3. **For relationship queries** ("how does X relate to Y"), the hybrid retrieval already
+   traverses 2 hops of graph edges. Use the `relations` field directly.
 
 **Response template for queries:**
 
@@ -165,15 +148,14 @@ Triggers: "what do you know about X", "how does X relate to Y", "search your bra
 <blockquote expandable><b>🔗 Deep Graph Context</b>
 
 <b>Connections:</b>
-• <i>{subject}</i> → {verb} → <i>{object}</i>
+• <i>{source}</i> → {verb} → <i>{target}</i>
   "{evidence_quote}" ({confidence})
 
-<b>Related by similarity:</b>
-{similarity_results}
+<b>Thematic clusters:</b>
+• <b>{community_name}</b> ({member_count} members): {summary}
 
-<b>Source documents:</b>
-• {doc_title_1}
-• {doc_title_2}</blockquote>
+<b>Source passages:</b>
+• [From: {doc_title}] "{chunk_text_excerpt}..."</blockquote>
 ```
 
 ### 3. CAPTURE MODE — "Remember This"
@@ -215,10 +197,13 @@ All commands require the venv + env activation shown above.
 | Command | Purpose |
 |---------|---------|
 | `python pipeline.py ingest <file> --embed -v` | Ingest + embed + verbose output |
-| `python pipeline.py search "<query>" --limit N` | Semantic similarity search |
+| `python pipeline.py retrieve "<query>" --json` | Hybrid search (vector + graph + communities + chunks) |
+| `python pipeline.py search "<query>" --limit N` | Vector-only similarity search |
 | `python pipeline.py similar <concept_id>` | Find similar concepts |
 | `python pipeline.py stats` | Database overview |
+| `python pipeline.py communities list` | List knowledge communities |
 | `python pipeline.py viz --limit N` | Generate 3D HTML visualization |
+| `python live_server.py --host 0.0.0.0` | Launch live real-time 3D visualization |
 | `python pipeline.py export -o file.json` | Export graph as JSON |
 
 ## Formatting Rules
