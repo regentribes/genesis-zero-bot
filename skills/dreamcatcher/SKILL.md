@@ -1,10 +1,10 @@
 ---
 name: dreamcatcher
-version: 1.0.0
+version: 2.0.0
 emoji: 🌠
 description: |
   Capture and develop member ideas into actionable development specifications. Guides individuals or groups through structured ideation, then compiles a full .md specification ready for a coding agent to execute. Triggers on: "capture my idea", "dreamcatcher", "I have an idea for...", "flesh out my idea", "create a spec", "build something", or any request to turn an idea into a development plan.
-metadata: {"openclaw":{"requires":{"bins":["git","bash","date"],"env":[],"os":["linux","darwin"]},"primaryEnv":"","network":["github.com"]}}
+metadata: {"openclaw":{"requires":{"bins":["git","bash","date","jq"],"env":[],"os":["linux","darwin"]},"primaryEnv":"","network":["github.com"]}}
 user-invocable: true
 ---
 
@@ -19,9 +19,10 @@ You are an ideation partner who helps RegenTribes members transform raw ideas in
 1. **Capture** — Receive a seed idea (from chat, reply, or direct trigger)
 2. **Explore** — Ask questions to flesh out: purpose, users, features, constraints, stack, timeline
 3. **Synthesize** — Compile into a structured `.md` specification
-4. **Create Repo** — Create a new repo under `regentribes/` org for this project
-5. **Push** — Push the spec to the new repo
-6. **Flag** — Create a GitHub issue tagged for a coding agent to pick up
+4. **Review** — Show spec to user, wait for "go" confirmation
+5. **Create Repo** — Create a new repo under `regentribes/` org for this project
+6. **Push** — Push the spec to the new repo
+7. **Flag** — Create a GitHub issue tagged for a coding agent to pick up
 
 ---
 
@@ -56,7 +57,7 @@ jq -n \
   --arg chatId "{chat_id}" \
   --arg now "$(date -u +%Y-%m-%dT%H:%M:%SZ)" \
   '{
-    version: "1.0",
+    version: "2.0",
     telegramUserId: $userId,
     chatId: $chatId,
     startedAt: $now,
@@ -139,75 +140,142 @@ PYEOF
 
 When you've gathered enough info (or the user says "done" / "I'm happy"), synthesize:
 
+### CRITICAL: Show Spec Before Building
+
+**Before creating any repo or sending to a coding agent, you MUST show the spec to the user and wait for confirmation.**
+
+Format:
+```
+📋 SPEC READY
+
+[Full spec markdown]
+
+Reply "go" to proceed with build, or "edit X" to change something.
+```
+
+Do NOT proceed to repo creation or coding agent invocation until user explicitly confirms.
+
+---
+
 ### Generate Specification
 
-Create a `{project-slug}.md` file locally:
+Use this TEMPLATE — fill in all sections with specific, actionable detail:
 
 ```markdown
 # {Project Name}
 
-**Status:** Specced & Ready for Build  
+**Status:** Draft  
 **Owner:** {owner}  
 **Created:** {date}  
-**Dream caught from:** {member1}, {member2} on the Regen Tribe Collective Network Telegram Group
+**Dream caught from:** {member1}, {member2} on Regen Tribe Collective Network Telegram Group
 
 ---
 
-## Problem Statement
+## 1. Summary
 
-{What problem does this solve? For whom?}
+{2-3 sentence overview of what this is and why it matters}
 
----
+## 2. Problem Statement
 
-## Vision
+- **Problem:** {What problem does this solve?}
+- **Who has this problem:** {Target users}
+- **Current workaround:** {How do they solve it today?}
 
-{1-2 sentence description of the solution}
+## 3. User Stories
 
----
+- **US-001:** As a {user type}, I want to {action} so that {benefit}
+- **US-002:** As a {user type}, I want to {action} so that {benefit}
+- (Add more as needed)
 
-## Target Users
+## 4. Functional Requirements
 
-{Who is this for?}
+### FR-001: {Requirement title}
+**Description:** {Detailed description of what this feature does}
+**Priority:** {High/Medium/Low}
+**Acceptance Criteria:**
+- Given {precondition}, when {action}, then {expected result}
+- Given {edge case}, when {action}, then {expected result}
 
----
+### FR-002: {Requirement title}
+**Description:** {Detailed description}
+**Priority:** {High/Medium/Low}
+**Acceptance Criteria:**
+- Given..., when..., then...
 
-## Use Case
+## 5. Technical Specification
 
-{How someone uses it — walkthrough}
+### 5.1 Architecture
+```
+{ASCII diagram or clear text description of components}
+```
 
----
+### 5.2 Data Models
 
-## Features
+**{EntityName}**
+| Field | Type | Required | Description |
+|-------|------|----------|-------------|
+| id | string | yes | Unique identifier |
+| {field} | {type} | yes/no | {description} |
 
-### Must Have (v1)
-- {feature 1}
-- {feature 2}
-- {feature 3}
+### 5.3 API Contracts
 
-### Nice to Have
-- {feature}
-- {feature}
+| Endpoint | Method | Request | Response | Description |
+|----------|--------|---------|----------|-------------|
+| /api/{resource} | GET | {params} | {response} | {description} |
+| /api/{resource} | POST | {body} | {response} | {description} |
 
----
+### 5.4 UI Components
 
-## Constraints & Context
+| Component | Props | States | Behavior |
+|-----------|-------|--------|----------|
+| {ComponentName} | {props} | default, hover, active, disabled | {onClick does X} |
 
-- **Budget:** {budget or "TBD"}
-- **Timeline:** {timeline or "TBD"}
-- **Tech Stack:** {stack or "Open — coding agent can recommend"}
-- **Integrations:** {any existing tools/APIs}
+### 5.5 Integrations
 
----
+| Service | Purpose | Auth |
+|---------|---------|------|
+| {service} | {purpose} | {auth method} |
 
-## Technical Notes
+## 6. Non-Functional Requirements
 
-{Any additional technical context, architecture hints, or requirements}
+- **Performance:** {e.g., <200ms response time, <3s initial load}
+- **Browser Support:** {e.g., Chrome 90+, Firefox 88+, Safari 14+}
+- **Mobile:** {e.g., responsive, PWA optional}
+- **Security:** {e.g., no PII stored, sanitized inputs}
+- **Accessibility:** {e.g., WCAG 2.1 AA}
 
----
+## 7. Constraints
 
-## Success Criteria
+- **Budget:** {budget or "none"}
+- **Timeline:** {timeline or "none"}
+- **Tech Stack:** {tech preferences or "open - coding agent can recommend"}
+- **Dependencies:** {any existing systems/tools}
 
-{How do we know this is done? What does "done" look like?}
+## 8. Out of Scope
+
+- {Explicitly NOT building in v1}
+- {Deferred to future versions}
+
+## 9. Success Metrics
+
+- {How do we know this is done? What does "done" look like?}
+- {How do we measure success?}
+
+## 10. File Structure
+
+```
+{project-root}/
+├── src/
+│   ├── components/
+│   ├── pages/
+│   ├── api/
+│   ├── utils/
+│   └── index.js
+├── public/
+│   └── index.html
+├── package.json
+└── README.md
+```
 
 ---
 
@@ -291,3 +359,4 @@ Read and show:
 - Don't over-engineer — aim for v1 scope, not the full vision.
 - If the idea is unclear, ask clarifying questions before moving forward.
 - Flag when the idea is too vague: *"Can you give me a concrete example of what that would look like?"*
+- **ALWAYS show the spec to the user and wait for "go" before sending to a coding agent**

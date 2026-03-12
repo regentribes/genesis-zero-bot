@@ -9,3 +9,7 @@
 2026-03-10T07:31:39.864535Z  INFO ralph::loop_runner: All done! LOOP_COMPLETE detected in solo output.
 2026-03-10T07:31:39.864712Z  INFO ralph_core::event_loop: Wrapping up: completed. 1 iterations in 25s. reason=completed iterations=1 duration=25s
 2026-03-10T07:31:39.867607Z  INFO ralph_core::landing: Beginning landing sequence loop_id=primary
+2026-03-10T07:31:45.426868Z  INFO ralph_core::landing: Auto-committed changes during landing loop_id=primary commit=Some("accf6a98916ba0f5302af0696539c264a9f9cf35") files=3399
+2026-03-10T07:31:46.340049Z  INFO ralph_core::landing: Generated handoff file loop_id=primary path=/home/ian/.openclaw/workspace-genesis/.ralph/agent/handoff.md completed=1 open=0
+2026-03-10T07:31:46.364404Z  INFO ralph_core::loop_completion: Landing completed with auto-commit commit=Some("accf6a98916ba0f5302af0696539c264a9f9cf35") handoff=/home/ian/.openclaw/workspace-genesis/.ralph/agent/handoff.md
+2026-03-10T07:31:46.364435Z  INFO ralph::loop_runner: Primary loop landed successfully committed=true handoff=/home/ian/.openclaw/workspace-genesis/.ralph/agent/handoff.md open_tasks=0
