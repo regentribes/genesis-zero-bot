@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cheapest Land for Regenerative Villages</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: #f8f9fa;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 40px 20px;
+    }
+
+    h1 {
+      color: #2d3436;
+      font-weight: 300;
+      font-size: 1.8rem;
+      margin-bottom: 10px;
+      letter-spacing: 0.5px;
+    }
+
+    .subtitle {
+      color: #636e72;
+      font-size: 0.95rem;
+      margin-bottom: 30px;
+    }
+
+    .map-container {
+      background: white;
+      border-radius: 12px;
+      padding: 30px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+      max-width: 1100px;
+      width: 100%;
+    }
+
+    svg {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .country, .state {
+      fill: #e9ecef;
+      stroke: #fff;
+      stroke-width: 0.5;
+      transition: fill 0.2s ease;
+    }
+
+    .highlighted {
+      fill: #00b894;
+    }
+
+    .highlighted-usa {
+      fill: #0984e3;
+    }
+
+    .country:hover, .state:hover {
+      opacity: 0.8;
+    }
+
+    .legend {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      justify-content: center;
+      margin-top: 30px;
+      padding-top: 20px;
+      border-top: 1px solid #eee;
+    }
+
+    .legend-section {
+      text-align: center;
+    }
+
+    .legend-title {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: #b2bec3;
+      margin-bottom: 8px;
+    }
+
+    .legend-items {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      justify-content: center;
+    }
+
+    .legend-item {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.8rem;
+      color: #495057;
+    }
+
+    .legend-color {
+      width: 14px;
+      height: 14px;
+      border-radius: 3px;
+    }
+
+    .legend-color.europe { background: #00b894; }
+    .legend-color.usa { background: #0984e3; }
+
+    .tooltip {
+      position: absolute;
+      background: #2d3436;
+      color: white;
+      padding: 8px 14px;
+      border-radius: 6px;
+      font-size: 0.8rem;
+      pointer-events: none;
+      opacity: 0;
+      transition: opacity 0.2s;
+      z-index: 100;
+    }
+
+    .tooltip.visible {
+      opacity: 1;
+    }
+
+    .note {
+      margin-top: 20px;
+      font-size: 0.8rem;
+      color: #b2bec3;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <h1>Cheapest Land for Regenerative Villages</h1>
+  <p class="subtitle">Highlighting affordable regions ideal for community development</p>
+  
+  <div class="map-container">
+    <svg viewBox="0 0 1100 500" xmlns="http://www.w3.org/2000/svg">
+      <!-- EUROPE -->
+      <!-- North Macedonia -->
+      <path class="country highlighted" data-country="North Macedonia" data-price="$8K plots (rural)" d="M520,295 L530,290 L540,292 L542,300 L538,308 L528,310 L518,305 L515,298 Z"/>
+      
+      <!-- Bulgaria -->
+      <path class="country highlighted" data-country="Bulgaria" data-price="Under $15K (rural)" d="M540,260 L565,255 L580,265 L578,285 L565,295 L545,295 L530,290 L540,270 Z"/>
+      
+      <!-- Romania -->
+      <path class="country highlighted" data-country="Romania" data-price="$30K+ (rural)" d="M545,230 L575,225 L590,235 L585,260 L565,270 L545,265 L535,250 Z"/>
+      
+      <!-- Albania -->
+      <path class="country highlighted" data-country="Albania" data-price="Very cheap" d="M505,310 L520,305 L530,315 L525,330 L510,335 L500,325 L502,315 Z"/>
+      
+      <!-- Italy -->
+      <path class="country highlighted" data-country="Italy (Sicily)" data-price="€1 homes (renovation)" d="M480,260 L500,250 L510,265 L505,290 L495,310 L485,320 L470,310 L465,285 L470,270 Z M510,330 L525,325 L530,340 L520,350 L510,345 Z"/>
+      
+      <!-- Context countries -->
+      <path class="country" data-country="Greece" d="M530,310 L555,305 L565,320 L555,335 L535,340 L525,330 L530,320 Z"/>
+      <path class="country" data-country="Serbia" d="M515,280 L535,275 L545,285 L540,300 L525,305 L510,295 Z"/>
+      <path class="country" data-country="Hungary" d="M525,250 L560,245 L570,260 L555,275 L530,270 L520,260 Z"/>
+      <path class="country" data-country="France" d="M420,230 L460,220 L475,250 L460,280 L430,285 L410,265 Z"/>
+      <path class="country" data-country="Spain" d="M380,280 L420,270 L435,300 L420,330 L390,335 L370,310 Z"/>
+      <path class="country" data-country="Germany" d="M480,210 L510,200 L525,220 L515,245 L490,250 L475,235 Z"/>
+      <path class="country" data-country="Poland" d="M530,190 L570,185 L585,205 L570,230 L540,235 L525,220 Z"/>
+      <path class="country" data-country="Ukraine" d="M590,200 L640,190 L660,220 L640,255 L600,260 L580,240 L585,220 Z"/>
+      <path class="country" data-country="Turkey" d="M580,290 L620,280 L640,300 L620,330 L580,325 L565,305 Z"/>
+      <path class="country" data-country="UK" d="M430,180 L450,175 L455,195 L445,210 L425,215 L425,195 Z"/>
+
+      <!-- USA STATES -->
+      <!-- New Mexico - cheapest -->
+      <path class="state highlighted-usa" data-country="New Mexico, USA" data-price="$671-725/acre (cheapest)" d="M180,280 L220,275 L250,280 L260,320 L240,350 L200,360 L170,340 L165,300 Z"/>
+      
+      <!-- Wyoming -->
+      <path class="state highlighted-usa" data-country="Wyoming, USA" data-price="$968-1,000/acre" d="M180,200 L230,195 L260,205 L265,250 L250,280 L220,275 L180,280 L170,230 Z"/>
+      
+      <!-- Nevada -->
+      <path class="state highlighted-usa" data-country="Nevada, USA" data-price="$1,120-1,230/acre" d="M120,250 L170,240 L180,280 L170,310 L140,320 L110,300 L105,270 Z"/>
+      
+      <!-- Montana -->
+      <path class="state highlighted-usa" data-country="Montana, USA" data-price="$1,180-1,280/acre" d="M180,150 L230,145 L250,170 L245,200 L230,195 L180,200 L170,180 Z"/>
+      
+      <!-- Arizona -->
+      <path class="state highlighted-usa" data-country="Arizona, USA" data-price="$3,780-4,200/acre" d="M140,320 L180,310 L220,320 L240,350 L220,380 L170,385 L130,360 L125,340 Z"/>
+      
+      <!-- Colorado -->
+      <path class="state highlighted-usa" data-country="Colorado, USA" data-price="$2,150-2,690/acre" d="M200,250 L230,245 L250,280 L240,320 L220,320 L200,310 L190,270 Z"/>
+      
+      <!-- Texas (partial) -->
+      <path class="state highlighted-usa" data-country="Texas, USA" data-price="$2,610/acre (eastern cheap)" d="M220,360 L280,350 L320,380 L310,430 L260,450 L220,420 L210,380 Z"/>
+
+      <!-- USA context -->
+      <path class="state" data-country="California" d="M80,260 L120,250 L120,310 L100,340 L70,330 L65,290 Z"/>
+      <path class="state" data-country="Oregon" d="M100,180 L140,170 L150,200 L140,230 L110,240 L95,220 Z"/>
+      <path class="state" data-country="Washington" d="M100,130 L140,120 L150,150 L140,180 L110,190 L95,170 Z"/>
+    </svg>
+    
+    <div class="legend">
+      <div class="legend-section">
+        <div class="legend-title">Europe</div>
+        <div class="legend-items">
+          <div class="legend-item"><div class="legend-color europe"></div><span>North Macedonia: $8K+</span></div>
+          <div class="legend-item"><div class="legend-color europe"></div><span>Bulgaria: &lt;$15K</span></div>
+          <div class="legend-item"><div class="legend-color europe"></div><span>Romania: $30K+</span></div>
+          <div class="legend-item"><div class="legend-color europe"></div><span>Albania: Very cheap</span></div>
+          <div class="legend-item"><div class="legend-color europe"></div><span>Italy: €1 homes</span></div>
+        </div>
+      </div>
+      <div class="legend-section">
+        <div class="legend-title">USA (Per Acre)</div>
+        <div class="legend-items">
+          <div class="legend-item"><div class="legend-color usa"></div><span>New Mexico: $671</span></div>
+          <div class="legend-item"><div class="legend-color usa"></div><span>Wyoming: $968</span></div>
+          <div class="legend-item"><div class="legend-color usa"></div><span>Nevada: $1,120</span></div>
+          <div class="legend-item"><div class="legend-color usa"></div><span>Montana: $1,180</span></div>
+          <div class="legend-item"><div class="legend-color usa"></div><span>Arizona: $3,780</span></div>
+          <div class="legend-item"><div class="legend-color usa"></div><span>Colorado: $2,150</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <p class="note">Prices are approximate and vary by location, size, and zoning. For community projects, verify local regulations.</p>
+
+  <div class="tooltip" id="tooltip"></div>
+
+  <script>
+    const tooltip = document.getElementById('tooltip');
+    const highlighted = document.querySelectorAll('.highlighted, .highlighted-usa');
+
+    highlighted.forEach(item => {
+      item.addEventListener('mouseenter', (e) => {
+        const name = item.dataset.country;
+        const price = item.dataset.price;
+        tooltip.textContent = `${name}: ${price}`;
+        tooltip.classList.add('visible');
+      });
+
+      item.addEventListener('mousemove', (e) => {
+        tooltip.style.left = e.pageX + 15 + 'px';
+        tooltip.style.top = e.pageY + 15 + 'px';
+      });
+
+      item.addEventListener('mouseleave', () => {
+        tooltip.classList.remove('visible');
+      });
+    });
+  </script>
+</body>
+</html>
