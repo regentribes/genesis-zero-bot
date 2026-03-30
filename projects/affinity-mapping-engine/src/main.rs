@@ -1,5 +1,6 @@
 pub mod models;
 pub mod scoring;
+pub mod seed;
 pub mod trust;
 pub mod anti_capture;
 pub mod api;
