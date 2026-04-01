@@ -1,0 +1,196 @@
+{
+  "run_number": 6,
+  "run_config": "Liberation Emphasis",
+  "weights": {
+    "liberation_potential": 2.0,
+    "social_resilience": 1.5,
+    "economic_sustainability": 1.2,
+    "governance_robustness": 1.0,
+    "ecological_coherence": 1.0,
+    "epistemic_rigor": 0.8,
+    "implementability": 0.8,
+    "civilizational_longevity": 0.8
+  },
+  "raw_scores": {
+    "shapiro": {
+      "epistemic_rigor": 8.0,
+      "implementability": 8.8,
+      "ecological_coherence": 4.1,
+      "social_resilience": 5.9,
+      "economic_sustainability": 7.3,
+      "governance_robustness": 5.8,
+      "civilizational_longevity": 5.2,
+      "liberation_potential": 5.8
+    },
+    "fresco": {
+      "epistemic_rigor": 5.3,
+      "implementability": 2.2,
+      "ecological_coherence": 8.8,
+      "social_resilience": 4.1,
+      "economic_sustainability": 7.8,
+      "governance_robustness": 3.0,
+      "civilizational_longevity": 7.2,
+      "liberation_potential": 6.8
+    },
+    "integral": {
+      "epistemic_rigor": 6.8,
+      "implementability": 5.7,
+      "ecological_coherence": 7.7,
+      "social_resilience": 8.0,
+      "economic_sustainability": 8.8,
+      "governance_robustness": 7.8,
+      "civilizational_longevity": 8.1,
+      "liberation_potential": 8.9
+    }
+  },
+  "weighted_totals": {
+    "shapiro": 56.71,
+    "fresco": 52.67,
+    "integral": 72.34
+  },
+  "overall_ranking": [
+    {
+      "rank": 1,
+      "civ": "integral",
+      "score": 72.34
+    },
+    {
+      "rank": 2,
+      "civ": "shapiro",
+      "score": 56.71
+    },
+    {
+      "rank": 3,
+      "civ": "fresco",
+      "score": 52.67
+    }
+  ],
+  "dimension_rankings": {
+    "epistemic_rigor": {
+      "1st": {
+        "civ": "shapiro",
+        "score": 8.0
+      },
+      "2nd": {
+        "civ": "integral",
+        "score": 6.8
+      },
+      "3rd": {
+        "civ": "fresco",
+        "score": 5.3
+      }
+    },
+    "implementability": {
+      "1st": {
+        "civ": "shapiro",
+        "score": 8.8
+      },
+      "2nd": {
+        "civ": "integral",
+        "score": 5.7
+      },
+      "3rd": {
+        "civ": "fresco",
+        "score": 2.2
+      }
+    },
+    "ecological_coherence": {
+      "1st": {
+        "civ": "fresco",
+        "score": 8.8
+      },
+      "2nd": {
+        "civ": "integral",
+        "score": 7.7
+      },
+      "3rd": {
+        "civ": "shapiro",
+        "score": 4.1
+      }
+    },
+    "social_resilience": {
+      "1st": {
+        "civ": "integral",
+        "score": 8.0
+      },
+      "2nd": {
+        "civ": "shapiro",
+        "score": 5.9
+      },
+      "3rd": {
+        "civ": "fresco",
+        "score": 4.1
+      }
+    },
+    "economic_sustainability": {
+      "1st": {
+        "civ": "integral",
+        "score": 8.8
+      },
+      "2nd": {
+        "civ": "fresco",
+        "score": 7.8
+      },
+      "3rd": {
+        "civ": "shapiro",
+        "score": 7.3
+      }
+    },
+    "governance_robustness": {
+      "1st": {
+        "civ": "integral",
+        "score": 7.8
+      },
+      "2nd": {
+        "civ": "shapiro",
+        "score": 5.8
+      },
+      "3rd": {
+        "civ": "fresco",
+        "score": 3.0
+      }
+    },
+    "civilizational_longevity": {
+      "1st": {
+        "civ": "integral",
+        "score": 8.1
+      },
+      "2nd": {
+        "civ": "fresco",
+        "score": 7.2
+      },
+      "3rd": {
+        "civ": "shapiro",
+        "score": 5.2
+      }
+    },
+    "liberation_potential": {
+      "1st": {
+        "civ": "integral",
+        "score": 8.9
+      },
+      "2nd": {
+        "civ": "fresco",
+        "score": 6.8
+      },
+      "3rd": {
+        "civ": "shapiro",
+        "score": 5.8
+      }
+    }
+  },
+  "winner": "integral",
+  "winner_name": "Integral Collective",
+  "margin": 15.630000000000003,
+  "battle_narrative": "Integral Collective wins by 15.6 points over second place. Integral's balanced excellence across dimensions\u2014particularly liberation potential and economic sustainability\u2014secured the win.",
+  "decisive_arguments": {
+    "epistemic_rigor": "Three Buckets is an accounting identity, not theory. Testable against data.",
+    "implementability": "Existing programs, proven mechanisms, political plausibility.",
+    "ecological_coherence": "Permaculture, biomimicry, closed loops, planetary boundary awareness.",
+    "social_resilience": "Federated; adaptive; local autonomy + network coherence; non-accumulative.",
+    "economic_sustainability": "Non-accumulation; circular flow; open design commons; increasing returns.",
+    "governance_robustness": "Weighted consensus; objection mapping; FRS feedback; democratic depth.",
+    "civilizational_longevity": "Feedback-rich; adaptive; no growth dependency; designed for longevity.",
+    "liberation_potential": "Non-accumulative reciprocity; democratic governance; open design; autonomy."
+  }
+}

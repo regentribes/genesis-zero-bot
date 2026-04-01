@@ -1,0 +1,4 @@
+Read ~/.openclaw/workspace-genesis/temp/part1.txt (first part). Read the telegram-compose skill at ~/.openclaw/workspace-genesis/skills/telegram-compose/SKILL.md for formatting rules, then format and send this content to Telegram. If successful, then read ~/.openclaw/workspace-genesis/temp/part2.txt and send as a continuation (add <i>(continued)</i> at the start).
+
+Chat ID: -1001921904187
+Thread ID: 4214
