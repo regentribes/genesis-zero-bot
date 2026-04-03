@@ -1,0 +1,14 @@
+#!/bin/bash
+# Post-push hook to mirror from Radicle to GitHub
+
+echo "=== Mirroring to GitHub ==="
+
+cd "$(dirname "$GIT_DIR")"
+
+# Get current branch
+BRANCH=$(git branch --show-current)
+
+# Push to GitHub mirror
+git push mirror "$BRANCH" 2>/dev/null
+
+echo "=== Mirrored $BRANCH to GitHub ==="

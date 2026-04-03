@@ -1,0 +1,14 @@
+#!/bin/bash
+# Auto-push to all remotes after commit
+echo "=== Auto-syncing ==="
+cd "$(dirname "$GIT_DIR")"
+
+# GitHub
+git push origin main
+git push origin gh-pages 2>/dev/null
+
+# Radicle  
+export PATH="$HOME/.radicle/bin:$PATH"
+git push rad main
+git push rad gh-pages
+echo "=== Synced to all ==="

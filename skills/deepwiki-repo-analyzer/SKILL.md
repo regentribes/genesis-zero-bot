@@ -45,3 +45,46 @@ analyze https://deepwiki.com/regentribes/genesis-zero-bot
 
 - Saves markdown to: `~/workspace-genesis/deepwiki_{owner}_{repo}.md`
 - Returns: file path, line count, first 1000 chars preview
+
+## Cloned Repos (Local)
+
+Pre-cloned repos reside in `~/.openclaw/workspace-genesis/cloned/`:
+
+### Space.js
+- **Repo:** https://github.com/alienkitty/space.js
+- **Location:** `cloned/space.js/`
+- **Src:** panels, ui, graph, meter, tween, audio, loaders, math, utils
+- **Examples:**
+  - UI: progress, meter, panel, radial_graph, graph, fps, audio_*
+  - 3D: three/3d_lights, three/3d_materials, three/3d_radial_graph
+  - Other: cyberspace, mars, magnetic, test_*
+
+### Alien.js (Three.js MVC)
+- **Repo:** https://github.com/alienkitty/alien.js
+- **Location:** `cloned/alien.js/`
+- **Src:** three (materials, shaders, physics), ogl, oimophysics
+- **Examples:**
+  - Transitions: page, canvas, scene, scroll, camera
+  - 3D Effects: Abstract Cube, Black Holes, Cyberspace, Fibonacci Sphere
+  - Physics: Gravity Balls, Instancing, Picking
+  - Shaders: Bloom, Blur, Fresnel, Hologram, Flowmap, Fluid
+
+### Wiki Docs
+- `cloned/space.js.wiki/` — Space.js wiki (Home, Tween)
+- `cloned/alien.js.wiki/` — Alien.js wiki
+
+## Capabilities Summary
+
+### Space.js (UI + 3D)
+- **Panel components:** Panel, PanelItem, ColorPicker, List, Slider, Toggle
+- **Graph components:** Graph, RadialGraph, Meter
+- **UI components:** UI (HUD), Progress, Details, FPS
+- **Tween engine:** spring physics, easing functions
+- **Audio:** WebAudio, BufferLoader, Audio streams
+- **Three.js integration:** EnvironmentTextureLoader, material UI panels
+
+### Alien.js (3D Framework)
+- **Materials:** Wobble, Custom shaders
+- **Transitions:** Page, Canvas, Scene, Scroll, Camera transitions
+- **Physics:** OimoPhysics integration
+- **OGL:** FXAAProgram and OGL shaders
