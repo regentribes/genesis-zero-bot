@@ -17,20 +17,20 @@ const AUTHOR_COLORS = {
 
 let scene, camera, renderer, controls;
 let messageMeshes = [];
+let authorMeshes = [];
 let labelSprites = [];
 let sceneData = null;
 let raycaster = new THREE.Raycaster();
 let mouse = new THREE.Vector2();
 let hoveredMesh = null;
 let selectedMesh = null;
-let labelThreshold = 80; // Max distance to show label
+let labelThreshold = 120;
 
-// Camera state
 let lastCameraPosition = new THREE.Vector3();
 let lastTime = performance.now();
 
 async function loadScene() {
-    const response = await fetch('/big_space_scene.json');
+    const response = await fetch('/big_space_scene_v2.json');
     if (!response.ok) throw new Error('Failed to load scene data');
     return response.json();
 }
@@ -38,43 +38,78 @@ async function loadScene() {
 function createLabel(text, color) {
     const canvas = document.createElement('canvas');
     const ctx = canvas.getContext('2d');
-    canvas.width = 256;
+    canvas.width = 320;
     canvas.height = 64;
 
-    // Background
-    ctx.fillStyle = 'rgba(0, 0, 0, 0.75)';
-    ctx.roundRect(0, 0, canvas.width, canvas.height, 8);
+    ctx.fillStyle = 'rgba(5, 5, 5, 0.88)';
+    ctx.roundRect(0, 0, canvas.width, canvas.height, 6);
     ctx.fill();
 
-    // Border with author color
-    ctx.strokeStyle = '#' + color.toString(16).padStart(6, '0');
+    ctx.strokeStyle = '#' + parseInt(color).toString(16).padStart(6, '0');
     ctx.lineWidth = 2;
-    ctx.roundRect(1, 1, canvas.width - 2, canvas.height - 2, 8);
+    ctx.roundRect(1, 1, canvas.width - 2, canvas.height - 2, 6);
     ctx.stroke();
 
-    // Text
-    ctx.fillStyle = '#ffffff';
-    ctx.font = 'bold 18px JetBrains Mono, Fira Code, monospace';
-    ctx.textAlign = 'center';
-    ctx.textBaseline = 'middle';
+    ctx.fillStyle = '#cccccc';
+    ctx.font = '13px JetBrains Mono, Fira Code, monospace';
+    ctx.textAlign = 'left';
+    ctx.textBaseline = 'top';
 
-    // Truncate if needed
-    let displayText = text;
-    while (ctx.measureText(displayText).width > 230 && displayText.length > 3) {
-        displayText = displayText.slice(0, -4) + '...';
+    // Word wrap
+    const words = text.split(' ');
+    let line = '';
+    let y = 8;
+    const maxWidth = canvas.width - 16;
+    for (const word of words) {
+        const test = line + word + ' ';
+        if (ctx.measureText(test).width > maxWidth && line !== '') {
+            ctx.fillText(line.trim(), 8, y);
+            line = word + ' ';
+            y += 16;
+            if (y > canvas.height - 20) { line += '...'; break; }
+        } else {
+            line = test;
+        }
     }
-    ctx.fillText(displayText, canvas.width / 2, canvas.height / 2);
+    ctx.fillText(line.trim(), 8, y);
 
     const texture = new THREE.CanvasTexture(canvas);
     texture.minFilter = THREE.LinearFilter;
+    const mat = new THREE.SpriteMaterial({ map: texture, transparent: true, depthTest: false });
+    const sprite = new THREE.Sprite(mat);
+    sprite.scale.set(50, 10, 1);
+    return sprite;
+}
 
-    const spriteMaterial = new THREE.SpriteMaterial({
-        map: texture,
-        transparent: true,
-        depthTest: false,
-        scale: new THREE.Vector3(40, 10, 1)
-    });
-    const sprite = new THREE.Sprite(spriteMaterial);
+function createAuthorLabel(name, color, count) {
+    const canvas = document.createElement('canvas');
+    const ctx = canvas.getContext('2d');
+    canvas.width = 256;
+    canvas.height = 48;
+
+    ctx.fillStyle = 'rgba(5, 5, 5, 0.9)';
+    ctx.roundRect(0, 0, canvas.width, canvas.height, 6);
+    ctx.fill();
+
+    ctx.strokeStyle = '#' + parseInt(color).toString(16).padStart(6, '0');
+    ctx.lineWidth = 3;
+    ctx.roundRect(1, 1, canvas.width - 2, canvas.height - 2, 6);
+    ctx.stroke();
+
+    ctx.fillStyle = '#ffffff';
+    ctx.font = 'bold 14px JetBrains Mono, monospace';
+    ctx.textAlign = 'center';
+    ctx.textBaseline = 'middle';
+    ctx.fillText(name.length > 18 ? name.substring(0, 16) + '…' : name, canvas.width / 2, canvas.height / 2 - 7);
+    ctx.font = '11px JetBrains Mono, monospace';
+    ctx.fillStyle = '#777777';
+    ctx.fillText(`${count} msgs`, canvas.width / 2, canvas.height / 2 + 10);
+
+    const texture = new THREE.CanvasTexture(canvas);
+    texture.minFilter = THREE.LinearFilter;
+    const mat = new THREE.SpriteMaterial({ map: texture, transparent: true, depthTest: false });
+    const sprite = new THREE.Sprite(mat);
+    sprite.scale.set(60, 12, 1);
     return sprite;
 }
 
@@ -82,8 +117,8 @@ function init() {
     scene = new THREE.Scene();
     scene.background = new THREE.Color(0x050505);
 
-    camera = new THREE.PerspectiveCamera(60, window.innerWidth / window.innerHeight, 0.1, 100000);
-    camera.position.set(0, 0, 300);
+    camera = new THREE.PerspectiveCamera(55, window.innerWidth / window.innerHeight, 0.1, 100000);
+    camera.position.set(0, 0, 500);
 
     renderer = new THREE.WebGLRenderer({ antialias: true });
     renderer.setSize(window.innerWidth, window.innerHeight);
@@ -98,16 +133,14 @@ function init() {
         MIDDLE: THREE.MOUSE.DOLLY,
         RIGHT: THREE.MOUSE.PAN
     };
-    controls.minDistance = 5;
+    controls.minDistance = 10;
     controls.maxDistance = 2000;
 
-    // Lighting
-    const ambientLight = new THREE.AmbientLight(0xffffff, 0.4);
+    const ambientLight = new THREE.AmbientLight(0xffffff, 0.5);
     scene.add(ambientLight);
-
-    const directionalLight = new THREE.DirectionalLight(0xffffff, 0.8);
-    directionalLight.position.set(100, 100, 50);
-    scene.add(directionalLight);
+    const dirLight = new THREE.DirectionalLight(0xffffff, 0.8);
+    dirLight.position.set(200, 200, 100);
+    scene.add(dirLight);
 
     window.addEventListener('resize', onWindowResize);
     renderer.domElement.addEventListener('mousemove', onMouseMove);
@@ -121,7 +154,7 @@ function init() {
         document.getElementById('ui').style.display = 'block';
         animate();
     }).catch(err => {
-        console.error('Error loading scene:', err);
+        console.error('Error:', err);
         document.getElementById('loading').textContent = 'Error: ' + err.message;
     });
 }
@@ -129,30 +162,68 @@ function init() {
 function buildScene(data) {
     const messages = data.messages;
     const authors = data.authors;
-    const replyChains = data.reply_chains;
+    const clusters = data.clusters;
+    const replyEdges = data.reply_edges;
 
-    const times = messages.map(m => m.unixtime);
-    const timeMin = Math.min(...times);
-    const timeMax = Math.max(...times);
-    const timeRange = timeMax - timeMin || 1;
+    const sphereGeo = new THREE.SphereGeometry(0.5, 10, 10);
 
-    const sphereGeo = new THREE.SphereGeometry(0.5, 12, 12);
-
-    // Build position lookup for reply lines
+    // Build position lookup for edges
     const posById = new Map();
 
-    // Create messages
-    messages.forEach((msg) => {
-        const t = (msg.unixtime - timeMin) / timeRange;
-        const x = (t - 0.5) * 1000;
+    // Author nodes (large, labeled spheres on X axis)
+    authors.forEach(author => {
+        const color = AUTHOR_COLORS[author.name] || 0xffffff;
+        const mat = new THREE.MeshStandardMaterial({
+            color: color,
+            roughness: 0.4,
+            metalness: 0.6,
+            emissive: color,
+            emissiveIntensity: 0.3,
+        });
+        const mesh = new THREE.Mesh(
+            new THREE.SphereGeometry(1.0, 16, 16),
+            mat
+        );
+        mesh.position.set(author.x, 0, 0);
+        mesh.userData = { type: 'author', author, color };
+        scene.add(mesh);
+        authorMeshes.push(mesh);
 
-        const authorIndex = authors.findIndex(a => a.name === msg.author);
-        const y = (authorIndex - authors.length / 2) * 8;
+        // Author label
+        const label = createAuthorLabel(author.name, color, author.message_count);
+        label.position.set(author.x, 15, 0);
+        label.lookAt(camera.position);
+        scene.add(label);
+        labelSprites.push(label);
 
-        const z = (msg.text_length % 100) - 50;
+        posById['author_' + author.name] = mesh.position;
+    });
 
+    // Cluster nodes (subtle, themed by domain)
+    clusters.forEach(cluster => {
+        // Small indicator sphere for cluster theme
+        const domainColor = hashColor(cluster.theme);
+        const mat = new THREE.MeshStandardMaterial({
+            color: domainColor,
+            roughness: 0.8,
+            metalness: 0.2,
+            transparent: true,
+            opacity: 0.4,
+        });
+        const mesh = new THREE.Mesh(
+            new THREE.SphereGeometry(0.3, 8, 8),
+            mat
+        );
+        mesh.position.set(0, cluster.y, 0);
+        mesh.userData = { type: 'cluster', cluster };
+        mesh.visible = false;  // Hidden, just for reference
+        scene.add(mesh);
+    });
+
+    // Messages (spheres on X=author, Y=cluster, Z=time)
+    messages.forEach(msg => {
         const color = AUTHOR_COLORS[msg.author] || 0xffffff;
-        const material = new THREE.MeshStandardMaterial({
+        const mat = new THREE.MeshStandardMaterial({
             color: color,
             roughness: 0.7,
             metalness: 0.3,
@@ -160,155 +231,176 @@ function buildScene(data) {
             emissiveIntensity: msg.link_count > 0 ? 0.2 : 0.05,
         });
 
-        const scale = 0.3 + Math.min(msg.link_count * 0.12, 1.2);
-
-        const mesh = new THREE.Mesh(sphereGeo, material);
-        mesh.position.set(x, y, z);
+        const scale = 0.25 + Math.min(msg.link_count * 0.08, 0.8);
+        const mesh = new THREE.Mesh(sphereGeo, mat);
+        mesh.position.set(msg.author_x, msg.y, msg.z);
         mesh.scale.setScalar(scale);
-        mesh.userData = { msg, author: msg.author, color };
+        mesh.userData = { type: 'message', msg, color };
 
         scene.add(mesh);
         messageMeshes.push(mesh);
-        posById.set(msg.msg_id, mesh.position);
+        posById[msg.msg_id] = mesh.position;
     });
 
-    // Reply chain lines
-    const maxLines = Math.min(replyChains.length, 800);
-    for (let i = 0; i < maxLines; i++) {
-        const reply = replyChains[i];
-        const from = posById.get(reply.from);
-        const to = posById.get(reply.to);
+    // Author-to-message edges (vertical lines from author to each message)
+    const authorMsgEdges = new Map();  // author -> [msg_ids]
+    messages.forEach(msg => {
+        if (!authorMsgEdges[msg.author]) authorMsgEdges[msg.author] = [];
+        authorMsgEdges[msg.author].push(msg);
+    });
+    authorMsgEdges.forEach((msgs, author) => {
+        const authorPos = posById['author_' + author];
+        const color = AUTHOR_COLORS[author] || 0xffffff;
+        msgs.forEach(msg => {
+            const msgPos = posById[msg.msg_id];
+            if (authorPos && msgPos) {
+                const lineMat = new THREE.LineBasicMaterial({
+                    color: color, transparent: true, opacity: 0.06
+                });
+                const pts = [authorPos.clone(), msgPos.clone()];
+                const geo = new THREE.BufferGeometry().setFromPoints(pts);
+                scene.add(new THREE.Line(geo, lineMat));
+            }
+        });
+    });
 
+    // Reply edges (message to reply_to message)
+    const maxReplies = Math.min(replyEdges.length, 800);
+    for (let i = 0; i < maxReplies; i++) {
+        const edge = replyEdges[i];
+        const from = posById[edge.from_id];
+        const to = posById[edge.to_id];
         if (from && to) {
-            const authorColor = AUTHOR_COLORS[reply.author] || 0xffffff;
+            const color = AUTHOR_COLORS[edge.author] || 0xffffff;
             const lineMat = new THREE.LineBasicMaterial({
-                color: authorColor,
-                transparent: true,
-                opacity: 0.08
+                color, transparent: true, opacity: 0.12
             });
-            const geometry = new THREE.BufferGeometry().setFromPoints([from, to]);
-            const line = new THREE.Line(geometry, lineMat);
-            scene.add(line);
+            const geo = new THREE.BufferGeometry().setFromPoints([from, to]);
+            scene.add(new THREE.Line(geo, lineMat));
         }
     }
 
-    // Create label sprites (hidden by default, shown when close)
-    messages.forEach((msg) => {
+    // Message labels (only nearby)
+    messages.forEach(msg => {
         const color = AUTHOR_COLORS[msg.author] || 0xffffff;
-        // Show first ~100 chars of text as label
-        const labelText = msg.text_preview.substring(0, 40).replace(/\n/g, ' ') + (msg.text_preview.length > 40 ? '...' : '');
-        const sprite = createLabel(labelText, color);
-        sprite.visible = false;
-        sprite.userData = { msgId: msg.msg_id };
-        scene.add(sprite);
-        labelSprites.push(sprite);
+        const text = msg.text || '';
+        const labelText = text.substring(0, 60).replace(/\n/g, ' ').trim() + (text.length > 60 ? '…' : '');
+        
+        if (labelText && labelText.length > 3) {
+            const sprite = createLabel(labelText, color);
+            const msgPos = posById[msg.msg_id];
+            sprite.position.copy(msgPos);
+            sprite.position.y += 2;
+            sprite.visible = false;
+            sprite.userData = { msgId: msg.msg_id };
+            scene.add(sprite);
+            labelSprites.push(sprite);
+        }
     });
 
-    // Position labels at message positions
-    messageMeshes.forEach((mesh, i) => {
-        labelSprites[i].position.copy(mesh.position);
-        labelSprites[i].position.y += 3; // Offset above sphere
-    });
-
-    // Axis arrows
-    addAxisHelpers(timeMin, timeMax, authors.length);
+    // Axis helpers
+    addAxes();
 }
 
-function addAxisHelpers(timeMin, timeMax, numAuthors) {
-    // X axis (time) arrow
-    const xArrow = new THREE.ArrowHelper(
-        new THREE.Vector3(1, 0, 0),
-        new THREE.Vector3(-550, -numAuthors * 4, -60),
-        900, 0x444444, 20, 10
-    );
-    scene.add(xArrow);
+function addAxes() {
+    const numAuthors = sceneData.authors.length;
+    const spread = numAuthors * 100;
 
-    // X label
-    const xLabel = createLabel2D('TIME (Feb → Apr)', '#666666');
-    xLabel.position.set(400, -numAuthors * 4 - 20, -60);
+    // X axis label (AUTHOR)
+    const xLabel = makeAxisLabel('AUTHOR (X)', '#555555');
+    xLabel.position.set(spread + 50, 0, 0);
+    xLabel.scale.set(80, 15, 1);
     scene.add(xLabel);
 
-    // Y axis (author) arrow
-    const yArrow = new THREE.ArrowHelper(
-        new THREE.Vector3(0, 1, 0),
-        new THREE.Vector3(-570, -numAuthors * 4, -60),
-        numAuthors * 8 + 20, 0x444444, 20, 10
-    );
-    scene.add(yArrow);
-
-    // Y label
-    const yLabel = createLabel2D('AUTHOR', '#666666');
-    yLabel.position.set(-570, 0, -60);
+    // Y axis label (THEME CLUSTER)
+    const yLabel = makeAxisLabel('THEME CLUSTER (Y)', '#555555');
+    yLabel.position.set(-spread - 50, 0, 0);
+    yLabel.scale.set(80, 15, 1);
     scene.add(yLabel);
 
-    // Z axis arrow
-    const zArrow = new THREE.ArrowHelper(
-        new THREE.Vector3(0, 0, 1),
-        new THREE.Vector3(-570, -numAuthors * 4, -100),
-        80, 0x333333, 15, 8
+    // Z axis label (TIME)
+    const zLabel = makeAxisLabel('TIME (Z)', '#555555');
+    zLabel.position.set(0, -60, 300);
+    zLabel.scale.set(60, 15, 1);
+    scene.add(zLabel);
+
+    // Time direction arrow
+    const arrowDir = new THREE.ArrowHelper(
+        new THREE.Vector3(0, 0, -1),  // Recent = closer (smaller Z)
+        new THREE.Vector3(-spread, -50, 250),
+        200, 0x333333, 15, 8
     );
-    scene.add(zArrow);
+    scene.add(arrowDir);
+
+    const arrowLabel = makeAxisLabel('RECENT', '#444444');
+    arrowLabel.position.set(-spread, -50, 100);
+    arrowLabel.scale.set(40, 12, 1);
+    scene.add(arrowLabel);
+
+    const arrowLabel2 = makeAxisLabel('OLD', '#444444');
+    arrowLabel2.position.set(-spread, -50, 450);
+    arrowLabel2.scale.set(30, 12, 1);
+    scene.add(arrowLabel2);
 }
 
-function createLabel2D(text, color) {
+function makeAxisLabel(text, color) {
     const canvas = document.createElement('canvas');
     const ctx = canvas.getContext('2d');
-    canvas.width = 256;
-    canvas.height = 32;
-    ctx.fillStyle = 'transparent';
+    canvas.width = 256; canvas.height = 32;
     ctx.clearRect(0, 0, canvas.width, canvas.height);
     ctx.fillStyle = color;
-    ctx.font = '16px JetBrains Mono, Fira Code, monospace';
-    ctx.textAlign = 'left';
+    ctx.font = 'bold 16px JetBrains Mono, monospace';
+    ctx.textAlign = 'center';
     ctx.textBaseline = 'middle';
-    ctx.fillText(text, 0, canvas.height / 2);
-
-    const texture = new THREE.CanvasTexture(canvas);
-    const spriteMaterial = new THREE.SpriteMaterial({
-        map: texture,
-        transparent: true,
-        depthTest: false
-    });
-    const sprite = new THREE.Sprite(spriteMaterial);
-    sprite.scale.set(80, 10, 1);
+    ctx.fillText(text, canvas.width / 2, canvas.height / 2);
+    const tex = new THREE.CanvasTexture(canvas);
+    const mat = new THREE.SpriteMaterial({ map: tex, transparent: true, depthTest: false });
+    const sprite = new THREE.Sprite(mat);
     return sprite;
 }
 
-function updateUI(data) {
-    document.getElementById('topic-name').textContent = data.meta.name;
-    document.getElementById('msg-count').textContent = data.messages.length;
-    document.getElementById('author-count').textContent = data.authors.length;
-    document.getElementById('link-count').textContent = data.links.length;
-
-    const legend = document.getElementById('legend');
-    legend.innerHTML = '';
-    data.authors.forEach(author => {
-        const color = AUTHOR_COLORS[author.name] || 0xffffff;
-        const hexColor = '#' + color.toString(16).padStart(6, '0');
-        legend.innerHTML += `<div style="margin:3px 0">
-            <span style="background:${hexColor};display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:5px"></span>
-            ${author.name} (${author.message_count})
-        </div>`;
-    });
+function hashColor(str) {
+    let hash = 0;
+    for (let i = 0; i < str.length; i++) {
+        hash = str.charCodeAt(i) + ((hash << 5) - hash);
+    }
+    const h = Math.abs(hash);
+    return (h & 0x00FFFFFF);
 }
 
 function updateLabels() {
     const camPos = camera.position;
-
-    labelSprites.forEach((sprite, i) => {
-        const mesh = messageMeshes[i];
-        const distance = mesh.position.distanceTo(camPos);
-
-        if (distance < labelThreshold) {
-            sprite.visible = true;
-            // Scale label based on distance (closer = larger)
-            const scale = Math.max(0.5, 1 - distance / labelThreshold);
-            sprite.scale.set(40 * scale, 10 * scale, 1);
-            // Always face camera
-            sprite.lookAt(camPos);
-        } else {
-            sprite.visible = false;
+    labelSprites.forEach(sprite => {
+        if (sprite.userData.msgId) {
+            // Message labels
+            const dist = sprite.position.distanceTo(camPos);
+            if (dist < labelThreshold) {
+                sprite.visible = true;
+                const scale = Math.max(0.4, 1.2 - dist / labelThreshold);
+                sprite.scale.set(50 * scale, 10 * scale, 1);
+            } else {
+                sprite.visible = false;
+            }
         }
+        sprite.lookAt(camPos);
+    });
+}
+
+function updateUI(data) {
+    document.getElementById('topic-name').textContent = data.meta.name;
+    document.getElementById('msg-count').textContent = data.meta.total_messages;
+    document.getElementById('author-count').textContent = data.meta.total_authors;
+    document.getElementById('link-count').textContent = data.links.length;
+
+    const legend = document.getElementById('legend');
+    legend.innerHTML = '';
+    data.authors.forEach(a => {
+        const c = AUTHOR_COLORS[a.name] || 0xffffff;
+        const hex = '#' + c.toString(16).padStart(6, '0');
+        legend.innerHTML += `<div class="legend-item">
+            <span class="legend-dot" style="background:${hex}"></span>
+            ${a.name} (${a.message_count})
+        </div>`;
     });
 }
 
@@ -321,29 +413,38 @@ function onWindowResize() {
 function onMouseMove(event) {
     mouse.x = (event.clientX / window.innerWidth) * 2 - 1;
     mouse.y = -(event.clientY / window.innerHeight) * 2 + 1;
-
     raycaster.setFromCamera(mouse, camera);
-    const intersects = raycaster.intersectObjects(messageMeshes);
+
+    const allMeshes = [...messageMeshes, ...authorMeshes];
+    const intersects = raycaster.intersectObjects(allMeshes);
 
     if (hoveredMesh && hoveredMesh !== selectedMesh) {
-        hoveredMesh.material.emissiveIntensity = hoveredMesh.userData.msg.link_count > 0 ? 0.2 : 0.05;
+        const base = hoveredMesh.userData.msg?.link_count > 0 ? 0.2 : 0.05;
+        hoveredMesh.material.emissiveIntensity = hoveredMesh.userData.type === 'author' ? 0.3 : base;
     }
 
     if (intersects.length > 0) {
         hoveredMesh = intersects[0].object;
-        hoveredMesh.material.emissiveIntensity = 0.5;
+        hoveredMesh.material.emissiveIntensity = 0.6;
         document.body.style.cursor = 'pointer';
 
         const info = document.getElementById('hover-info');
-        const msg = hoveredMesh.userData.msg;
-        const color = hoveredMesh.userData.color;
-        const hexColor = '#' + color.toString(16).padStart(6, '0');
+        const ud = hoveredMesh.userData;
 
-        info.querySelector('.author-dot').style.background = hexColor;
-        info.querySelector('.author-name').textContent = msg.author;
-        info.querySelector('.date').textContent = msg.date;
-        info.querySelector('.text').textContent = msg.text_preview.substring(0, 200).replace(/\n/g, ' ') + (msg.text_preview.length > 200 ? '...' : '');
-        info.querySelector('.links').textContent = msg.link_count > 0 ? `🔗 ${msg.link_count} link(s)` : '';
+        if (ud.type === 'author') {
+            info.querySelector('.author-dot').style.background = '#' + ud.color.toString(16).padStart(6, '0');
+            info.querySelector('.author-name').textContent = ud.author.name;
+            info.querySelector('.date').textContent = `${ud.author.message_count} messages in topic`;
+            info.querySelector('.text').textContent = `X=${ud.author.x.toFixed(0)}, Author node position`;
+            info.querySelector('.links').textContent = '';
+        } else {
+            const msg = ud.msg;
+            info.querySelector('.author-dot').style.background = '#' + ud.color.toString(16).padStart(6, '0');
+            info.querySelector('.author-name').textContent = msg.author;
+            info.querySelector('.date').textContent = `${msg.date} · cluster: ${msg.theme}`;
+            info.querySelector('.text').textContent = msg.text.substring(0, 250);
+            info.querySelector('.links').textContent = msg.link_count > 0 ? `🔗 ${msg.links.join(', ')}` : '';
+        }
         info.style.display = 'block';
     } else {
         hoveredMesh = null;
@@ -355,16 +456,13 @@ function onMouseMove(event) {
 function onClick(event) {
     if (hoveredMesh) {
         if (selectedMesh) {
-            selectedMesh.material.emissiveIntensity = selectedMesh.userData.msg.link_count > 0 ? 0.2 : 0.05;
+            const base = selectedMesh.userData.msg?.link_count > 0 ? 0.2 : 0.05;
+            selectedMesh.material.emissiveIntensity = selectedMesh.userData.type === 'author' ? 0.3 : base;
         }
         selectedMesh = hoveredMesh;
         selectedMesh.material.emissiveIntensity = 1.0;
-
-        const target = selectedMesh.position.clone();
-        controls.target.copy(target);
-
-        const info = document.getElementById('hover-info');
-        info.style.borderColor = 'rgba(0,255,136,0.5)';
+        controls.target.copy(selectedMesh.position);
+        document.getElementById('hover-info').style.borderColor = 'rgba(0,255,136,0.5)';
     }
 }
 
