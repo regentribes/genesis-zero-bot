@@ -17,14 +17,15 @@ const AUTHOR_COLORS = {
 
 let scene, camera, renderer, controls;
 let messageMeshes = [];
-let lineGeometry;
+let labelSprites = [];
 let sceneData = null;
 let raycaster = new THREE.Raycaster();
 let mouse = new THREE.Vector2();
 let hoveredMesh = null;
 let selectedMesh = null;
+let labelThreshold = 80; // Max distance to show label
 
-// Camera state for velocity display
+// Camera state
 let lastCameraPosition = new THREE.Vector3();
 let lastTime = performance.now();
 
@@ -34,22 +35,61 @@ async function loadScene() {
     return response.json();
 }
 
+function createLabel(text, color) {
+    const canvas = document.createElement('canvas');
+    const ctx = canvas.getContext('2d');
+    canvas.width = 256;
+    canvas.height = 64;
+
+    // Background
+    ctx.fillStyle = 'rgba(0, 0, 0, 0.75)';
+    ctx.roundRect(0, 0, canvas.width, canvas.height, 8);
+    ctx.fill();
+
+    // Border with author color
+    ctx.strokeStyle = '#' + color.toString(16).padStart(6, '0');
+    ctx.lineWidth = 2;
+    ctx.roundRect(1, 1, canvas.width - 2, canvas.height - 2, 8);
+    ctx.stroke();
+
+    // Text
+    ctx.fillStyle = '#ffffff';
+    ctx.font = 'bold 18px JetBrains Mono, Fira Code, monospace';
+    ctx.textAlign = 'center';
+    ctx.textBaseline = 'middle';
+
+    // Truncate if needed
+    let displayText = text;
+    while (ctx.measureText(displayText).width > 230 && displayText.length > 3) {
+        displayText = displayText.slice(0, -4) + '...';
+    }
+    ctx.fillText(displayText, canvas.width / 2, canvas.height / 2);
+
+    const texture = new THREE.CanvasTexture(canvas);
+    texture.minFilter = THREE.LinearFilter;
+
+    const spriteMaterial = new THREE.SpriteMaterial({
+        map: texture,
+        transparent: true,
+        depthTest: false,
+        scale: new THREE.Vector3(40, 10, 1)
+    });
+    const sprite = new THREE.Sprite(spriteMaterial);
+    return sprite;
+}
+
 function init() {
-    // Scene
     scene = new THREE.Scene();
-    scene.background = new THREE.Color(0x000000);
+    scene.background = new THREE.Color(0x050505);
 
-    // Camera
     camera = new THREE.PerspectiveCamera(60, window.innerWidth / window.innerHeight, 0.1, 100000);
-    camera.position.set(50, 50, 100);
+    camera.position.set(0, 0, 300);
 
-    // Renderer
     renderer = new THREE.WebGLRenderer({ antialias: true });
     renderer.setSize(window.innerWidth, window.innerHeight);
-    renderer.setPixelRatio(window.devicePixelRatio);
+    renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
     document.body.appendChild(renderer.domElement);
 
-    // Controls
     controls = new OrbitControls(camera, renderer.domElement);
     controls.enableDamping = true;
     controls.dampingFactor = 0.05;
@@ -58,26 +98,21 @@ function init() {
         MIDDLE: THREE.MOUSE.DOLLY,
         RIGHT: THREE.MOUSE.PAN
     };
+    controls.minDistance = 5;
+    controls.maxDistance = 2000;
 
-    // Lights
-    const ambientLight = new THREE.AmbientLight(0xffffff, 0.5);
+    // Lighting
+    const ambientLight = new THREE.AmbientLight(0xffffff, 0.4);
     scene.add(ambientLight);
 
-    const directionalLight = new THREE.DirectionalLight(0xffffff, 1);
+    const directionalLight = new THREE.DirectionalLight(0xffffff, 0.8);
     directionalLight.position.set(100, 100, 50);
     scene.add(directionalLight);
 
-    // Grid helper (subtle)
-    const gridHelper = new THREE.GridHelper(2000, 50, 0x222222, 0x111111);
-    gridHelper.position.y = -50;
-    scene.add(gridHelper);
-
-    // Event listeners
     window.addEventListener('resize', onWindowResize);
     renderer.domElement.addEventListener('mousemove', onMouseMove);
     renderer.domElement.addEventListener('click', onClick);
 
-    // Load data
     loadScene().then(data => {
         sceneData = data;
         buildScene(data);
@@ -96,91 +131,147 @@ function buildScene(data) {
     const authors = data.authors;
     const replyChains = data.reply_chains;
 
-    // Calculate time range for scaling
     const times = messages.map(m => m.unixtime);
     const timeMin = Math.min(...times);
     const timeMax = Math.max(...times);
     const timeRange = timeMax - timeMin || 1;
 
-    // Create sphere geometry (reused for all messages)
     const sphereGeo = new THREE.SphereGeometry(0.5, 12, 12);
 
+    // Build position lookup for reply lines
+    const posById = new Map();
+
     // Create messages
-    messages.forEach((msg, i) => {
-        // Map time to X position (spread over 1000 units)
+    messages.forEach((msg) => {
         const t = (msg.unixtime - timeMin) / timeRange;
         const x = (t - 0.5) * 1000;
 
-        // Author-based Y position (group authors vertically)
         const authorIndex = authors.findIndex(a => a.name === msg.author);
         const y = (authorIndex - authors.length / 2) * 8;
 
-        // Text length-based Z position
         const z = (msg.text_length % 100) - 50;
 
-        // Color by author
         const color = AUTHOR_COLORS[msg.author] || 0xffffff;
         const material = new THREE.MeshStandardMaterial({
             color: color,
             roughness: 0.7,
             metalness: 0.3,
             emissive: color,
-            emissiveIntensity: msg.link_count > 0 ? 0.3 : 0.1,
+            emissiveIntensity: msg.link_count > 0 ? 0.2 : 0.05,
         });
 
-        // Scale based on link count
-        const scale = 0.3 + Math.min(msg.link_count * 0.15, 1.5);
+        const scale = 0.3 + Math.min(msg.link_count * 0.12, 1.2);
 
         const mesh = new THREE.Mesh(sphereGeo, material);
         mesh.position.set(x, y, z);
         mesh.scale.setScalar(scale);
-        mesh.userData = { msg, author: msg.author };
+        mesh.userData = { msg, author: msg.author, color };
 
         scene.add(mesh);
         messageMeshes.push(mesh);
+        posById.set(msg.msg_id, mesh.position);
     });
 
-    // Create reply chain lines (limit for performance)
-    const lineMaterial = new THREE.LineBasicMaterial({ 
-        color: 0xffffff, 
-        transparent: true, 
-        opacity: 0.15 
-    });
-
-    // Build position lookup
-    const posById = new Map();
-    messageMeshes.forEach(m => posById.set(m.userData.msg.msg_id, m.position));
-
-    const points = [];
-    const maxLines = Math.min(replyChains.length, 1000);
-
+    // Reply chain lines
+    const maxLines = Math.min(replyChains.length, 800);
     for (let i = 0; i < maxLines; i++) {
         const reply = replyChains[i];
         const from = posById.get(reply.from);
         const to = posById.get(reply.to);
 
         if (from && to) {
-            // Color line by author
-            const authorColor = new THREE.Color(AUTHOR_COLORS[reply.author] || 0xffffff);
+            const authorColor = AUTHOR_COLORS[reply.author] || 0xffffff;
             const lineMat = new THREE.LineBasicMaterial({
                 color: authorColor,
                 transparent: true,
-                opacity: 0.1
+                opacity: 0.08
             });
-
             const geometry = new THREE.BufferGeometry().setFromPoints([from, to]);
             const line = new THREE.Line(geometry, lineMat);
             scene.add(line);
         }
     }
 
-    // Add axis labels
-    addAxisLabels(timeMin, timeMax);
+    // Create label sprites (hidden by default, shown when close)
+    messages.forEach((msg) => {
+        const color = AUTHOR_COLORS[msg.author] || 0xffffff;
+        // Show first ~100 chars of text as label
+        const labelText = msg.text_preview.substring(0, 40).replace(/\n/g, ' ') + (msg.text_preview.length > 40 ? '...' : '');
+        const sprite = createLabel(labelText, color);
+        sprite.visible = false;
+        sprite.userData = { msgId: msg.msg_id };
+        scene.add(sprite);
+        labelSprites.push(sprite);
+    });
+
+    // Position labels at message positions
+    messageMeshes.forEach((mesh, i) => {
+        labelSprites[i].position.copy(mesh.position);
+        labelSprites[i].position.y += 3; // Offset above sphere
+    });
+
+    // Axis arrows
+    addAxisHelpers(timeMin, timeMax, authors.length);
 }
 
-function addAxisLabels(timeMin, timeMax) {
-    // This would need sprites or canvas textures for proper labels
-    // For now we rely on the UI
+function addAxisHelpers(timeMin, timeMax, numAuthors) {
+    // X axis (time) arrow
+    const xArrow = new THREE.ArrowHelper(
+        new THREE.Vector3(1, 0, 0),
+        new THREE.Vector3(-550, -numAuthors * 4, -60),
+        900, 0x444444, 20, 10
+    );
+    scene.add(xArrow);
+
+    // X label
+    const xLabel = createLabel2D('TIME (Feb → Apr)', '#666666');
+    xLabel.position.set(400, -numAuthors * 4 - 20, -60);
+    scene.add(xLabel);
+
+    // Y axis (author) arrow
+    const yArrow = new THREE.ArrowHelper(
+        new THREE.Vector3(0, 1, 0),
+        new THREE.Vector3(-570, -numAuthors * 4, -60),
+        numAuthors * 8 + 20, 0x444444, 20, 10
+    );
+    scene.add(yArrow);
+
+    // Y label
+    const yLabel = createLabel2D('AUTHOR', '#666666');
+    yLabel.position.set(-570, 0, -60);
+    scene.add(yLabel);
+
+    // Z axis arrow
+    const zArrow = new THREE.ArrowHelper(
+        new THREE.Vector3(0, 0, 1),
+        new THREE.Vector3(-570, -numAuthors * 4, -100),
+        80, 0x333333, 15, 8
+    );
+    scene.add(zArrow);
+}
+
+function createLabel2D(text, color) {
+    const canvas = document.createElement('canvas');
+    const ctx = canvas.getContext('2d');
+    canvas.width = 256;
+    canvas.height = 32;
+    ctx.fillStyle = 'transparent';
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    ctx.fillStyle = color;
+    ctx.font = '16px JetBrains Mono, Fira Code, monospace';
+    ctx.textAlign = 'left';
+    ctx.textBaseline = 'middle';
+    ctx.fillText(text, 0, canvas.height / 2);
+
+    const texture = new THREE.CanvasTexture(canvas);
+    const spriteMaterial = new THREE.SpriteMaterial({
+        map: texture,
+        transparent: true,
+        depthTest: false
+    });
+    const sprite = new THREE.Sprite(spriteMaterial);
+    sprite.scale.set(80, 10, 1);
+    return sprite;
 }
 
 function updateUI(data) {
@@ -189,16 +280,35 @@ function updateUI(data) {
     document.getElementById('author-count').textContent = data.authors.length;
     document.getElementById('link-count').textContent = data.links.length;
 
-    // Build legend
     const legend = document.getElementById('legend');
     legend.innerHTML = '';
     data.authors.forEach(author => {
         const color = AUTHOR_COLORS[author.name] || 0xffffff;
         const hexColor = '#' + color.toString(16).padStart(6, '0');
         legend.innerHTML += `<div style="margin:3px 0">
-            <span class="author" style="background:${hexColor};display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:5px"></span>
+            <span style="background:${hexColor};display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:5px"></span>
             ${author.name} (${author.message_count})
         </div>`;
+    });
+}
+
+function updateLabels() {
+    const camPos = camera.position;
+
+    labelSprites.forEach((sprite, i) => {
+        const mesh = messageMeshes[i];
+        const distance = mesh.position.distanceTo(camPos);
+
+        if (distance < labelThreshold) {
+            sprite.visible = true;
+            // Scale label based on distance (closer = larger)
+            const scale = Math.max(0.5, 1 - distance / labelThreshold);
+            sprite.scale.set(40 * scale, 10 * scale, 1);
+            // Always face camera
+            sprite.lookAt(camPos);
+        } else {
+            sprite.visible = false;
+        }
     });
 }
 
@@ -215,29 +325,26 @@ function onMouseMove(event) {
     raycaster.setFromCamera(mouse, camera);
     const intersects = raycaster.intersectObjects(messageMeshes);
 
-    // Reset previous hover
     if (hoveredMesh && hoveredMesh !== selectedMesh) {
-        hoveredMesh.material.emissiveIntensity = hoveredMesh.userData.msg.link_count > 0 ? 0.3 : 0.1;
+        hoveredMesh.material.emissiveIntensity = hoveredMesh.userData.msg.link_count > 0 ? 0.2 : 0.05;
     }
 
     if (intersects.length > 0) {
         hoveredMesh = intersects[0].object;
-        hoveredMesh.material.emissiveIntensity = 0.6;
+        hoveredMesh.material.emissiveIntensity = 0.5;
+        document.body.style.cursor = 'pointer';
 
-        // Update hover info panel
         const info = document.getElementById('hover-info');
         const msg = hoveredMesh.userData.msg;
-        const color = AUTHOR_COLORS[msg.author] || 0xffffff;
+        const color = hoveredMesh.userData.color;
         const hexColor = '#' + color.toString(16).padStart(6, '0');
 
         info.querySelector('.author-dot').style.background = hexColor;
         info.querySelector('.author-name').textContent = msg.author;
         info.querySelector('.date').textContent = msg.date;
-        info.querySelector('.text').textContent = msg.text_preview.substring(0, 200) + (msg.text_preview.length > 200 ? '...' : '');
+        info.querySelector('.text').textContent = msg.text_preview.substring(0, 200).replace(/\n/g, ' ') + (msg.text_preview.length > 200 ? '...' : '');
         info.querySelector('.links').textContent = msg.link_count > 0 ? `🔗 ${msg.link_count} link(s)` : '';
-
         info.style.display = 'block';
-        document.body.style.cursor = 'pointer';
     } else {
         hoveredMesh = null;
         document.getElementById('hover-info').style.display = 'none';
@@ -247,18 +354,15 @@ function onMouseMove(event) {
 
 function onClick(event) {
     if (hoveredMesh) {
-        // Select this message
         if (selectedMesh) {
-            selectedMesh.material.emissiveIntensity = selectedMesh.userData.msg.link_count > 0 ? 0.3 : 0.1;
+            selectedMesh.material.emissiveIntensity = selectedMesh.userData.msg.link_count > 0 ? 0.2 : 0.05;
         }
         selectedMesh = hoveredMesh;
         selectedMesh.material.emissiveIntensity = 1.0;
 
-        // Fly camera to it
         const target = selectedMesh.position.clone();
         controls.target.copy(target);
 
-        // Update info panel to be persistent
         const info = document.getElementById('hover-info');
         info.style.borderColor = 'rgba(0,255,136,0.5)';
     }
@@ -266,21 +370,9 @@ function onClick(event) {
 
 function animate() {
     requestAnimationFrame(animate);
-
     controls.update();
-
-    // Calculate camera velocity
-    const now = performance.now();
-    const dt = (now - lastTime) / 1000;
-    if (dt > 0) {
-        const vel = camera.position.distanceTo(lastCameraPosition) / dt;
-        // Could display velocity in UI if needed
-    }
-    lastCameraPosition.copy(camera.position);
-    lastTime = now;
-
+    updateLabels();
     renderer.render(scene, camera);
 }
 
-// Start
 init();

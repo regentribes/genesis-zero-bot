@@ -3,12 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RegenTribes Digital Twin - Telegram Topic Explorer</title>
+    <title>RegenTribes Digital Twin — Telegram Topic Explorer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body { 
             overflow: hidden; 
-            background: #000; 
+            background: #050505; 
             font-family: 'JetBrains Mono', 'Fira Code', monospace;
             color: #fff;
         }
@@ -17,87 +19,131 @@
             position: fixed;
             top: 10px;
             left: 10px;
-            background: rgba(0,0,0,0.85);
+            background: rgba(0,0,0,0.88);
             padding: 15px 20px;
             border-radius: 8px;
-            font-size: 13px;
-            line-height: 1.6;
-            max-width: 350px;
-            border: 1px solid rgba(255,255,255,0.1);
-            backdrop-filter: blur(10px);
+            font-size: 12px;
+            line-height: 1.7;
+            max-width: 320px;
+            border: 1px solid rgba(255,255,255,0.08);
+            backdrop-filter: blur(12px);
             z-index: 100;
         }
         #ui h1 {
-            font-size: 16px;
-            margin-bottom: 10px;
+            font-size: 15px;
+            margin-bottom: 12px;
             color: #00FF88;
+            letter-spacing: 0.5px;
         }
-        #ui .stat { color: #aaa; }
-        #ui .value { color: #fff; font-weight: bold; }
-        #ui .author { display: inline-block; width: 10px; height: 10px; border-radius: 50%; margin-right: 5px; }
+        #ui .row { display: flex; justify-content: space-between; }
+        #ui .label { color: #777; }
+        #ui .value { color: #fff; font-weight: 700; }
+        #ui .divider {
+            border-top: 1px solid rgba(255,255,255,0.06);
+            margin: 10px 0;
+        }
+        #ui .axes {
+            background: rgba(255,255,255,0.03);
+            padding: 10px 12px;
+            border-radius: 6px;
+            font-size: 11px;
+            color: #888;
+        }
+        #ui .axes .axis { margin: 3px 0; }
+        #ui .axes span { color: #aaa; }
+        #ui .legend { margin-top: 10px; }
+        #ui .legend-item { margin: 4px 0; }
+        #ui .legend-dot {
+            display: inline-block;
+            width: 9px; height: 9px;
+            border-radius: 50%;
+            margin-right: 6px;
+            vertical-align: middle;
+        }
         #controls {
             position: fixed;
             bottom: 20px;
             left: 50%;
             transform: translateX(-50%);
-            background: rgba(0,0,0,0.8);
-            padding: 10px 20px;
+            background: rgba(0,0,0,0.7);
+            padding: 10px 24px;
             border-radius: 20px;
-            font-size: 12px;
-            color: #888;
-            border: 1px solid rgba(255,255,255,0.1);
+            font-size: 11px;
+            color: #555;
+            border: 1px solid rgba(255,255,255,0.06);
         }
         #loading {
             position: fixed;
-            top: 50%;
-            left: 50%;
+            top: 50%; left: 50%;
             transform: translate(-50%, -50%);
-            font-size: 24px;
+            font-size: 20px;
             color: #00FF88;
         }
         #hover-info {
             position: fixed;
             top: 10px;
             right: 10px;
-            background: rgba(0,0,0,0.9);
-            padding: 15px;
+            background: rgba(0,0,0,0.92);
+            padding: 14px 16px;
             border-radius: 8px;
-            max-width: 400px;
+            max-width: 380px;
             font-size: 12px;
             display: none;
-            border: 1px solid rgba(255,255,255,0.2);
+            border: 1px solid rgba(255,255,255,0.12);
+            backdrop-filter: blur(12px);
         }
         #hover-info .author-line {
-            display: flex;
-            align-items: center;
-            margin-bottom: 8px;
+            display: flex; align-items: center;
+            margin-bottom: 6px;
         }
         #hover-info .author-dot {
-            width: 12px;
-            height: 12px;
+            width: 11px; height: 11px;
             border-radius: 50%;
             margin-right: 8px;
         }
-        #hover-info .date { color: #888; font-size: 11px; }
-        #hover-info .text { color: #ccc; margin-top: 8px; line-height: 1.5; }
-        #hover-info .links { color: #4ECDC4; margin-top: 5px; font-size: 11px; }
+        #hover-info .author-name { font-weight: 700; font-size: 13px; }
+        #hover-info .date { color: #666; font-size: 10px; margin-bottom: 8px; }
+        #hover-info .text { color: #ccc; line-height: 1.6; margin-top: 6px; }
+        #hover-info .links { color: #4ECDC4; margin-top: 6px; font-size: 11px; }
     </style>
 </head>
 <body>
-    <div id="loading">Loading scene data...</div>
+    <div id="loading">Loading scene...</div>
     <div id="ui" style="display:none">
-        <h1>📍 Digital Twin Topic</h1>
-        <div><span class="stat">Topic:</span> <span class="value" id="topic-name">-</span></div>
-        <div><span class="stat">Messages:</span> <span class="value" id="msg-count">-</span></div>
-        <div><span class="stat">Authors:</span> <span class="value" id="author-count">-</span></div>
-        <div><span class="stat">Links:</span> <span class="value" id="link-count">-</span></div>
-        <div style="margin-top:10px; border-top:1px solid rgba(255,255,255,0.1); padding-top:10px">
-            <div class="stat">Legend:</div>
-            <div id="legend"></div>
+        <h1>📍 Digital Twin Explorer</h1>
+        <div class="row">
+            <span class="label">Topic</span>
+            <span class="value" id="topic-name">-</span>
         </div>
-        <div style="margin-top:10px; color:#666; font-size:11px">
-            X-axis = time | Y = author | Z = text length<br>
-            Lines = reply chains
+        <div class="row">
+            <span class="label">Messages</span>
+            <span class="value" id="msg-count">-</span>
+        </div>
+        <div class="row">
+            <span class="label">Authors</span>
+            <span class="value" id="author-count">-</span>
+        </div>
+        <div class="row">
+            <span class="label">Links</span>
+            <span class="value" id="link-count">-</span>
+        </div>
+
+        <div class="divider"></div>
+        <div class="axes">
+            <div class="axis">← <span>X</span> = Time (Feb → Apr)</div>
+            <div class="axis">← <span>Y</span> = Author</div>
+            <div class="axis">← <span>Z</span> = Text length</div>
+            <div class="axis" style="margin-top:6px;color:#555">Sphere size = link count</div>
+            <div class="axis" style="color:#555">Lines = reply chains</div>
+        </div>
+
+        <div class="divider"></div>
+        <div class="legend" id="legend"></div>
+
+        <div class="divider"></div>
+        <div style="color:#444;font-size:10px">
+            Labels appear on nearby nodes<br>
+            Scroll = zoom | Right-drag = pan
         </div>
     </div>
     <div id="controls">
@@ -106,7 +152,7 @@
     <div id="hover-info">
         <div class="author-line">
             <div class="author-dot"></div>
-            <strong class="author-name"></strong>
+            <span class="author-name"></span>
         </div>
         <div class="date"></div>
         <div class="text"></div>
