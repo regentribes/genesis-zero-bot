@@ -84,6 +84,34 @@ git push rad main
 
 If push fails due to SSH blocking (Hetzner VPS), the local repo is still correct — push from a machine with SSH access.
 
+### Step 7: Inform the User (MANDATORY)
+
+After successful push, run:
+```bash
+COMMIT=$(git rev-parse HEAD)
+```
+Then reply with this template:
+
+```
+✅ Note saved to regen-tribes-notes.
+
+URL: https://app.radicle.xyz/nodes/iris.radicle.xyz/rad:z4WAr7CiNkf5JAoAb1srwi7gDz8nU/tree/${COMMIT}/<NNN>-<slug>.md
+File: <NNN>-<slug>.md
+Commit: ${COMMIT}
+```
+
+If push failed (SSH blocked), use:
+
+```
+✅ Note saved locally (push pending — will sync when SSH access is available).
+
+File: <NNN>-<slug>.md
+Local path: ~/.radicle/regen-tribes-notes/<NNN>-<slug>.md
+```
+
+**Root URL:** `https://app.radicle.xyz/nodes/iris.radicle.xyz/rad:z4WAr7CiNkf5JAoAb1srwi7gDz8nU`
+**Radicle ID:** `rad:z4WAr7CiNkf5JAoAb1srwi7gDz8nU/z6MkhgHUCtE8dW8S89wziVgThbCUDuK5f3A2qdbfiSXDP4Ye`
+
 ## Document Numbering
 
 - Numbers are permanent. Never change a number once assigned.
@@ -214,7 +242,7 @@ Do not use these metaphors in titles. Use concrete terms (system, network, unit,
 ## Skill Manifest (Deployed)
 
 - Path: `~/.openclaw/workspace-genesis/skills/regen-tribes-notes/SKILL.md`
-- Version: 2026-04-23
+- Version: 2026-04-23-rev2
 - Supersedes: radicle-kbase skill (moved to `.deprecated-skills/radicle-kbase/`)
 
 ## Important Notes
