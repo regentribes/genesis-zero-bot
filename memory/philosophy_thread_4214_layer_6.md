@@ -1,0 +1,3 @@
+Interpretive Layer 6: The Fourfold Path as Epistemological Battle
+
+The fragment-engine's four modes (spec, shape, interpret, extract) map directly onto the philosophical war's four camps. Spec corresponds to the engineering mindset (Corporate AI Labs, Classical Economics) demanding imperative control over knowledge. Shape corresponds to the structuralists (Traditional IP, Open Source) demanding representation without transformation. Interpret corresponds to the critical theorists (Techno-Pessimists) demanding context over content. Extract corresponds to the utopians (KBE, Venus Project) demanding comprehensive capture of all knowledge flows. Each mode refuses to acknowledge the legitimacy of the others, mirroring the epitaphic mutual destruction.

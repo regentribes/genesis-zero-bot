@@ -1,0 +1,3 @@
+## C.3 Bloom ’s Taxonom y Levels in the Affective Dom ain
+
+Table 21 provides a description of the Bloom ’s Taxonom y for the affective dom ain. This inform ation isincluded in GRCSE because the development of affective capabilities is part of what enables success in SE (Sosniak 1994). In particular, systems engineers need to appreciate the subtleties of interaction withcolleagues in order to elicit the best effect from team work and to be characterized by their belief thattaking a holistic and systemic approach to engineering is the best approach for achieving successfulresults. To dem onstrate how these levels m ay be applied specifically to SE, Table 22 shows someexam ples of various Bloom affective dom ain com petencies that might apply to GRCSE curricula andcourses.

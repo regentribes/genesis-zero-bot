@@ -1,0 +1,98 @@
+🤖 <b>PART 8: AI AGENT (Gaps 31–33)</b>
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+<b>Gap 31: Genesis Zero Bot architecture public documentation</b>
+
+<b>Core insight:</b> Genesis is documented internally but not publicly. Others should be able to replicate.
+
+<b>Documentation Scope:</b>
+1. System overview: OpenClaw agent, SurrealDB knowledge graph, Radicle version control
+2. Skill system: SKILL.md format, how to write new skills
+3. Memory system: daily logs, curated MEMORY.md, session initialization
+4. Tool use: available tools, how to add new tools
+5. Deployment: Hetzner VPS, self-hosted, Docker
+6. Contributing: how to fork and modify
+
+<b>Publish:</b> Radicle (regen-tribes notes repo). Use S1000D-STE100 tool suite for structured documentation.
+
+---
+
+<b>Gap 32: Skill.md format canonical specification</b>
+
+<b>Core insight:</b> SKILL.md format is used but not formally specified. Needs canonical spec to enable parsers, validators, cross-agent skill sharing.
+
+<b>Canonical Structure:</b>
+<code># Skill Name
+## Description
+When to use this skill
+
+## Triggers
+- trigger phrase 1
+- trigger phrase 2
+
+## Files
+- path/to/skill.md (this file)
+- path/to/script.py (executable)
+
+## Variables
+- $VAR1: description
+- $VAR2: description
+
+## Execution
+1. Step 1
+2. Step 2
+
+## Error handling
+- On error: do X</code>
+
+<b>Publish as RFC</b> in Regen Tribes Notes. Enables community of agents to share and validate skills.
+
+---
+
+<b>Gap 33: Telos-Lang grammar and semantics documentation</b>
+
+⚠️ <b>Warning:</b> Telos-Lang referenced 20+ times but not documented anywhere. The community is using a language with no documentation — a significant risk.
+
+<b>Action required:</b> If Telos-Lang is critical → prioritize documentation. If not critical → replace with established alternatives (Temporal Logic query languages, etc.)
+
+<b>Recommendation:</b> Document or replace. No middle ground for undocumented components in production systems.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━
+<b>PART 9: SOCIAL SYSTEM (Gaps 34–35)</b>
+━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+<b>Gap 34: Sacred Clown role formalization + selection process</b>
+
+Sacred Clown = truth-teller who can say what others cannot. Referenced 132 times but not formalized.
+
+<b>Formalization:</b>
+• <b>Term:</b> Time-limited (1 year, renewable once)
+• <b>Selection:</b> Self-nomination + CDS consent vote
+• <b>Training:</b> Shadow existing Sacred Clown for 3 months
+• <b>Authority:</b> Can call "emperor has no clothes" moment — pauses deliberation, forces re-examination
+• <b>Accountability:</b> After using authority → write reflection on what happened and why
+
+<b>Theatrical/Ritual Elements:</b>
+• Initiation ceremony (sacred items, story)
+• Costume (specific to role)
+• Signature phrase or gesture
+• Closing ceremony when term ends
+
+---
+
+<b>Gap 35: De-ritualized healing community protocol</b>
+
+<b>Core insight:</b> Trauma is stored in body and relationships. Healing happens through: witnessing, naming, shared story, new experience.
+
+<b>Protocol (8 steps):</b>
+1. <b>Initiate:</b> Person asks for circle (via Sacred Clown, coordinator, or friend)
+2. <b>Gather:</b> 4–8 people, circle formation, no eye contact required
+3. <b>Opening:</b> Simple intention statement — "We gather to support [name]"
+4. <b>Story:</b> Person speaks their experience (no interruption, no advice)
+5. <b>Witness:</b> Others say what they heard — "I heard you say..."
+6. <b>Integration:</b> Others share similar experiences (resonance, not advice)
+7. <b>Closing:</b> Simple statement — "You are not alone"
+8. <b>Follow-up:</b> Check-in at 1 week, 1 month
+
+<b>Facilitator Training:</b> Mental health peer support (80 hours)

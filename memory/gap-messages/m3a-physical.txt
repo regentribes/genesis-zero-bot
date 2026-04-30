@@ -1,0 +1,53 @@
+🏠 <b>PART 3: PHYSICAL INFRASTRUCTURE (Gaps 11–15)</b>
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+<b>Gap 11: Regenerative neighborhood land acquisition strategy</b>
+
+<b>Core insight:</b> Land acquisition: buying, being given, or occupying unused land. All face obstacles.
+
+<b>Solution Stack:</b>
+• <b>CLT (Community Land Trust):</b> Perpetual affordability, cannot be seized for debt. Nonprofit holds title, members get 99-year renewable leases.
+• <b>Cooperative purchase:</b> Whole community buys together, fractional ownership via cooperative shares
+• <b>Succession:</b> Landowner donates/sells to community (tax benefits for charitable donation)
+• <b>Land reclamation:</b> Unused/neglected land → community stewardship
+• <b>Landshare model:</b> Lease with option to buy
+
+<b>Strategy:</b> Form CLT in advance → apply for conservation easements → partner with land trusts → target distressed sales (estate sales, tax liens, zombie properties).
+
+<b>Obstacle resistance:</b> Use LLCs to obscure buyer identity. CLT permanently removes land from speculation.
+
+---
+
+<b>Gap 12: Community land trust legal formation guide</b>
+
+<b>Core insight:</b> CLT = nonprofit/trust owns land + members get long-term leases. Land stays in trust forever.
+
+<b>Formation Steps:</b>
+1. Choose state (MA pioneered, 40+ states CLT-friendly)
+2. Incorporate nonprofit: 501(c)(3) or state nonprofit corporation
+3. Draft ground lease: 99-year renewable, non-assignable, removes right to sell
+4. Buy land (conservation easement lowers price)
+5. Member onboarding: Sub-lease to individual members
+6. Governance: Board elected by members, consent-based decisions
+
+<b>Costs:</b> Legal $5–20K | Filing fees $500–2K | First year property tax
+
+<b>Alternative:</b> Join existing CLT network (Grounded, Oakland CLT) → reduces cost to $1–5K
+
+---
+
+<b>Gap 13: LoRa mesh sensor network protocol stack</b>
+
+<b>Core insight:</b> Mesh network where every node relays messages. Sensors at each node.
+
+<b>Protocol Stack:</b>
+• <b>L1:</b> ESP32 + LoRa radio (915MHz US / 868MHz EU)
+• <b>L2:</b> ESP-NOW (simpler, no gateway) or LoRaWAN
+• <b>L3:</b> Reticulum (Python, works over LoRa) or custom mesh
+• <b>L4:</b> JSON via MQTT or Nostr (kind 30000 for sensor data)
+• <b>Data:</b> JSON-LD with Schema.org vocabulary
+
+<b>Security:</b> ed25519 signing per node. ECDH encryption.
+
+<i>(continued in next message)</i>

@@ -1,0 +1,3 @@
+Interpretive Layer 5: The Mirror of Mutual Accusation
+
+The epitaphs reveal a recursive structure of accusation: every faction uses the same words ("naive", "fantasy", "collapse") to describe their opponents, suggesting that economic worldviews are not reasoned conclusions but identity markers. When Corporate AI Labs call KBE "naive utopianism" and KBE calls Open Source "gift economy fantasy," both are performing the same rhetorical operation: dismissing alternative visions as psychological deficits rather than engaging their logic. This mirror reveals that economic philosophy is tribal belonging, not rational inquiry.

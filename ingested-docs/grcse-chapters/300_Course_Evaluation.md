@@ -1,0 +1,3 @@
+## Course Evaluation
+
+ M ay result in additionalcourse requirem ents  Requires coordination andagreem ent on standards  Provides good indirect  Respondents m ay bedata influenced by factors  Data can be com pared other than those being **Satisfaction** Com prehension, longitudinally considered Application, **and**  Can be used to determ ine  Validity and reliability I Analysis, **Perception** outcom es over a long m ost be closely watched. Synthesis, & **Surveys** Evaluation period of tim e Special attention shouldbe paid to the selection ofthe sam ple group (students, em ployers, etc.)

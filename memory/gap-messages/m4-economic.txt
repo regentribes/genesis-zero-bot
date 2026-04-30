@@ -1,0 +1,116 @@
+💰 <b>PART 4: ECONOMIC MECHANISM (Gaps 16–20)</b>
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+<b>Gap 16: ITC ledger software specification</b>
+
+ITC = time-based credit, not money. Credits issued for verified contribution, extinguish on use. Non-accumulative.
+
+<b>SurrealDB Schema:</b>
+<code>events { id, timestamp, from_member, to_member|to_pool, quantity, difficulty_mult, skill_mult, category, description }</code>
+
+<b>Balance calculation:</b>
+<code>balance = sum(credits_earned) - sum(credits_spent)</code>
+with decay applied per Gap 18.
+
+<b>Multipliers:</b>
+• Skill: 1.0–2.0 (based on demonstrated proficiency)
+• Difficulty: 1.0–3.0 (task complexity)
+• Urgency: 1.0–2.0 (time-sensitive tasks)
+
+<b>Value proposition:</b> ITC is not pegged to extractive currency. Value emerges from contribution density.
+
+<b>Flow:</b>
+1. Members submit contribution claims
+2. CDS certifies claim (consent-based verification)
+3. Ledger issues credits
+4. Members spend credits on others' contributions
+5. CDS resolves disputes
+
+<b>API:</b> REST endpoints for: submit claim, approve claim, transfer credits, get balance, get history
+
+---
+
+<b>Gap 17: Mutual credit clearing algorithm</b>
+
+<b>Core insight:</b> Bilateral trade is unbalanced by default. Clearing algorithm finds settlement paths.
+
+<b>Algorithm:</b>
+1. Each node maintains trade balance with every other node
+2. Build trade balance matrix
+3. Find minimum transactions to settle (netting)
+4. Execute settlement via ITC ledger
+5. Repeat at intervals (daily/weekly)
+
+<b>Example:</b> A sells food to B (+100), B sells solar to C (+80), C sells consulting to A (+60).
+Without clearing: 3 transactions.
+With clearing: B pays A 20 ITC, C pays A 40 ITC. Net = 2 transactions.
+
+<b>Implementation:</b>
+• All inter-node trades recorded in SurrealDB
+• Weekly clearing computes net positions
+• Generate settlement proposals → CDS approves → execute
+
+---
+
+<b>Gap 18: Non-accumulative credit mechanism enforcement</b>
+
+<b>Core insight:</b> If credits don't decay → hoarding → ITC becomes money → extractive dynamics.
+
+<b>Mechanism:</b>
+• Credits have "vintage" (month of issuance)
+• Monthly decay: 1 month = 5%, 2 months = 10%, etc.
+• After 24 months → full decay (unusable)
+• Members "refresh" by contributing again
+
+<b>Implementation:</b>
+<code>balance = sum(credited × decay_factor) - sum(spent)</code>
+• Monthly cron applies decay
+• UI shows "effective balance" vs "nominal balance"
+• Analytics detect hoarding patterns
+
+<b>Alternative:</b> Annual "reset" where balances above threshold partially redistributed to community pool.
+
+---
+
+<b>Gap 19: x402 micropayment community service revenue</b>
+
+<b>Core insight:</b> x402 = native HTTP 402 header for USDC/SOL/POLYGON. Enables microtransactions without payment processor.
+
+<b>Use Cases:</b>
+• API access to community knowledge graph (small per-query)
+• Digital product passport verification (per-scan)
+• Sensor data resale (subscription + overage)
+• Community compute (per-minute billing)
+
+<b>Flow:</b>
+1. Community runs x402 relay server
+2. Services charge in USDC (or community token)
+3. Clients pay via x402 header
+4. Revenue → community treasury (ITC pool)
+5. Members claim ITC equivalent of USDC earned
+
+<b>Tooling:</b> @x402-dev/sdk or build on viem/ethers for Ethereum base.
+
+---
+
+<b>Gap 20: GS1 integration open source tooling</b>
+
+<b>Core insight:</b> GS1 = global product ID standard. Community needs valid GS1 barcodes for products.
+
+<b>Requirements:</b>
+• GS1 membership (~$1K/yr for small orgs)
+• GLN (Global Location Number) per physical location
+• GS1 Company Prefix → generate GTINs for products
+• Barcode generators: zint, bwip-js
+• EPCIS events for supply chain traceability
+
+<b>Open Source Tools:</b>
+• <b>bwip-js:</b> Barcodes in browser/Node
+• <b>zint:</b> Command-line barcode generation
+• <b>openfoodfacts:</b> Product database with GS1 codes
+• <b>epcis.js:</b> Event capture library
+
+<b>GS1 Digital Link URI:</b>
+<code>https://example.com/01/12345678901234/10/ABC123/21/1234567890</code>
+GTIN + batch + serial encoded in Data Matrix.

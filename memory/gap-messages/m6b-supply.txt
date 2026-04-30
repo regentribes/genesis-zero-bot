@@ -1,0 +1,72 @@
+🔢 <b>PART 6: DIGITAL TWIN (cont.)</b>
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+<b>Gap 27: Real-time community state visualization</b>
+
+<b>Core insight:</b> Human processes ~100 data points visually. Complex state requires abstraction.
+
+<b>Solution:</b> 3D force graph (Regen Viz / three.js) with abstraction layers:
+
+1. <b>Top level:</b> 5 nodes (one per RNF scale), edges = information flows
+2. <b>Drill down:</b> Each scale → major subsystems
+3. <b>Drill down:</b> Each subsystem → key metrics (color-coded)
+4. <b>Anomaly:</b> Node pulses if metric outside threshold
+
+<b>Stack:</b> SurrealDB (state) → WebSocket (real-time) → Three.js (3D rendering) | Mobile: simplified 2D view.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━
+<b>PART 7: SUPPLY CHAIN (Gaps 28–30)</b>
+━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+<b>Gap 28: GS1 digital link resolver open source implementation</b>
+
+<b>Core insight:</b> GS1 Digital Link = barcode encoding product ID + online lookup URL.
+
+<b>Example URI:</b>
+<code>https://resolver.example/01/12345678901234/10/ABC123/21/SERIAL123</code>
+GTIN + batch + serial in Data Matrix.
+
+<b>Implementation:</b>
+1. Deploy web server (Cloudflare Worker, Lambda, self-hosted)
+2. Parse barcode → extract GTIN, batch, expiration, serial
+3. Query product database
+4. Return JSON-LD → link to DPP (Digital Product Passport)
+5. DPP stored in community knowledge graph
+
+<b>Open Source:</b> @gs1/digital-link library | Express.js resolver
+
+---
+
+<b>Gap 29: DPP data validation SHACL shapes</b>
+
+DPP = Digital Product Passport. Must conform to EU regulations.
+
+<b>EU DPP Requirements (2024):</b> Battery regulation + CSRD sustainability data.
+
+<b>SHACL Required Fields:</b>
+• product ID (GS1 GTIN)
+• manufacturer
+• manufacturing date
+• country of origin
+• carbon footprint
+• recycled content %
+• repairability score
+
+<b>Optional:</b> supply chain events, repair history, end-of-life instructions
+
+<b>Implementation:</b> Write SHACL shapes (Turtle) → validate incoming DPP → reject non-conforming → generate compliance report.
+
+---
+
+<b>Gap 30: Supply chain verifiable credential issuer</b>
+
+<b>Core insight:</b> VC Issuer signs credentials. Holder presents. Verifier checks signature.
+
+<b>Architecture:</b>
+• Community DID = issuer identity
+• Signing keys in HSM (or smart card)
+• Issuer service → signs VC → stores in holder DID document
+• Holder → presents to verifier
+
+<b>Stack:</b> Universal Resolver (DID) | Mattr or Aries Framework (VC) | SurrealDB revocation registry

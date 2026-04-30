@@ -1,0 +1,94 @@
+🧠 <b>PART 5: KNOWLEDGE SYSTEMS (Gaps 21–24)</b>
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+<b>Gap 21: RNF ontology formalization OWL/RDFS</b>
+
+RNF = Regenerative Neighborhood Framework. Needs formal ontology for computable reasoning.
+
+<b>Core Structure:</b>
+• <b>Classes:</b> RNFNode, RNFScale, RNFScaleAttribute, RNFConnection, RNFProcess
+• <b>Properties:</b> hasScale, hasAttribute, connectsTo, processesMaterial
+• <b>Axioms:</b> Each RNFNode has exactly one Scale. Scales: {individual, household, neighborhood, district, regional}
+
+<b>Implementation:</b>
+1. Write OWL ontology (Protégé or Manchester syntax)
+2. Import into Oxigraph (Rust RDF store)
+3. Write SHACL shapes for data validation
+4. Export JSON-LD context for application use
+5. Write SPARQL queries for common patterns
+
+<b>Example SPARQL:</b>
+<code>SELECT ?node WHERE {
+  ?node a RNFNode .
+  ?node hasScale neighborhood .
+  ?node connectsTo ?regionalNode .
+  ?regionalNode hasScale regional
+}</code>
+
+---
+
+<b>Gap 22: AME correlation algorithm specification</b>
+
+AME = Affinity Mapping Engine. Formal algorithm for correlation computation.
+
+<b>Algorithm:</b>
+1. Track co-occurrence of all concept pairs in discourse
+2. Compute PMI (Pointwise Mutual Information):
+<code>PMI(a,b) = log( P(a,b) / (P(a) × P(b)) )</code>
+3. Apply bias correction (normal PMI overestimates rare co-occurrences)
+4. Threshold: correlation exists if PMI > threshold AND co-occurrence count > minimum
+5. Weight by recency (recent co-occurrences weighted higher)
+
+<b>Implementation:</b>
+• Parse messages with Langextract-RS (SPO extraction, 176K lookups/sec)
+• Store concept pairs in SurrealDB with timestamps
+• Weekly batch computes PMI for all pairs
+• Store as weighted edges in concept graph
+• AME Dynamic Profiler reads correlations → surfaces insights
+
+---
+
+<b>Gap 23: Agent memory persistence cross-session</b>
+
+<b>Core insight:</b> Memory = structured records of what happened and what was decided.
+
+<b>Architecture:</b>
+• <b>Daily memory:</b> memory/YYYY-MM-DD.md (append-only log)
+• <b>Long-term:</b> MEMORY.md (curated, updated after daily file reviews)
+• <b>Working memory:</b> SurrealDB session state
+• <b>Knowledge graph:</b> SurrealDB concept graph (Genesis Brain)
+
+<b>Session Startup Sequence:</b>
+1. Read SOUL.md (persona)
+2. Read USER.md (current human context)
+3. Read memory/YYYY-MM-DD.md + yesterday
+4. Read MEMORY.md (if main session)
+5. Query knowledge graph for relevant recent knowledge
+6. Context ready
+
+<b>Memory Update Protocol:</b>
+• After significant decisions → write to daily memory
+• Weekly review: daily → update MEMORY.md
+• Monthly: MEMORY.md → distill into AGENTS.md, TOOLS.md
+
+---
+
+<b>Gap 24: Multi-agent task allocation algorithm</b>
+
+<b>Core insight:</b> Task allocation = matching task requirements to agent capabilities.
+
+<b>Algorithm:</b>
+1. Task submitted with: required capabilities (language, domain, tools, time available)
+2. Match to agent with highest capability score
+3. If multiple capable → round-robin or pick least utilized
+4. If none capable → escalate to human
+
+<b>Implementation:</b>
+• Agent registry in SurrealDB: capabilities, current load, availability
+• Task queue with priority + requirements
+• Matching job runs on task submit
+• Results tracked for quality assurance
+• Feedback loop improves future matching
+
+<b>Quality Assurance:</b> If task quality < threshold → reroute to different agent. Track agent accuracy rates.

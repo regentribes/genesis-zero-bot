@@ -1,0 +1,28 @@
+Activity,Regen Score (1-10),Income Min ($/mo),Income Max ($/mo),Accessibility (1-10),Time Intensity (1-10),Startup Cost (1-10),Scalability (1-10),Income Score,Time Score,Startup Score,Scale Score,Pareto Score,Quadrant
+Regenerative Farming,9.5,3000,8000,6,8,7,8,0.55,0.2,0.3,0.8,7.155,★ GOLD
+Ecotourism Guide,8.5,4000,12000,5,7,4,6,0.8,0.3,0.6,0.6,7.27,★ GOLD
+Permaculture Design,9.0,5000,15000,4,6,5,7,1.0,0.4,0.5,0.7,7.59,★ GOLD
+Tool Library Operator,8.0,2000,5000,8,4,3,9,0.3,0.6,0.7,0.9,6.685,★ GOLD
+Cooperative Grocery,7.5,4000,10000,5,8,6,8,0.65,0.2,0.4,0.8,6.5925,★ GOLD
+Solar Installation,7.0,6000,18000,3,7,5,7,1.0,0.3,0.5,0.7,6.92,★ GOLD
+Regenerative Consulting,6.5,8000,25000,3,5,2,5,1.0,0.5,0.8,0.5,6.695,◐ SILVER
+Composting Service,9.0,1000,3000,7,6,4,7,0.2,0.4,0.6,0.7,6.265,◐ SILVER
+Water Harvesting,8.5,2000,6000,5,6,5,6,0.4,0.4,0.5,0.6,6.11,★ GOLD
+Seed Saving,9.5,0,2000,8,3,2,5,0.0,0.7,0.8,0.5,5.545,✗ CUT
+Mushroom Cultivation,9.0,1500,5000,7,5,3,7,0.35,0.5,0.7,0.7,6.2525,★ GOLD
+Herbal Medicine,8.5,2000,7000,5,5,4,6,0.5,0.5,0.6,0.6,6.255,★ GOLD
+Natural Building,8.0,4000,12000,4,7,5,6,0.8,0.3,0.5,0.6,6.245,★ GOLD
+Bike Repair,7.5,2500,6000,7,6,3,7,0.38,0.4,0.7,0.7,5.999,★ GOLD
+Soap/Candle Making,7.0,1500,4500,8,5,2,6,0.3,0.5,0.8,0.6,5.805,◐ SILVER
+Repair Services,8.0,3000,8000,6,6,4,7,0.5,0.4,0.6,0.7,6.14,★ GOLD
+Beekeeping,8.5,2000,7000,5,4,5,7,0.5,0.6,0.5,0.7,6.17,★ GOLD
+Community Kitchen,7.5,2500,7000,6,7,4,7,0.45,0.3,0.6,0.7,5.9575,★ GOLD
+Textile/Fiber Arts,7.0,1500,5000,7,6,3,6,0.35,0.4,0.7,0.6,5.6325,◐ SILVER
+Skill Teaching,8.0,2000,8000,6,4,2,8,0.55,0.6,0.8,0.8,6.405,★ GOLD
+Mesh Network Setup,7.5,1000,4000,4,5,5,6,0.25,0.5,0.5,0.6,5.4625,✗ CUT
+Local Currency Design,8.5,0,1000,3,6,4,4,0.0,0.4,0.6,0.4,4.545,✗ CUT
+Conflict Mediation,6.5,3000,10000,4,5,2,5,0.65,0.5,0.8,0.5,5.77,✗ CUT
+Firewood/Heating,6.5,2500,8000,5,7,4,5,0.5,0.3,0.6,0.5,5.33,✗ CUT
+Small Animal Husbandry,7.0,2000,6000,5,8,5,6,0.4,0.2,0.5,0.6,5.155,✗ CUT
+Biochar Production,7.5,1500,4000,5,5,4,5,0.25,0.5,0.6,0.5,5.1475,✗ CUT
+Fishing/Hunting,6.0,2000,7000,4,8,4,4,0.45,0.2,0.6,0.4,4.6625,✗ CUT

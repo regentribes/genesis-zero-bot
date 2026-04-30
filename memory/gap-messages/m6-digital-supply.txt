@@ -1,0 +1,131 @@
+🔢 <b>PART 6: DIGITAL TWIN (Gaps 25–27)</b>
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+<b>Gap 25: Active inference digital twin generative model</b>
+
+<b>Core insight:</b> Active inference = minimize free energy by inferring causes of sensory input. Community digital twin = generative model predicting community states.
+
+<b>Generative Model:</b>
+• <b>State variables:</b> population, food_production, energy_balance, trust_level, economic_output
+• <b>Prior beliefs:</b> about state evolution (based on known processes)
+• <b>Likelihood model:</b> how observations relate to states
+• <b>Inference:</b> given observations → compute posterior belief about current state
+• <b>Action:</b> beliefs inform decisions → decisions affect state → state produces new observations
+
+<b>Implementation:</b>
+1. Define state space (SurrealDB record per state variable)
+2. Set priors from historical data
+3. Build likelihood model (simple linear for initial deployment)
+4. Implement particle filter or variational inference for state estimation
+5. Use predicted states for decision support (FRS integration)
+
+<b>Tools:</b> PyTorch for model | SurrealDB for state | custom integration layer
+
+---
+
+<b>Gap 26: Neighborhood free energy functional formulation</b>
+
+<b>Core insight:</b> Free energy = surprise + complexity cost.
+• Surprise = −log P(observation)
+• Complexity = cost of maintaining beliefs
+
+<b>Neighborhood Formulation:</b>
+• O = {FRS metrics, sensor readings, member feedback}
+• S = {health, productivity, trust, resilience}
+• P(S) = prior belief about neighborhood state
+• P(O|S) = likelihood of observation given state
+• Free energy ≈ −log P(O|S) − log P(S) (ELBO approximation)
+
+<b>Practical:</b>
+1. Collect observations via FRS (meters, surveys, behavioral signals)
+2. Compute surprise as deviation from expected
+3. Complexity = entropy of belief distribution
+4. Dashboard shows free energy trend → decreasing = improving health
+
+<b>Reference:</b> Friston's "Of Mice and Men" paper for mathematical details.
+
+---
+
+<b>Gap 27: Real-time community state visualization</b>
+
+<b>Core insight:</b> Human processes ~100 data points visually. Complex state requires abstraction.
+
+<b>Solution:</b> 3D force graph (Regen Viz / three.js) with abstraction layers:
+
+1. <b>Top level:</b> 5 nodes (one per RNF scale), edges = information flows
+2. <b>Drill down:</b> Each scale → major subsystems
+3. <b>Drill down:</b> Each subsystem → key metrics (color-coded)
+4. <b>Anomaly highlight:</b> Node pulses if metric outside threshold
+
+<b>Implementation:</b>
+• SurrealDB = state source
+• WebSocket subscription for real-time updates
+• Three.js renders 3D force graph
+• Controls: zoom, rotate, drill-down, time scrubber
+• Mobile: simplified 2D view with key metrics only
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━
+<b>PART 7: SUPPLY CHAIN (Gaps 28–30)</b>
+━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+<b>Gap 28: GS1 digital link resolver open source implementation</b>
+
+<b>Core insight:</b> GS1 Digital Link = barcode that encodes product ID + online lookup URL. Resolver = web service that accepts URI → returns EPCIS data.
+
+<b>Implementation:</b>
+1. Deploy web server (Cloudflare Worker, Lambda, or self-hosted)
+2. Parse GS1 Digital Link barcode (contains: GTIN, batch, expiration, serial)
+3. Query product database for GTIN
+4. Return JSON-LD with product info + link to DPP
+5. DPP stored in community knowledge graph
+
+<b>Open Source:</b> @gs1/digital-link library for parsing | Express.js for resolver base
+
+<b>Example URI:</b>
+<code>https://resolver.example/01/12345678901234/10/ABC123/21/SERIAL123</code>
+
+---
+
+<b>Gap 29: DPP data validation SHACL shapes</b>
+
+DPP = Digital Product Passport. Must conform to EU regulatory requirements.
+
+<b>EU DPP Requirements (2024):</b> Battery regulation requires DPP for batteries. CSRD requires sustainability data.
+
+<b>SHACL Shapes for DPP:</b>
+<b>Required fields:</b>
+• product ID (GS1 GTIN)
+• manufacturer
+• manufacturing date
+• country of origin
+• carbon footprint
+• recycled content %
+• repairability score
+
+<b>Optional:</b> supply chain events, repair history, end-of-life instructions
+
+<b>Implementation:</b>
+1. Write SHACL shapes in Turtle format
+2. Validate incoming DPP data against shapes
+3. Reject non-conforming records
+4. Generate compliance report for regulatory submission
+
+---
+
+<b>Gap 30: Supply chain verifiable credential issuer</b>
+
+<b>Core insight:</b> VC Issuer = service that signs credentials. Holder presents. Verifier checks signature against issuer's public key.
+
+<b>Architecture:</b>
+• Community DID = issuer identity
+• Signing keys in HSM (or replicated smart card)
+• Issuer service receives VC creation request
+• Signs → stores in holder's DID document
+• Holder presents to verifier
+
+<b>Implementation:</b>
+• Universal Resolver for DID resolution
+• Mattr or Aries Framework for VC issuance
+• Community maintains revocation registry (SurrealDB)
+• Verifiers check DID resolution + revocation list

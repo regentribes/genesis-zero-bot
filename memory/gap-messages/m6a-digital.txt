@@ -1,0 +1,47 @@
+🔢 <b>PART 6: DIGITAL TWIN (Gaps 25–27)</b>
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+<b>Gap 25: Active inference digital twin generative model</b>
+
+<b>Core insight:</b> Active inference = minimize free energy by inferring causes of sensory input. Community digital twin = generative model predicting community states.
+
+<b>Generative Model:</b>
+• <b>State variables:</b> population, food_production, energy_balance, trust_level, economic_output
+• <b>Prior beliefs:</b> about state evolution (based on known processes)
+• <b>Likelihood model:</b> how observations relate to states
+• <b>Inference:</b> given observations → compute posterior belief about current state
+• <b>Action:</b> beliefs inform decisions → decisions affect state → state produces new observations
+
+<b>Implementation:</b>
+1. Define state space (SurrealDB record per state variable)
+2. Set priors from historical data
+3. Build likelihood model (simple linear for initial deployment)
+4. Implement particle filter or variational inference for state estimation
+5. Use predicted states for decision support (FRS integration)
+
+<b>Tools:</b> PyTorch for model | SurrealDB for state | custom integration layer
+
+---
+
+<b>Gap 26: Neighborhood free energy functional formulation</b>
+
+<b>Core insight:</b> Free energy = surprise + complexity cost.
+
+<code>Free energy ≈ −log P(O|S) − log P(S) (ELBO)</code>
+
+Where:
+• O = {FRS metrics, sensor readings, member feedback}
+• S = {health, productivity, trust, resilience}
+• Surprise = −log P(observation)
+• Complexity = cost of maintaining beliefs
+
+<b>Practical:</b>
+1. Collect observations via FRS
+2. Compute surprise as deviation from expected
+3. Complexity = entropy of belief distribution
+4. Dashboard shows free energy trend → decreasing = improving health
+
+<b>Reference:</b> Friston's "Of Mice and Men" paper.
+
+<i>(continued in next message)</i>

@@ -1,0 +1,73 @@
+{
+  "source_file": "result---3447699e-86d7-4493-8f25-f7b51e31d890.json",
+  "chat_name": "Regen Tribe Collective Network",
+  "chat_id": 1921904187,
+  "chat_type": "private_supergroup",
+  "extracted_at": "2026-03-15T11:50:00Z",
+  "date_range": {
+    "start": "2023-09-21T11:43:06",
+    "end": "2026-03-15T07:29:34"
+  },
+  "stats": {
+    "total_messages": 4362,
+    "unique_senders": 83,
+    "links_shared": 1456,
+    "unique_links": 1244,
+    "topics_created": 29,
+    "service_events": 8
+  },
+  "top_contributors": [
+    {"name": "Genesis", "count": 947},
+    {"name": "Oscar C ii 🔺", "count": 635},
+    {"name": "Vitali", "count": 518},
+    {"name": "Ian Tairea", "count": 369},
+    {"name": "Airic Easm", "count": 362},
+    {"name": "Sonia Wendorff", "count": 200},
+    {"name": "Fae 🧚♂️", "count": 192},
+    {"name": "Laila", "count": 93},
+    {"name": "Rabbitt White Sun", "count": 63},
+    {"name": "Stefan", "count": 39}
+  ],
+  "topics": [
+    "Ambassador Check in",
+    "Amb. Digital Community",
+    "Amb. Education & Resources",
+    "Amb. Events",
+    "Amb. Biozones",
+    "Berlin squad 🧸",
+    "Tribes Development collab",
+    "RT marketing support",
+    "Core team daily updates",
+    "Agency Alchemy",
+    "Celebrations & Gratitude",
+    "Ai myconet 🍄",
+    "Agents in training",
+    "Collective Blog",
+    "#regenNetworkState ➕🔺🌱",
+    "Collaborator Agreements",
+    "Free Cities Conference '24",
+    "DePIN",
+    "rt DAO",
+    "Urban Regenerstive neighborhoods",
+    "RNMCD Regenerative Neighborhood modular concept design",
+    "Framework Regen Neighborhood",
+    "digital twin",
+    "Regen Tech Stack",
+    "Bot Playground",
+    "Governance is not who we are …",
+    "Financial Engines",
+    "Philosophy",
+    "philosophy"
+  ],
+  "service_event_types": [
+    "edit_group_photo",
+    "invite_members",
+    "join_group_by_link",
+    "migrate_from_group",
+    "pin_message",
+    "remove_members",
+    "topic_created",
+    "topic_edit"
+  ],
+  "ingested_to_graph": false
+}

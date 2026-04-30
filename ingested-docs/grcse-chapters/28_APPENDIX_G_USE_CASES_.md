@@ -1,0 +1,3 @@
+## APPENDIX G: USE CASES.......................................................................................................................... 113
+
+USE CASE 2: SYSTEM S ENGINEERING CURRICULUM DEVELOPM ENT............................................................................116 USE CASE 3: SYSTEM S ENGINEERING CURRICULUM ASSESSM ENT................................................................................117 USE CASE 4: SYSTEM S ENGINEERING COURSE DEVELOPM ENT FORNON-SYSTEM S ENGINEERING CLASSES....118 USE CASE 5: DEGREE SELECTION...........................................................................................................................................118

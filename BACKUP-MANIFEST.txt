@@ -1,0 +1,39 @@
+# Genesis Workspace Backup Manifest
+# Generated: 2026-04-30T13:15:00Z
+# Radicle RID: rad:z4WAr7CiNkf5JAoAb1srwi7gDz8nU
+# GitHub:    github.com/regentribes/genesis-zero-bot
+
+## Included Size Summary
+
+## Included Directories
+32M	radicle-notes/
+18M	ingested-docs/
+13M	memory/
+5.2M	archives/
+3.8M	artifacts/
+2.7M	3d-force-graph/
+2.6M	deepwiki_exports/
+2.1M	ame-pc-export/
+832K	research/
+580K	docs/
+464K	archive/
+72K	digital-twin-fragments/
+16K	big_space_threejs_test/
+4.0K	aisystant-course/
+
+## Skills (semantic-graph .venv excluded)
+32M	skills/
+
+## Excluded
+  - synthesis-prime/ (552M, cloned upstream)
+  - valueflows/ (351M, cloned upstream)
+  - genesis-zero-bot/ (271M, cloned upstream)
+  - skills/semantic-graph/.venv/ (227M, pip reinstallable)
+  - tmp/ (153M, generated images)
+  - gtr/ (121M, cloned upstream)
+  - spec-untp/ (81M, cloned upstream)
+  - integral-whitepaper/ (77M, cloned upstream)
+  - telegram_bigspace/ (77M, generated)
+  - SurrealDB brain.db (open-brain/, separate service)
+  - .radicle/node data (368M, radicle node metadata)
+  - All **/.git/ dirs (34 repos, re-clonable via REPO-MANIFEST.json)

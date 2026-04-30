@@ -1,0 +1,3 @@
+## Nam e Organization
+
+M ark Ardis Stevens Institute of Technology, USA Vicenzo Arrichiello SELEX Sistem i Integrati SpA, Italy Radu F. Babiceanu University of Arkansas at Little Rock, USA Eric Bonjour AFIS University of Franche Com te, France; University of Lorraine, France Stephen Cook University of South Australia, Australia Rita Creel Software Engineering Institute Carnegie M ellon, USA Sharon Crossby EADS Astrium, UK Andrew Daw Harm onic Limited, UK Daniel J. Dechant Raytheon Com pany, USA Johnny D. Duckworth Raytheon/Space & Airborne System s, USA Claudia A. Dunn Raytheon, USA Salah Eldin North Carolina State University, USA Erik Elich M onto, Netherlands Bruce Elliott Arbutus Technical Consulting, UK Susan Ferreira The University of Texas at Arlington, USA vi

@@ -1,0 +1,282 @@
+across communities. Recognizing technical leaders in the federated network.
+
+**Proficiency Target:** Lead Practitioner (Stage 2), Expert (Stage 3)
+
+**Essential Resources:** GRCSE Chapter 11 (Technical Leadership).
+
+**Connection to INTEGRAL:** Technical leadership manifests in CDS deliberations and OAD contributions.
+
+**Critical Risks:** Technical leaders who become autocrats — making decisions without CDS deliberation — undermine the cooperative structure. Rotate technical leadership roles.
+
+---
+
+#### 33. Negotiation (Neg)
+
+**Bootstrap Challenge:** Negotiation — reaching agreement between parties with different interests — is needed in every SECF competency area. Stage 0 communities often avoid negotiation or resolve it through conflict.
+
+**Bootstrap Pathway:**
+- **Stage 0:** Basic negotiation practice in CDS: when two parties want different things, work through the disagreement. Document the negotiation process and outcome.
+- **Stage 1:** Formal negotiation: interest-based negotiation (separate interests from positions, generate options, use objective criteria). Train the community in negotiation basics.
+- **Stage 2:** Complex negotiation: multi-party negotiations, negotiations with external communities, negotiations involving technical complexity.
+- **Stage 3:** Federated negotiation: negotiating agreements between communities. Establish negotiation protocols and dispute resolution mechanisms.
+
+**Proficiency Target:** Supervised Practitioner (Stage 1), Practitioner (Stage 2), Lead Practitioner (Stage 3)
+
+**Essential Resources:** GRCSE Chapter 12 (Negotiation). OAD negotiation templates.
+
+**Connection to INTEGRAL:** CDS is the negotiation arena. ITC provides objective criteria (contribution tracking). OAD stores negotiation records.
+
+**Critical Risks:** Negotiation that produces agreements that cannot be kept — over-commitment — damages credibility. CDS must ratify significant negotiated agreements.
+
+---
+
+#### 34. Team Dynamics (TD)
+
+**Bootstrap Challenge:** How people work together in technical teams. Stage 0 communities are the team — everyone knows everyone. This makes team dynamics both easier (trust is high) and harder (personal conflicts are community conflicts).
+
+**Bootstrap Pathway:**
+- **Stage 0:** Establish team norms: how do we make decisions together? How do we handle conflict? How do we give feedback? Document team norms in the OAD.
+- **Stage 1:** Role clarity: who is responsible for what? What is expected of each team member? Address role conflict proactively.
+- **Stage 2:** Full team development: forming, storming, norming, performing. Understand team development stages and manage transitions.
+- **Stage 3:** Multi-team coordination: coordinating across teams in federated community. Establish team interfaces and coordination mechanisms.
+
+**Proficiency Target:** Supervised Practitioner (Stage 1), Practitioner (Stage 2), Lead Practitioner (Stage 3)
+
+**Essential Resources:** GRCSE Chapter 13 (Team Dynamics). OAD team norm templates.
+
+**Connection to INTEGRAL:** COS manages team allocation. CDS resolves team conflicts. ITC tracks individual contributions.
+
+**Critical Risks:** Teamthink — conformity pressure that suppresses critical thinking — undermines quality. Foster a team culture that rewards questioning.
+
+---
+
+#### 35. Facilitation (Fac)
+
+**Bootstrap Challenge:** Facilitating group processes — meetings, workshops, deliberations — is distinct from participating in them. Stage 0 communities rarely have trained facilitators.
+
+**Bootstrap Pathway:**
+- **Stage 0:** Identify natural facilitators: community members who help others communicate effectively, who keep meetings on track. Give them basic facilitation training.
+- **Stage 1:** Formal facilitation: facilitation training, facilitation for all significant CDS deliberations. Facilitator remains neutral on content, manages process.
+- **Stage 2:** Complex facilitation: multi-day workshops, complex technical deliberations, conflict resolution facilitation.
+- **Stage 3:** Federated facilitation: facilitating deliberations across communities, often with language and cultural differences.
+
+**Proficiency Target:** Supervised Practitioner (Stage 1), Practitioner (Stage 2), Lead Practitioner (Stage 3)
+
+**Essential Resources:** GRCSE Chapter 14 (Facilitation). OAD facilitation guides.
+
+**Connection to INTEGRAL:** CDS relies on skilled facilitation. OAD stores facilitation guides. FRS monitors deliberation quality.
+
+**Critical Risks:** Facilitation that dominates — facilitator steering outcomes — undermines CDS legitimacy. Facilitator neutrality is load-bearing for CDS trust.
+
+---
+
+#### 36. Emotional Intelligence (EI)
+
+**Bootstrap Challenge:** Understanding and managing emotions — one's own and others' — in technical contexts. Stage 0 communities often treat emotions as irrelevant to technical work.
+
+**Bootstrap Pathway:**
+- **Stage 0:** Emotional awareness: recognizing what emotions are present in the community, naming them, acknowledging them. This is not weakness — it is information.
+- **Stage 1:** Emotional regulation: strategies for managing emotions that interfere with good judgment. Techniques: pause before responding, seek perspective, manage stress.
+- **Stage 2:** Empathy in technical contexts: understanding how technical decisions affect people's emotions and motivations. Applying empathy to system design and team leadership.
+- **Stage 3:** Emotional intelligence at scale: managing emotional dynamics in federated communities with cultural diversity.
+
+**Proficiency Target:** Practitioner (all stages, escalating depth)
+
+**Essential Resources:** GRCSE Chapter 15 (Emotional Intelligence). OAD emotional intelligence practice guides.
+
+**Connection to INTEGRAL:** EI supports CDS deliberations (managing emotional dynamics), team dynamics, negotiation, facilitation.
+
+**Critical Risks:** Emotional suppression — pretending emotions don't exist — produces decisions that ignore human reality. EI is not emotionalism — it is emotional awareness in service of better judgment.
+
+---
+
+#### 37. Coaching and Mentoring (CM)
+
+**Bootstrap Challenge:** Developing others' competencies. Stage 0 communities have no formal coaching — skills transfer informally or not at all.
+
+**Bootstrap Pathway:**
+- **Stage 0:** Apprenticeship is coaching: define the mentoring relationship, set expectations, provide feedback. The master-apprentice model is the foundation.
+- **Stage 1:** Formal coaching skills: questioning techniques (Socratic questioning), feedback delivery (SBI: Situation-Behavior-Impact), coaching conversations.
+- **Stage 2:** Full coaching and mentoring programs: structured mentoring relationships, coaching plans, coaching circles.
+- **Stage 3:** Federated coaching: mentoring relationships across communities. Expert practitioners mentor across community boundaries.
+
+**Proficiency Target:** Lead Practitioner (Stage 2), Expert (Stage 3)
+
+**Essential Resources:** GRCSE Chapter 16 (Coaching and Mentoring). OAD coaching templates.
+
+**Connection to INTEGRAL:** ITC credits coaching work. OAD stores coaching records and development plans. FRS tracks competency development outcomes.
+
+**Critical Risks:** Coaching that creates dependency — mentees who cannot function without coaches — defeats the purpose. Goal is independence, not lifelong dependency.
+
+---
+
+### THEME 5: KNOWLEDGE MANAGEMENT
+
+---
+
+#### 38. Data (Data)
+
+**Bootstrap Challenge:** Understanding data — what it represents, how to collect it, how to interpret it — is foundational to evidence-based decision-making. Stage 0 communities collect little systematic data.
+
+**Bootstrap Pathway:**
+- **Stage 0:** Data collection for critical decisions: when the CDS makes a significant decision, what data informed it? Record the data, not just the decision. This begins the data culture.
+- **Stage 1:** Systematic data collection: instrument key systems (temperature,产量, quality), maintain data logs, define data quality standards.
+- **Stage 2:** Data analysis: statistical analysis, trend analysis, data visualization. Use data to inform decisions, not just document them.
+- **Stage 3:** Federated data management: data standards across communities. Data sharing protocols that protect sensitive information.
+
+**Proficiency Target:** Supervised Practitioner (Stage 1), Practitioner (Stage 2), Lead Practitioner (Stage 3)
+
+**Essential Resources:** OAD data templates, GRCSE Chapter 40 (Data).
+
+**Connection to INTEGRAL:** FRS collects data. OAD stores data. CDS uses data for decisions. ITC uses data for valuation.
+
+**Critical Risks:** Data that is collected but never used — vanity metrics — waste resources and erode data culture credibility. Collect only what will be used.
+
+---
+
+#### 39. Knowledge Management (KM)
+
+**Bootstrap Challenge:** The discipline of capturing, sharing, and using knowledge. Stage 0 has no formal KM — knowledge exists only in people's memories.
+
+**Bootstrap Pathway:**
+- **Stage 0:** OAD is the KM system. Every significant piece of knowledge must be written in the OAD before it can be considered to exist. Knowledge that is only in someone's head is at risk of being lost.
+- **Stage 1:** Structured KM: knowledge categories, knowledge capture processes (after-action reviews, lessons learned), knowledge retrieval systems.
+- **Stage 2:** Full KM system: knowledge mapping (who knows what), knowledge gaps analysis, knowledge sharing incentives (ITC credits for knowledge sharing).
+- **Stage 3:** Federated KM: knowledge sharing across communities. Communities contribute knowledge to the federated knowledge network and draw from it.
+
+**Proficiency Target:** Supervised Practitioner (Stage 1), Practitioner (Stage 2), Lead Practitioner (Stage 3)
+
+**Essential Resources:** OAD KM templates.
+
+**Connection to INTEGRAL:** OAD is the KM infrastructure. All 5 subsystems contribute to and draw from KM.
+
+**Critical Risks:** KM that is bureaucratic — elaborate systems no one uses — is counterproductive. Keep KM practical: if it is easier to write it in the OAD than to remember it, the system works.
+
+---
+
+#### 40. SECF Cross-Cutting Competencies
+
+Several competencies cut across all SECF themes and must be developed in parallel with all others:
+
+**Specialty Engineering** (SE Specialty) — Domain-specific expertise (metallurgy, agriculture, medicine, etc.). Developed in parallel with all other competencies through the domain-specific bootstrap pathways in civilization-stack-ground-zero.md.
+
+**Software Systems Engineering** (SWE) — Developing software systems. In Stage 0, software is minimal (OAD is primarily documents). In Stage 1, simple databases and tools. In Stage 2, more complex software systems. In Stage 3, full software engineering capability.
+
+**Systems Engineering Management** (SEM) — Managing systems engineering activities. Inseparable from project management and technical leadership. Developed in parallel with PM and TL.
+
+**Interface Management** (IFM) — Managing interfaces across all competency areas. Inseparable from Competency 12 (Interfaces). Developed in parallel.
+
+---
+
+## SECTION F: MASTER COMPETENCY DEVELOPMENT MATRIX
+
+The following matrix shows the target proficiency level for each of the 40 SECF competency areas at each bootstrap stage:
+
+| Competency | Stage 0 | Stage 1 | Stage 2 | Stage 3 |
+|---|---|---|---|---|
+| 1. Systems Thinking | Aware | Aware-SPrac | Prac | LeadPrac |
+| 2. Life Cycles | Aware | SPrac | Prac | LeadPrac |
+| 3. Capability Engineering | Aware | SPrac | Prac | LeadPrac |
+| 4. General Engineering | Aware | SPrac | Prac | LeadPrac |
+| 5. Critical Thinking | Prac | Prac | Prac | LeadPrac |
+| 6. Systems Modeling | Aware | SPrac | Prac | LeadPrac |
+| 7. Communications | SPrac | Prac | Prac | LeadPrac |
+| 8. Requirements Definition | Aware | SPrac | Prac | LeadPrac |
+| 9. System Architecting | Aware | SPrac | Prac | LeadPrac |
+| 10. Design For... | Aware | SPrac | Prac | LeadPrac |
+| 11. Integration | Aware | SPrac | Prac | LeadPrac |
+| 12. Interfaces | Aware | SPrac | Prac | LeadPrac |
+| 13. Verification | Aware | SPrac | Prac | LeadPrac |
+| 14. Validation | Aware | SPrac | Prac | LeadPrac |
+| 15. Transition | Aware | SPrac | Prac | LeadPrac |
+| 16. Utilization and Support | Aware | SPrac | Prac | LeadPrac |
+| 17. Retirement | Aware | SPrac | Prac | LeadPrac |
+| 18. Planning | Aware | SPrac | Prac | LeadPrac |
+| 19. Monitoring and Control | Aware | SPrac | Prac | LeadPrac |
+| 20. Decision Management | Prac | Prac | Prac | LeadPrac |
+| 21. Concurrent Engineering | Aware | SPrac | Prac | LeadPrac |
+| 22. Business Enterprise Integration | Aware | SPrac | Prac | LeadPrac |
+| 23. Acquisition and Supply | Aware | SPrac | Prac | LeadPrac |
+| 24. Information Management | Aware | SPrac | Prac | LeadPrac |
+| 25. Configuration Management | Aware | SPrac | Prac | LeadPrac |
+| 26. Risk Management | Aware | SPrac | Prac | LeadPrac |
+| 27. Project Management | Aware | SPrac | Prac | LeadPrac |
+| 28. Finance | Aware | SPrac | Prac | LeadPrac |
+| 29. Logistics | Aware | SPrac | Prac | LeadPrac |
+| 30. Quality | Aware | SPrac | Prac | LeadPrac |
+| 31. Ethics | Prac | Prac | Prac | LeadPrac |
+| 32. Technical Leadership | Aware | SPrac | Prac | LeadPrac-Expert |
+| 33. Negotiation | Aware | SPrac | Prac | LeadPrac |
+| 34. Team Dynamics | SPrac | Prac | Prac | LeadPrac |
+| 35. Facilitation | Aware | SPrac | Prac | LeadPrac |
+| 36. Emotional Intelligence | Prac | Prac | Prac | LeadPrac |
+| 37. Coaching and Mentoring | Aware | SPrac | LeadPrac | Expert |
+| 38. Data | Aware | SPrac | Prac | LeadPrac |
+| 39. Knowledge Management | SPrac | Prac | Prac | LeadPrac |
+| 40. Specialty Engineering | Aware | SPrac | Prac | LeadPrac |
+
+Key: Aware = Awareness, SPrac = Supervised Practitioner, Prac = Practitioner, LeadPrac = Lead Practitioner, Expert = Expert
+
+---
+
+## SECTION G: CRITICAL PATH FOR COMPETENCY DEVELOPMENT
+
+The bootstrap sequence has a critical path — a minimum set of competencies that must be developed before other competencies can advance:
+
+**Stage 0 Critical Path:**
+1. Critical Thinking (CT-1) — must precede all others
+2. Systems Thinking (ST-1) — must precede planning and architecture
+3. Communications (CM-1) — must precede knowledge management
+4. General Engineering (GE-1) — must precede all technical competencies
+5. Ethics and Professionalism (Ethics-1) — must precede all management competencies
+6. Emotional Intelligence (EI-1) — must precede team dynamics, negotiation, facilitation
+
+**Stage 1 Critical Path additions:**
+7. Requirements Definition (RD-1) — enables all design and building
+8. Life Cycles (LC-1) — enables long-term planning
+9. Knowledge Management (KM-1) — enables competency development acceleration
+10. Project Management (PM-1) — enables complex project execution
+
+**Stage 2 Critical Path additions:**
+11. System Architecting (SA-1) — enables complex system design
+12. Integration (IN-1) — enables system assembly
+13. Verification and Validation (VF/VL-1) — enables quality assurance
+14. Configuration Management (CMgt-1) — enables change control
+
+**Stage 3:** All competencies reach Practitioner or above. Focus shifts to Lead Practitioner and Expert development through federated knowledge sharing.
+
+---
+
+## SECTION H: THE MINIMUM VIABLE COMMUNITY COMPETENCY PACKAGE
+
+For a 25-person community to survive and thrive through Stage 0, the following 10 competencies must reach Supervised Practitioner level within Year 1. If any of these fails, the community is at existential risk:
+
+1. **Critical Thinking (CT)** — Without evidence-based decision-making, all other competencies fail
+2. **Water Management (embedded in General Engineering GE)** — Without clean water, nothing else matters
+3. **Food Production (embedded in Agriculture — civilization-stack-ground-zero.md)** — Without food, nothing else matters
+4. **Basic Medicine (embedded in Medicine — civilization-stack-ground-zero.md)** — Without healthcare, people die
+5. **Communications (CM)** — Without shared understanding, coordination fails
+6. **Ethics (Ethics)** — Without ethical norms, conflict destroys community
+7. **Fire and Heat (embedded in Energy — civilization-stack-ground-zero.md)** — Without heat, survival in cold climates fails
+8. **Basic Metallurgy (embedded in Materials — civilization-stack-ground-zero.md)** — Without metal tools, agriculture and construction fail
+9. **Knowledge Management (KM)** — Without writing things down, knowledge is lost when anyone is unavailable
+10. **Team Dynamics (TD)** — Without functional teams, nothing gets done
+
+These 10 competencies are the non-negotiable foundation. All other competencies build on this foundation.
+
+---
+
+## SECTION I: CONCLUSION
+
+The bootstrap paradox is real but not insurmountable. The community does not need to already possess a competency to begin developing it. The resolution is iterative: start with written materials (OAD procedures from the legacy civilization), practice with supervision (Supervised Practitioner level), build competence through repetition and feedback (Practitioner level), and eventually contribute back to the OAD (Lead Practitioner and Expert levels).
+
+The SECF framework provides the map. The civilization-stack-ground-zero.md provides the domain knowledge. The INTEGRAL system provides the coordination infrastructure. The bootstrap sequence provides the timeline.
+
+The most critical competency is the one that enables all others: Critical Thinking. Every CDS deliberation is a Critical Thinking exercise. Every OAD entry is a Critical Thinking product. Every technical decision is a Critical Thinking application.
+
+Build Critical Thinking first. Everything else follows.
+
+---
+
+DOCUMENT: civilization-stack-SECF-assessment.md
+SOURCES: SECF v2 (40 competency areas), GRCSE v1.1, NASA SE Handbook (SP-2016-6105 Rev2), civilization-stack-ground-zero.md

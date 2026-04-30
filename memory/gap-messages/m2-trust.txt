@@ -1,0 +1,80 @@
+🌿⚡ <b>PART 2: TRUST & IDENTITY (Gaps 6–10)</b>
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+<b>Gap 6: FOT measurement formalism</b>
+
+FOT = Field of Trust. No formal model exists despite 1,430+ mentions. Here's the math:
+
+<code>T_i = w₁×B₁_avg + w₂×B₂_avg + w₃×B₃_avg + w₄×B₄_avg</code>
+
+Where:
+• B₁ = Promise kept | B₂ = Quality of work | B₃ = Response velocity | B₄ = Mutual support
+• w₁–w₄ = weights per behavior category (configurable)
+• Each tracked as moving average over last N interactions
+
+<b>FOT Composite</b> = min(T_i) across all circle members
+(Hologram principle: whole limited by weakest part)
+
+<b>Update rules:</b> Decay old observations, weight recent ones higher. Use exponential decay: weight_n = weight_0 × λ^(n−1) where λ < 1.
+
+<b>SurrealDB:</b> Schema for behavior events → behavior_events { actor, action_type, quality_score, timestamp }. Query layer computes rolling averages.
+
+---
+
+<b>Gap 7: FOT + ZKP integration protocol</b>
+
+<b>Core insight:</b> Prove your T_i > threshold without revealing T_i or underlying behavior.
+
+<b>Protocol:</b>
+1. CDS records behavior events
+2. Compute T_i monthly
+3. Issue VC with T_i to member DID
+4. Member proves "T_i > 0.7" via ZCPP (zero-knowledge committed provenance proof)
+5. Requester verifies proof against community DID (the issuer)
+
+<b>Tools:</b> Holochain for private behavior records. BBS+ library for ZCPP. Nostr relay for community DID publication.
+
+---
+
+<b>Gap 8: Behavioral signal cryptographic attestation</b>
+
+<b>Core insight:</b> Turn Telegram messages, working sessions → cryptographically attestable signals.
+
+<b>Solution:</b> Each interaction → "observation record" signed by observer. Stored in append-only log (Holochain). Aggregated into FOT by designated attestor role.
+
+<b>Implementation:</b>
+• AME-Chase TypeScript processor sends signals to SurrealDB
+• Signals stored as ed25519 signed records
+• Weekly aggregation computes T_i from signals
+• T_i issued as VC to member
+• Member presents ZCPP proofs to others
+
+---
+
+<b>Gap 9: Trust field topology dynamic update rules</b>
+
+<b>Core insight:</b> Topology = structure of trust relationships. Changes as members behave differently.
+
+<b>Solution:</b>
+• Nodes = members | Edges = trust relationships T_AB
+• T_AB computed from observed A↔B interactions
+• Edges strengthen on positive interactions, weaken on negative
+• Update rate: slow (monthly) to prevent gaming
+• Hysteresis: require sustained behavior change before topology shifts
+
+<b>Visualization:</b> SurrealDB graph queries compute T_AB. 3D force graph (Regen Viz / three.js). Changes proposed weekly, ratified by CDS.
+
+---
+
+<b>Gap 10: did:web community identity resolution</b>
+
+<b>Core insight:</b> Communities need stable DIDs that are easy to resolve without specialized tooling.
+
+<b>Solution:</b>
+• Register domain (e.g., regentribe.did)
+• Host /.well-known/did.json at that domain
+• DID document contains: public keys for signing, service endpoints
+• Resolution = standard HTTPS GET
+
+<b>Tooling:</b> Cloudflare worker hosts did.json. Key rotation via designated admin (controlled by CDS). Nostr relay = additional resolution endpoint.

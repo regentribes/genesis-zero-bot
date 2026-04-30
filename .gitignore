@@ -1,22 +1,91 @@
-# Server-side runtime dirs and files — not synced or committed
+# === RUNTIME / SERVER-SIDE — excluded ===
 cron/
-memory/
 sessions/
 state/
 .openclaw/
+bin/
 BOOTSTRAP.md
 BOOTSTRAP.md.done
 MEMORY.md
-bin/
+hermes-agent/
 
-# Python artifacts
+# === PYTHON / VENV ===
 __pycache__/
 *.pyc
+*.pyo
+.venv/
+venv/
+.env/
 
-# Local-only — not sent to server or committed
-sync-genesis.sh
+# === NODE / NPM ===
+node_modules/
+skills/*/node_modules/
+skills/*/.npm/
+.npm/
 
-# Third-party skills (installed via clawhub, not maintained here)
+# === COMPILED / BINARY ===
+*.so
+*.dylib
+*.o
+*.a
+
+# === MEDIA / CACHE ===
+*.mp4
+*.mov
+*.avi
+*.zip
+*.tar.gz
+*.tgz
+*.rar
+*.7z
+*.iso
+.DS_Store
+Thumbs.db
+*.log
+
+# === LARGE CLONED UPSTREAM REPOS ===
+synthesis-prime/
+valueflows/
+genesis-zero-bot/
+pages/
+gtr/
+spec-untp/
+spec-unvtd/
+integral-whitepaper/
+DS-ecosystem-development/
+telegram_bigspace/
+big_space/
+projects/
+ComplexityMeasures.jl/
+DynamicalSystems.jl/
+RCOS-ecohubs/
+S1000D-STE100-Tool-Suite/
+archi-scripts/
+ecohubs-website/
+fpf-problem-solving-skill/
+integral-devguide/
+mythogen-ame/
+triz-prompt-engineering/
+archives/regen-tribes-notes-v2-5_2mb/
+
+# === SURREAL-DB / DB FILES ===
+*.db
+*.sqlite
+*.sqlite3
+open-brain/
+
+# === RADICLE NODE METADATA (not repo content) ===
+.radicle/
+node/
+node.backup/
+storage/
+cobs/
+
+# === SEMANTIC-GRAPH VENV (reinstallable via pip) ===
+skills/semantic-graph/.venv/
+skills/semantic-graph/__pycache__/
+
+# === SKILLS (reinstallable via clawhub) ===
 skills/deep-research-pro/
 skills/find-skills/
 skills/gog/
@@ -24,7 +93,21 @@ skills/summarize/
 skills/telegram/
 skills/transcribe/
 skills/web-search/
+skills/video-transcript-downloader/
+skills/regen-viz/
+skills/regen-cas/
+skills/tmux/
+skills/weather/
+skills/knowledge-extraction/
+skills/meaning-capsule/
+skills/openai-image-gen/
+skills/openai-whisper/
+skills/openai-whisper-api/
+skills/llm-pareto-analyzer/
 
-# Large source docs — content is distilled into references/playbook-guide.md
-skills/alchemy/*.md.bak
-"skills/alchemy/🔺🧩*"
+# === GENERATED ARTWORK / TEMP ===
+tmp/
+memory/industry-classifications/*.pdf
+
+# === RECURSIVE .git exclusion (anywhere) ===
+**/.git/

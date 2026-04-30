@@ -1,0 +1,44 @@
+🏠 <b>PART 3: PHYSICAL INFRASTRUCTURE (cont.)</b>
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+<b>Gap 14: Microgrid islanding community energy</b>
+
+<b>Core insight:</b> Islanding requires: generation, storage, smart load shedding, synchronization control.
+
+<b>Architecture:</b>
+• <b>Generation:</b> Solar + wind + microhydro (if water available)
+• <b>Storage:</b> LiFePO4 batteries + flywheel for short-term
+• <b>Inverter:</b> Grid-forming mode (not grid-following)
+• <b>Control:</b> Open source microgrid controller (Naval Postgraduate School)
+• <b>Load priority:</b> Critical (refrigeration, medical, comms) → Deferrable (heating, hot water) last
+
+<b>Islanding Procedure:</b>
+1. Detect grid failure (voltage/frequency anomaly)
+2. Open main disconnect
+3. Start grid-forming inverters (sync to 60Hz)
+4. Connect critical loads first
+5. Gradually add deferrable loads
+6. Reconnect only when stable
+
+<b>Products:</b> Schneider EcoStruxure, SMA Sunny Island (grid-forming capable)
+
+---
+
+<b>Gap 15: Aquaponics community food system design</b>
+
+<b>Core insight:</b> Fish ammonia → bacteria convert to nitrate (plant fertilizer) → plants consume → clean water returns to fish.
+
+<b>System Sizing (50 people):</b>
+• 1lb fish per 10 gallons water
+• 1lb fish needs ~1 sq ft growing area (NFT channels)
+• 50g protein/person/day → 5lb/day production → 50lb stock → 500 gallons → 50 sq ft
+
+<b>Components:</b>
+• Fish tank: 500gal HDPE barrel, 75–85°F (tilapia)
+• Biofilter: Moving bed or flood-and-drain
+• Plant beds: DWC rafts or NFT channels
+• Solids removal: Settling tank
+• Water testing: pH, ammonia, nitrite, nitrate (daily)
+
+<b>Economics:</b> ~$5K–10K | ~5lb fish/week + constant vegetables | 2–3yr payback

@@ -1,0 +1,5 @@
+## Student Assessm ent Course Reference Course Outcom es M ethod
+
+**SE3: Introduction to** Upon successfully com pleting the course, students will be M ultiple choice **V&V** able to describe and explain basics definitions and exam ination questionsobjectives of verification and validation processes **SE3: Introduction to** Upon successfully com pleting the course, students will Short answer **V&V** know the four basic m eans for supporting verification and exam ination questionsvalidation processes: review, dem onstration, analysis, and test **SE3: Introduction to** Upon successfully com pleting the course, students will be Course project: **V&V** able to set-up a verification and validation plan including: Develop a V&V plan  the definition and justification of a V&V strategy  the identification of V&V activities life cycle  the specification of the environm ent  the definition of the organization **SE3-1: Introduction to** Upon successfully com pleting the course, students will Course project: M BSE **Form al M ethods** have an in-depth knowledge of the m odel based system engineering approach, including:
+
+ m odel checking approach

@@ -1,0 +1,3 @@
+## Outcom es
+
+This appendix presents additional, com plem entary m aterial for Chapter 8. It describes a generalfram ework for assessment that is independent of the dom ain covered by the program as well as itsacademic level (undergraduate or postgraduate). This fram ework is a generic reference that should beused to drive the definition and execution of the assessment of actual system s engineering program s. This appendix does not present a prescriptive m odel; rather, it offers guidance to help in building andapplying assessm ent activities in concrete programs. Chapter 8 contains exam ples of how to apply thatfram ework to assess system s engineering m aster’s program s.

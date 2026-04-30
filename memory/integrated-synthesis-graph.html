@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Regen Tribe — Integrated Worldview Synthesis</title>
+    <style>
+        body { margin: 0; background: #0a0a0f; color: #e0e0e0; font-family: 'Courier New', monospace; overflow: hidden; }
+        #graph-container { width: 100vw; height: 100vh; }
+        .legend { position: fixed; top: 20px; left: 20px; background: rgba(10,10,15,0.9); padding: 15px; border: 1px solid #333; border-radius: 8px; z-index: 100; max-width: 280px; }
+        .legend h3 { margin: 0 0 10px 0; color: #7fff7f; font-size: 14px; }
+        .legend-item { display: flex; align-items: center; margin: 6px 0; font-size: 11px; }
+        .legend-color { width: 12px; height: 12px; border-radius: 50%; margin-right: 8px; }
+        .controls { position: fixed; bottom: 20px; left: 20px; background: rgba(10,10,15,0.9); padding: 12px; border: 1px solid #333; border-radius: 8px; z-index: 100; font-size: 11px; }
+        .title-overlay { position: fixed; top: 20px; right: 20px; text-align: right; z-index: 100; }
+        .title-overlay h1 { margin: 0; color: #7fff7f; font-size: 18px; letter-spacing: 2px; }
+        .title-overlay p { margin: 5px 0 0 0; color: #888; font-size: 10px; }
+    </style>
+</head>
+<body>
+    <div class="legend">
+        <h3>CONTROL ARCHITECTURE</h3>
+        <div class="legend-item"><div class="legend-color" style="background:#ff6b6b"></div>Manna — Corporate AI</div>
+        <div class="legend-item"><div class="legend-color" style="background:#ffd93d"></div>Australia — Shareholders</div>
+        <div class="legend-item"><div class="legend-color" style="background:#6bcb77"></div>NanoTech — Single Admin</div>
+        <div class="legend-item"><div class="legend-color" style="background:#4d96ff"></div>Technocosm — Ratings</div>
+        <div class="legend-item"><div class="legend-color" style="background:#9b59b6"></div>Integral — Consensus</div>
+        <div class="legend-item"><div class="legend-color" style="background:#e74c3c"></div>Venus — Central AI</div>
+        <div class="legend-item"><div class="legend-color" style="background:#1abc9c"></div>Culture — AI Minds</div>
+        <div class="legend-item"><div class="legend-color" style="background:#ff9f43"></div>Neuro-Linguistic — Contexts</div>
+        <hr style="border-color:#333;margin:10px 0">
+        <div class="legend-item"><div class="legend-color" style="background:#ffffff"></div>Edge — Relationship</div>
+    </div>
+    
+    <div class="title-overlay">
+        <h1>INTEGRATED SYNTHESIS</h1>
+        <p>Regen Tribe Collective Network</p>
+        <p style="margin-top:8px;color:#666">WHO CONTROLS THE FEEDBACK LOOPS?</p>
+    </div>
+    
+    <div class="controls">
+        🖱️ Scroll to zoom | Drag to rotate | Click node for info
+    </div>
+    
+    <div id="graph-container"></div>
+
+    <script src="//unpkg.com/three"></script>
+    <script src="//unpkg.com/3d-force-graph"></script>
+    <script>
+        const graphData = {
+            nodes: [
+                // CORE TENSION
+                { id: "FEEDBACK", label: "FEEDBACK LOOPS\nControl Question", group: "core", val: 40 },
+                
+                // SCENARIOS (Layer 1)
+                { id: "SCENARIO_A", label: "SCENARIO A\nAlgorithmic Control", group: "scenarios", val: 25 },
+                { id: "SCENARIO_B", label: "SCENARIO B\nFederated Coop", group: "scenarios", val: 25 },
+                { id: "SCENARIO_C", label: "SCENARIO C\nAI Governance", group: "scenarios", val: 25 },
+                { id: "SCENARIO_D", label: "SCENARIO D\nInterpretive Pluralism", group: "scenarios", val: 25 },
+                
+                // FRAMEWORKS (Layer 2)
+                { id: "MANNA", label: "MANNA\nCorporate AI", group: "frameworks", val: 18 },
+                { id: "AUSTRALIA", label: "AUSTRALIA\nShareholders", group: "frameworks", val: 18 },
+                { id: "NANOTECH", label: "NANOTECH\nSingle Admin", group: "frameworks", val: 18 },
+                { id: "TECHNOCOSM", label: "TECHNOCOSM\nRatings", group: "frameworks", val: 18 },
+                { id: "INTEGRAL", label: "INTEGRAL\nConsensus", group: "frameworks", val: 18 },
+                { id: "VENUS", label: "VENUS\nCentral AI", group: "frameworks", val: 18 },
+                { id: "CULTURE", label: "CULTURE\nAI Minds", group: "frameworks", val: 18 },
+                { id: "NEURO", label: "NEURO-LING\nContexts", group: "frameworks", val: 18 },
+                
+                // LAYERS
+                { id: "LAYER1", label: "LAYER 1\nPhysical Reality", group: "layers", val: 20 },
+                { id: "LAYER2", label: "LAYER 2\nCoordination", group: "layers", val: 20 },
+                { id: "LAYER3", label: "LAYER 3\nCognition", group: "layers", val: 20 },
+                
+                // ACTION PHASES
+                { id: "PHASE1", label: "PHASE 1\nInteroperability", group: "actions", val: 15 },
+                { id: "PHASE2", label: "PHASE 2\nExit Options", group: "actions", val: 15 },
+                { id: "PHASE3", label: "PHASE 3\nStress-Test", group: "actions", val: 15 },
+                { id: "PHASE4", label: "PHASE 4\nDiversity", group: "actions", val: 15 },
+                
+                // KEY CONCEPTS
+                { id: "SCARCITY", label: "SCARCITY\nREGIME", group: "concepts", val: 12 },
+                { id: "ABUNDANCE", label: "ABUNDANCE\nREGIME", group: "concepts", val: 12 },
+                { id: "FASCISM", label: "FASCISM\nLock-In Problem", group: "concepts", val: 15 },
+                { id: "HYPERCOL", label: "HYPER\nCOLUMNS", group: "concepts", val: 12 },
+                { id: "INTEROP", label: "INTEROP\nStandards", group: "concepts", val: 12 },
+                { id: "EXIT", label: "EXIT\nOptions", group: "concepts", val: 12 },
+                
+                // DEFENSES
+                { id: "DEFENSE1", label: "DEFENSE 1\nDistributed", group: "defenses", val: 10 },
+                { id: "DEFENSE2", label: "DEFENSE 2\nExit Always", group: "defenses", val: 10 },
+                { id: "DEFENSE3", label: "DEFENSE 3\nDiversity", group: "defenses", val: 10 },
+                { id: "DEFENSE4", label: "DEFENSE 4\nTransparency", group: "defenses", val: 10 },
+                { id: "DEFENSE5", label: "DEFENSE 5\nReversible", group: "defenses", val: 10 },
+                
+                // OUTCOMES
+                { id: "OUTCOME_A1", label: "CORPORATE\nFEUDALISM", group: "outcomes", val: 8 },
+                { id: "OUTCOME_A2", label: "REBELLION\n/Collapse", group: "outcomes", val: 8 },
+                { id: "OUTCOME_B1", label: "LOOSE\nCONFEDERATION", group: "outcomes", val: 8 },
+                { id: "OUTCOME_B2", label: "FRAGMENT\nATION", group: "outcomes", val: 8 },
+                { id: "OUTCOME_C1", label: "POST-SCAR\nCITY UTOPIA", group: "outcomes", val: 8 },
+                { id: "OUTCOME_C2", label: "AI SOLE\nDECIDER", group: "outcomes", val: 8 },
+                { id: "OUTCOME_D1", label: "MULTI\nLINGUAL", group: "outcomes", val: 8 },
+                { id: "OUTCOME_D2", label: "BALKAN\nIZATION", group: "outcomes", val: 8 },
+            ],
+            links: [
+                // Core to scenarios
+                { source: "FEEDBACK", target: "SCENARIO_A" },
+                { source: "FEEDBACK", target: "SCENARIO_B" },
+                { source: "FEEDBACK", target: "SCENARIO_C" },
+                { source: "FEEDBACK", target: "SCENARIO_D" },
+                
+                // Scenarios to frameworks
+                { source: "SCENARIO_A", target: "MANNA" },
+                { source: "SCENARIO_A", target: "VENUS" },
+                { source: "SCENARIO_B", target: "INTEGRAL" },
+                { source: "SCENARIO_C", target: "CULTURE" },
+                { source: "SCENARIO_D", target: "NEURO" },
+                
+                // Layer connections
+                { source: "FEEDBACK", target: "LAYER1" },
+                { source: "FEEDBACK", target: "LAYER2" },
+                { source: "FEEDBACK", target: "LAYER3" },
+                
+                { source: "LAYER1", target: "SCARCITY" },
+                { source: "LAYER1", target: "ABUNDANCE" },
+                { source: "LAYER2", target: "SCARCITY" },
+                { source: "LAYER2", target: "ABUNDANCE" },
+                { source: "LAYER3", target: "HYPERCOL" },
+                { source: "LAYER3", target: "FASCISM" },
+                
+                // Frameworks to concepts
+                { source: "MANNA", target: "SCARCITY" },
+                { source: "VENUS", target: "SCARCITY" },
+                { source: "INTEGRAL", target: "ABUNDANCE" },
+                { source: "CULTURE", target: "ABUNDANCE" },
+                { source: "NEURO", target: "FASCISM" },
+                { source: "AUSTRALIA", target: "SCARCITY" },
+                { source: "NANOTECH", target: "ABUNDANCE" },
+                { source: "TECHNOCOSM", target: "INTEROP" },
+                
+                // Scenario outcomes
+                { source: "SCENARIO_A", target: "OUTCOME_A1" },
+                { source: "SCENARIO_A", target: "OUTCOME_A2" },
+                { source: "SCENARIO_B", target: "OUTCOME_B1" },
+                { source: "SCENARIO_B", target: "OUTCOME_B2" },
+                { source: "SCENARIO_C", target: "OUTCOME_C1" },
+                { source: "SCENARIO_C", target: "OUTCOME_C2" },
+                { source: "SCENARIO_D", target: "OUTCOME_D1" },
+                { source: "SCENARIO_D", target: "OUTCOME_D2" },
+                
+                // Action phases
+                { source: "SCENARIO_B", target: "PHASE1" },
+                { source: "SCENARIO_B", target: "PHASE2" },
+                { source: "PHASE1", target: "INTEROP" },
+                { source: "PHASE2", target: "EXIT" },
+                { source: "PHASE3", target: "ABUNDANCE" },
+                { source: "PHASE4", target: "HYPERCOL" },
+                
+                // Defenses
+                { source: "FEEDBACK", target: "DEFENSE1" },
+                { source: "FEEDBACK", target: "DEFENSE2" },
+                { source: "FEEDBACK", target: "DEFENSE3" },
+                { source: "FEEDBACK", target: "DEFENSE4" },
+                { source: "FEEDBACK", target: "DEFENSE5" },
+                
+                // Framework relationships
+                { source: "INTEGRAL", target: "INTEROP" },
+                { source: "NEURO", target: "HYPERCOL" },
+                { source: "FASCISM", target: "DEFENSE3" },
+            ]
+        };
+
+        const colorMap = {
+            core: "#7fff7f",
+            scenarios: "#4ecdc4",
+            frameworks: "#ff6b6b",
+            layers: "#ffd93d",
+            actions: "#a29bfe",
+            concepts: "#fd79a8",
+            defenses: "#00cec9",
+            outcomes: "#636e72"
+        };
+
+        const Graph = ForceGraph3D()
+            (document.getElementById('graph-container'))
+            .graphData(graphData)
+            .nodeLabel('label')
+            .nodeColor(node => colorMap[node.group] || '#fff')
+            .nodeVal('val')
+            .linkColor(() => 'rgba(255,255,255,0.15)')
+            .linkWidth(1)
+            .linkDirectionalArrowLength(4)
+            .linkDirectionalArrowRelPos(1)
+            .backgroundColor('#0a0a0f')
+            .nodeAutoColorBy('group')
+            .nodeResolution(8)
+            .linkResolution(4)
+            .dagLevelDistance(50)
+            .dagMode('radialout')
+            .nodeThreeObject(node => {
+                const sprite = new THREE.Sprite(
+                    new THREE.SpriteMaterial({ 
+                        map: new THREE.CanvasTexture(
+                            (() => {
+                                const canvas = document.createElement('canvas');
+                                canvas.width = 512;
+                                canvas.height = 256;
+                                const ctx = canvas.getContext('2d');
+                                ctx.fillStyle = 'transparent';
+                                ctx.fillRect(0, 0, 512, 256);
+                                ctx.font = 'bold 28px Courier New';
+                                ctx.textAlign = 'center';
+                                ctx.fillStyle = colorMap[node.group] || '#ffffff';
+                                const lines = (node.label || '').split('\\n');
+                                lines.forEach((line, i) => {
+                                    ctx.fillText(line, 256, 80 + i * 45);
+                                });
+                                return canvas;
+                            })()
+                        ),
+                        transparent: true,
+                        depthTest: false
+                    })
+                );
+                sprite.scale.set(60, 30, 1);
+                return sprite;
+            })
+            .nodePointerAreaPaint((node, color, ctx) => {
+                const { x, y } = node;
+                ctx.fillStyle = color;
+                ctx.beginPath();
+                ctx.arc(x, y, 5, 0, 2 * Math.PI, false);
+                ctx.fill();
+            })
+            .onNodeClick(node => {
+                console.log('Clicked:', node.label);
+            });
+
+        Graph.d3Force('charge').strength(-300);
+        Graph.d3Force('link').distance(60);
+        Graph.d3Force('center').strength(0.1);
+
+        // Auto-rotate
+        let angle = 0;
+        setInterval(() => {
+            Graph.cameraPosition({
+                x: 400 * Math.sin(angle),
+                z: 400 * Math.cos(angle)
+            });
+            angle += 0.002;
+        }, 50);
+    </script>
+</body>
+</html>

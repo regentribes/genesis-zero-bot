@@ -1,0 +1,73 @@
+🌿⚡ <b>35 RESEARCH GAPS — COMPLETE SOLUTIONS</b>
+
+A first-principles engineering analysis for RegenTribe.
+35 gaps identified → 35 solutions. Implementation guides below.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━
+<b>PART 1: GOVERNANCE (Gaps 1–5)</b>
+━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+<b>Gap 1: On-chain DAO + cooperative economy</b>
+
+<b>Core insight:</b> Governance needs: allocate resources, resolve disputes, set direction, remove bad actors. Smart contracts can only do the first.
+
+<b>Solution:</b> Hybrid off-chain deliberation (CDS) + on-chain execution via smart contracts only for unambiguous resource moves.
+
+• Proposals flow through CDS deliberation
+• Approved → "intents" executed by contracts
+• Disputes return to CDS
+• Contracts handle: ITC issuance, resource allocation, membership changes
+
+<b>Start:</b> Multi-sig for resource moves. Scale to threshold crypto as complexity grows.
+
+---
+
+<b>Gap 2: Consent-based governance + smart contract</b>
+
+<b>Core insight:</b> Consent = "I can live with this." Objection = "this harms me in an unacceptable way."
+
+<b>Solution:</b> Objection = proposed action violates stated boundary of objector. Consent = no paramount objection raised within timeframe.
+
+• Each member defines boundaries (not preferences)
+• Proposal includes impact assessment against known boundaries
+• Objection raised → addressed or proposal modified
+• Timeout = consent if no objection
+
+<b>Tool:</b> SurrealDB schema for "consent tracker." Member boundaries stored as structured records. Proposals reference which boundaries they affect.
+
+---
+
+<b>Gap 3: Soul-bound token governance credential</b>
+
+<b>Core insight:</b> Governance tokens can be bought → plutocracy. Need credentials tied to a person, not an account.
+
+<b>Solution:</b> Soul-bound token = credential bound to a DID, not an Ethereum address.
+
+• Issue W3C Verifiable Credentials to member DIDs
+• Use BBS+ signatures for selective disclosure
+• Store in member-controlled DID documents
+• ZKPs for privacy-preserving membership verification
+
+---
+
+<b>Gap 4: Non-transferable reputation credential</b>
+
+<b>Core insight:</b> Reputation should be portable (travels with you) but not sellable.
+
+<b>Solution:</b> Credential issued to DID, stored in member's wallet, presented on-demand. Cannot be transferred because issuer must re-issue to new DID.
+
+• W3C VC with challenge-response to prove possession without disclosure
+• Holder proves they hold DID without revealing DID itself
+• Issuer tracks issued credentials in SurrealDB
+
+---
+
+<b>Gap 5: Exit rights + cooperative governance</b>
+
+<b>Core insight:</b> Exit right = leave with accumulated contribution minus damages. Not "selling your stake" — you can't profit, only recover contributed labor.
+
+<b>Solution:</b> Exit value = (total ITC earned through contributions) − (community damages assigned through dispute). Vesting: 50% after 1yr, 100% after 5yrs. Paid from community mutual credit line over 12 months.
+
+• Track all contributions in ITC ledger
+• On exit: CDS deliberates on any damages
+• Balance paid from community operating fund

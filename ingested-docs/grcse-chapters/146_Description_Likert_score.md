@@ -1,0 +1,3 @@
+## Description Likert score
+
+**All key dim ensions of the trade-space are described with valid, quantifiable m easures. 1 The set of m easures identified describes m ost of the key system attributes. M easures** 2 **are well-written and quantifiable. A few m easures are identified, and som e are descriptive of the key system s attributes.** 3 **The m easures are quantifiable. At least a single m easure identified, but the m easure is not descriptive of the required** 4 **system attribute. The m easure m ay not be quantifiable. No m easure identified. 5** Sim U chooses not to involve em ployers of graduates, although it would have given an interestingexternal point-of-view administered through em ployer surveys or by the establishm ent of an advisoryboard.

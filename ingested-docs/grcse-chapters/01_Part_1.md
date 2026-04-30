@@ -1,0 +1,29 @@
+## 6. The Core Body of Knowledge (CorBoK)
+
+In a program that aligns with GRCSE, what specific SE knowledge are students expected to learn? GRCSEprovides its answer in the form of a CorBoK, which is com posed of knowledge that every graduate isexpected to m aster. This chapter covers the topics that com prise the foundation and two concentrationtopics for the CorBoK. Appendix H includes the recomm ended minim um percentage of the curriculumanticipated in order to cover the CorBoK content at an appropriate level in a curriculum. The CorBoKdoes not directly address knowledge related to GRCSE’s APPLICATION DOM AIN and SPECIALTY outcomes.
+
+- **6.1 CorBoK Features**
+
+This section describes the m ajor features of the CorBoK. These features should be viewed prim arily asrecomm endations in order to im plem ent a curriculum which supports the achievement of the outcom esspecified in Chapter 3, especially in the cases of the FOUNDATION, CONCENTRATION, and TOPIC DEPTHoutcom es.
+
+- ***6.1.1 CorBoK Foundation***
+
+The CorBoK is based on the System s Engineering Body of Knowledge (SEBoK). The SEBoK, which acts as a guide to the literature that com prises the body of knowledge of SE, has seven parts, each covering a specific set of knowledge areas (KAs), each of which in turn contain a set of topics. There are m ore than 100 topics overall in the SEBoK. The seven parts are:
+
+ Part 1 – SEBoK Introduction. Covers the scope, structure, uses, and evolution of the SEBoK.  Part 2 – Foundations of System s Engineering. Describes the characteristics of system s andfoundation principles of SE.
+
+ Part 3 – SE and M anagem ent. Addresses how SE is conducted and covers life cycle m odelsand processes, SE developm ent and evolution practices, m anagem ent processes, andstandards.
+
+ Part 4 – Applications of SE. Covers the application of SE to the developm ent anddeploym ent of products, services, enterprises, and system s of system s.
+
+ Part 5 – Topics on Enabling SE. Discusses the enabling of SE at the individual, team , andbusiness/enterprise levels and includes a discussion of ethics, team dynam ics, and culture.
+
+ Part 6 – Related Disciplines. Focuses on the relationship of SE to other disciplines.  Part 7 – SE Im plem entation Exam ples. Includes overviews of case studies and vignettes,which provide real-world exam ples of SE activities and provide links back to the conceptscovered in the first six parts of the SEBoK.
+
+The CorBoK topics are those from Parts 2 through 6 of the SEBoK and are listed in Tables 5 through 9 (in section 6.2). The Knowledge Areas and Topics in tables 5 through 9 are taken from SEBoK Version 1.4 (BKCASE Editorial Board, 2015). These tables provide a high-level description of the CorBoK; foradditional detail the current SEBoK should be consulted. See Section 6.4 for further discussion of theim pact on GRCSE of the continuing evolution of the SEBoK. To help verify the significance and relevance of the SEBoK, topics from Parts 2-6 in the SEBoK werecom pared with inform ation provided from the survey of graduate program s conducted at the beginningof the BKCASE project (see Appendix B). The survey shows that those program s with a “general system s focus” (66% of responding program s) included the following in their curricula: an overview of system s engineering concepts and principles (Part 2 of the SEBoK), and a m ore in-depth coverage ofrequirements, architecture, and m anagement topics (Part 3 of the SEBoK). Topics in V&V, acquisition,deploym ent, and evolution were not evident in the survey, but m ost likely were covered as part ofoverview, m anagem ent, or system definition courses. Based on this inform al analysis, it appears that SEBoK Parts 2-6 contain topics suitable for the developm ent of high-quality program s, as well as theevolution and advancem ent of existing program s. It should be noted that it is expected that the GRCSE curriculum content will go beyond the CorBoK. Since there are few clear boundaries on systems, students need to be well-rounded across m ultipledisciplines; broad knowledge of different fields of study is highly valuable for a system engineer. The *DOM AIN, SPECIALTY, and RELATED DISCIPLINES outcom es are particularly relevant to this issue.*
+
+- ***6.1.2 50% Apportionm ent***
+
+Two principles have guided the GRCSE efforts: (1) to provide guidance that will support the creation and m aintenance of effective system engineering program s, and (2) to allow for sufficient flexibility so thatprogram s can pursue special interests and requirements. In support of these principles, it isrecomm ended that the CorBoK com prise approxim ately 50% of the curriculum. The GRCSE authors feel a 50% apportionment allows a program to cover the CorBoK topics in sufficient breadth and depth, yetstill provides the other 50% for a program to offer additional depth in selected CorBoK topics and tosupport program specialties and constraints. In particular, the CorBoK supports attainm ent of the *FOUNDATION, CONCENTRATION, and TOPIC DEPTH outcom es.*
+
+Figure 6 depicts the organization of GRCSE curriculum m aterial. Note again that 50% of the curriculum isdevoted to the CorBoK Foundation and Concentration knowledge (described in Section 6.1.3), with theother 50% reserved for greater depth in the CorBoK topics and dom ain, application, or other knowledgethat serves a program ’s or a student’s special needs and interests. It should be em phasized that theseknowledge areas do not correspond to courses, but represent the content that would be distributedacross a program ’s courses. However, the Capstone Experience segment, depicted in Figure 6, would bedelivered in one or m ore courses and represents the overarching nature of such a curriculum element,possibly covering m any CorBoK areas and types of knowledge.

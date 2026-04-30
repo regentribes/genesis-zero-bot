@@ -1,0 +1,10814 @@
+# NASA Systems Engineering Handbook
+
+Source: /home/ian/.openclaw/media/inbound/nasa_systems_engineering_handbook_0---56aa907e-dbde-4ec1-bbeb-860301077a50.pdf
+
+## Metadata
+
+{
+  "title": "NASA Systems Engineering Handbook",
+  "authors": [
+    "National Aeronautics",
+    "Space Administration"
+  ],
+  "created_at": "2017-06-02T13:54:00Z",
+  "created_by": "Adobe InDesign CC 2017 (Macintosh)",
+  "format_type": "pdf",
+  "height": 756,
+  "is_encrypted": false,
+  "page_count": 297,
+  "pdf_version": "1.7",
+  "producer": "Adobe PDF Library 15.0",
+  "width": 576,
+  "quality_score": 1.0,
+  "output_format": "markdown"
+}
+
+## Content
+
+National Aeronautics and Space Administration
+
+NASA insignia Background photo showing a flow chart and data concept
+
+# NASA
+
+# SYSTEMS ENGINEERING
+
+# HANDBOOK
+
+Researchers at NASA's Langley Research Center in Hampton, Va., use all sorts of tools and techniques to learn more during the development of aircraft and spacecraft designs. In this photo, engineers led by researcher Greg Gatlin have sprayed fluorescent oil on a 5.8 percent scale model of a futuristic hybrid wing body during tests in the14 by-22-Foot Subsonic Wind Tunnel. The oil helps researchers "see" the flow patterns when air passes over and around the model. Those patterns are important in determining crucial aircraft characteristics such as lift and drag. Credits: NASA Langley/Preston Martin Orion Water Test Drop on 08/24/16. NASA Langley Research Center Scientists and engineers placed two NASA James Webb Space Telescope test primary mirror segments onto the support structure that will hold them, where they resemble stepping stones, as seen in this photo. Photo credit: NASA/Chris Gunn Self-portrait of NASA’s Curiosity Mars rover shows the vehicle at the “Mojave” site, where its drill collected the mission’s second taste of Mount Sharp
+
+www.nasa.gov
+
+NASA SP-2016-6105 Rev2 supersedes SP-2007-6105 Rev 1 dated December, 2007.
+
+**Cover photos: Top left: In this photo, engineers led by researcher Greg Gatlin have sprayed fluorescent oil on a 5.8 percent scale model of a futuristic hybrid wing body during tests in the 14- by 22-Foot Subsonic Wind Tunnel at NASA’s Langley Research Center in Hampton, VA. The oil helps researchers “see” the flow patterns when air passes over and around the model. (NASA Langley/Preston Martin) Top right: Water impact test of a test version of the Orion spacecraft took place on August 24, 2016, at NASA Langley Research Center (NASA) Bottom left: two test mirror segments are placed onto the support structure that will hold them. (NASA/Chris Gunn) Bottom right: This self-portrait of NASA’s Curiosity Mars rover shows the vehicle at the “Mojave” site, where its drill collected the mission’s second taste of Mount Sharp. (NASA/JPL-Caltech/MSSS)**
+
+**Comments, questions, and suggestions regarding this document can be sent to:**
+
+**Steven R. Hirshorn**
+
+Chief Engineer, Aeronautics Research Mission Directorate (ARMD)
+
+Office of the Chief Engineer
+
+NASA Headquarters, Room 6D37
+
+300 E St SW
+
+Washington, DC 20546-0001
+
+202-358-0775
+
+*steven.r.hirshorn@nasa.gov*
+
+# Table of Contents
+
+*Preface viii*
+
+*Acknowledgments . . . . . . . . . . . . . .ix*
+
+**1.0**
+
+Introduction 1
+
+1.1
+
+1.2
+
+**2.0**
+
+Fundamentals of Systems Engineering 3
+
+2.1
+
+2.2
+
+2.3
+
+2.4
+
+2.5
+
+2.6
+
+2.7
+
+**3.0**
+
+NASA Program/Project Life Cycle 17
+
+3.1
+
+3.2
+
+3.3
+
+3.4
+
+3.5
+
+3.6
+
+3.7
+
+3.8
+
+3.9
+
+3.10
+
+3.11
+
+3.11.1
+
+3.11.2
+
+3.11.3
+
+3.11.4
+
+3.11.5
+
+3.11.6
+
+**4.0**
+
+System Design Processes 43
+
+4.1
+
+4.1.1
+
+4.1.2
+
+4.2
+
+4.2.1
+
+4.2.2
+
+4.3
+
+4.3.1
+
+4.3.2
+
+4.4
+
+4.4.1
+
+4.4.2
+
+**5.0**
+
+Product Realization 77
+
+5.1
+
+5.1.1
+
+5.1.2
+
+5.2
+
+5.2.1
+
+5.2.2
+
+5.3
+
+5.3.1 5.3.2 5.4 5.4.1 5.4.2 5.5 5.5.1 5.5.2
+
+## 6.0
+
+Crosscutting Technical Management 113 6.1
+
+6.1.1 6.1.2 6.2 6.2.1 6.2.2 6.3 6.3.1 6.3.2 6.4 6.4.1 6.4.2 6.5 6.5.1 6.5.2 6.6 6.6.1 6.6.2 6.7 6.7.1 6.7.2 6.8 6.8.1 6.8.2 Appendix A Acronyms . . . . . . . . . . . . . . 173 Appendix B Glossary. . . . . . . . . . . . . . . .176 Appendix C How to Write a Good Requirement— Checklist. . . . . . . . . . . . . . . .197 Appendix D Requirements Verification Matrix. . . .201 Appendix E Creating the Validation Plan with a Validation Requirements Matrix. . . . 203 Appendix F Functional, Timing, and State Analysis 205 Appendix G Technology Assessment/Insertion. . 206 Appendix H Integration Plan Outline. . . . . . . . .214 Appendix I Verification and Validation Plan Outline 216 Appendix J SEMP Content Outline. . . . . . . . .223 Appendix K Technical Plans. . . . . . . . . . . . 235 Appendix M CM Plan Outline . . . . . . . . . . . 239 Appendix O Reserved. . . . . . . . . . . . . . . .241 Appendix P SOW Review Checklist. . . . . . . . .242 Appendix Q Reserved. . . . . . . . . . . . . . . .243 Appendix R HSI Plan Content Outline. . . . . . . .244 Appendix T Systems Engineering in Phase E. . . .254 *References Cited 260 Bibliography . . . . . . . . . . . . . . . 270*
+
+# Table of Figures
+
+Figure 2.0-1
+
+Figure 2.1-1
+
+Figure 2.2-1
+
+Figure 2.5-1
+
+Figure 3.0-1
+
+Figure 3.11-1
+
+Figure 4.0‑1
+
+Figure 4.1‑1
+
+Figure 4.1‑2
+
+Figure 4.1‑3
+
+Figure 4.2‑1
+
+Figure 4.2-2
+
+Figure 4.2‑3
+
+Figure 4.3‑1
+
+Figure 4.4‑1
+
+Figure 4.4‑2
+
+Figure 4.4‑3
+
+Figure 5.0-1
+
+Figure 5.1-1
+
+Figure 5.2-1
+
+Figure 5.3-1
+
+Figure 5.3-2
+
+Figure 5.4-1
+
+Figure 5.5-1
+
+Figure 6.1‑1
+
+Figure 6.2‑1
+
+Figure 6.3‑1
+
+Figure 6.4-1
+
+Figure 6.4-2
+
+Figure 6.4-3
+
+Figure 6.4-4
+
+Figure 6.5‑1
+
+Figure 6.5‑2
+
+Figure 6.5‑3
+
+Figure 6.5‑4
+
+Figure 6.6‑1
+
+Figure 6.7‑1
+
+Figure 6.7‑2
+
+Figure 6.8‑1
+
+Figure 6.8-2
+
+Figure G.1-1
+
+Figure G.3-1
+
+Figure G.3-2
+
+Figure G.4-1
+
+Figure G.4-2
+
+Figure G.4-3
+
+# Table of Tables
+
+Table 2.1-1
+
+Table 2.2-1
+
+Table 2.7-1
+
+Table 3.0-1
+
+Table 3.11-1
+
+Table 3.11-2
+
+Table 3.11-3
+
+Table 4.1-1
+
+Table 4.2-1
+
+Table 4.2‑2
+
+Table 5.3-1
+
+Table 6.1-1
+
+Table 6.1-2
+
+Table 6.6‑1
+
+Table 6.7-1
+
+Table 6.8‑1
+
+Table D-1
+
+Table E-1
+
+Table G.1-1
+
+Table J-1
+
+Table K-1
+
+Table R.2-1
+
+# Table of Boxes
+
+The Systems Engineer’s Dilemma . . . . . . . . . . 12
+
+Space Flight Program Formulation. . . . . . . . . . 20
+
+Space Flight Program Implementation. . . . . . . . 21
+
+Space Flight Pre‑Phase A: Concept Studies. . . . . 22
+
+Space Flight Phase C: Final Design and Fabrication . 28
+
+Space Flight Phase E: Operations and Sustainment. 32
+
+Phase F: Closeout. . . . . . . . . . . . . . . . . . 33
+
+System Design Keys. . . . . . . . . . . . . . . . . 44
+
+Concept of Operations vs. Operations Concept . . . 51
+
+Rationale. . . . . . . . . . . . . . . . . . . . . . . 60
+
+Product Realization Keys. . . . . . . . . . . . . . . 78
+
+Differences between Verification, Qualification, Acceptance and Certification. . . . . . . . . . . . . 90
+
+Methods of Verification. . . . . . . . . . . . . . . . 93
+
+Methods of Validation . . . . . . . . . . . . . . . 101
+
+Crosscutting Technical Management Keys. . . . . .114
+
+Types of Hardware. . . . . . . . . . . . . . . . . .124
+
+Environments. . . . . . . . . . . . . . . . . . . . .127
+
+Definitions . . . . . . . . . . . . . . . . . . . . . 130
+
+Types of Configuration Management Changes. . . .149
+
+Data Collection Checklist. . . . . . . . . . . . . . .155
+
+HSI Relevance. . . . . . . . . . . . . . . . . . . .246
+
+HSI Strategy. . . . . . . . . . . . . . . . . . . . .246
+
+HSI Domains. . . . . . . . . . . . . . . . . . . . .247
+
+HSI Requirements. . . . . . . . . . . . . . . . . .247
+
+HSI Implementation . . . . . . . . . . . . . . . . 249
+
+HSI Plan Updates . . . . . . . . . . . . . . . . . 250
+
+# Preface
+
+S
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+NASA/SP-2016-6105 Rev2 supersedes SP-2007-6105 Rev 1 dated December, 2007.
+
+# Acknowledgments
+
+
+
+Alexander, Michael, NASA/Langley Research Center
+
+Allen, Martha, NASA/Marshall Space Flight Center
+
+Baumann, Ethan, NASA/Armstrong Flight Research Center
+
+Bixby, CJ, NASA/Armstrong Flight Research Center
+
+Boland, Brian, NASA/Langley Research Center
+
+Brady, Timothy, NASA/NASA Engineering and Safety Center
+
+Bromley, Linda, NASA/Headquarters/Bromley SE Consulting
+
+Brown, Mark, NASA/Jet Propulsion Laboratory
+
+Brumfield, Mark, NASA/Goddard Space Flight Center
+
+Campbell, Paul, NASA/Johnson Space Center
+
+Carek, David, NASA/Glenn Research Center
+
+Cox, Renee, NASA/Marshall Space Flight Center
+
+Crable, Vicki, NASA/Glenn Research Center
+
+Crocker, Alan, NASA/Ames Research Center
+
+DeLoof, Richard, NASA/Glenn Research Center
+
+Demo, Andrew/Ames Research Center
+
+Dezfuli, Homayoon, NASA/HQ
+
+Diehl, Roger, NASA/Jet Propulsion Laboratory
+
+DiPietro, David, NASA/Goddard Space Flight Center
+
+Doehne, Thomas, NASA/Glenn Research Center
+
+Duarte, Alberto, NASA/Marshall Space Flight Center
+
+Durham, David, NASA/Jet Propulsion Laboratory
+
+Epps, Amy, NASA/Marshall Space Flight Center
+
+Fashimpaur, Karen, Vantage Partners
+
+Feikema, Douglas, NASA/Glenn Research Center
+
+Fitts, David, NASA/Johnson Space Flight Center
+
+Foster, Michele, NASA/Marshall Space Flight Center
+
+Fuller, David, NASA/Glenn Research Center
+
+Gati, Frank, NASA/Glenn Research Center
+
+Gefert, Leon, NASA/Glenn Research Center
+
+Ghassemieh, Shakib, NASA/Ames Research Center
+
+Grantier, Julie, NASA/Glenn Research Center
+
+Hack, Kurt, NASA/Glenn Research Center
+
+Hall, Kelly, NASA/Glenn Research Center
+
+Hamaker, Franci, NASA/Kennedy Space Center
+
+Hange, Craig, NASA/Ames Research Center
+
+Henry, Thad, NASA/Marshall Space Flight Center
+
+Hill, Nancy, NASA/Marshall Space Flight Center
+
+Hirshorn, Steven, NASA/Headquarters
+
+Holladay, Jon, NASA/NASA Engineering and Safety Center
+
+Hyatt, Mark, NASA/Glenn Research Center
+
+Killebrew, Jana, NASA/Ames Research Center
+
+Jannette, Tony, NASA/Glenn Research Center
+
+Jenks, Kenneth, NASA/Johnson Space Center
+
+Jones, Melissa, NASA/Jet Propulsion Laboratory
+
+Jones, Ross, NASA/Jet Propulsion Laboratory
+
+Killebrew, Jana, NASA/Ames Research Center
+
+Leitner, Jesse, NASA/Goddard Space Flight Center
+
+Lin, Chi, NASA/Jet Propulsion Laboratory
+
+Mascia, Anne Marie, Graphic Artist
+
+McKay, Terri, NASA/Marshall Space Flight Center
+
+McNelis, Nancy, NASA/Glenn Research Center
+
+Mendoza, Donald, NASA/Ames Research Center
+
+Miller, Scott, NASA/Ames Research Center
+
+Montgomery, Patty, NASA/Marshall Space Flight Center
+
+Mosier, Gary, NASA/Goddard Space Flight Center
+
+Noble, Lee, NASA/Langley Research Center
+
+Oleson, Steven, NASA/Glenn Research Center
+
+Parrott, Edith, NASA/Glenn Research Center
+
+Powell, Christine, NASA/Stennis Space Center
+
+Powell, Joseph, NASA/Glenn Research Center
+
+Price, James, NASA/Langley Research Center
+
+Rawlin, Adam, NASA/Johnson Space Center
+
+Rochlis-Zumbado, Jennifer, NASA/Johnson Space Center
+
+Rohn, Dennis, NASA/Glenn Research Center
+
+Rosenbaum, Nancy, NASA/Goddard Space Flight Center
+
+Ryan, Victoria, NASA/Jet Propulsion Laboratory
+
+Sadler, Gerald, NASA/Glenn Research Center
+
+Salazar, George, NASA/Johnson Space Center
+
+Sanchez, Hugo, NASA/Ames Research Center
+
+Schuyler, Joseph, NASA/Stennis Space Center
+
+Sheehe, Charles, NASA/Glenn Research Center
+
+Shepherd, Christena, NASA/Marshall Space Flight Center
+
+Shull, Thomas, NASA/Langley Research Center
+
+Singer, Bart, NASA/Langley Research Center
+
+Slywczak, Richard, NASA/Glenn Research Center
+
+Smith, Scott, NASA/Goddard Space Flight Center
+
+Smith, Joseph, NASA/Headquarters
+
+Sprague, George, NASA/Jet Propulsion Laboratory
+
+Trase, Kathryn, NASA/Glenn Research Center
+
+Trenkle, Timothy, NASA/Goddard Space Flight Center
+
+Vipavetz, Kevin, NASA/Langley Research Center
+
+Voss, Linda, Dell Services
+
+Walters, James Britton, NASA/Johnson Space Center
+
+Watson, Michael, NASA/Marshall Space Flight Center
+
+Weiland, Karen, NASA/Glenn Research Center
+
+Wiedeman, Grace, Dell Services
+
+Wiedenmannott, Ulrich, NASA/Glenn Research Center
+
+Witt, Elton, NASA/Johnson Space Center
+
+Woytach, Jeffrey, NASA/Glenn Research Center
+
+Wright, Michael, NASA/Marshall Space Flight Center
+
+Yu, Henry, NASA/Kennedy Space Center
+
+## 1.0
+
+# Introduction
+
+## 1.1 Purpose
+
+T
+
+
+
+
+
+
+
+## 1.2 Scope and Depth
+
+
+
+
+
+
+
+
+
+
+
+
+
+*https://nen.nasa.gov/web/se*
+
+
+
+
+
+This handbook is applicable to NASA space flight projects of all sizes and to research and development programs and projects. While all 17 processes are applicable to all projects, the amount of formality, depth of documentation, and timescales are varied as appropriate for the type, size, and complexity of the project. References to “documents” are intended to include not only paper or digital files but also models, graphics, drawings, or other appropriate forms that capture the intended information.
+
+
+
+*https://nen.nasa.gov/web/se/doc-repository*
+
+
+
+## 2.0
+
+# Fundamentals of
+
+# Systems Engineering
+
+A
+
+
+
+
+
+
+
+
+
+
+
+1
+
+
+
+
+
+1 Eberhardt Rechtin, Systems Architecting of Organizations: Why Eagles Can’t Swim.
+
+
+
+
+
+
+
+2
+
+2 Comments on systems engineering throughout Chapter 2.0 are extracted from the speech “System Engineering and the Two Cultures of Engineering” by Michael D. Griffin, NASA Administrator.
+
+
+
+technical manager, chief engineer—but for this doc  ument, the term “systems engineer” is used.
+
+                
+
+FIGURE 2.0-1
+
+  
+
+document, but an overview is given in the following subsections of this chapter.
+
+PROJECT MANAGEMENTPROJECT MANAGEMENT ACTIVITIES• Setting up Project Team• Programmatic Stakeholders (non-technical, non-business)• Programmatic Planning (non-technical, non-business)• Identifying Programmatic (non-technical) requirements• Identifying Programmatic Risks• Technology Transfer and Commercialization• Integration of technical and non-technical activities• Overall Approver/DeciderSystems EngineeringSystem Design Processes• Stakeholder Expectations Definition• Technical Requirement’s Definition• Logical Decomposition• Design Solution DefinitionProduct Realization Processes• Product Implementation• Product Integration• Product Verification• Product Validation• Product TransitionTechnical Management Processes• Technical Planning• Requirements Management• Interface Management• Technical Risk Management• Configuration Management• Technical Data Management• Technical Assessment• Decision AnalysesPP&C• PP&C Integration• Resource Management• Scheduling• Cost Estimation & Assessment• Acquisition & ContractManagement• Risk Management• CM/DMCommonAreas• Stakeholders• Risks• ConfigurationManagement• DataManagement• Reviews• Schedule
+
+FIGURE 2.0-1 SE in Context of Overall Project Management
+
+## 2.1 The Common Technical Processes and the SE Engine
+
+
+
+FIGURE 2.1-1
+
+
+
+
+
+*Chapters 4.0*
+
+*5.0*
+
+*6.0*
+
+FIGURE 2.1-1
+
+**Requirements DefinitionProcesses 1. Stakeholders Expectations Definition2. Technical Requirements Definition3. Logical Decomposition4. Design Solution DefinitionSystem Design ProcessesRequirements Flow Down from Level aboveTechnical Management Processes10. Technical Planning11. Requirement Management 12. Interface Management 13. Technical Risk Management 14. Configuration Management 15. Technical Data Management 16. Technical Assessment Technical Decision Analysis Process 17. Decision Analysis 9. Product Transition8. Product Validation7. Product Verification6. Product Integration5. Product ImplementationProduct Realization ProcessesSystem Design Processes applied to each product layer down through system structureProduct Realization Processes applied to each product layer up through system structureRequirements Flow Down To Level belowRealized Products to Level aboveRealized ProductsFrom Level belowCross -cuttingCrosscuttingTechnical Solution Definition Processes Technical PlanningProcesses Technical ControlProcesses Product TransitionProcesses Evaluation Processes Design RealizationProcesses Technical Assessment Processes** FIGURE 2.1-1 The Systems Engineering Engine (NPR 7123.1)
+
+•
+
+System Design Processes:
+
+FIGURE 2.1-1
+
+    •
+
+Product Realization Processes:
+
+
+
+expectations as a function of the applicable life cycle phase.
+
+•
+
+Technical Management Processes:
+
+   
+
+TABLE 2.1-1 Alignment of the 17 SE Processes to AS9100 SE Process AS9100 Requirement Stakeholder Expectations Customer Requirements Technical Requirements Definition Planning of Product Realization Logical Decomposition Design and Development Input Design Solution Definition Design and Development Output Product Implementation Control of Production Product Integration Control of Production Product Verification Verification Product Validation Validation Product Transition Control of Work Transfers; Post Delivery Support, Preservation of Product Technical Planning Planning of Product Realization; Review of Requirements; Measurement, Analysis and Improvement Requirements Management Design and Development Planning; Purchasing Interface Management Configuration Management Technical Risk Management Risk Management Configuration Management Configuration Management; Identification and Traceability; Control of Nonconforming Product Technical Data Management Control of Documents; Control of Records; Control of Design and Development Changes Technical Assessment Design and Development Review Decision Analysis Measurement, Analysis and Improvement; Analysis of Data
+
+
+
+integrate the smallest product into greater and larger systems until the whole of the system or product has been assembled, verified, validated, and transitioned.
+
+*https://nen.nasa.gov/web/se/*
+
+*doc-repository*
+
+
+
+
+
+TABLE 2.1-1
+
+## 2.2 An Overview of the SE Engine by Project Phase
+
+FIGURE 2.2-1
+
+TABLE 2.2-1
+
+FIGURE 2.2-1
+
+*https://nen.nasa.gov/*
+
+*web/se/doc-repository*
+
+Pre-Phase A:Concept Studies ImplementationApproval Technical Development Technical Management5.2Key Decision Points:Major Reviews:Feasible Concept Top-Level Architecture Functional Baseline AllocatedBaseline As-Deployed Baseline6.16.86.16.86.16.86.16.86.16.86.16.86.16.8???5.35.45.55.14.24.14.34.4???????4.24.14.34.45.15.35.45.55.2ProductBaselinePhase F:Closeout Phase E:Operations &Sustainment Phase D:System Assembly, Integration & Test, LaunchPhase B:Preliminary Design &Technology CompletionPhase A:Concept & TechnologyDevelopment Phase C:Final Design &Fabrication6.26.76.66.56.46.3Formulation
+
+FIGURE 2.2-1 Miniature Version of the Poster-Size NASA Project Life CycleProcess Flow for Flight and Ground Systems Accompanying this Handbook
+
+
+
+ 
+
+TABLE 2.2-1 Project Life Cycle Phases Phase Purpose Typical Outcomes
+
+Pre-Formulation
+
+Pre-Phase AConcept Studies To produce a broad spectrum of ideas and alternatives for missions from which new programs/projects can be selected. Determine feasibility of desired system, develop mission concepts, draft system-level requirements, assess performance, cost, and schedule feasibility; identify potential technology needs, and scope.
+
+Feasible system concepts in the form of simulations, analysis, study reports, models, and mock-ups
+
+Formulation
+
+Phase A Concept and Technology Development To determine the feasibility and desirability of a suggested new system and establish an initial baseline compatibility with NASA’s strategic plans. Develop final mission concept, system-level requirements, needed system technology developments, and program/project technical management plans.
+
+System concept definition in the form of simulations, analysis, engineering models and mock-ups, and trade study definition Phase B Preliminary Design and Technology Completion To define the project in enough detail to establish an initial baseline capable of meeting mission needs. Develop system structure end product (and enabling product) requirements and generate a preliminary design for each system structure end product.
+
+End products in the form of mock-ups, trade study results, specification and interface documents, and prototypes
+
+Implementation
+
+Phase CFinal Design and Fabrication To complete the detailed design of the system (and its associated subsystems, including its operations systems), fabricate hardware, and code software. Generate final designs for each system structure end product.
+
+End product detailed designs, end product component fabrication, and software development Phase DSystem Assembly, Integration and Test, Launch To assemble and integrate the system (hardware, software, and humans), meanwhile developing confidence that it is able to meet the system requirements. Launch and prepare for operations. Perform system end product implementation, assembly, integration and test, and transition to use.
+
+Operations-ready system end product with supporting related enabling products Phase E Operations and Sustainment To conduct the mission and meet the initially identified need and maintain support for that need. Implement the mission operations plan.
+
+Desired system Phase F Closeout To implement the systems decommissioning/disposal plan developed in Phase E and perform analyses of the returned data and any returned samples.
+
+Product closeout
+
+## 2.3 Example of Using the SE Engine
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Phase C again uses the left side of the SE engine to finalize all requirement updates, finalize the ConOps validation, develop the final designs to the lowest level of the product tree, and begin fabrication.
+
+
+
+
+
+## 2.4 Distinctions between Product Verification and Product Validation
+
+From a process perspective, the Product Verification and Product Validation processes may be similar in nature, but the objectives are fundamentally different:
+
+•
+
+
+
+
+
+
+
+•
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## 2.5 Cost Effectiveness Considerations
+
+
+
+
+
+THE SYSTEMS ENGINEER’S DILEMMA
+
+At each cost-effective solution:• To reduce cost at constant risk, performance must be reduced.• To reduce risk at constant cost, performance must be reduced.• To reduce cost at constant performance, higher risks must be accepted.• To reduce risk at constant performance, higher costs must be accepted.In this context, time in the schedule is often a critical resource, so that schedule behaves like a kind of cost.
+
+FIGURE 2.5-1
+
+
+
+
+
+
+
+*Section 6.8*
+
+## 2.6 Human Systems Integration (HSI) in the SE Process
+
+
+
+
+
+
+
+
+
+
+
+*https://nen.*
+
+*nasa.gov/web/se/doc-repository*
+
+0%10%20%MCR SRR SDR PDR CDR SIR ORR DR/DRR30%40% 3–6×45%Concept DesignDevelopProd/TestOperations through Disposal75%90%100%50%20%15% 8%20–100×500–1000×50%60%70%80%90%100%Cumulative Percentage Life Cycle Cost against TimeTimeCommitted Life Cycle Costs% Completed (Costs Expended)Cost to Change Design DirectionMCR Mission Concept Review CDR Critical Design ReviewSRR System Requirements Review SIR System Integration ReviewSDR System Definition Review ORR Operational Readiness ReviewPDR Preliminary Design Review DR/DRR Decommissioning/Disposal Readiness ReviewAdapted from INCOSE-TP-2003-002-04, 2015
+
+FIGURE 2.5-1 Life-Cycle Cost Impacts from Early Phase Decision-Making
+
+## 2.7 Competency Model for Systems Engineers
+
+TABLE 2.7-1
+
+
+
+*http://appel.nasa.gov/competency-model/*
+
+There are four levels of proficiencies associated with each of these competencies:
+
+•
+
+Team Practitioner/Technical Engineer
+
+•
+
+Team Lead/Subsystem Lead
+
+•
+
+Project Systems Engineer
+
+•
+
+Chief Engineer
+
+TABLE 2.7-1 NASA System Engineering Competency Model
+
+## Competency Area
+
+Competency Description SE 1.0 SE 1.1 Eliciting and defining use cases, scenarios, concept of operations and stakeholder expectations. This includes identifying stakeholders, establishing support strategies, establishing a set of Measures of Effectiveness (MOEs), validating stakeholder expectation statements, and obtaining commitments from the customer and other stakeholders, as well as using the baselined stakeholder expectations for product validation during product realization SE 1.2 Transforming the baseline stakeholder expectations into unique, quantitative, and measurable technical requirements expressed as “shall” statements that can be used for defining the design solution. This includes analyzing the scope of the technical problems to be solved, defining constraints affecting the designs, defining the performance requirements, validating the resulting technical requirement statements, defining the Measures of Performance (MOPs) for each MOE, and defining appropriate Technical Performance Measures (TPMs) by which technical progress will be assessed.
+
+SE 1.3 Transforming the defined set of technical requirements into a set of logical decomposition models and their associated set of derived technical requirements for lower levels of the system, and for input to the design solution efforts. This includes decomposing and analyzing by function, time, behavior, data flow, object, and other models. It also includes allocating requirements to these decomposition models, resolving conflicts between derived requirements as revealed by the models, defining a system architecture for establishing the levels of allocation, and validating the derived technical requirements.
+
+SE 1.4 Translating the decomposition models and derived requirements into one or more design solutions, and using the Decision Analysis process to analyze each alternative and for selecting a preferred alternative that will satisfy the technical requirements. A full technical data package is developed describing the selected solution. This includes generating a full design description for the selected solution; developing a set of ‘make-to,’ ‘buy-to,’ ‘reuse-to,’ specifications; and initiating the development or acquisition of system products and enabling products.
+
+SE 2.0 SE 2.1 Generating a specific product through buying, making, or reusing so as to satisfy the design requirements. This includes preparing the implementation strategy; building or coding the produce; reviewing vendor technical information; inspecting delivered, built, or reused products; and preparing product support documentation for integration.
+
+SE 2.2 Assembling and integrating lower-level validated end products into the desired end product of the higher-level product. This includes preparing the product integration strategy, performing detailed planning, obtaining products to integrate, confirming that the products are ready for integration, preparing the integration environment, and preparing product support documentation.
+
+SE 2.3 Proving the end product conforms to its requirements. This includes preparing for the verification efforts, analyzing the outcomes of verification (including identifying anomalies and establishing recommended corrective actions), and preparing a product verification report providing the evidence of product conformance with the applicable requirements.
+
+## Competency Area
+
+Competency Description SE 2.0 SE 2.4 Confirming that a verified end product satisfies the stakeholder expectations for its intended use when placed in its intended environment and ensuring that any anomalies discovered during validation are appropriately resolved prior to product transition. This includes preparing to conduct product validation, performing the product validation, analyzing the results of validation (including identifying anomalies and establishing recommended corrective actions), and preparing a product validation report providing the evidence of product conformance with the stakeholder expectations baseline.
+
+SE 2.5 Transitioning the verified and validated product to the customer at the next level in the system structure. This includes preparing to conduct product transition, evaluating the product and enabling product readiness for product transition, preparing the product for transition (including handling, storing, and shipping preparation), preparing sites, and generating required documentation to accompany the product SE 3.0 SE 3.1 Planning for the application and management of each common technical process, as well as identifying, defining, and planning the technical effort necessary to meet project objectives. This includes preparing or updating a planning strategy for each of the technical processes, and determining deliverable work products from technical efforts; identifying technical reporting requirements; identifying entry and success criteria for technical reviews; identifying product and process measures to be used; identifying critical technical events; defining cross domain interoperability and collaboration needs; defining the data management approach; identifying the technical risks to be addressed in the planning effort; identifying tools and engineering methods to be employed; and defining the approach to acquire and maintain technical expertise needed. This also includes preparing the Systems Engineering Management Plan (SEMP) and other technical plans; obtaining stakeholder commitments to the technical plans; and issuing authorized technical work directives to implement the technical work SE 3.2 Managing the product requirements, including providing bidirectional traceability, and managing changes to establish requirement baselines over the life cycle of the system products. This includes preparing or updating a strategy for requirements management; selecting an appropriate requirements management tool; training technical team members in established requirement management procedures; conducting expectation and requirements traceability audits; managing expectation and requirement changes; and communicating expectation and requirement change information SE 3.3 Establishing and using formal interface management to maintain internal and external interface definition and compliance among the end products and enabling products. This includes preparing interface management procedures, identifying interfaces, generating and maintaining interface documentation, managing changes to interfaces, disseminating interface information, and conducting interface control SE 3.4 Examining on a continual basis the risks of technical deviations from the plans, and identifying potential technical problems before they occur. Planning, invoking, and performing risk-handling activities as needed across the life of the product or project to mitigate impacts on meeting technical objectives. This includes developing the strategy for technical risk management, identifying technical risks, and conducting technical risk assessment; preparing for technical risk mitigation, monitoring the status of each technical risk, and implementing technical risk mitigation and contingency action plans when applicable thresholds have been triggered.
+
+## Competency Area
+
+Competency Description SE 3.0 SE 3.5 Identifying the configuration of the product at various points in time, systematically controlling changes to the configuration of the product, maintaining the integrity and traceability of product configuration, and preserving the records of the product configuration throughout its life cycle. This includes establishing configuration management strategies and policies, identifying baselines to be under configuration control, maintaining the status of configuration documentation, and conducting configuration audits SE 3.6 Identifying and controlling product-related data throughout its life cycle; acquiring, accessing, and distributing data needed to develop, manage, operate, support, and retire system products; managing and disposing data as records; analyzing data use; obtaining technical data feedback for managing the contracted technical efforts; assessing the collection of appropriate technical data and information; maintaining the integrity and security of the technical data, effectively managing authoritative data that defines, describes, analyzes, and characterizes a product life cycle; and ensuring consistent, repeatable use of effective Product Data and Life-cycle Management processes, best practices, interoperability approaches, methodologies, and traceability. This includes establishing technical data management strategies and policies; maintaining revision, status, and history of stored technical data and associated metadata; providing approved, published technical data; providing technical data to authorized parties; and collecting and storing required technical data.
+
+SE 3.7 Monitoring progress of the technical effort and providing status information for support of the system design, product realization, and technical management efforts. This includes developing technical assessment strategies and policies, assessing technical work productivity, assessing product quality, tracking and trending technical metrics, and conducting technical, peer, and life cycle reviews.
+
+SE 3.8 Evaluating technical decision issues, identifying decision criteria, identifying alternatives, analyzing alternatives, and selecting alternatives. Performed throughout the system life cycle to formulate candidate decision alternatives, and evaluate their impacts on health and safety, technical, cost, and schedule performance. This includes establishing guidelines for determining which technical issues are subject to formal analysis processes; defining the criteria for evaluating alternative solutions; identifying alternative solutions to address decision issues; selecting evaluation methods; selecting recommended solutions; and reporting the results and findings with recommendations, impacts, and corrective actions.
+
+## 3.0
+
+# NASA Program/Project Life Cycle
+
+O
+
+
+
+**
+
+
+
+
+
+
+
+For NASA projects, the life cycle is defined in the applicable governing document:
+
+•
+
+For space flight projects:
+
+•
+
+For information technology:
+
+•
+
+For NASA research and technology
+
+•
+
+For software:
+
+For example, NPR 7120.5 defines the major NASA life cycle phases as Formulation and Implementation. For space flight systems projects, the NASA life cycle phases of Formulation and Implementation divide into the following seven incremental pieces. The phases of the project life cycle are:
+
+Program Pre-Formulation:
+
+•
+
+Pre-Phase A:
+
+Program Formulation
+
+•
+
+Phase A:
+
+•
+
+Phase B:
+
+Program Implementation:
+
+•
+
+Phase C:
+
+•
+
+Phase D:
+
+•
+
+Phase E:
+
+•
+
+Phase F:
+
+FIGURE 3.0-1
+
+
+
+*https://nen.nasa.gov/web/se/doc-repository* FIGURE 3.0-1 NASA Space Flight Project Life Cycle from NPR 7120 .5E
+
+**NASA Life-Cycle Phases FORMULATION IMPLEMENTATIONProject Life-Cycle PhasesPre-Phase A:Concept StudiesPhase A:Concept and Technology DevelopmentPhase B:Preliminary Design and Technology CompletionPhase C:Final Design and FabricationPhase D:System Assembly, Integration & Test, Launch & CheckoutPhase E:Operations and SustainmentPhase F:CloseoutProject LifeCycle Gates, Documents, and Major EventsAgency ReviewsHuman Space Flight Project Life-Cycle Reviews1,2Re-flightsRobotic Mission Project Life Cycle Reviews1,2Other ReviewsSupporting ReviewsFOOTNOTES1. Flexibility is allowed as to the timing, number, and content of reviews as long as the equivalent information is provided at each KDP and the approach is fully documented in the Project Plan.2. Life-cycle review objectives and expected maturity states for these reviews and the attendant KDPs are contained in Table 2-5 and Appendix D Table D-3 of this handbook3. PRR is needed only when there are multiple copies of systems. It does not require an SRB. Timing is notional.4. CERRs are established at the discretion of program .5. For robotic missions, the SRR and the MDR may be combined.6. SAR generally applies to human space flight.7. Timing of the ASM is determined by the MDAA. It may take place at any time during Phase A.Red triangles represent life-cycle reviews that require SRBs. The Decision Authority, Administrator, MDAA, or Center Director may request the SRB to conduct other reviews.ACRONYMSASM – Acquisition Strategy MeetingCDR – Critical Design ReviewCERR – Critical Events Readiness ReviewDR – Decommissioning ReviewDRR – Disposal Readiness ReviewFA – Formulation AgreementFAD – Formulation Authorization DocumentFRR – Flight Readiness ReviewKDP – Key Decision PointLRR – Launch Readiness ReviewLV – Launch VehicleMCR – Mission Concept ReviewMDR – Mission Definition ReviewMRR – Mission Readiness ReviewORR – Operational Readiness ReviewPDR – Preliminary Design ReviewPFAR – Post-Flight Assessment ReviewPLAR – Post-Launch Assessment ReviewPRR – Production Readiness ReviewSAR – System Acceptance ReviewSDR – System Definition ReviewSIR – System Integration ReviewSMSR – Safety and Mission Success ReviewSRB – Standing Review BoardSRR – System Requirements ReviewApproval forFormulationApproval forImplementationKDP APreliminary Project RequirementsPreliminaryProject PlanBaselineProject PlanLaunch End of Mission Final Archival of DataInspections and RefurbishmentRe-enters appropriate life-cycle phase if modifications are needed between flightsEnd of FlightFADMCRMCRASM7SRRSRRSDRMDR5PDRPDRSIRSIRORRORRFRRMRRPLARPLARSMSR,LRR (LV), FRR (LV) SAR 6CERR4CERR4PFARDRDRDRRDRRCDR/PRR3CDR/PRR3FAKDP B KDP C KDP D KDP FKDP E Peer Reviews, Subsystem PDFs, Subsystem CDRs, and System Reviews**
+
+TABLE 3.0-1
+
+Formulation Implementation
+
+Products
+
+Uncoupled/ Loosely Coupled KDP 0 KDP I Periodic KDPs Tightly Coupled Programs KDP 0 KDP I KDP II KDP III Periodic KDPs Projects and Single Project Programs Pre Phase A Phase A Phase B Phase C Phase D Phase E Phase F KDP A KDP B KDP C KDP D KDP E KDP F MCR SRR MDR/SDR PDR CDR SIR ORR FRR DR DRR
+
+Stakeholder identification and **Baseline Update Update Update Concept definition **Baseline Update Update Update Update Measure of effectiveness definition **Approve Cost and schedule for technical Initial Update Update Update Update Update Update Update Update SEMP
+
+1
+
+Preliminary **Baseline **Baseline Update Update Update Requirements Preliminary **Baseline Update Update Update Technical Performance Measures definition **Approve Architecture definition **Baseline Allocation of requirements to next lower level **Baseline Required leading indicator trends **Initial Update Update Update Design solution definition Preliminary **Preliminary **Baseline Update Update Interface definition(s) Preliminary Baseline Update Update Implementation plans (Make/ code, buy, reuse) Preliminary Baseline Update Integration plans Preliminary Baseline Update **Update Verification and validation plans Approach Preliminary Baseline Update Update Verification and validation results **Initial **Preliminary **Baseline Transportation criteria and instructions Initial Final Update Operations plans Baseline Update Update **Update Operational procedures Preliminary Baseline **Update Update Certification (flight/use) Preliminary **Final Decommissioning plans Preliminary Preliminary Preliminary **Baseline Update **Update Disposal plans Preliminary Preliminary Preliminary **Baseline Update Update **Update
+
+** Item is a required product for that review 1 SEMP is baselined at SRR for projects, tightly coupled programs and single-project programs, and at MDR/SDR for uncoupled, and loosely coupled programs.
+
+## 3.1 Program Formulation
+
+
+
+
+
+
+
+SPACE FLIGHT PROGRAM FORMULATION
+
+PurposeTo establish a cost-effective program that is demonstrably capable of meeting Agency and mission directorate goals and objectives
+
+Typical Activities and Their Products for Space Flight Programs• Identify program stakeholders and users• Develop program requirements based on user expectations and allocate them to initial projects• Identify NASA risk classification• Define and approve program acquisition strategies• Develop interfaces to other programs• Start developing technologies that cut across multiple projects within the program• Derive initial cost estimates and approve a program budget based on the project’s life cycle costs• Perform required program Formulation technical activities defined in NPR 7120.5• Satisfy program Formulation reviews’ entrance/success criteria detailed in NPR 7123.1• Develop a clear vision of the program’s benefits and usage in the operational era and document it in a ConOps
+
+Reviews• MCR (pre-Formulation)• SRR• SDR
+
+## 3.2 Program Implementation
+
+During the program Implementation phase, the PM works with the Mission Directorate Associate Administrator (MDAA) and the constituent project PurposeTo establish a cost-effective program that is demonstrably capable of meeting Agency and mission directorate goals and objectivesSPACE FLIGHT PROGRAM FORMULATIONReviews• MCR (pre-Formulation)• SRR• SDR
+
+
+
+
+
+
+
+
+
+
+
+SPACE FLIGHT PROGRAM IMPLEMENTATION
+
+PurposeTo execute the program and constituent projects and ensure that the program continues to contribute to Agency goals and objectives within funding constraints
+
+Typical Activities and Their Products• Initiate projects through direct assignment or competitive process (e.g., Request for Proposal (RFP), Announcement of Opportunity (AO)• Monitor project’s formulation, approval, implementation, integration, operation, and ultimate decommissioning• Adjust program as resources and requirements change• Perform required program Implementation technical activities from NPR 7120.5• Satisfy program Implementation reviews’ entrance/success criteria from NPR 7123.1
+
+Reviews• PSR/PIR (uncoupled and loosely coupled programs only)• Reviews synonymous (not duplicative) with the project reviews in the project life cycle (see FIGURE 3.0-4) through Phase D (single-project and tightly coupled programs only)
+
+## 3.3 Project Pre-Phase A: Concept Studies
+
+
+
+
+
+
+
+SPACE FLIGHT PRE‑PHASE A: CONCEPT STUDIES
+
+Purpose To produce a broad spectrum of ideas and alternatives for missions from which new programs and projects can be selected. Determine feasibility of desired system; develop mission concepts; draft system-level requirements; assess performance, cost, and schedule feasibility; identify potential technology needs and scope.
+
+Typical Activities and Products • > Mission > Science > Top-level system • > Identify key stakeholders for each phase of the life cycle > Capture and baseline expectations as Needs, Goals, and Objectives (NGOs) > Define measures of effectiveness • > Identify and perform trade-offs and analyses of alternatives (AoA) > Perform preliminary evaluations of possible missions • Identify risk classification • Identify initial technical risks • Identify the roles and responsibilities in performing mission objectives (i.e., technical team, flight, and ground crew) including training • > Develop preliminary SEMP > Develop and baseline Technology Development Plan > Define preliminary verification and validation approach • > Mission justification and objectives;
+
+> A ConOps that exhibits clear understanding of how the program’s outcomes will cost-effectively satisfy mission objectives;
+
+> High-level Work Breakdown Structures (WBSs);
+
+> Life cycle rough order of magnitude (ROM) cost, schedule, and risk estimates; and > Technology assessment and maturation strategies.
+
+• Satisfy MCR entrance/success criteria from NPR 7123.1 Reviews • MCR • Informal proposal review
+
+
+
+
+
+
+
+
+
+
+
+Descope options are developed when the NGOs or other stakeholder expectation documentation is developed. The project team develops a preliminary set of mission descope options as a gate product for the MCR, but these preliminary descope options are not baselined or maintained. They are kept in the documentation archive in case they are needed later in the life cycle.
+
+
+
+
+
+## 3.4 Project Phase A: Concept and Technology Development
+
+
+
+
+
+
+
+Purpose
+
+To determine the feasibility and desirability of a suggested new system and establish an initial baseline compatibility with NASA’s strategic plans. Develop final mission concept, system-level requirements, needed system technology developments, and program/project technical management plans.
+
+Typical Activities and Their Products
+
+•
+
+Review and update documents baselined in Pre-Phase A if needed
+
+•
+
+Monitor progress against plans
+
+•
+
+Develop and baseline top-level requirements and constraints including internal and external interfaces, integrated logistics and maintenance support, and system software functionality
+
+•
+
+Allocate system requirements to functions and to next lower level
+
+•
+
+Validate requirements
+
+•
+
+>
+
+Systems Engineering Management Plan
+
+>
+
+Human Systems Integration Plan
+
+>
+
+Control plans such as the Risk Management Plan, Configuration Management Plan, Data Management Plan, Safety and Mission Assurance Plan, and Software Development or Management Plan (See NPR 7150.2)
+
+>
+
+Other crosscutting and specialty plans such as environmental compliance documentation, acquisition surveillance plan, contamination control plan, electromagnetic interference/electromagnetic compatibility control plan, reliability plan, quality control plan, parts management plan, logistics plan
+
+•
+
+Develop preliminary Verification and Validation Plan
+
+•
+
+Establish human rating plan and perform initial evaluations
+
+•
+
+>
+
+Develop breadboards, engineering units or models identify and reduce high risk concepts
+
+>
+
+Demonstrate that credible, feasible design(s) exist
+
+>
+
+Perform and archive trade studies
+
+>
+
+Initiate studies on human systems interactions
+
+•
+
+Initiate environmental evaluation/National Environmental Policy Act process
+
+•
+
+Develop initial orbital debris assessment (NASA-STD-8719.14)
+
+•
+
+>
+
+Provide technical cost estimate and range and develop system-level cost-effectiveness model
+
+>
+
+Define the WBS
+
+>
+
+Develop SOWs
+
+>
+
+Acquire systems engineering tools and models
+
+   
+
+> Establish technical resource estimates • Identify, analyze and update risks • Perform required Phase A technical activities from NPR 7120.5 as applicable • Satisfy Phase A reviews’ entrance/success criteria from NPR 7123.1 Reviews • SRR • MDR/SDR
+
+      
+
+Purpose
+
+To define the project in enough detail to establish an initial baseline capable of meeting mission needs. Develop system structure end product (and enabling product) requirements and generate a preliminary design for each system structure end product.
+
+Typical Activities and Their Products
+
+•
+
+Review and update documents baselined in previous phases
+
+•
+
+Monitor progress against plans
+
+•
+
+>
+
+Identify one or more feasible preliminary designs including internal and external interfaces
+
+>
+
+Perform analyses of candidate designs and report results
+
+>
+
+Conduct engineering development tests as needed and report results
+
+>
+
+Perform human systems integration assessments
+
+>
+
+Select a preliminary design solution
+
+•
+
+>
+
+Define system operations as well as Principal Investigator (PI)/contract proposal management, review, and access and contingency planning
+
+•
+
+Report technology development results
+
+•
+
+Update cost range estimate and schedule data (Note that after PDR changes are incorporated and costed, at KDP C this will turn into the Agency Baseline Commitment)
+
+•
+
+Improve fidelity of models and prototypes used in evaluations
+
+•
+
+Identify and update risks
+
+•
+
+Develop appropriate level safety data package and security plan
+
+•
+
+>
+
+Orbital Debris Assessment
+
+>
+
+Decommissioning Plan
+
+>
+
+Disposal Plan
+
+•
+
+Perform required Phase B technical activities from NPR 7120.5 as applicable
+
+•
+
+Satisfy Phase B reviews’ entrance/success criteria from NPR 7123.1
+
+Reviews
+
+•
+
+PDR
+
+•
+
+Safety review
+
+engineers are involved in this phase to ensure the preliminary designs of the various systems will work together, are compatible, and are likely to meet the customer expectations and applicable requirements.
+
+         
+
+*Section 6.5*
+
+
+
+FIGURE 2.5-1
+
+    
+
+SPACE FLIGHT PHASE C: FINAL DESIGN AND FABRICATION
+
+Purpose To complete the detailed design of the system (and its associated subsystems, including its operations systems), fabricate hardware, and code software. Generate final designs for each system structure end product.
+
+Typical Activities and Their Products • Review and update documents baselined in previous phases • Monitor progress against plans • > Fully mature and define selected preliminary designs > Add remaining lower level design specifications to the system architecture > Perform and archive trade studies > Perform development testing at the component or subsystem level > Fully document final design and develop data package • > Interface definitions > Implementation plans > Integration plans > Verification and validation plans > Operations plans • > Decommissioning and disposal plans, including human capital transition > Spares > Communications (including command and telemetry lists) • > Refine integration > Manufacturing and assembly > Verification and validation • Fabricate (or code) the product • Identify and update risks • Monitor project progress against project plans • Prepare launch site checkout and post launch activation and checkout • Finalize appropriate level safety data package and updated security plan • Identify opportunities for preplanned product improvement • Refine orbital debris assessment • Perform required Phase C technical activities from NPR 7120.5 as applicable • Satisfy Phase C review entrance/success criteria from NPR 7123.1
+
+Reviews
+
+•
+
+CDR
+
+•
+
+PRR
+
+•
+
+SIR
+
+•
+
+Safety review
+
+All the planning initiated back in Phase A for the
+
+testing and operational equipment, processes and
+
+analysis, integration of the crosscutting and engineer
+
+
+
+ing specialty analysis, and manufacturing processes
+
+and controls is implemented. Configuration manage
+
+
+
+ment continues to track and control design changes
+
+as detailed interfaces are defined. At each step in the
+
+successive refinement of the final design, correspond
+
+
+
+ing integration and verification activities are planned
+
+in greater detail. During this phase, technical param
+
+
+
+eters, schedules, and budgets are closely tracked to
+
+ensure that undesirable trends (such as an unexpected
+
+growth in spacecraft mass or increase in its cost) are
+
+recognized early enough to take corrective action.
+
+These activities focus on preparing for the CDR,
+
+Production Readiness Review (PRR) (if required),
+
+and the SIR.
+
+Phase C contains a series of CDRs containing the sys
+
+
+
+tem-level CDR and CDRs corresponding to the dif
+
+
+
+ferent levels of the system hierarchy. A CDR for each
+
+end item should be held prior to the start of fabrica
+
+
+
+tion/production for hardware and prior to the start
+
+of coding of deliverable software products. Typically,
+
+the sequence of CDRs reflects the integration pro
+
+
+
+cess that will occur in the next phase; that is, from
+
+lower level CDRs to the system-level CDR. Projects,
+
+however, should tailor the sequencing of the reviews
+
+to meet the needs of the project. If there is a pro
+
+
+
+duction run of products, a PRR will be performed to
+
+ensure the production plans, facilities, and personnel
+
+are ready to begin production. Phase C culminates
+
+with an SIR. Training requirements and preliminary
+
+mission operations procedures are created and base
+
+
+
+lined. The final product of this phase is a product
+
+ready for integration.
+
+## 3.7
+
+## Project Phase D:
+
+## System Assembly,
+
+## Integration and Test, Launch
+
+The purpose of Phase D is to assemble, integrate, ver
+
+
+
+ify, validate, and launch the system. These activities
+
+focus on preparing for the Flight Readiness Review
+
+(FRR)/Mission Readiness Review (MRR). Activities
+
+include assembly, integration, verification, and vali
+
+
+
+dation of the system, including testing the flight sys
+
+
+
+tem to expected environments within margin. Other
+
+activities include updating operational procedures,
+
+rehearsals and training of operating personnel and
+
+crew members, and implementation of the logistics
+
+and spares planning. For flight projects, the focus
+
+of activities then shifts to prelaunch integration and
+
+launch. System engineering is involved in all aspects
+
+of this phase including answering questions, provid
+
+
+
+ing advice, resolving issues, assessing results of the
+
+verification and validation tests, ensuring that the
+
+V&V results meet the customer expectations and
+
+applicable requirements, and providing information
+
+to decision makers for go/no-go decisions.
+
+The planning for Phase D activities was initiated
+
+in Phase A. For IT projects, refer to the
+
+*IT Systems*
+
+*Engineering Handbook*
+
+. The planning for the activ
+
+
+
+ities should be performed as early as possible since
+
+Purpose
+
+To assemble and integrate the system (hardware, software, and humans), meanwhile developing confidence that it will be able to meet the system requirements. Launch and prepare for operations. Perform system end product implementation, assembly, integration and test, and transition to use.
+
+Typical Activities and Their Products
+
+•
+
+Update documents developed and baselined in previous phases
+
+•
+
+Monitor project progress against plans
+
+•
+
+Identify and update risks
+
+•
+
+Integrate/assemble components according to the integration plans
+
+•
+
+>
+
+Perform system qualification verifications, including environmental verifications
+
+>
+
+Perform system acceptance verifications and validation(s) (e.g., end-to-end tests encompassing all elements; i.e., space element, ground system, data processing system)
+
+>
+
+Assess and approve verification and validation results
+
+>
+
+Resolve verification and validation discrepancies
+
+>
+
+Archive documentation for verifications and validations performed
+
+>
+
+Baseline verification and validation report
+
+•
+
+>
+
+Operator’s manuals
+
+>
+
+Maintenance manuals
+
+>
+
+Operations handbook
+
+•
+
+>
+
+Train initial system operators and maintainers
+
+>
+
+Train on contingency planning
+
+>
+
+Confirm telemetry validation and ground data processing
+
+>
+
+Confirm system and support elements are ready for flight
+
+>
+
+Provide support to the launch and checkout of the system
+
+>
+
+Perform planned on-orbit operational verification(s) and validation(s)
+
+•
+
+Document lessons learned. Perform required Phase D technical activities from NPR 7120.5
+
+•
+
+Satisfy Phase D reviews’ entrance/success criteria from NPR 7123.1
+
+Reviews
+
+•
+
+Test Readiness Reviews (TRRs)
+
+•
+
+System Acceptance Review (SAR) or pre-Ship Review
+
+•
+
+ORR
+
+•
+
+FRR
+
+•
+
+System functional and physical configuration audits
+
+•
+
+Safety review
+
+changes at this point can become costly. Phase D
+
+concludes with a system that has been shown to be
+
+capable of accomplishing the purpose for which it
+
+was created.
+
+## 3.8
+
+## Project Phase E:
+
+## Operations and Sustainment
+
+The purpose of Phase E is to conduct the prime
+
+mission to meet the initially identified need and to
+
+maintain support for that need. The products of the
+
+phase are the results of the mission and performance
+
+of the system.
+
+Systems engineering personnel continue to play a
+
+role during this phase since integration often overlaps
+
+with operations for complex systems. Some programs
+
+have repeated operations/flights which require con
+
+
+
+figuration changes and new mission objectives with
+
+each occurrence. And systems with complex sustain
+
+
+
+ment needs or human involvement will likely require
+
+evaluation and adjustments that may be beyond the
+
+scope of operators to perform. Specialty engineering
+
+disciplines, like maintainability and logistics servic
+
+
+
+ing, will be performing tasks during this phase as
+
+well. Such tasks may require reiteration and/or recur
+
+
+
+sion of the common systems engineering processes.
+
+Systems engineering personnel also may be involved
+
+in in-flight anomaly resolution. Additionally, soft
+
+
+
+ware development may continue well into Phase E.
+
+For example, software for a planetary probe may
+
+be developed and uplinked while in-flight. Another
+
+example would be new hardware developed for space
+
+station increments.
+
+This phase encompasses the evolution of the system
+
+only insofar as that evolution does not involve major
+
+changes to the system architecture. Changes of that
+
+scope constitute new “needs,” and the project life cycle
+
+starts over. For large flight projects, there may be an
+
+extended period of cruise, orbit insertion, on-orbit
+
+assembly, and initial shakedown operations. Near the
+
+end of the prime mission, the project may apply for
+
+a mission extension to continue mission activities or
+
+attempt to perform additional mission objectives.
+
+For additional information on systems engineering in
+
+Phase E, see
+
+*Appendix T*
+
+.
+
+## 3.9
+
+## Project Phase F: Closeout
+
+The purpose of Phase F is to implement the systems
+
+decommissioning and disposal planning and analyze
+
+any returned data and samples. The products of the
+
+phase are the results of the mission. The system engi
+
+
+
+neer is involved in this phase to ensure all technical
+
+information is properly identified and archived, to
+
+answer questions, and to resolve issues as they arise.
+
+Phase F deals with the final closeout of the sys
+
+
+
+tem when it has completed its mission; the time at
+
+which this occurs depends on many factors. For a
+
+flight system that returns to Earth after a short mis
+
+
+
+sion duration, closeout may require little more than
+
+de-integrating the hardware and returning it to its
+
+owner. On flight projects of long duration, closeout
+
+may proceed according to established plans or may
+
+begin as a result of unplanned events, such as fail
+
+
+
+ures. Refer to NASA Policy Directive (NPD) 8010.3,
+
+Notification of Intent to Decommission or Terminate
+
+Operating Space Systems and Terminate Missions,
+
+SPACE FLIGHT PHASE E: OPERATIONS AND SUSTAINMENT
+
+Purpose To conduct the mission and meet the initially identified need and maintain support for that need. Implement the mission operations plan.
+
+Typical Activities and Their Products • Conduct launch vehicle performance assessment. Commission and activate science instruments • Conduct the intended prime mission(s) • > Implement spares plan > Collect engineering and science data > Train replacement operators and maintainers > Train the flight team for future mission phases (e.g., planetary landed operations) > Maintain and approve operations and maintenance logs > Maintain and upgrade the system > Identify and update risks > Address problem/failure reports > Process and analyze mission data > Apply for mission extensions, if warranted • Prepare for deactivation, disassembly, decommissioning as planned (subject to mission extension) • Capture lessons learned • Complete post-flight evaluation reports • Develop final mission report • Perform required Phase E technical activities from NPR 7120.5 • Satisfy Phase E reviews’ entrance/success criteria from NPR 7123.1 Reviews • Post-Launch Assessment Review (PLAR) • Critical Event Readiness Review (CERR) • Post-Flight Assessment Review (PFAR) (human space flight only) • DR • System upgrade review • Safety review
+
+for terminating an operating mission. Alternatively, technological advances may make it uneconomical to continue operating the system either in its current configuration or an improved one.
+
+PHASE F: CLOSEOUT
+
+Purpose
+
+To implement the systems decommissioning/disposal plan developed in Phase E and perform analyses of the returned data and any returned samples.
+
+Typical Activities and Their Products
+
+•
+
+Dispose of the system and supporting processes
+
+•
+
+Document lessons learned
+
+•
+
+Baseline mission final report
+
+•
+
+Archive data
+
+•
+
+Capture lessons learned
+
+•
+
+Perform required Phase F technical activities from NPR 7120.5
+
+•
+
+Satisfy Phase F reviews’ entrance/success criteria from NPR 7123.1
+
+Reviews
+
+•
+
+DRR
+
+
+
+
+
+
+
+In addition to uncertainty about when this part of the phase begins, the activities associated with safe closeout of a system may be long and complex and may affect the system design. Consequently, different options and strategies should be considered during the project’s earlier phases along with the costs and risks associated with the different options.
+
+## 3.10 Funding: The Budget Cycle
+
+*https://nen.nasa.gov/*
+
+*web/se/doc-repository*
+
+## 3.11Tailoring and Customization of NPR 7123.1 Requirements
+
+
+
+3.11.1 Introduction
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+3.11.2 Criteria for Tailoring
+
+
+
+
+
+1.
+
+Type of mission.
+
+2.
+
+Criticality of the mission
+
+3.
+
+Acceptable risk level.
+
+4.
+
+National significance.
+
+5.
+
+Complexity.
+
+6.
+
+Mission lifetime.
+
+
+
+7.
+
+Cost of mission.
+
+8.
+
+Launch constraints.
+
+### 3.11.3 Tailoring SE NPR Requirements Using the Compliance Matrix
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+FIGURE 3.11-1
+
+
+
+Through an iterative process, the project team goes through the NPR requirements in the Compliance Matrix to tailor the requirements. A tailoring tool with suggested guidelines may make the tailoring process easier if available. Several NASA Centers including LaRC and MSFC have developed tools for use at their Centers which could be adapted for other Centers. Guidance from Subject Matter Experts (SMEs) should be sought to determine the appropriate amount of tailoring for a specific project.
+
+The Compliance Matrix provides rationales for each of the NPR requirements to assist in understanding. Once the tailoring is finalized and recorded in the Compliance Matrix with appropriate rationales, the requested tailoring proceeds through the appropriate governance model for approval.
+
+**Inputs OutputsProject Needs, Goals, ObjectivesTailoring Tool(s)Approved Compliance Matrix Attached to SEMP or Project PlanCenter-levelProgram OfficeEngineering/Projects DirectoratePMS&MACELSERisk PostureReview/ApproveReview/ApproveFinalize/Update ProjectSpecific Tailoring and Capture Waiver RationalesAdvisory Teams as NecessarySuggest Tailoring NNN YYYProject Team Review and Refine TailoringReview/Approve** FIGURE 3.11-1 Notional Space Flight Products Tailoring Process
+
+3.11.4 Ways to Tailor a SE Requirement Tailoring often comes in three areas:
+
+1.
+
+Eliminating a requirement that does not apply to the specific program/project.
+
+2.
+
+ 
+
+3.
+
+ Customizing SE practices can include the following:
+
+1.
+
+Adjusting the way each of the 17 SE processes is implemented.
+
+2.
+
+Adjusting the formality and timing of reviews.
+
+3.11.4.1 Non-Applicable NPR Requirements 
+
+3.11.4.2 Adjusting the Scope   3.11.4.3 Formality and Timing of Reviews    *https://nen.nasa.gov/web/se* 
+
+3.11.5 Examples of Tailoring and Customization
+
+TABLE 3.11-1
+
+ 
+
+Criteria Type A Type B Type C Type D Type E Type F Description of the Types of Mission Human Space Flight or Very Large Science/Robotic Missions Non-Human Space Flight or Science/Robotic Missions Small Science or Robotic Missions Smaller Science or Technology Missions (ISS payload) Suborbital or Aircraft or Large Ground based Missions Aircraft or Ground based technology demonstrations Priority (Criticality to Agency Strategic Plan) and Acceptable Risk Level High priority, very low (minimized) risk Medium priority, medium risk Low to very low priority, high risk National Significance Very high High Medium Medium to Low Low Very Low Complexity Very high to high High to Medium Medium to Low Medium to Low Low Low to Very Low Mission Lifetime (Primary Baseline Mission) Long. >5 years Medium. 2–5 years Short. <2 years Short. <2 years N/A N/A Launch Constraints Critical Medium Few Few to none Few to none N/A Alternative Research Opportunities or Re-flight Opportunities No alternative or re-flight opportunities Few or no alternative or re-flight opportunities Some or few alternative or re-flight opportunities Significant alternative or re-flight opportunities Significant alternative or re-flight opportunities Significant alternative or re-flight opportunities Achievement of Mission Success Criteria All practical measures are taken to achieve minimum risk to mission success. The highest assurance standards are used.
+
+Stringent assurance standards with only minor compromises in application to maintain a low risk to mission success.
+
+Medium risk of not achieving mission success may be acceptable. Reduced assurance standards are permitted.
+
+Medium or significant risk of not achieving mission success is permitted. Minimal assurance standards are permitted.
+
+Significant risk of not achieving mission success is permitted. Minimal assurance standards are permitted.
+
+Significant risk of not achieving mission success is permitted. Minimal assurance standards are permitted.
+
+Examples HST, Cassini, JIMO, JWST, MPCV, SLS, ISS MER, MRO, Discovery payloads, ISS Facility Class payloads, Attached ISS payloads SPARTAN, GAS Can, technology demonstrators, simple ISS, express middeck and subrack payloads, SMEX, MISSE-X, EV-2 DAWNAir, InFlame, Research, technology demonstrations
+
+
+
+TABLE 3.11-2 Type A Type B Type C Type D Type E Type F Example Project Technical Products Concept Documentation Fully Compliant Fully Compliant Fully Compliant Tailor Tailor Tailor Mission, Spacecraft, Ground, and Payload Architectures Fully Compliant Fully Compliant Fully Compliant Tailor Tailor Tailor Project-Level, System and Subsystem Requirements Fully Compliant Fully Compliant Fully Compliant Fully Compliant Tailor Tailor Design Documentation Fully Compliant Fully Compliant Fully Compliant Fully Compliant Tailor Tailor Operations Concept Fully Compliant Fully Compliant Fully Compliant Tailor Tailor Tailor Technology Readiness Assessment Documentation Fully Compliant Fully Compliant Fully Compliant Tailor Tailor Tailor Human Systems Integration Plan Fully Compliant Fully Compliant Fully Compliant Tailor Tailor Tailor Heritage Assessment Documentation Fully Compliant Fully Compliant Fully Compliant Tailor Tailor Tailor Safety Data Packages Fully Compliant Fully Compliant Fully Compliant Fully Compliant Tailor Tailor ELV Payload Safety Process Deliverables Fully Compliant Fully Compliant Fully Compliant Fully Compliant Fully Compliant Not Applicable Verification and Validation Report Fully Compliant Fully Compliant Fully Compliant Tailor Tailor Tailor Operations Handbook Fully Compliant Fully Compliant Fully Compliant Tailor Tailor Not Applicable End of Mission Plans Fully Compliant Fully Compliant Fully Compliant Tailor Tailor Tailor Mission Report Fully Compliant Fully Compliant Tailor Tailor Tailor Tailor
+
+
+
+
+
+Type A
+
+Type B
+
+Type C
+
+Type D
+
+Type E
+
+Type F
+
+Example Project Plan Control Plans
+
+Risk Management Plan
+
+Fully Compliant
+
+Fully Compliant
+
+Fully Compliant
+
+Tailor
+
+Tailor
+
+Not Applicable
+
+Technology Development plan
+
+Fully Compliant
+
+Fully Compliant
+
+Fully Compliant
+
+Fully Compliant
+
+Not Applicable
+
+Not Applicable
+
+Systems Engineering Management Plan
+
+Fully Compliant
+
+Fully Compliant
+
+Fully Compliant
+
+Tailor
+
+Tailor
+
+Tailor
+
+Software Management plan
+
+Fully Compliant
+
+Fully Compliant
+
+Tailor
+
+Tailor
+
+Tailor
+
+Tailor
+
+Verification and Validation Plan
+
+Fully Compliant
+
+Fully Compliant
+
+Tailor
+
+Tailor
+
+Tailor
+
+Tailor
+
+Review Plan
+
+Fully Compliant
+
+Fully Compliant
+
+Fully Compliant
+
+Tailor
+
+Tailor
+
+Tailor
+
+Integrated Logistics Support Plan
+
+Fully Compliant
+
+Fully Compliant
+
+Fully Compliant
+
+Tailor
+
+Tailor
+
+Not Applicable
+
+Science Data Management Plan
+
+Fully Compliant
+
+Fully Compliant
+
+Fully Compliant
+
+Tailor
+
+Tailor
+
+Not Applicable
+
+Integration Plan
+
+Fully Compliant
+
+Fully Compliant
+
+Fully Compliant
+
+Fully Compliant
+
+Tailor
+
+Tailor
+
+Configuration Management Plan
+
+Fully Compliant
+
+Fully Compliant
+
+Fully Compliant
+
+Fully Compliant
+
+Tailor
+
+Tailor
+
+Technology Transfer (formerly Export) Control Plan
+
+Fully Compliant
+
+Fully Compliant
+
+Fully Compliant
+
+Fully Compliant
+
+Tailor
+
+Tailor
+
+Lessons Learned Plan
+
+Fully Compliant
+
+Fully Compliant
+
+Fully Compliant
+
+Fully Compliant
+
+Tailor
+
+Tailor
+
+Human Rating Certification Package
+
+Fully Compliant
+
+Not Applicable
+
+Not Applicable
+
+Not Applicable
+
+Not Applicable
+
+Not Applicable
+
+### 3.11.6 Approvals for Tailoring
+
+
+
+
+
+ 
+
+TABLE 3.11-3 TABLE 3.11-3 Example Use of a Compliance Matrix ReqID SE NPR Section Requirement Statement Rationale Req. Owner Comply?
+
+Justification SE-05 2.1.5.2 For those requirements owned by Center Directors, the technical team shall complete the Compliance Matrix in Appendix H.2and include it in the SEMP.
+
+For programs and projects, the Compliance Matrix in Appendix H.2 is filled out showing that the program/project is compliant with the requirements of this NPR (or a particular Center’s implementation of NPR 7123.1, whichever is applicable) or any tailoring thereof is identified and approved by the Center Director or designee as part of the program/project SEMP.
+
+CD Fully Compliant SE-06 2.1.6.1 The DGA shall approve the SEMP, waiverauthorizations, and other key technical documents to ensure independent assessment of technical content.
+
+The DGA, who is often the TA, provides an approval of the SEMPs, waivers to technical requirements and other key technical document to provide assurance of the applicability and technical quality of the products.
+
+CD Fully Complaint SE-24 4.2.1 The NASA technical team shall define the engineering activities for the periods before contract award, during contract performance, and upon contract completion in the SEMP.
+
+It is important for both the government and contractor technical teams to understand what activities will be handled by which organization throughout the product life cycle. The contractor(s) will typically develop a SEMP or its equivalent to describe the technical activities in their portion of the project, but an overarching SEMP is needed that will describe all technical activities across the life cycle whether contracted or not.
+
+CD Not Applicable Project is conducted entirely in-house and therefore there are no contracts involved
+
+3.0 NASA Program /Project Life Cycle
+
+N ASA SYSTEM S EN G IN EERIN G H AN D BO O K 42
+
+## 4.0
+
+# System Design Processes
+
+T
+
+FIGURE 2.1-1
+
+
+
+
+
+FIGURE 2.1-1
+
+
+
+
+
+FIGURE 4.0-1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Once the system meets the stakeholder expectations, the study team baselines the products and prepares for the next phase. Often, intermediate levels of decomposition are validated as part of the process. In
+
+Iterate RequirementsProgram AuthorityNeeds, Goals and ObjectivesConstraintsSuccess CriteriaDevelop ConOpsStakeholder ExpectationsIterate ConOpsIterate ExpectationsDesign Solution DefinitionDerived and Allocated Requirements• Functional• Performance•Interface•Operational• Safety• “ilities”ValidateReq. SetReq. Meet ConOps?Inconsistencies - IterateGood YesRequirements DefinitionNo - IterateCompare EvaluateSuccess CriteriaIterateLowest Level?No – Recursive CycleTo Product Realization ProcessesLogical DecompositionDecomposition• Functional Flow• Temporal Flow• Behavioral• Data Flow• States and ModesDevelop ArchitectureDevelop DesignConOps
+
+FIGURE 4.0‑1 Interrelationships among the System Design Processes
+
+SYSTEM DESIGN KEYS
+
+• Successfully understanding and defining the mission objectives and the concept of operations are keys to capturing the stakeholder expectations, which will translate into quality requirements and operational efficiencies over the life cycle of the project.
+
+• Complete and thorough requirements traceability is a critical factor in successful validation of requirements.
+
+• Clear and unambiguous requirements will help avoid misunderstanding when developing the overall system and when making major or minor changes.
+
+• Document all decisions made during the development of the original design concept in the technical data package. This will make the original design philosophy and negotiation results available to assess future proposed changes and modifications against.
+
+• The validation of a design solution is a continuing recursive and iterative process during which the design solution is evaluated against stakeholder expectations.
+
+
+
+
+
+
+
+
+
+## 4.1 Stakeholder Expectations Definition
+
+
+
+
+
+
+
+4.1.1 Process Description
+
+FIGURE 4.1-1
+
+4.1.1.1 Inputs
+
+Typical inputs needed for the Stakeholder Expectations Definition Process include the following:
+
+•
+
+Initial Customer Expectations:
+
+
+
+•
+
+Other Stakeholder Expectations:
+
+
+
+
+
+•
+
+Customer Flow-down Requirements:
+
+
+
+
+
+4.1.1.2 Process Activities
+
+4.1.1.2.1
+
+A “stakeholder” is a group or individual that is affected by or has a stake in the product or project. The key players for a project/product are called the key stakeholders. One key stakeholder is always the
+
+
+
+Customer Flow-downRequirementsInitial CustomerExpectations Enabling ProductSupport StrategiesConcept of OperationsMeasures of Effectiveness Validated StakeholderExpectationsOther StakeholderExpectations From Project Establish list of stakeholdersDefine stakeholder expectations in acceptablestatements Validate that defined expectation statementsreflect bidirectional traceabilityElicit stakeholder expectationsEstablish operations concept and supportstrategiesAnalyze expectation statements for measures of effectivenessBaseline stakeholder expectationsObtain stakeholder commitments to the validated set of expectationsCapture work products from stakeholder expectations activitiesTo Technical Requirements Definition and Technical Data Management ProcessesTo Technical Requirements Definition and Configuration Management ProcessesTo Technical Requirements Definition and Requirements and Interface Management Processes FIGURE 4.1‑1 Stakeholder Expectations Definition Process
+
+  
+
+TABLE 4.1-1
+
+examples of stakeholders in the life cycle phase that should be considered.
+
+TABLE 4.1-1 Stakeholder Identification throughout the Life Cycle Life-Cycle Stage Example Stakeholders Pre-Phase A NASA Headquarters, NASA Centers, Presidential Directives, NASA advisory committees, the National Academy of Sciences Phase A Mission Directorate, customer, potential users, engineering disciplines, safety organization Phase B Customer, engineering disciplines, safety, crew, operations, logistics, production facilities, suppliers, principle investigators Phase C Customer, engineering disciplines, safety, crew, operations, logistics, production facilities, suppliers, principle investigators Phase D Customer, engineering disciplines, safety, crew, operations, training, logistics, verification team, Flight Readiness Board members Phase E Customer, system managers, operations, safety, logistics, sustaining team, crew, principle investigators, users Phase F Customer, NASA Headquarters, operators, safety, planetary protection, public 4.1.1.2.2
+
+   
+
+FIGURE 4.1-2
+
+Defining stakeholder expectations begins with the mission authority and strategic objectives that the mission is meant to achieve. Mission authority changes depending on the category of the mission. For example, science missions are usually driven by NASA Science Mission Directorate strategic plans, whereas the exploration missions may be driven by a Presidential directive. Understanding the objectives of the mission helps ensure that the project team is working toward a common vision. These goals and
+
+objectives form the basis for developing the mission, so they need to be clearly defined and articulated.
+
+**Mission GoalsOperational Drivers Measurements Mission DriversExplorationsMission ObjectivesOperational ObjectivesSuccessCriteriaDesignDrivers• Agency Strategic Plans• Announcements of Opportunity• Road Maps• Directed Missions• Science Objectives• Exploration Objectives• Technology Demonstration Objectives• Technology Development Objectives• Programmatic Objectives• Integration and Test• Launch• On-Orbit• Transfer• Surface• Science Data Distribution• Maintenance• Logistics• Etc.• Launch Date• Mission Duration• Orbit• Cost Constraints• Etc.• What measurements?• How well?• What explorations?• What goals?**
+
+FIGURE 4.1‑2 Information Flow for Stakeholder Expectations
+
+ 
+
+## NOTE:
+
+ 
+
+  4.1.1.2.3  
+
+to know who the primary stakeholders are and who has the decision authority to help resolve conflicts.
+
+Needs, Goals, and Objectives (NGOs) provide a mechanism to ensure that everyone (implementer, customer, and other stakeholders) is in agreement at the beginning of a project in terms of defining the problem that needs to be solved and its scope. NGOs are not contractual requirements or designs.
+
+    The following definitions (source: Applied Space Systems Engineering edited by Larson, Kirkpatrick, Sellers, Thomas, and Verma) are provided to help the reader interpret the NGOs contained in this product.
+
+•
+
+Need:
+
+•
+
+Goals:
+
+  •
+
+Objectives:
+
+     These stakeholder expectations are captured and are considered as initial until they can be further refined through development of the concept of operations and final agreement by the stakeholders.
+
+4.1.1.2.4              FIGURE 4.1-3      *https://nen.nasa.gov/web/se/doc-repository*
+
+100 kmLow Lunar OrbitLow EarthOrbitAscent Stage ExpendedLunarSurfaceAccessModule(LSAM) Crew Exploration VehicleEarth Departure Stage ExpendedDirect or Skip Land EntryEarthMoonLSAM Performs Lunar Orbit InjectionEarth Departure Stage FIGURE 4.1‑3 Example of a Lunar Sortie DRM Early in the Life Cycle
+
+CONCEPT OF OPERATIONS VS. OPERATIONS CONCEPT
+
+Concept of Operations Developed early in Pre-Phase A by the technical team, describes the overall high-level concept of how the system will be used to meet stakeholder expectations, usually in a time sequenced manner. It describes the system from an operational perspective and helps facilitate an understanding of the system goals. It stimulates the development of the requirements and architecture related to the user elements of the system. It serves as the basis for subsequent definition documents and provides the foundation for the long-range operational planning activities.
+
+Operations Concept A description of how the flight system and the ground system are used together to ensure that the concept of operation is reasonable. This might include how mission data of interest, such as engineering or scientific data, are captured, returned to Earth, processed, made available to users, and archived for future reference. It is typically developed by the operational team. (See NPR 7120.5.)
+
+*Appendix S* 4.1.1.2.5
+
+    4.1.1.2.6   
+
+*https://nen.nasa.gov/web/se/doc-repository* 4.1.1.2.7
+
+ 4.1.1.2.8  
+
+*Section 6.7*
+
+agreement. This agreement shows that both sides have committed to the development of this product.
+
+4.1.1.2.9 The set of stakeholder expectations (e.g., NGOs and MOEs) and the concept of operations that are agreed upon are now baselined. Any further changes will be required to go through a formal or informal (depending on the nature of the product) approval process involving both the stakeholder and the technical team.
+
+4.1.1.2.10  4.1.1.3 Outputs  • Validated Stakeholder Expectations:
+
+•
+
+Concept of Operations:
+
+ •
+
+Enabling Product Support Strategies:
+
+  •
+
+Measures of Effectiveness:
+
+Other outputs that might be generated:
+
+•
+
+Human/Systems Function Allocation:
+
+  4.1.2 Stakeholder Expectations Definition Guidance
+
+*https://nen.*
+
+*nasa.gov/web/se/doc-repository*
+
+ • Concept of Operations (including examples), • protection of space assets, and • identification of stakeholders for each phase.
+
+## 4.2 Technical Requirements Definition
+
+
+
+
+
+
+
+
+
+**NOTE:**
+
+
+
+
+
+
+
+4.2.1 Process Description
+
+FIGURE 4.2-1
+
+
+
+
+
+4.2.1.1 Inputs
+
+Typical inputs needed for the requirements process include the following:
+
+•
+
+Baselined Stakeholder Expectations:
+
+
+
+•
+
+Baselined Concept of Operations:
+
+
+
+
+
+
+
+•
+
+Baselined Enabling Support Strategies:
+
+
+
+•
+
+Measures of Effectiveness:
+
+
+
+Other inputs that might be useful in determining the technical requirements:
+
+•
+
+Human/Systems Function Allocation:
+
+  
+
+Technical PerformanceMeasures Baselined Stakeholder Expectations Validated TechnicalRequirements Baselined Concept ofOperations Measures ofEffectiveness Baselined EnablingSupport Strategies From StakeholderExpectations Definitionand Configuration Management Processes Measures ofPerformance To Logical Decompositionand Technical DataManagement ProcessesTo TechnicalAssessment ProcessTo Logical Decompositionand Requirementsand Interface ManagementProcesses Define performancerequirements for eachdefined functional andbehavioral expectation performance measures Define design andproduct constraints Validate technicalrequirements Establish technicalrequirements baseline Define functional and behavioral expectation intechnical terms Analyze scope of problemDefine technical requirements in acceptable “shall” statementsDefine measures ofDefine technicalperformance for eachmeasure of effectivenessCapture work products from technical requirements definition activities FIGURE 4.2‑1 Technical Requirements Definition Process
+
+4.2.1.2 Process Activities 4.2.1.2.1   • Defining constraints that the design needs to adhere to or that limit how the system will be used. The constraints typically cannot be changed based on trade-off analyses.
+
+• Identifying those elements that are already under design control and cannot be changed. This helps FIGURE 4.2‑1 Technical Requirements Definition Process
+
+establish those areas where further trades will be made to narrow potential design solutions.
+
+•  • Defining functional and behavioral expectations for the range of anticipated uses of the system as identified in the ConOps. The ConOps describes how the system will be operated and the possible use-case scenarios.
+
+EXAMPLE OF FUNCTIONAL AND PERFORMANCE REQUIREMENTS
+
+Initial Function Statement The Thrust Vector Controller (TVC) shall provide vehicle control about the pitch and yaw axes.
+
+This statement describes a high-level function that the TVC must perform. The technical team needs to transform this statement into a set of design-to functional and performance requirements.
+
+Functional Requirements with Associated Performance Requirements • The TVC shall gimbal the engine a maximum of 9 degrees, ± 0.1 degree.
+
+• The TVC shall gimbal the engine at a maximum rate of 5 degrees/second ± 0.3 degrees/second.
+
+• The TVC shall provide a force of 40,000 pounds, ± 500 pounds.
+
+• The TVC shall have a frequency response of 20 Hz, ± 0.1 Hz.
+
+4.2.1.2.2  FIGURE 4.2-2  • Functional requirements define what functions need to be performed to accomplish the objectives.
+
+• Performance requirements define how well the system needs to perform the functions.
+
+ 
+
+**Program RequirementsProject RequirementsMission DirectorateImposed RequirementsProgramImposed RequirementsSelf-Imposed DerivedRequirementsSelf-Imposed DerivedRequirementsLikewise flow to Lower Level Systems“Programmatic” RequirementsTechnical RequirementsOwned by Program/ ProjectOwned by Technical AuthorityAllSee note*OwnershipType Flow Ex: At least one major element shall be provided by the international community.Ex: The spacecraft shall provide a direct Earth entry capability for 11500 m/s or greater.Ex: The spacecraft shall provide a direct Earth entry capability for 11500 m/s or greater.Ex: The system shall have a 1.4 factor of safety* Requirements invoked by OCE, OSMA and OCHMO directives, technical standards and Center institutional requirements** FIGURE 4.2-2 Flow, Type and Ownership of Requirements
+
+## NOTE:
+
+
+
+FIGURE 4.2-3 4.2.1.2.3
+
+ 
+
+*Appendix C Appendix E*
+
+
+
+TABLE 4.2-1 SystemPerformanceRequirementsEnvironmentaland Other DesignRequirementsand Guidelines InstitutionalConstraintsAssumptionsImplementingOrganizationsCustomerProgrammatics:• Cost• Schedule• Constraints• Mission ClassificationMissionObjectives SystemFunctionalRequirements Subsystem AFunctional andPerformanceRequirementsSubsystemCMissionRequirements AllocatedRequirementsDerivedRequirementsSubsystem XFunctional andPerformanceRequirementsAllocatedRequirementsDerivedRequirementsSubsystemB...MissionAuthority FIGURE 4.2‑3 The Flowdown of Requirements
+
+
+
+TABLE 4.2-2 4.2.1.2.4
+
+An important part of requirements definition is the validation of the requirements against the stakeholder
+
+TABLE 4.2-1 Benefits of Well-Written Requirements Benefit Rationale Establish the basis for agreement between the stakeholders and the developers on what the product is to do The complete description of the functions to be performed by the product specified in the requirements will assist the potential users in determining if the product specified meets their needs or how the product should be modified to meet their needs. During system design, requirements are allocated to subsystems (e.g., hardware, software, and other major components of the system), people, or processes.
+
+Reduce the development effort because less rework is required to address poorly written, missing, and misunderstood requirements The Technical Requirements Definition Process activities force the relevant stakeholders to rigorously consider all of the requirements before design begins. Careful review of the requirements can reveal omissions, misunderstandings, and inconsistencies early in the development cycle when these problems are easier to correct thereby reducing costly redesign, remanufacture, recoding, and retesting in later life cycle phases.
+
+Provide a basis for estimating costs and schedules The description of the product to be developed as given in the requirements is a realistic basis for estimating project costs and can be used to evaluate bids or price estimates.
+
+Provide a baseline for verification and validation Organizations can develop their verification and validation plans much more productively from a good requirements document. Both system and subsystem test plans and procedures are generated from the requirements. As part of the development, the requirements document provides a baseline against which compliance can be measured. The requirements are also used to provide the stakeholders with a basis for acceptance of the system.
+
+Facilitate transfer The requirements make it easier to transfer the product. Stakeholders thus find it easier to transfer the product to other parts of their organization, and developers find it easier to transfer it to new stakeholders or reuse it.
+
+Serve as a basis for enhancement The requirements serve as a basis for later enhancement or alteration of the finished product.
+
+TABLE 4.2‑2 Requirements Metadata Item Function Requirement ID Provides a unique numbering system for sorting and tracking.
+
+Rationale Provides additional information to help clarify the intent of the requirements at the time they were written. (See “Rationale” box below on what should be captured.) Traced from Captures the bidirectional traceability between parent requirements and lower level (derived) requirements and the relationships between requirements.
+
+Owner Person or group responsible for writing, managing, and/or approving changes to this requirement.
+
+Verification method Captures the method of verification (test, inspection, analysis, demonstration) and should be determined as the requirements are developed.
+
+Verification lead Person or group assigned responsibility for verifying the requirement.
+
+Verification level Specifies the level in the hierarchy at which the requirements will be verified (e.g., system, subsystem, element).
+
+expectations, the mission objectives and constraints, the concept of operations, and the mission success criteria. Validating requirements can be broken into six steps:
+
+RATIONALE
+
+The rationale should be kept up to date and include the following information:
+
+• Reason for the Requirement: Often the reason for the requirement is not obvious, and it may be lost if not recorded as the requirement is being documented. The reason may point to a constraint or concept of operations. If there is a clear parent requirement or trade study that explains the reason, then it should be referenced.
+
+• Document Assumptions: If a requirement was written assuming the completion of a technology development program or a successful technology mission, the assumption should be documented.
+
+• Document Relationships: The relationships with the product’s expected operations (e.g., expectations about how stakeholders will use a product) should be documented. This may be done with a link to the ConOps.
+
+• Document Design Constraints: Constraints imposed by the results from decisions made as the design evolves should be documented. If the requirement states a method of implementation, the rationale should state why the decision was made to limit the solution to this one method of implementation.
+
+1.
+
+Are the Requirements Written Correctly?
+
+
+
+2.
+
+Are the Requirements Technically Correct?
+
+   
+
+3.
+
+Do the Requirements Satisfy Stakeholders?
+
+4.
+
+Are the Requirements Feasible?
+
+ 
+
+5.
+
+Are the Requirements Verifiable?
+
+
+
+6.
+
+Are the Requirements Redundant or Over specified?
+
+ 
+
+     4.2.1.2.5    
+
+*https://nen.*
+
+*nasa.gov/web/se/doc-repository* 4.2.1.2.6
+
+
+
+*Section 6.7* 4.2.1.2.7
+
+ 4.2.1.3 Outputs •
+
+Validated Technical Requirements:
+
+ •
+
+Measures of Performance:
+
+
+
+*https://nen.nasa.gov/web/*
+
+*se/doc-repository*
+
+•
+
+Technical Performance Measures:
+
+*https://nen.nasa.gov/web/*
+
+*se/doc-repository*
+
+4.2.2 Technical Requirements Definition Guidance
+
+*https://nen.nasa.gov/*
+
+*web/se/doc-repository*
+
+•
+
+types of requirements,
+
+•
+
+requirements databases, and
+
+•
+
+the use of technical standards.
+
+## 4.3 Logical Decomposition
+
+
+
+The Logical Decomposition Process is used to:
+
+•
+
+
+
+•
+
+Decompose the parent requirements into a set of logical decomposition models and their associated sets of derived technical requirements for input to the Design Solution Definition Process.
+
+4.3.1 Process Description
+
+FIGURE 4.3-1
+
+
+
+4.3.1.1 Inputs
+
+Typical inputs needed for the Logical Decomposition Process include the following:
+
+•
+
+Technical Requirements:
+
+
+
+•
+
+Technical Measures:
+
+
+
+
+
+*https://nen.*
+
+*nasa.gov/web/se/doc-repository*
+
+4.3.1.2 Process Activities
+
+4.3.1.2.1
+
+The key first step in the Logical Decomposition Process is establishing the system architecture model. The system architecture activity defines the
+
+
+
+*From Technicaland ConfigurationManagemenRequirements DefinitionRequirements Definitiont ProcessesTo Technical DataManagement ProcessDerived Technical RequirementsLogical DecompositionWork ProductsBaselined Technical RequirementsMeasures of PerformanceTo Design Solution and Requirements and Interface Management ProcessesLogical DecompositionModelsFrom Technicaland Technical DataManagement ProcessesTo Design Solutionand ConfigurationManagement Processes Define one or more logicaldecomposition models Allocate technical requirements tological decomposition models to forma set of derived technical requirementsResolve derived technical requirements conflicts Validate the resulting set of derivedtechnical requirements Establish the derived technicalrequirements baselineCapture work products from logicaldecomposition activities* FIGURE 4.3‑1 Logical Decomposition Process
+
+     Focusing on the project’s ends, top-level (or parent) requirements, and constraints, the system architect should develop at least one, but preferably multiple, FIGURE 4.3‑1 Logical Decomposition Process
+
+       
+
+FIGURE 2.5-1
+
+ 4.3.1.2.2    Three key steps in performing functional analysis are:
+
+1.
+
+Translate top-level requirements into functions that should be performed to accomplish the requirements.
+
+2.
+
+Decompose and allocate the functions to lower levels of the product breakdown structure.
+
+3.
+
+Identify and describe functional and subsystem interfaces.
+
+ 
+
+
+
+
+
+
+
+4.3.1.2.3
+
+The other work products generated during the Logical Decomposition Process should be captured along with key decisions made, supporting decision rationale and assumptions, and lessons learned in performing the activities.
+
+4.3.1.3 Outputs
+
+Typical outputs of the Logical Decomposition Process include the following:
+
+•
+
+Logical Decomposition Models:
+
+
+
+•
+
+Derived Technical Requirements:
+
+•
+
+Logical Decomposition Work Products:
+
+4.3.2 Logical Decomposition Guidance
+
+*https://nen.nasa.gov/web/se/doc-repository*
+
+
+
+•
+
+Product Breakdown Structures and
+
+•
+
+Functional Analysis Techniques.
+
+## 4.4 Design Solution Definition
+
+
+
+
+
+the product and to conduct product verification. This process may be further refined depending on whether there are additional subsystems of the end product that need to be defined.
+
+4.4.1 Process Description
+
+FIGURE 4.4-1 ** To Implementation ProcessBaselined LogicalDecompositionModels System-Speci dRequirements To Requirements andInterface Management ProcessesInitial Su SpecificationsbsystemTo Stakeholder Expectations Definitionand Requirements and InterfaceManagement ProcessesProduct ValidationPlan To Product Validation ProcessLogistics and OperateTo ProceduresTo Technical Data Management ProcessEnabling ProductRequirementsTo Stakeholder Expectations Definitionor Product Implementation andRequirements and Interface Management Processes From Logical Decomposition andConfiguration ManagementProcessesInitiate developmentof enabling products No YesInitiate development of next lower levelproducts Define alternative design solutionsAnalyze each alternative design solutionSelect best design solution alternativeGenerate full design description of theselected solutionVerifyCapture work products from design solution definition activitiesthe fully defined design solutionBaseline design solution specified requirementsand design descriptions No*Needlower levelproduct?Yes*Enablingproductexists? End Product–SpecifiedRequirements Product VerificationPlan To Product Verification ProcessBaselined DerivedTechnicalRequirements* FIGURE 4.4‑1 Design Solution Definition Process 4.4.1.1 Inputs
+
+ •
+
+Technical Requirements:
+
+•
+
+Logical Decomposition Models:
+
+
+
+*Appendix B*
+
+4.4.1.2 Process Activities 4.4.1.2.1   FIGURE 4.4-2 
+
+Recognize need/opportunityIdentify and quantify goalsCreate conceptsIdentify and quantify goalsIdentify and quantify goalsCreate conceptsCreate conceptsCreate conceptsIdentify and quantify goalsDo trade studiesDo trade studiesDo trade studiesSelectdesignSelectdesignSelectdesignSelectdesignDo trade studiesIncreaseresolutionPerformmissionImplement decisionsIncreaseresolutionIncreaseresolution FIGURE 4.4‑2 The Doctrine of Successive Refinement FIGURE 4.4-2
+
+  
+
+FIGURE 4.0-1 FIGURE 4.4-2
+
+  
+
+*https://nen.nasa.gov/web/ se/doc-repository*
+
+As the system is realized, its particulars become clearer—but also harder to change. See the rising
+
+FIGURE 2.5‑1
+
+  4.4.1.2.2       After identifying the technology gaps existing in a given design concept, it is frequently necessary to undertake technology development in order to ascertain viability. Given that resources will always be limited, it is necessary to pursue only the most promising technologies that are required to enable a given concept.
+
+       
+
+ 
+
+*Appendix G* FIGURE 4.4-2
+
+    4.4.1.2.3    •  •  • Rank the alternatives according to appropriate selection criteria.
+
+• Drop less promising alternatives and proceed to the next level of resolution, if needed.
+
+  
+
+
+
+*Section 6.8*
+
+          4.4.1.2.4 
+
+*Section 6.8*
+
+ 
+
+FIGURE 4.4-3
+
+BCALife-Cycle Cost, Expressed in Constant DollarsSome Aspect of Effectiveness,Expressed in Quantitative Units FIGURE 4.4‑3 A Quantitative Objective Function, Dependent on Life Cycle Cost and All Aspects of Effectiveness Note: The different shaded areas indicate different levels of uncertainty. Dashed lines represent constant values of objective function (cost-effectiveness). Higher values of costeffectiveness are achieved by moving toward upper left. A, B, and C are design concepts with different risk patterns.
+
+ 
+
+FIGURE 4.4-3
+
+        4.4.1.2.5
+
+FIGURE 4.4-2
+
+
+
+of the design to the requirements and ConOps; it should also have sufficient depth to support cost and operations modeling and to convince a review team of a feasible design with performance, cost, and risk margins.
+
+      At this point in the systems engineering process, there is a logical branch point. For those issues for which the process of successive refinement has proceeded far enough, the next step is to implement the decisions at that level of resolution. For those issues that are still insufficiently resolved, the next step is to refine the development further.
+
+4.4.1.2.6     FIGURE 4.4-1 *Section 4.4.1.3* 4.4.1.2.7  
+
+ The verification should show that the design solution definition:
+
+• Is realizable within the constraints imposed on the technical effort;
+
+• Has specified requirements that are stated in acceptable statements and have bidirectional traceability with the technical requirements and stakeholder expectations; and • Has decisions and assumptions made in forming the solution consistent with its set of technical requirements and identified system product and service constraints.
+
+
+
+*Section 5.3* 4.4.1.2.8 FIGURE 4.0-1
+
+   
+
+*Section 5.4* 4.4.1.2.9
+
+   Therefore, an important activity in the Design Solution Definition Process is the identification of the enabling products and personnel that will be required
+
+ An environmental test chamber is an example of an enabling product whose use would be acquired at an appropriate time during the test phase of a space flight system.
+
+ 4.4.1.2.10
+
+FIGURE 4.0-1
+
+      4.4.1.3 Outputs  As mentioned earlier, the scope and content of the full design description should be appropriate for the product life cycle phase, the phase success criteria, and the product position in the PBS.
+
+Outputs of the Design Solution Definition Process include the following:
+
+•
+
+The System Specification:
+
+
+
+ •
+
+The System External Interface Specifications:
+
+ •
+
+The End-Product Specifications:
+
+  •
+
+The End-Product Interface Specifications:
+
+•
+
+Initial Subsystem Specifications:
+
+ •
+
+Enabling Product Requirements:
+
+   •
+
+Product Verification Plan:
+
+   •
+
+Product Validation Plan:
+
+ •
+
+Logistics and Operate-to Procedures:
+
+  Other outputs may include:
+
+•
+
+Human Systems Integration Plan:
+
+4.4.2 Design Solution Definition Guidance
+
+*https://nen.nasa.*
+
+*gov/web/se/doc-repository*
+
+• technology assessment, • human capability assessment, and • integrating engineering specialties into the SE process.
+
+## 5.0
+
+# Product Realization
+
+T
+
+
+
+FIGURE 2.1-1
+
+FIGURE 2.1-1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+FIGURE
+
+5.0-1
+
+
+
+The next sections describe each of the five product realization processes and their associated products for a given NASA mission.
+
+**DESIGN REALIZATIONPRODUCTTRANSITIONPROCESSEVALUATION PROCESSES• Acquire• Make/Code• ReuseProductImplementationProductIntegrationProductVerificationProductValidationProductTransition• Assembly• FunctionalEvaluation• Functional• Environmental• Operational Testing in Integration& Test Environment• Operational Testing in MissionEnvironment• Delivery to NextHigher Level in PBS• Delivery to OperationalSystem**
+
+FIGURE 5.0-1 Product Realization
+
+PRODUCT REALIZATION KEYS
+
+• Define and execute production activities.• Generate and manage requirements for off-the-shelf hardware/software products as for all other products.• Understand the differences between verification testing and validation testing.• Consider all customer, stakeholder, technical, programmatic, and safety requirements when evaluating the input necessary to achieve a successful product transition.• Analyze for any potential incompatibilities with interfaces as early as possible.• Completely understand and analyze all test data for trends and anomalies.• Understand the limitations of the testing and any assumptions that are made.• Ensure that a reused product meets the verification and validation required for the relevant system in which it is to be used, as opposed to relying on the original verification and validation it met for the system of its original use. Then ensure that it meets the same verification and validation as a purchased product or a built product. The “pedigree” of a reused product in its original application should not be relied upon in a different system, subsystem, or application.
+
+## 5.1
+
+## Product Implementation
+
+Product implementation is the first process encoun
+
+
+
+tered in the SE engine that begins the movement
+
+from the bottom of the product hierarchy up towards
+
+the Product Transition Process. This is where the plans, designs, analysis, requirements development, and drawings are realized into actual products.
+
+
+
+hardware, software, models, or studies to generate a product appropriate for the phase of the life cycle. The product should satisfy the design solution and its specified requirements.
+
+  5.1.1 Process Description
+
+FIGURE 5.1-1 5.1.1.1 Inputs FIGURE 5.1-1 End ProductDocuments andManualsFrom ConfigurationManagement ProcessDesired EndProduct To ProductVerification ProcessEnd Product DesignSpecifications andConfigurationDocumentation ProductImplementation–Enabling Products To Technical DataManagement ProcessProductImplementationWork Products From existingresources or ProductTransition ProcessRequired RawMaterials From existingresources orexternal sources Make the specified end productCapture work products from productimplementation activitiesPrepare to conduct implementationIf implemented by buying:Participate in purchaseof specified end productPrepare appropriateproduct support documentation If implemented byreuse:Participate in acquiringthe reuse end product If implemented by making:Evaluate readiness ofproduct implementation–enabling products FIGURE 5.1-1 Product Implementation Process
+
+•
+
+Inputs If Purchasing the End Product:
+
+ 
+
+•
+
+Inputs If Making/Coding the End Product:
+
+  •
+
+Inputs Needed If Reusing an End Product:
+
+ •
+
+Enabling Products:
+
+  5.1.1.2 Process Activities Implementing the product can take one of three forms:
+
+1.
+
+Purchase/buy
+
+2.
+
+Make/code
+
+3.
+
+Reuse
+
+FIGURE 5.1-1
+
+  5.1.1.2.1      
+
+5.1.1.2.2 Purchase the Product        The NASA technical team should also ensure that any enabling products necessary to provide test, operations, maintenance, and disposal support for the product are also ready or provided as defined in the contract.
+
+
+
+Make/Code the Product
+
+   
+
+     
+
+Reuse
+
+      Special arrangements may need to be made or forms such as nondisclosure agreements may need to be acquired before the reuse product can be received.
+
+
+
+
+
+
+
+
+
+
+
+5.1.1.2.3
+
+
+
+
+
+
+
+5.1.1.3 Outputs
+
+•
+
+End Product for Verification:
+
+•
+
+End Product Documents and Manuals:
+
+•
+
+Product Implementation Work Products:
+
+The process is complete when the following activities have been accomplished:
+
+•
+
+End products are fabricated, purchased, or reuse modules are acquired.
+
+•
+
+End products are reviewed, checked, and ready for verification.
+
+•
+
+Procedures, decisions, assumptions, anomalies, corrective actions, lessons learned, etc., resulting from the make/buy/reuse are recorded.
+
+5.1.2 Product Implementation Guidance
+
+*https://nen.*
+
+*nasa.gov/web/se/doc-repository*
+
+
+
+•
+
+buying off-the-shelf products and
+
+•
+
+the need to consider the heritage of products.
+
+## 5.2 Product Integration
+
+Product integration is a key activity of the systems engineer. Product integration is the engineering of the subsystem interactions and their interactions with the system environments (both natural and induced). Also in this process, lower-level products are assembled into higher-level products and checked
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+
+*Appendix H*
+
+ 5.2.1 Process Description
+
+FIGURE 5.2-1
+
+ 5.2.1.1 Inputs •
+
+Lower-level products to be integrated:
+
+•
+
+End product design specifications and config  uration documentation:
+
+ •
+
+Product integration-enabling products:
+
+ 5.2.1.2 Process Activities  
+
+Product Documentsand Manuals To ProductVerification ProcessLower LevelProducts to BeIntegrated End Product DesignSpecifications andConfigurationDocumentation Product Integration–Enabling ProductsTo Technical DataManagement ProcessFrom ProductTransition ProcessFrom ConfigurationManagement ProcessFrom existingresources or ProductTransition ProcessIntegrated ProductProduct IntegrationWork Products Confirm that received productshave been validated Prepare the integration environmentfor assembly and integrationAssemble and integrate thereceived products into the desiredend productObtain lower level products forassembly and integration Capture work products from product integration activitiesPrepare to conduct productintegrationPrepare appropriate productsupport documentation FIGURE 5.2-1 Product Integration Process 5.2.1.2.1
+
+       
+
+ 5.2.1.2.2  5.2.1.2.3   5.2.1.2.4    5.2.1.2.5   Functional testing of the assembled or integrated unit is conducted to ensure that assembly is ready to enter verification testing and ready to be integrated into the next level. Typically, all or key representative functions are checked to ensure that the assembled system is functioning as expected. Formal product verification and validation will be performed in the next process.
+
+5.2.1.2.6  5.2.1.2.7  
+
+5.2.1.3 Outputs
+
+The following are typical outputs from this process and destinations for the products from this process:
+
+•
+
+Integrated product(s)
+
+•
+
+Documentation and manuals
+
+•
+
+Work products
+
+
+
+
+
+
+
+
+
+
+
+
+
+5.2.2 Product Integration Guidance
+
+*https://nen.nasa.*
+
+*gov/web/se/doc-repository*
+
+•
+
+product integration strategies,
+
+•
+
+the relationship to product implementation,
+
+•
+
+product integration support,
+
+•
+
+product integration of the design solution,
+
+•
+
+system analysis, and
+
+•
+
+interface system integration.
+
+## 5.3 Product Verification
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  DIFFERENCES BETWEEN VERIFICATION AND VALIDATION TESTING
+
+Testing is a detailed evaluation method of both verification and validation Verification Testing: Verification testing relates back to the approved requirements set (such as an SRD) and can be performed at different stages in the product life cycle. Verification tests are the official “for the record” testing performed on a system or element to show that it meets its allocated requirements or specifications including physical and functional interfaces. Verification tests use instrumentation and measurements and are generally accomplished by engineers, technicians, or operator-maintainer test personnel in a controlled environment to facilitate failure analysis.
+
+Validation Testing: Validation relates back to the ConOps document. Validation testing is conducted under realistic conditions (or simulated conditions) on any end product to determine the effectiveness and suitability of the product for use in mission operations by typical users and to evaluate the results of such tests. It ensures that the system is operating as expected when placed in a realistic environment.
+
+5.3.1 Process Description
+
+FIGURE 5.3-1
+
+ 5.3.1.1 Inputs Key inputs to the process are:
+
+•
+
+The product to be verified:
+
+ •
+
+Verification plan:
+
+ •
+
+Specified requirements baseline:
+
+•
+
+Enabling products:
+
+  
+
+DIFFERENCES BETWEEN VERIFICATION, QUALIFICATION, ACCEPTANCE AND CERTIFICATION
+
+Verification: Verification is a formal process, using the method of test, analysis, inspection or demonstration, to confirm that a system and its associated hardware and software components satisfy all specified requirements. The Verification program is performed once regardless of how many flight units may be generated (as long as the design doesn’t change).
+
+Qualification: Qualification activities are performed to ensure that the flight unit design will meet functional and performance requirements in anticipated environmental conditions. A subset of the verification program is performed at the extremes of the environmental envelope and will ensure the design will operate properly with the expected margins. Qualification is performed once regardless of how many flight units may be generated (as long as the design doesn’t change).
+
+Acceptance: smaller subset of the verification program is selected as criteria for the acceptance program. The selected Acceptance activities are performed on each of the flight units as they are manufactured and readied for flight/use. An Acceptance Data Package is prepared for each of the flight units and shipped with the unit. The acceptance test/analysis criteria are selected to show that the manufacturing/workmanship of the unit conforms to the design that was previously verified/qualified. Acceptance testing is performed for each flight unit produced.
+
+Certification: Certification is the audit process by which the body of evidence that results from the verification activities and other activities are provided to the appropriate certifying authority to indicate the design is certified for flight/use. The Certification activity is performed once regardless of how many flight units may be generated.
+
+5.3.1.2 Process Activities     
+
+Product VerificationResultsProduct VerificationReport From ProductImplementation orProduct Integration ProcessEnd Productto Be VerifiedProduct VerificationPlan Specified RequirementsBaseline Product VerificationEnabling ProductsTo TechnicalAssessment ProcessVerified End Product To ProductValidation ProcessTo Technical DataManagement ProcessFrom ConfigurationManagement ProcessFrom existingresources or ProductTransition Process Product VerificationWork Products Perform the productverificationAnalyze the outcomes ofthe product verificationCapture work products fromproduct verification activitiesPrepare a productverification reportPrepare to conduct productverification FIGURE 5.3-1 Product Verification Process
+
+•
+
+»
+
+The type of flight article involved (e.g., an experiment, payload, or launch vehicle).
+
+»
+
+For missions required to follow NPR 7120.5, NASA Space Flight Program and Project Management Requirements, NASA payload classification (NPR 8705.4, Risk Classification for NASA Payloads) guidelines are intended to serve as a starting point for establishing the formality of verification approaches that can be adapted to the needs of a specific project based on the “A–D” payload classification. Further flexibility is imparted to projects following NPR 7120.8, NASA Research and Technology Program and Project Management Requirements.
+
+»
+
+ 
+
+»
+
+
+
+ • Availability of verification facilities/sites and transportation assets to move an article from one location to another (when needed). This requires coordination with the Integrated Logistics Support (ILS) engineer.
+
+• Availability of appropriately trained users for interaction with systems having human interfaces.
+
+• Acquisition strategy; i.e., in-house development or system contract. A NASA field Center can often shape a contractor’s verification process through the project’s SOW.
+
+• Degree of design heritage and hardware/software reuse.
+
+5.3.1.2.1  When operator or other user interaction is involved, it is important to ensure that humans are properly represented in the verification activities. This includes physical size, skills, knowledge, training, clothing, special gear, and tools. Note: Testing that includes representatives of the human in the system is often referred to as “human-in-the-loop” testing.
+
+## NOTE:
+
+    TABLE 5.3-1
+
+ 
+
+METHODS OF VERIFICATION
+
+Analysis: The use of mathematical modeling and analytical techniques to predict the suitability of a design to stakeholder expectations based on calculated data or data derived from lower system structure end product verifications. Analysis is generally used when a prototype; engineering model; or fabricated, assembled, and integrated product is not available. Analysis includes the use of modeling and simulation as analytical tools. A model is a mathematical representation of reality. A simulation is the manipulation of a model. Analysis can include verification by similarity of a heritage product.
+
+Demonstration: Showing that the use of an end product achieves the individual specified requirement. It is generally a basic confirmation of performance capability, differentiated from testing by the lack of detailed data gathering. Demonstrations can involve the use of physical models or mock-ups; for example, a requirement that all controls shall be reachable by the pilot could be verified by having a pilot perform flight-related tasks in a cockpit mock-up or simulator. A demonstration could also be the actual operation of the end product by highly qualified personnel, such as test pilots, who perform a one-time event that demonstrates a capability to operate at extreme limits of system performance, an operation not normally expected from a representative operational pilot.
+
+Inspection: The visual examination of a realized end product. Inspection is generally used to verify physical design features or specific manufacturer identification. For example, if there is a requirement that the safety arming pin has a red flag with the words “Remove Before Flight” stenciled on the flag in black letters, a visual inspection of the arming pin flag can be used to determine if this requirement was met. Inspection can include inspection of drawings, documents, or other records.
+
+Test: The use of an end product to obtain detailed data needed to verify performance or provide sufficient information to verify performance through further analysis. Testing can be conducted on final end products, breadboards, brassboards, or prototypes. Testing produces data at discrete points for each specified requirement under controlled conditions and is the most resource-intensive verification technique. As the saying goes, “Test as you fly, and fly as you test.” (See Section 5.3.2.5 in the NASA Expanded Guidance for Systems Engineering at https://nen.nasa.gov/web/se/doc-repository)
+
+Outcomes of verification preparation include the following:
+
+•   •  • The resources (funding, facilities, and people including appropriately skilled operators) needed
+
+TABLE 5.3-1 Example information in Verification Procedures and Reports Verification Procedure Verification Report Nomenclature and identification of the test article or material;
+
+Verification objectives and the degree to which they were met;
+
+Identification of test configuration and any differences from flight operational configuration;
+
+Description of verification activity including deviations from nominal results (discrepancies);
+
+Identification of objectives and criteria established for the verification by the applicable requirements specification;
+
+Test configuration and differences from the flight operational configuration;
+
+Characteristics and design criteria to be inspected, demonstrated, or tested, including values with tolerances for acceptance or rejection;
+
+Specific result of each activity and each procedure, including the location or link to verification data/artifacts;
+
+Description, in sequence, of steps, operations, and observations to be taken;
+
+Specific result of each analysis including those associated with test-data analysis;
+
+Identification of computer software required;
+
+Test performance data tables, graphs, illustrations, and pictures;
+
+Identification of measuring, test, and recording equipment to be used, specifying range, accuracy, and type;
+
+Summary of nonconformance/discrepancy reports, including dispositions with approved corrective actions and planned retest activity if available;
+
+Provision for recording equipment calibration or software version data;
+
+Conclusions and recommendations relative to the success of verification activity;
+
+Credentials showing that required computer test programs/support equipment and software have been verified prior to use with flight operational hardware;
+
+Status of Government-Supplied Equipment (GSE) and other enabling support equipment as affected by test;
+
+Any special instructions for operating data recording equipment or other automated test equipment as applicable;
+
+Copy of the as-run procedure (may include redlines); and Layouts, schematics, or diagrams showing identification, location, and interconnection of test equipment, test articles, and measuring points and any other associated design or configuration work products;
+
+Authentication of test results and authorization of acceptability.
+
+Identification of hazardous situations or operations;
+
+Precautions and safety instructions to ensure safety of personnel and prevent degradation of test articles and measuring equipment;
+
+Environmental and/or other conditions to be maintained with tolerances;
+
+Constraints on inspection or testing;
+
+Provision or instructions for the recording of verification results and other artifacts;
+
+Special instructions for instances of nonconformance and anomalous occurrences or results; and Specifications for facility, equipment maintenance, housekeeping, quality inspection, and safety and handling requirements before, during, and after the total verification activity.
+
+to conduct the verification are available according to the verification plans and schedules; and •  5.3.1.2.2              
+
+FIGURE 5.3-2
+
+
+
+
+
+## EXTERNALSTIMULIInstrumentSet B X-raysInfraredVisibleUltravioletMicrowaveInstrumentSet ASpacecraftExecutionCommunityMissionPlanningDataCaptureSoftwareLoadsCommandGeneration PlanningArchivalTransmissionAnalysisUplink ProcessDownlink ProcessEXTERNALSYSTEMSGROUND SYSTEM FLIGHT SYSTEM
+
+FIGURE 5.3-2 Example of End-to-End Data Flow for a Scientific Satellite Mission
+
+         Outcomes of performing product verification include the following:
+
+• A verified product is established with supporting confirmation that the product (in the appropriate FIGURE 5.3-2 Example of End-to-End Data Flow for a Scientific Satellite Mission
+
+ •  • A determination is made that the verification product was appropriately integrated with the enabling products and verification environment.
+
+5.3.1.2.3      Discrepancies and nonconforming products should be recorded and reported for follow-up action and closure. Verification results should be recorded in a requirements compliance or verification matrix or other method developed during the Technical Requirements Definition Process to trace compliance for each product requirement. Waivers needed as a result of verification to request relief from or modify a requirement are identified.
+
+## NOTE:
+
+  Outcomes of analyzing the verification results include the following:
+
+• Product nonconformance (not compliant with product requirement) is identified.
+
+•   •  • Waivers for nonconforming products are accepted.
+
+• Discrepancy and nonconformance reports including corrective actions have been generated as needed.
+
+• The verification report is completed.
+
+Re-engineering
+
+  Re-engineering could require the reapplication of the system design processes (Stakeholder Expectations Definition Process, Technical Requirements Definition Process, Logical Decomposition Process, and Design Solution Definition Process).
+
+5.3.1.2.4 Verification work products (inputs to the Technical Data Management Process) take many forms and involve many sources of information. The capture and recording of verification results and related data is a very important, but often underemphasized, step in the Product Verification Process.
+
+Verification results, peer review reports, anomalies, and any corrective action(s) taken should be captured, as should all relevant results from the application of the Product Verification Process (related decisions, rationale for the decisions made, assumptions, and lessons learned).
+
+Outcomes of capturing verification work products include the following:
+
+•   • Variations, anomalies, and out-of-compliance conditions have been identified and documented, including the actions taken to resolve them.
+
+• Proof that the realized end product did or did not satisfy the specified requirements is documented.
+
+•
+
+»
+
+recorded test/verification results/data;
+
+»
+
+version of the set of specified requirements used;
+
+»
+
+version of the product verified;
+
+»
+
+
+
+»
+
+results of each verification including pass or fail declarations; and
+
+»
+
+discrepancies.
+
+5.3.1.3 Outputs Key outputs from the process are:
+
+•
+
+Verified product ready for validation:
+
+•
+
+Product verification results:
+
+•
+
+Product verification report(s):
+
+ •
+
+Product verification work products:
+
+
+
+
+
+5.3.2 Product Verification Guidance
+
+*https://nen.nasa.*
+
+*gov/web/se/doc-repository*
+
+•
+
+the verification approach,
+
+•
+
+verification in the life cycle,
+
+•
+
+verification procedures,
+
+•
+
+verification reports
+
+•
+
+end-to-end testing,
+
+•
+
+use of modeling and simulations, and
+
+•
+
+hardware-in-the-loop testing.
+
+## 5.4 Product Validation
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*Section 2.4*
+
+5.4.1 Process Description
+
+FIGURE 5.4-1
+
+
+
+5.4.1.1 Inputs
+
+Key inputs to the process are:
+
+•
+
+End product to be validated:
+
+
+
+
+
+•
+
+Validation plan:
+
+
+
+•
+
+Baselined stakeholder expectations:
+
+
+
+•
+
+Any enabling products:
+
+or other items needed to perform the Product Validation Process.
+
+5.4.1.2 Process Activities The Product Validation Process demonstrates that the end product satisfies its stakeholder (customer and other interested party) expectations (MOEs) within the intended operational environments, with validation performed by anticipated operators and/or users whenever possible. The method of validation is a function of the life cycle phase and the position of the end product within the system structure.
+
+There are five major steps in the validation process: (1) preparing to conduct validation, (2) conduct planned validation (perform validation), (3) analyze validation results, (4) prepare a validation report, and (5) capture the validation work products.
+
+*From ProductVerification Process To ProductTransition ProcessProduct ValidationResults Product ValidationReport End Productto Be Validated Product ValidationPlan Stakeholder ExpectationBaseline Product Validation–Enabling ProductsTo TechnicalAssessment ProcessFrom Design Solution and TechnicalPlanning ProcessesValidated End Product To Technical DataManagement ProcessFrom ConfigurationManagement ProcessFrom existingresources or ProductTransition Process Product ValidationWork Products Perform the productvalidationAnalyze the outcomes ofthe product validationCapture the work productsfrom product validation activities Prepare a productvalidation report Prepare to conduct productvalidation* FIGURE 5.4-1 Product Validation Process
+
+The objectives of the Product Validation Process are:
+
+•
+
+»
+
+Validation is performed for each implemented or integrated and verified end product from the lowest end product in a system structure branch up to the top level end product (the system).
+
+»
+
+ 
+
+•
+
+»
+
+The user interface meets human engineering criteria.
+
+»
+
+Operators and maintainers have the required skills and abilities.
+
+»
+
+
+
+»
+
+The working environment supports crew health and safety.
+
+• To ensure that any problems discovered are appropriately resolved prior to delivery of the end product (if validation is done by the supplier of the product) or prior to integration with other products into a higher level assembled product (if validation is done by the receiver of the product).
+
+METHODS OF VALIDATION
+
+Analysis: The use of mathematical modeling and analytical techniques to predict the suitability of a design to stakeholder expectations based on calculated data or data derived from lower system structure end product verifications. Analysis is generally used when a prototype; engineering model; or fabricated, assembled, and integrated product is not available. Analysis includes the use of modeling and simulation as analytical tools. A model is a mathematical representation of reality. A simulation is the manipulation of a model.
+
+Demonstration: Showing that the use of an end product achieves the stakeholder expectations as defined in the NGOs and the ConOps. It is generally a basic confirmation of behavioral capability, differentiated from testing by the lack of detailed data gathering. Demonstrations can involve the use of physical models or mock-ups; for example, an expectation that controls are readable by the pilot in low light conditions could be validated by having a pilot perform flight-related tasks in a cockpit mock-up or simulator under those conditions.
+
+Inspection: The visual examination of a realized end product. Inspection is generally used to validate the presence of a physical design features or specific manufacturer identification. For example, if there is an expectation that the safety arming pin has a red flag with the words “Remove Before Flight” stenciled on the flag in black letters, a visual inspection of the arming pin flag can be used to determine if this expectation has been met.
+
+Test: The use of an end product to obtain detailed data needed to determine a behavior, or provide sufficient information to determine a behavior through further analysis. Testing can be conducted on final end products, breadboards, brassboards, or prototypes. Testing produces information at discrete points for each specified expectation under controlled conditions and is the most resource-intensive validation technique.
+
+5.4.1.2.1 To prepare for performing product validation, the appropriate set of expectations, including MOEs and MOPs, against which the validation is to be made
+
+     When operator or other user interaction is involved, it is important to ensure that humans are properly represented in the validation activities. This includes physical size, skills, knowledge, training, clothing, special gear, and tools. When possible, actual end users/operators should be used and other stakeholders should participate or observe activities as appropriate and practical.
+
+Outcomes of validation preparation include the following:
+
+•   •  • Users/operators and other resources are available according to validation plans and schedules; and •  5.4.1.2.2     
+
+Outcomes of performing validation include the following:
+
+•  •  •   • A determination is made that the product being validated functions together with interfacing products throughout their operational envelopes.
+
+5.4.1.2.3      Outcomes of analyzing validation results include the following:
+
+•  •    •  • The validation report is completed.
+
+Re-engineering
+
+  
+
+Validation Deficiencies
+
+  •  •  Other reasons for validation deficiencies (particularly when M&S are involved) may be incorrect and/or inappropriate initial or boundary conditions; poor formulation of the modeled equations or behaviors; the impact of approximations within the modeled equations or behaviors; failure to provide the required geometric and physics fidelities needed for credible simulations for the intended purpose; and/or poor spatial, temporal, and perhaps, statistical resolution of physical phenomena used in M&S.
+
+## NOTE:
+
+
+
+
+
+Pass Verification but Fail Validation?
+
+      
+
+FIGURE 2.5-1
+
+5.4.1.2.4 Validation work products (inputs to the Technical Data Management Process) take many forms and involve many sources of information. The capture and recording of validation-related data is a very important, but often underemphasized, step in the Product Validation Process.
+
+ Outcomes of capturing validation work products include the following:
+
+• 
+
+*Appendix E*
+
+• Deficiencies (e.g., variations and anomalies and out-of-compliance conditions) are identified and documented, including the actions taken to resolve.
+
+•  •
+
+»
+
+Recorded validation results/data;
+
+»
+
+Version of the set of stakeholder expectations used;
+
+»
+
+Version and form of the end product validated;
+
+»
+
+Version or standard for tools and equipment used, together with applicable calibration data;
+
+»
+
+Outcome of each validation including pass or fail declarations; and
+
+»
+
+Discrepancy between expected and actual results.
+
+## NOTE:
+
+ 5.4.1.3 Outputs
+
+Key outputs of validation are:
+
+•
+
+Validated end product:
+
+•
+
+Product validation results:
+
+•
+
+Product validation report:
+
+•
+
+Work products:
+
+
+
+
+
+
+
+5.4.2 Product Validation Guidance
+
+*https://nen.nasa.*
+
+*gov/web/se/doc-repository*
+
+•
+
+use of modeling and simulation,
+
+•
+
+software validation, and
+
+•
+
+taking credit for validation.
+
+## 5.5 Product Transition
+
+
+
+
+
+
+
+
+
+
+
+
+
+5.5.1 Process Description
+
+FIGURE 5.5-1
+
+
+
+5.5.1.1 Inputs
+
+
+
+FIGURE 5.5-1 *To ProductImplementation,Integration, Verification,Validation, and Transition Processes Product TransitionWork ProductsEnd Product to BeTransitioned Documentation toAccompany theDelivered End ProductProduct Transition–Enabling ProductsTo Technical DataManagement ProcessFrom Technical DataManagement ProcessDelivered End ProductWith ApplicableDocumentationRealized EnablingProducts Prepare the end product for transition Prepare sites, as required, where theend product will be stored, assembled,integrated, installed, used, and/ormaintainedEvaluate the end product, personnel,and enabling product readiness forproduct transition Capture work products from producttransition activities Prepare to conduct producttransitionTransition the end product to thecustomer with required documentationbased on the type of transition requiredTo end user or ProductIntegration Process(recursive loop)* FIGURE 5.5-1 Product Transition Process
+
+•
+
+The end product or products to be transitioned (from the Product Validation Process):
+
+     •
+
+Documentation including manuals, procedures, and processes that accompany the end product (from the Technical Data Management Process):
+
+      Special consideration should be given to safety, including clearly identifiable tags and markings that identify the use of hazardous materials, special handling instructions, and storage requirements.
+
+•
+
+Product transition-enabling products, includ  ing packaging materials; containers; handling equipment; and storage, receiving, and ship  ping facilities (from existing resources or the Product Transition Process for enabling product realization):
+
+        5.5.1.2 Process Activities Transitioning the product can take one of two forms:
+
+•  • 
+
+In the first case, the end product is one of perhaps several other pieces that will ultimately be integrated together to form the item. In the second case, the end product is for final delivery to the customer. For example, the end product might be one of several circuit cards that will be integrated together to form the final unit that is delivered. Or that unit might also be one of several units that have to be integrated together to form the final product.
+
+
+
+FIGURE 5.5-1
+
+    How these activities are performed and what form the documentation takes depends on where the end items are in the product hierarchy and the life cycle phase.
+
+5.5.1.2.1        5.5.1.2.2 
+
+      5.5.1.2.3       5.5.1.2.4    The end product is finally installed into the next higher assembly or into the customer/user site using the preapproved installation procedures.
+
+Confirm Ready to Support
+
+
+
+ 5.5.1.2.5  5.5.1.3 Outputs •
+
+Delivered end product with applicable docu  mentation:
+
+1.
+
+Delivered end product for integration to next level up in system structure:
+
+
+
+2.
+
+Delivered operational end product for end users:
+
+    •
+
+Work products from transition activities to tech  nical data management:
+
+•
+
+Realized enabling end products to appropri  ate life cycle support organization:
+
+     The process is complete when the following activities have been accomplished:
+
+• For deliveries to the integration path, the end product is delivered to intended usage sites in a condition suitable for integration with other end products or composites of end products.
+
+Procedures, decisions, assumptions, anomalies, corrective actions, lessons learned, etc., resulting from transition for integration are recorded.
+
+•   •    5.5.2 Product Transition Guidance
+
+*https://nen.nasa.*
+
+*gov/web/se/doc-repository*
+
+• additional product transition considerations and • what’s next after product transition to the end user.
+
+## 6.0
+
+# Crosscutting Technical Management
+
+T
+
+
+
+FIGURE 2.1-1
+
+*Chapters 4*
+
+*5*
+
+FIGURE 2.1-1
+
+
+
+
+
+The next sections describe each of the eight technical management processes and their associated products for a given NASA mission.
+
+## 6.1 Technical Planning
+
+
+
+
+
+
+
+
+
+ CROSSCUTTING TECHNICAL MANAGEMENT KEYS
+
+• Thoroughly understand and plan the scope of the technical effort by investing time upfront to develop the technical product breakdown structure, the technical schedule and workflow diagrams, and the technical resource requirements and constraints (funding, budget, facilities, and long-lead items) that will be the technical planning infrastructure. The systems engineer also needs to be familiar with the non-technical aspects of the project.• Define all interfaces and assign interface authorities and responsibilities to each, both intra-and interorganizational. This includes understanding potential incompatibilities and defining the transition processes.• Control of the configuration is critical to understanding how changes will impact the system. For example, changes in design and environment could invalidate previous analysis results.• Conduct milestone reviews to enable a critical and valuable assessment to be performed. These reviews are not to be solely used to meet contractual or scheduling incentives. These reviews have specific entrance criteria and should be conducted when these are met.• Understand any biases, assumptions, and constraints that impact the analysis results.• Place all analysis under configuration control to be able to track the impact of changes and understand when the analysis needs to be reevaluated.
+
+  6.1.1 Process Description
+
+FIGURE 6.1-1
+
+ 6.1.1.1 Inputs Input to the Technical Planning Process comes from both the project management and technical teams as outputs from the other common technical processes. Initial planning utilizing external inputs from the project to determine the general scope and framework • Thoroughly understand and plan the scope of the technical effort by investing time upfront to develop the technical product breakdown structure, the technical schedule and workflow diagrams, and the technical resource requirements and constraints (funding, budget, facilities, and long-lead items) that will be the technical planning infrastructure. The systems engineer also needs to be familiar with the non-technical aspects of the project.• Define all interfaces and assign interface authorities and responsibilities to each, both intra-and interorganizational. This includes understanding potential incompatibilities and defining the transition processes.• Control of the configuration is critical to understanding how changes will impact the system. For example, changes in design and environment could invalidate previous analysis results.• Conduct milestone reviews to enable a critical and valuable assessment to be performed. These reviews are not to be solely used to meet contractual or scheduling incentives. These reviews have specific entrance criteria and should be conducted when these are met.• Understand any biases, assumptions, and constraints that impact the analysis results.• Place all analysis under configuration control to be able to track the impact of changes and understand when the analysis needs to be reevaluated.CROSSCUTTING TECHNICAL MANAGEMENT KEYS
+
+ 
+
+Project T ortRequirements and ProjectResource ConstraintsTo Technical DataManagement ProcessFrom project From Technical DataManagement ProcessTo TechnicalAssessment ProcessTo project To applicable technicalprocessesTo applicable technical teamsFrom Technical Assessmentand Technical RiskManagement ProcessesPrepare to conduct technicalplanningkSchedule, organize, and costthe technical work Prepare SEMP and othertechnical plansObtain stakeholder commitmentsto technical plansIssue authorized technicalwork directivesCapture work products from technical planning activitiesAgreements, CapabilityNeeds, Applicable ProductLine Life-Cycle PhaseApplicable Policies, Procedures, Standards, and Organizational ProcessesPrior Phase orBaseline PlansReplanning NeedsCost Estimates,Schedules, and ResourceRequestsProduct and ProcessMeasuresSEMP and OtherTechnical PlansTechnical PlanningWork ProductsTechnical Work Directives FIGURE 6.1‑1 Technical Planning Process
+
+•
+
+Project Technical Effort Requirements and Project Resource Constraints:
+
+    •
+
+Agreements, Capability Needs, Applicable Product Life Cycle Phase:
+
+
+
+  •
+
+Applicable Policies, Procedures, Standards, and Organizational Processes:
+
+   •
+
+Prior Phase or Baseline Plans:
+
+ •
+
+Replanning Needs:
+
+6.1.1.2 Process Activities  *https://nen.nasa.gov/web/ se/doc-repository*   *Section 6.4 Section 6.7*  
+
+FIGURE 6.1-1
+
+  6.1.1.2.1 For technical planning to be conducted properly, the processes and procedures that are needed to conduct technical planning should be identified, defined, and communicated. As participants are identified, their roles and responsibilities and any training and/or certification activities should be clearly defined and communicated.
+
+Team Selection
+
+            Mission class and project phase may also influence the required team skill mix. For example, with respect to mission class, certain discipline analyses needed for Class A and B missions may not be required for Class D (or lower) missions. And with respect to project phase, some design and analyses may be performed by a single general discipline in Pre-Phase A and Phase A, whereas the need to conduct design and analyses in more detail in Phases B and C may indicate the need for multiple specialized subsystem design and discipline engineering skills.
+
+TABLE 6.1-1
+
+
+
+TABLE 6.1-1 Example Engineering Team Disciplines in Pre-Phase A for Robotic Infrared Observatory Systems Engineering Mission Systems Engineer Instrument Systems Engineer Spacecraft Bus, Flight Dynamics, Launch Vehicle Interface, Ground System Interface Subteam Flight Dynamics Analysis Mission Operations (includes ConOps, & interfaces with ground station, mission ops center, science ops center) Bus Mechanical Subsystem (includes mechanisms) Bus Power Subsystem (includes electrical harness) Bus Thermal Subsystem Bus Propulsion Subsystem Bus Attitude Control and Determination Subsystem Bus Avionics Subsystem Bus Communications Subsystem Bus Flight Software Subsystem Integration and Test (bus, observatory) Launch Vehicle Integration Radiation Analysis Orbital Debris/End of Mission Planning Analysis System Reliability/Fault Tolerance Analysis (includes analysis of instrument) Instrument Subteam Mechanical Subsystem Mechanisms Subsystem Thermal Subsystem Cryogenics Subsystem Avionics Subsystem (incl. Electrical Harness) Mechanism Drive Electronics Subsystem Detector Subsystem Optics Subsystem Control Subsystem Metrology Subsystem Flight Software Subsystem Integration and Test Stray Light/Radiometry Analysis Other Specialty Disciplines (e.g., Contamination Analysis) as needed
+
+
+
+
+
+
+
+•
+
+The communication strategy within the technical team and for up and out communications;
+
+•
+
+Identification and tailoring of NASA procedural requirements that apply to each level of the PBS structure;
+
+•
+
+The level of planning documentation required for the SEMP and all other technical planning documents;
+
+•
+
+Identifying and collecting input documentation;
+
+•
+
+The sequence of technical work to be conducted, including inputs and outputs;
+
+•
+
+The deliverable products from the technical work;
+
+•
+
+How to capture the work products of technical activities;
+
+•
+
+How technical risks will be identified and managed;
+
+•
+
+
+
+•
+
+The involvement of stakeholders in each facet of the technical effort;
+
+•
+
+How the NASA technical team will be involved with the technical efforts of external contractors;
+
+•
+
+The entry and success criteria for milestones, such as technical reviews and life cycle phases;
+
+•
+
+The identification, definition, and control of internal and external interfaces;
+
+•
+
+The identification and incorporation of relevant lessons learned into the technical planning;
+
+•
+
+The team’s approach to capturing lessons learned during the project and how those lessons will be recorded;
+
+•
+
+The approach for technology development and how the resulting technology will be incorporated into the project;
+
+•
+
+The identification and definition of the technical metrics for measuring and tracking progress to the realized product;
+
+•
+
+The criteria for make, buy, or reuse decisions and incorporation criteria for Commercial Off-theShelf (COTS) software and hardware;
+
+•
+
+The plan to identify and mitigate off-nominal performance;
+
+•
+
+The “how-tos” for contingency planning and replanning;
+
+•
+
+The plan for status assessment and reporting;
+
+•
+
+
+
+•
+
+The plan for managing the human element in the technical activities and product.
+
+
+
+
+
+Identifying Facilities
+
+ 
+
+TABLE 6.1-2 TABLE 6.1-2 Examples of Types of Facilities to Consider During Planning Communications and Tracking LabsPower Systems LabsPropulsion Test StandsMechanical/Structures LabsInstrumentation LabsHuman Systems LabsGuidance and Navigation LabsRobotics LabsSoftware Development EnvironmentMeeting RoomsEducation/Outreach Centers Models and Simulation LabsPrototype Development ShopsCalibration LabsBiological LabsSpace Materials Curation LabsElectromagnetic Effects LabsMaterials LabsVacuum ChambersMission Control CenterTraining FacilitiesServer Farms Thermal ChambersVibration LabsRadiation LabsAnimal Care LabsFlight Hardware Storage AreasDesign VisualizationWiring ShopsNDE LabsLogistics WarehouseConference FacilitiesProject Documentation Centers 6.1.1.2.2
+
+   •    •   
+
+•     6.1.1.2.3 
+
+Scheduling
+
+         For additional information on scheduling, refer to NASA/SP-2010-3403, NASA Schedule Management Handbook.
+
+Budgeting
+
+      • direct labor costs, • overhead costs, • other direct costs (travel, data processing, etc.), • subcontract costs, • material costs, • equipment costs, • general and administrative costs, • cost of money (i.e., interest payments, if applicable), • fee (if applicable), and • contingency (Unallocated Future Expenses (UFE)).
+
+For additional information on cost estimating, refer to the NASA Cost Estimating Handbook and NPR 7120.5, NASA Space Flight Program and Project Management Requirements.
+
+6.1.1.2.4 Systems Engineering Management Plan    *Appendix J*      
+
+*Appendix K*
+
+     
+
+Role of the SEMP
+
+      
+
+Verification Plan
+
+  
+
+at a detailed technical level, plays a pivotal role in bottom-up product realization.
+
+ TYPES OF HARDWARE
+
+Breadboard: A low fidelity unit that demonstrates function only without considering form or fit in the case of hardware or platform in the case of software. It often uses commercial and/or ad hoc components and is not intended to provide definitive information regarding operational performance.
+
+Brassboard: A medium fidelity functional unit that typically tries to make use of as much operational hardware/software as possible and begins to address scaling issues associated with the operational system. It does not have the engineering pedigree in all aspects, but is structured to be able to operate in simulated operational environments in order to assess performance of critical functions.
+
+Engineering Unit: A high fidelity unit that demonstrates critical aspects of the engineering processes involved in the development of the operational unit. Engineering test units are intended to closely resemble the final product (hardware/software) to the maximum extent possible and are built and tested so as to establish confidence that the design will function in the expected environments. In some cases, the engineering unit will become the final product, assuming proper traceability has been exercised over the components and hardware handling.
+
+Prototype Unit: The prototype unit demonstrates form, fit, and function at a scale deemed to be representative of the final product operating in its operational environment. A subscale test article provides fidelity sufficient to permit validation of analytical models capable of predicting the behavior of full-scale systems in an operational environment.
+
+Qualification Unit: A unit that is the same as the flight unit (form, fit, function, components, etc.) that will be exposed to the extremes of the environmental criteria (thermal, vibration, etc.). The unit will typically not be flown due to these off-nominal stresses.
+
+Protoflight Unit: In projects that will not develop a qualification unit, the flight unit may be designated as a protoflight unit and a limited version of qualification test ranges will be applied. This unit will be flown.
+
+Flight Unit: The end product that will be flown and will typically undergo acceptance level testing.
+
+• simulated (algorithmic models, virtual reality simulator);
+
+• mock-up (plywood, brassboard, breadboard);
+
+• concept description (paper report);
+
+• engineering unit (fully functional but may not be same form/fit);
+
+• prototype (form, fit, and function);
+
+•  • qualification units (identical to flight units but may be subjected to extreme environments); and • flight units (end product that is flown, including protoflight units).
+
+  Any of these types of product forms may be in any of these states:
+
+• produced (built, fabricated, manufactured, or coded);
+
+• reused (modified internal non-developmental products or OTS product); or •  
+
+## NOTE:
+
+
+
+
+
+## NOTE:
+
+ *Section 4.2*  *Section 6.1*
+
+
+
+Validation Plan
+
+
+
+ 
+
+*Appendix I*
+
+                   • simulated (algorithmic models, virtual reality simulator);
+
+• mock-up (plywood, brassboard, breadboard);
+
+• concept description (paper report);
+
+• engineering unit (functional but may not be same form/fit);
+
+• prototype (product with form, fit, and function);
+
+•  • qualification unit (identical to flight unit but may be subjected to extreme environments); and • flight unit (end product that is flown).
+
+Any of these types of product forms may be in any of these states:
+
+• produced (built, fabricated, manufactured, or coded);
+
+• reused (modified internal non-developmental products or off-the-shelf product); or • assembled and integrated (a composite of lower level products).
+
+ENVIRONMENTS
+
+Relevant Environment: Not all systems, subsystems, and/or components need to be operated in the operational environment in order to satisfactorily address performance margin requirements or stakeholder expectations. Consequently, the relevant environment is the specific subset of the operational environment that is required to demonstrate critical “at risk” aspects of the final product performance in an operational environment.
+
+Operational Environment: The environment in which the final product will be operated. In the case of space flight hardware/software, it is space. In the case of ground-based or airborne systems that are not directed toward space flight, it is the environments defined by the scope of operations. For software, the environment is defined by the operational platform.
+
+## NOTE:
+
+
+
+## NOTE:
+
+  *https://nen.nasa.gov/web/ se/doc-repository*
+
+•
+
+*Appendix H*
+
+•
+
+*Appendix I*
+
+•
+
+*Appendix J*
+
+•
+
+*Appendix K*
+
+•
+
+*Appendix L*
+
+•
+
+*Appendix M*
+
+•
+
+*Appendix R*
+
+•
+
+*Appendix S* 6.1.1.2.5 Stakeholder Roles in Project Planning
+
+To obtain commitments to the technical plans from the stakeholders, the technical team should ensure that the appropriate stakeholders, including subject domain experts, have a method to provide inputs and to review the project planning for implementation of stakeholder interests.
+
+  
+
+Stakeholder Involvement in Defining Requirements
+
+  
+
+Stakeholder Agreements
+
+ 
+
+Stakeholder Support for Forums
+
+
+
+   6.1.1.2.6     
+
+*https://nen.nasa.gov/web/se/doc-repository* 6.1.1.2.7
+
+ 6.1.1.3 Outputs Typical outputs from technical planning activities are:
+
+•
+
+Technical work cost estimates, schedules, and resource needs:
+
+ •
+
+Product and process measures:
+
+•
+
+SEMP and other technical plans:
+
+ 
+
+•
+
+Technical work directives:
+
+•
+
+Technical Planning Process work products:
+
+
+
+
+
+6.1.2 Technical Planning Guidance
+
+*https://nen.nasa.*
+
+*gov/web/se/doc-repository*
+
+•
+
+Work Breakdown Structure (WBS),
+
+•
+
+cost definition and modeling, and
+
+•
+
+.
+
+Additional information on the WBS can also be found in NASA/SP-2010-3404, NASA Work Breakdown Structure Handbook and on costing in the NASA Cost Estimating Handbook.
+
+DEFINITIONS
+
+Traceability: A discernible association between two or more logical entities such as requirements, system elements, verifications, or tasks.
+
+Bidirectional traceability: The ability to trace any given requirement/expectation to its parent requirement/expectation and to its allocated children requirements/expectations.
+
+## 6.2 Requirements Management
+
+
+
+
+
+
+
+•
+
+
+
+•
+
+Provide bidirectional traceability.
+
+• Manage the changes to established requirement baselines over the life cycle of the system products.
+
+6.2.1 Process Description
+
+FIGURE 6.2-1 Expectations and Requirements to BeManagedFrom system design processes From Product Verificationand Validation ProcessesTo Technical DataManagement ProcessTo ConfigurationManagement ProcessPrepare to conductrequirements managementConduct requirementsmanagementConduct expectations and requirements traceabilityManage expectationsand requirement changesCapture work products fromrequirements managementactivitiesRequirements ChangeRequestsTPM Estimation/Evaluation ResultsRequirementsDocumentsApproved Changes toRequirements BaselinesRequirementsManagement WorkProductsFrom project and TechnicalAssessment ProcessFrom TechnicalAssessment ProcessProduct Verification andProduct Validation Results FIGURE 6.2‑1 Requirements Management Process 6.2.1.1 Inputs
+
+There are several fundamental inputs to the Requirements Management Process.
+
+•
+
+Expectations and requirements to be managed:
+
+•
+
+Requirement change requests:
+
+•
+
+TPM estimation/evaluation results:
+
+  •
+
+Product verification and validation results:
+
+requirements database with the goal of verifying and validating all requirements.
+
+6.2.1.2 Process Activities 6.2.1.2.1 Preparing to conduct requirements management includes gathering the requirements that were defined and baselined during the Requirements Definition Process. Identification of the sources/owners of each requirement should be checked for currency. The organization (e.g., change board) and procedures to perform requirements management are established.
+
+6.2.1.2.2    • Establish a plan for executing requirements management.
+
+•  • Maintain bidirectional traceability between requirements.
+
+• Evaluate all change requests to the requirements baseline over the life of the project and make changes if approved by change board.
+
+•  6.2.1.2.3 As each requirement is documented, its bidirectional traceability should be recorded. Each requirement should be traced back to a parent/source requirement or expectation in a baselined document or identified as self-derived and concurrence on it sought from the next higher level requirements sources. Examples of self-derived requirements are requirements that are locally adopted as good practices or are the result of design decisions made while performing the activities of the Logical Decomposition and Design Solution Processes.
+
+  
+
+6.2.1.2.4 Throughout early Phase A, changes in requirements and constraints will occur as they are initially defined and matured. It is imperative that all changes be thoroughly evaluated to determine the impacts on the cost, schedule, architecture, design, interfaces, ConOps, and higher and lower level requirements. Performing functional and sensitivity analyses will ensure that the requirements are realistic and evenly allocated. Rigorous requirements verification and validation will ensure that the requirements can be satisfied and conform to mission objectives. All changes should be subjected to a review and approval cycle to maintain traceability and to ensure that the impacts are fully assessed for all parts of the system.
+
+ 
+
+*Section 6.5* 6.2.1.2.5 Requirements Changes
+
+ •
+
+Performance Margins:
+
+  •
+
+CM Topic Evaluators List:
+
+ •
+
+Risk System and Threats List:
+
+
+
+
+
+Requirements Creep
+
+   There are several techniques for avoiding or at least minimizing requirements creep:
+
+• The first line of defense is a good ConOps that has been thoroughly discussed and agreed-to by the customer and relevant stakeholders.
+
+• In the early requirements definition phase, flush out the conscious, unconscious, and undreamed-of requirements that might otherwise not be stated.
+
+•  •   •  •  6.2.1.2.6   6.2.1.3 Outputs Typical outputs from the requirements management activities are:
+
+•
+
+Requirements Documents:
+
+
+
+that has been selected by the project. In this way, they are linked to the requirements matrix with all of its traceable relationships.
+
+•
+
+Approved Changes to the Requirements
+
+Baselines:
+
+
+
+
+
+•
+
+Various Requirements Management Work
+
+Products:
+
+
+
+
+
+6.2.2 Requirements Management Guidance
+
+*https://nen.nasa.*
+
+*gov/web/se/doc-repository*
+
+•
+
+the Requirements Management Plan and
+
+•
+
+requirements management tools.
+
+## 6.3 Interface Management
+
+
+
+
+
+
+
+The basic tasks that need to be established involve the management of internal and external interfaces of the various levels of products and operator tasks to support product integration. These basic tasks are as follows:
+
+•
+
+Define interfaces;
+
+•
+
+
+
+•
+
+
+
+•
+
+Strictly control all of the interface processes during design, construction, operation, etc.;
+
+•
+
+Identify lower level products to be assembled and integrated (from the Product Transition Process);
+
+•
+
+
+
+•
+
+
+
+
+
+•
+
+Identify product integration-enabling products (from existing resources or the Product Transition Process for enabling product realization).
+
+6.3.1 Process Description
+
+FIGURE 6.3-1
+
+
+
+*From Project andTechnical AssessmentProcessesFrom user or program andsystem design processes To Technical DataManagement ProcessTo ConfigurationManagement ProcessInterfaceRequirements Interface ControlDocumentsApproved InterfaceRequirementChangesInterface ManagementWork ProductsPrepare or update interfacemanagement procedures Conduct interface management duringsystem design activities for each WBSlike model in the system structureConduct interface control Conduct interface management duringproduct integration activities Capture work products from interfacemanagement activities InterfaceChanges* FIGURE 6.3‑1 Interface Management Process 6.3.1.1 Inputs
+
+Typical inputs needed to understand and address interface management would include the following:
+
+•
+
+Interface Requirements:
+
+  •
+
+Interface Change Requests:
+
+ Other inputs that might be useful are:
+
+•
+
+System Description:
+
+ •
+
+System Boundaries:
+
+ •
+
+Organizational Structure:
+
+•
+
+Boards Structure:
+
+6.3.1.2 Process Activities 6.3.1.2.1  6.3.1.2.2   6.3.1.2.3    6.3.1.2.4     6.3.1.2.5  6.3.1.3 Outputs  • Interface control documentation.
+
+ 
+
+•
+
+Approved interface requirement changes.
+
+
+
+
+
+
+
+•
+
+Other work products.
+
+
+
+6.3.2 Interface Management Guidance
+
+*https://nen.nasa.*
+
+*gov/web/se/doc-repository*
+
+•
+
+interface requirements documents,
+
+•
+
+interface control documents,
+
+•
+
+interface control drawings,
+
+•
+
+interface definition documents,
+
+•
+
+the interface control plans, and
+
+•
+
+interface management tasks.
+
+## 6.4 Technical Risk Management
+
+
+
+
+
+•
+
+safety
+
+•
+
+technical
+
+•
+
+cost
+
+•
+
+schedule
+
+
+
+
+
+Risk is characterized by three basic components:
+
+1.
+
+
+
+2.
+
+The likelihood(s) (qualitative or quantitative) of those scenario(s); and
+
+3.
+
+The consequence(s) (qualitative or quantitative severity of the performance degradation) that would result if the scenario(s) was (were) to occur.
+
+     
+
+FIGURES 6.4-1 6.4-2 **Uncertainty AnalysisScenario DevelopmentScenario ModelingConsequenceModelingInitiating Event Selection1. What can go wrong? (definition of scenarios)2. How frequently does it happen? (scenario frequencyquantification)3. What are the consequences? (scenario consequence quantification)Scenario FrequencyEvaluation** FIGURE 6.4-1 Risk Scenario Development (Source: NASA/SP-2011-3421) **RISK =Structure of ScenarioLikelihood andIts UncertaintyConsequence Severityand Its UncertaintyStructure of ScenarioLikelihood andIts UncertaintyConsequence Severityand Its UncertaintyStructure of ScenarioLikelihood andIts UncertaintyConsequence Severityand Its Uncertainty** FIGURE 6.4-2 Risk as an Aggregate Set of Risk Triplets
+
+Key Concepts in Risk Management Risk: Risk is the potential for shortfalls, which may be realized in the future with respect to achieving explicitly-stated requirements. The performance shortfalls may be related to institutional support for mission execution, or related to any one or more of the following mission execution domains: safety, technical, cost, schedule. Risk is characterized as a set of triplets:
+
+>
+
+The scenario(s) leading to degraded performance in one or more performance measures.
+
+>
+
+The likelihood(s) of those scenarios.
+
+>
+
+The consequence(s), impact, or severity of the impact on performance that would result if those scenarios were to occur.
+
+Uncertainties are included in the evaluation of likelihoods and consequences.
+
+Cost Risk: This is the risk associated with the ability of the program/project to achieve its life-cycle cost objectives and secure appropriate funding. Two risk areas bearing on cost are (1) the risk that the cost estimates and objectives are not accurate and reasonable; and (2) the risk that program execution will not meet the cost objectives as a result of a failure to handle cost, schedule, and performance risks.
+
+Schedule Risk: Schedule risks are those associated with the adequacy of the time estimated and allocated for the development, production, implementation, and operation of the system. Two risk areas bearing on schedule risk are (1) the risk that the schedule estimates and objectives are not realistic and reasonable; and (2) the risk that program execution will fall short of the schedule objectives as a result of failure to handle cost, schedule, or performance risks.
+
+Technical Risk: This is the risk associated with the evolution of the design and the production of the system of interest affecting the level of performance necessary to meet the stakeholder expectations and technical requirements. The design, test, and production processes (process risk) influence the technical risk and the nature of the product as depicted in the various levels of the PBS (product risk).
+
+Programmatic Risk: This is the risk associated with action or inaction from outside the project, over which the project manager has no control, but which may have significant impact on the project. These impacts may manifest themselves in terms of technical, cost, and/or schedule. This includes such activities as: International Traffic in Arms Regulations (ITAR), import/export control, partner agreements with other domestic or foreign organizations, congressional direction or earmarks, Office of Management and Budget (OMB) direction, industrial contractor restructuring, external organizational changes, etc.
+
+Scenario: A sequence of credible events that specifies the evolution of a system or process from a given state to a future state. In the context of risk management, scenarios are used to identify the ways in which a system or process in its current state can evolve to an undesirable state.
+
+ 6.4.1 Risk Management Process Description
+
+FIGURE 6.4-3
+
+
+
+*From TechnicalAssessment andDecision AnalysisProcesses From project and alltechnical processesTo project and TechnicalData ManagementProcess To Technical DataManagement ProcessTo TechnicalPlanning ProcessTechnical Risk StatusMeasurements Technical RiskReportingRequirements Technical RiskIssuesTechnical RiskMitigation and/orContingency Actions Technical RiskReports Work Products ofTechnical RiskManagement From project andTechnical AssessmentProcess From projectProject RiskManagement Plan Prepare a strategy to conduct technicalrisk management Identify technical risksPrepare for technical risk mitigationConduct technical risk assessmentMonitor the status of each technicalrisk periodically Implement technical risk mitigation andcontingency action plans as triggered Capture work products from technicalrisk management activities* FIGURE 6.4-3 Risk Management Process 6.4.1.1 Inputs
+
+The following are typical inputs to risk management:
+
+•
+
+Project Risk Management Plan:
+
+ •
+
+Technical Risk Issues:
+
+ •
+
+Technical Risk Status Measurements:
+
+•
+
+Technical Risk Reporting Requirements:
+
+Additional inputs that may be useful:
+
+•
+
+Other Plans and Policies:
+
+ •
+
+Technical Inputs:
+
+  6.4.1.2 Activities 6.4.1.2.1  6.4.1.2.2  6.4.1.2.3    
+
+FIGURE 6.4-4
+
+Graphic showing risk management as the interaction between risk-informed decision making and continuous risk management
+
+FIGURE 6.4-4 Risk Management as the Interaction of Risk-Informed Decision Making and Continuous Risk Management (Source: NASA/SP-2011-3422)
+
+6.4.1.2.4
+
+
+
+
+
+6.4.1.2.5
+
+
+
+
+
+6.4.1.2.6
+
+
+
+
+
+6.4.1.2.7
+
+Work products include the strategy and procedures for conducting technical risk management; the rationale for decisions made; assumptions made in prioritizing, handling, and reporting technical risks and action plan effectiveness; actions taken to correct action plan implementation anomalies; and lessons learned.
+
+6.4.1.3 Outputs
+
+Following are key risk outputs from activities:
+
+•
+
+Technical Risk Mitigation and/or Contingency
+
+Actions:
+
+•
+
+Technical Risk Reports:
+
+
+
+
+
+•
+
+Work Products:
+
+
+
+6.4.2 Risk Management Process Guidance
+
+For additional guidance on risk management, refer to NASA/SP-2010-576, NASA RIDM Handbook and NASA/SP-2011-3422, NASA Risk Management Handbook.
+
+## 6.5 Configuration Management
+
+
+
+
+
+
+
+
+
+          6.5.1 Process Description
+
+FIGURE 6.5-1 6.5.1.1 Inputs
+
+The inputs for this process are:
+
+•
+
+CM plan:
+
+•
+
+Engineering change proposals:
+
+•
+
+Expectation, requirements and interface docu  ments:
+
+•
+
+Approved requirements baseline changes:
+
+•
+
+Designated configuration items to be controlled:
+
+6.5.1.2 Process Activities FIGURE 6.5-2 • configuration planning and management • configuration identification,
+
+• configuration change management, • Configuration Status Accounting (CSA), and • configuration verification.
+
+*From projectFrom Requirementsand InterfaceManagement ProcessesTo Technical DataManagement ProcessTo applicabletechnical processes To project andTechnical DataManagement ProcessExpectation, Requirements, andInterface Documents Engineering ChangeProposalsProject ConfigurationManagement Plan List of ConfigurationItems UnderControlConfigurationManagementWork Products CurrentBaselinesConfigurationManagementReports ApprovedRequirementBaseline ChangesPrepare a strategy to conductconfiguration managementIdentify baseline to be underconfiguration controlMaintain the status of configuration Maintain the status of configuration documentation Manage configuration change controlConduct configuration auditsCapture work products fromconfiguration management activitiesIdentified Riskto Be ControlledDesignatedConfiguration Itemsto Be Controlled* FIGURE 6.5‑1 Configuration Management Process 6.5.1.2.1
+
+
+
+ConfigurationVerificationConfigurationStatusAccountingConfigurationChangeManagementConfigurationPlanning and ConfigurationIdentification ManagementCONFIGURATIONMANAGEMENT FIGURE 6.5‑2 Five Elements of Configuration Management
+
+ 
+
+*Appendix M*
+
+This plan has both internal and external uses:
+
+•
+
+Internal:
+
+ •
+
+External:
+
+ 6.5.1.2.2        
+
+FIGURE 6.5-3
+
+ •
+
+Functional Baseline:
+
+   •
+
+Allocated Baseline:
+
+ 
+
+performance characteristics and for initiating detailed design for a CI. The allocated baseline is usually controlled by the design organization until all design requirements have been verified. The allocated baseline is typically established at the successful completion of the PDR. Prior to CDR, NASA normally reviews design output for conformance to design requirements through incremental deliveries of engineering data. NASA control of the allocated baseline occurs through review of the engineering deliveries as data items.
+
+Level 1 TechnicalRequirementsFUNCTIONAL BASELINEConfiguration Information Non-Configuration Information (examples)MilestonesMajor ArchitectureAspects of DesignCompleteALLOCATEDBASELINEImplementationAspects of DesignComplete PRODUCTBASELINERealization Aspects of Design Complete; Fabricationand Text Complete MDRConceptPartial analysesand studiesProgram andproject plansDevelopmentaldataCompleteanalysesDevelopmentaldataTest plansSystem SpecTest informationManualsCertificationsProduct structureSDRSRRPDRORRSARCDRSegment SpecPrime ItemDesign-to-SpecEnd ItemDesign-to-SpecEnd ItemBuild-to-SpecEnd ItemDesign-to-SpecEnd ItemDesign-to-SpecSegment Spec Segment SpecPrime ItemDesign-to-SpecPrime ItemDesign-to-Spec FIGURE 6.5‑3 Evolution of Technical Baseline
+
+•
+
+Product Baseline:
+
+
+
+»
+
+Detailed physical or form, fit, and function characteristics of a CI;
+
+»
+
+
+
+»
+
+The production acceptance test requirements.
+
+•
+
+As-Deployed Baseline:
+
+ 6.5.1.2.3    
+
+FIGURE 6.5-4
+
+
+
+**OriginatorNORMAL CONFIGURATION CHANGE PROCESSCM Function ReviewersResponsibleOrganization CCB Actionees1.• Prepare and submit change request• Propose reviewers3. 4.2. 5.• Receive and log request in system• Screen change package• Release for reviewReview and submit commentsSchedule CCB and prepare agenda (if needed)8b.Collect, track, and adjudicatecomments (withreviewers andoriginator)6.Prepare decisionpackage9.7. 8a.Completeassigned actions• Disposition change request• Assign action items as needed• Release CCB minutes• Track actions10.• Verify release package• Release final documentation• Close change request• Execute approved changes • Finalizedocumentation** FIGURE 6.5‑4 Typical Change Control Process
+
+TYPES OF CONFIGURATION MANAGEMENT CHANGES
+
+• Engineering Change: An engineering change is an iteration in the baseline. Changes can be major or minor. They may or may not include a specification change. Changes affecting an external interface must be coordinated and approved by all stakeholders affected.
+
+> A “major” change is a change to the baseline configuration documentation that has significant impact (i.e., requires retrofit of delivered products or affects the baseline specification, cost, safety, compatibility with interfacing products, or operator, or maintenance training).> A ”minor” change corrects or modifies configuration documentation or processes without impact to the interchangeability of products or system elements in the system structure.
+
+• Waiver: A waiver is a documented agreement intentionally releasing a program or project from meeting a requirement. (Some Centers use deviations prior to Implementation and waivers during Implementation.) Authorized waivers do not constitute a change to a baseline.
+
+6.5.1.2.4  • Complete current and historical configuration documentation and unique identifiers.
+
+•  •   Some useful purposes of the CSA data include:
+
+•  • Historical traceability • Software trouble reporting • Performance measurement data The following are critical functions or attributes to consider if designing or purchasing software to assist with the task of managing configuration.
+
+• Ability to share data real time with internal and external stakeholders securely;
+
+• Version control and comparison (track history of an object or product);
+
+• Secure user checkout and check in;
+
+• Tracking capabilities for gathering metrics (i.e., time, date, who, time in phases, etc.);
+
+• Web based;
+
+• Notification capability via e-mail;
+
+• Integration with other databases or legacy systems;
+
+• Compatible with required support contractors and/or suppliers (i.e., can accept data from a third party as required);
+
+• Integration with drafting and modeling programs as required;
+
+• Provide neutral format viewer for users;
+
+• License agreement allows for multiple users within an agreed-to number;
+
+• Workflow and life cycle management;
+
+• Limited customization;
+
+• Migration support for software upgrades;
+
+• User friendly;
+
+• Consideration for users with limited access;
+
+• Ability to attach standard format files from desktop • Workflow capability (i.e., route a CI as required based on a specific set of criteria); and • Capable of acting as the one and only source for released information.
+
+6.4.1.2.5  6.4.1.2.6   6.5.1.3 Outputs NPR 7120.5 defines a project’s life cycle in progressive phases. Beginning with Pre-Phase A, these steps in turn are grouped under the headings of Formulation and Implementation. Approval is required to transition between these phases. Key Decision Points (KDPs) define transitions between the phases. CM plays an important role in determining whether a KDP has been met. Major outputs of CM are:
+
+•
+
+List of configuration items under control (Configuration Status Accounting (CSA) reports):
+
+ •
+
+Current baselines:
+
+ •
+
+CM reports:
+
+•
+
+Other CM work products:
+
+6.5.2 CM Guidance
+
+*https://nen.nasa.*
+
+*gov/web/se/doc-repository*
+
+• the impact of not doing CM, • warning signs when you know you are in trouble, and • when it is acceptable to use redline drawings.
+
+## 6.6 Technical Data Management
+
+The Technical Data Management Process is used to plan for, acquire, access, manage, protect, and use data of a technical nature to support the total life cycle of a system. Data Management (DM) includes the development, deployment, operations and support, eventual retirement, and retention of appropriate technical, to include mission and science, data beyond system retirement as required by NPR 1441.1, NASA Records Retention Schedules.
+
+FIGURE 6.6-1
+
+*From all technicalprocesses and contractorsTo all technical processesand contractors To project and alltechnical processes Technical DataProducts to BeManaged Technical DataRequests Technical DataElectronic ExchangeFormats Form of TechnicalData Products Delivered TechnicalData Prepare for technical datamanagement implementation Collect and store requiredtechnical dataProvide technical data to authorizeCapture work products from technicaldata management activitiesdpartiesMaintain stored technical data*
+
+FIGURE 6.6‑1 Technical Data Management Process
+
+•
+
+application of policies and procedures for data identification and control,
+
+•
+
+timely and economical acquisition of technical data,
+
+•
+
+assurance of the adequacy of data and its protection,
+
+•
+
+facilitating access to and distribution of the data to the point of use,
+
+•
+
+analysis of data use,
+
+•
+
+
+
+•
+
+process access to information written in legacy software.
+
+
+
+6.6.1 Process Description
+
+FIGURE 6.6-1
+
+6.6.1.1 Inputs The inputs for this process are:
+
+•
+
+Technical data products to be managed:
+
+•
+
+Technical data requests:
+
+6.6.1.2 Process Activities  Other NASA policies address the acquisition and storage of data and not just the technical data used in the life cycle of a system.
+
+6.6.1.2.1   • Identification/definition/management of data sets.
+
+• Control procedures—receipt, modification, review, and approval.
+
+• Guidance on how to access/search for data for users.
+
+•  • Data rights and distribution limitations such as export-control Sensitive But Unclassified (SBU).
+
+•    •  • The data content and format;
+
+•   • 
+
+•  •   • Obtain strategy/plan commitment from relevant stakeholders.
+
+•  •   •  •  
+
+Data Identification/Definition
+
+   •
+
+Data »
+
+ 
+
+»
+
+“Data,” as used in SE DM, includes technical data; computer software documentation; and representation of facts, numbers, or data of any nature that can be communicated, stored, and processed to form information required by a contract or agreement to be delivered to, or accessed by, the Government.
+
+»
+
+Data include that associated with system development, modeling and simulation used in development or test, test and evaluation, installation, parts, spares, repairs, usage data required for product sustainability, and source and/or supplier data.
+
+»
+
+
+
+transactional data, and other data of a purely business nature.
+
+•
+
+Data Call:
+
+   •
+
+Information:
+
+ •
+
+Technical Data Package:
+
+     •
+
+Technical Data Management System:
+
+  6.6.1.2.2  • Requirements relating to the flow/delivery of data to or from a contractor should be specified in the technical data management plan and included in the Request for Proposal (RFP) and contractor agreement.
+
+•  •  • The availability/access of technical data lies with the author, originator, or generator of the data in conjunction with the manager of the technical data management system.
+
+•  • 
+
+TABLE 6.6-1 6.6.1.2.3
+
+
+
+systems engineering activities. This injunction applies whether the data are hard copy or digital.
+
+
+
+CPI protection should be a key consideration for the technical data management effort and is part of the asset protection planning process.
+
+6.6.1.3 Outputs
+
+FIGURE 6.6-1
+
+•
+
+Form of Technical Data Products:
+
+•
+
+Technical Data Electronic Exchange Formats:
+
+•
+
+Delivered Technical Data:
+
+DATA COLLECTION CHECKLIST
+
+• Have the frequency of collection and the points in the technical and technical management processes when data inputs will be available been determined?• Has the timeline that is required to move data from the point of origin to storage repositories or stakeholders been established?• Who is responsible for the input of the data?• Who is responsible for data storage, retrieval, and security?• Have necessary supporting tools been developed or acquired?
+
+
+
+6.6.2 Technical Data Management Guidance
+
+*https://nen.nasa.*
+
+*gov/web/se/doc-repository*
+
+•
+
+data security and
+
+•
+
+ITAR.
+
+## 6.7 Technical Assessment
+
+
+
+TABLE 6.6‑1 Technical Data Tasks Description Tasks Expected Outcomes Technical data capture Collect and store inputs and technical effort outcomes from the technical and technical management processes, including:
+
+• results from technical assessments;
+
+• descriptions of methods, tools, and metrics used;
+
+• recommendations, decisions, assumptions, and impacts of technical efforts and decisions;
+
+• lessons learned;
+
+• deviations from plan;
+
+• anomalies and out-of-tolerances relative to requirements; and • other data for tracking requirements.
+
+Perform data integrity checks on collected data to ensure compliance with content and format as well as technical data checks to ensure there are no errors in specifying or recording the data.
+
+Report integrity check anomalies or variances to the authors or generators of the data for correction.
+
+Prioritize, review, and update data collection and storage procedures as part of regularly scheduled maintenance.
+
+Sharable data needed to perform and control the technical and technical management processes is collected and stored.
+
+Stored data inventory.
+
+Technical data maintenance Implement technical management roles and responsibilities with technical data products received.
+
+Manage database(s) to ensure that collected data have proper quality and integrity; and are properly retained, secure, and available to those with access authority.
+
+Periodically review technical data management activities to ensure consistency and identify anomalies and variances.
+
+Review stored data to ensure completeness, integrity, validity, availability, accuracy, currency, and traceability.
+
+Perform technical data maintenance, as required.
+
+Identify and document significant issues, their impacts, and changes made to technical data to correct issues and mitigate impacts.
+
+Maintain, control, and prevent the stored data from being used inappropriately.
+
+Store data in a manner that enables easy and speedy retrieval.
+
+Maintain stored data in a manner that protects the technical data against foreseeable hazards, e.g., fire, flood, earthquake, etc.
+
+Records of technical data maintenance.
+
+Technical effort data, including captured work products, contractordelivered documents, and acquirer-provided documents are controlled and maintained.
+
+Status of data stored is maintained to include: version description, timeline, and security classification.
+
+Technical data/information distribution Maintain an information library or reference index to provide technical data availability and access instructions.
+
+Receive and evaluate requests to determine data requirements and delivery instructions.
+
+Process special requests for technical effort data or information according to established procedures for handling such requests.
+
+Ensure that required and requested data are appropriately distributed to satisfy the needs of the acquirer and requesters in accordance with the agreement, program/project directives, and technical data management plans and procedures.
+
+Ensure that electronic access rules are followed before database access is allowed or any requested data are electronically released/transferred to the requester.
+
+Provide proof of correctness, reliability, and security of technical data provided to internal and external recipients.
+
+Access information (e.g., available data, access means, security procedures, time period for availability, and personnel cleared for access) is readily available.
+
+Technical data are provided to authorize requesters in the appropriate format, with the appropriate content, and by a secure mode of delivery, as applicable.
+
+
+
+Description
+
+Tasks
+
+Expected Outcomes
+
+Data management system maintenance
+
+Implement safeguards to ensure protection of the technical database and of en routetechnical data from unauthorized access or intrusion.
+
+Establish proof of coherence of the overall technical dataset to facilitate effective and efficient use.
+
+Maintain, as applicable, backups of each technical database.
+
+Evaluate the technical data management system to identify collection and storage performance issues and problems; satisfaction of data users; risks associated with delayed or corrupted data, unauthorized access, or survivability of information from hazards such as fire, flood, earthquake, etc.
+
+Review systematically the technical data management system, including the database capacity, to determine its appropriateness for successive phases of the Defense Acquisition Framework.
+
+Recommend improvements for discovered risks and problems:
+
+Handle risks identified as part of technical risk management.
+
+Control recommended changes through established program/project change management activities.
+
+Current technical data management system.
+
+Technical data are appropriately and regularly backed up to prevent data loss.
+
+NASA has multiple review cycle processes for both space flight programs and projects (see NPR 7120.5), and research and technology programs and projects. (See NPR 7120.8, NASA Research and Technology Program and Project Management Requirements.) These different review cycles all support the same basic goals but with differing formats and formalities based on the particular program or project needs.
+
+### 6.7.1 Process Description
+
+FIGURE 6.7-1
+
+
+
+
+
+6.7.1.1 Inputs
+
+Typical inputs needed for the Technical Assessment Process would include the following:
+
+•
+
+Technical Plans:
+
+
+
+
+
+
+
+•
+
+Technical Process and Product Measures:
+
+
+
+*https://nen.nasa.gov/web/se/doc-re  pository*
+
+ •
+
+Reporting Requirements:
+
+  
+
+*To Decision Analysis ProcessAnalysis Support RequestsWork Products fromTechnical AssessmentTo Technical DataManagement ProcessTo Technical Planning, Requirements , andInterface Management Processes Corrective ActionRecommendationsTechnical Cost and ScheduleStatus ReportsProduct MeasurementsDecision SupportRecommendations andImpacts From Product VerificationandProduct Validation ProcessesFrom Decision Analysis Process Product and ProcessMeasures Technical PlansFrom TechnicalPlanning ProcessFrom projectRisk ReportingRequirementsTechnical ReviewReports To project and Technical DataManagement ProcessAssessment Results/Findings To Technical Planning, Risk Management, and RequirementsManagement ProcessesPrepare strategy for conductingtechnical assessmentsAssess technical work productivity (measure progress against plans)Conduct horizontal and vertical progresstechnical reviewsAssess technical product quality(measure progress against requirements)Capture work products from technicalassessment activities* FIGURE 6.7‑1 Technical Assessment Process 6.7.1.2 Process Activities 6.7.1.2.1 FIGURE 6.7-1
+
+   
+
+ 
+
+*Section 6.8* FIGURE 6.7-2 (Re-)PlanningStatusReporting Assessing DecisionmakingStatus Not OKStatus OKExecute
+
+   •
+
+*https://nen.nasa.gov/web/se/doc-repository*
+
+• Report these technical measures in a consistent format at all project levels.
+
+•  • Encourage a logical process of rolling up technical measures (e.g., use the WBS or PBS for project progress status).
+
+• Support assessments with quantitative risk measures.
+
+• Summarize the condition of the project by using color-coded (red, yellow, and green) alert zones for all technical measures.
+
+6.7.1.2.2 *https://nen.nasa.gov/web/se/doc-repository*   The measures are predominantly assessed during the program and project technical reviews. Typical activities performed for technical reviews include (1) identifying, planning, and conducting phase-tophase technical reviews; (2) establishing each review’s purpose, objective, and entry and success criteria; (3)
+
+establishing the makeup of the review team; and (4) identifying and resolving action items resulting from the review. Section 6.7.2.3 summarizes the types of technical reviews typically conducted on a program/project and the role of these reviews in supporting management decision processes. This section address the types of technical reviews typically conducted for both space flight and research and technology programs/projects and the role of these reviews in supporting management decision processes. It also identifies some general principles for holding reviews, but leaves explicit direction for executing a review to the program/project team to define.
+
+
+
+TABLE 6.7-1
+
+6.7.1.2.3
+
+The work products generated during these activities should be captured along with key decisions made, supporting decision rationale and assumptions, and lessons learned in performing the Technical Assessment Process.
+
+6.7.1.3 Outputs
+
+Typical outputs of the Technical Assessment Process would include the following:
+
+•
+
+Assessment Results, Findings, and
+
+Recommendations:
+
+•
+
+Technical Review Reports/Minutes:
+
+
+
+•
+
+Other Work Products:
+
+
+
+6.7.2 Technical Assessment Guidance
+
+*https://nen.*
+
+*nasa.gov/web/se/doc-repository*
+
+
+
+•
+
+the basis of technical reviews,
+
+•
+
+audits,
+
+•
+
+Key Decision Points,
+
+•
+
+required technical reviews for space flight projects,
+
+•
+
+other reviews,
+
+•
+
+status reporting and assessment (including MOEs, MOPs, KPPs, TPMs, EVM and other metrics,
+
+Additional information is also available in NASA/SP-2014-3705, NASA Space Flight Program and Project Management Handbook.
+
+## 6.8 Decision Analysis
+
+
+
+
+
+TABLE 6.7-1 Purpose and Results for Life-Cycle Reviews for Spaceflight Projects Name of Review Purpose Timing Entrance/Success Criteria Results of Review Mission Concept Review (MCR) The MCR will affirm the mission need and evaluates the proposed objectives and the concept for meeting those objectives.
+
+The MCR should be completed prior to entering the concept development phase (Phase A) The MCR entrance and success criteria are defined in Table G-3 of NPR 7123.1.
+
+A successful MCR supports the determination that the proposed mission meets the customer need and has sufficient quality and merit to support a field Center management decision to propose further study to the cognizant NASA program Associate Administrator as a candidate Phase A effort.
+
+System Requirements Review (SRR) The SRR evaluates the functional and performance requirements defined for the system and the preliminary program or project plan and ensures that the requirements and selected concept will satisfy the mission.
+
+The SRR is conducted during the concept development phase (Phase A) and before conducting the SDR or MDR.
+
+The SRR entrance and success criteria for a program are defined in Table G-1 of NPR 7123.1. The SRR entrance and success criteria for projects and single-project programs are defined in Table G-4 of NPR 7123.1.
+
+Successful completion of the SRR freezes program/project requirements and leads to a formal decision by the cognizant program Associate Administrator to proceed with proposal request preparations for project implementation Sometimes called the MDR by robotic projects and SDR for human flight projects, this review evaluates whether the proposed architecture is responsive to the functional and performance requirements and that the requirements have been allocated to all functional elements of the mission/system.
+
+The MDR/SDR is conducted during the concept development phase (Phase A) prior to KDP B and the start of preliminary design.
+
+The MDR/SDR entrance and success criteria for a program are defined in Table G-2 of NPR 7123.1. The MDR/SDR entrance and success criteria for projects and single-project programs are defined in Table G-5 of NPR 7123.1.
+
+A successful MDR/SDR supports the decision to further develop the system architecture/design and any technology needed to accomplish the mission. The results reinforce the mission/system’s merit and provide a basis for the system acquisition strategy. As a result of successful completion, the mission/system and its operation are well enough understood to warrant design and acquisition of the end items.
+
+Preliminary Design Review (PDR) The PDR demonstrates that the preliminary design meets all system requirements with acceptable risk and within the cost and schedule constraints and establishes the basis for proceeding with detailed design. It shows that the correct design options have been selected, interfaces have been identified, and verification methods have been described. The PDR should address and resolve critical, system-wide issues and show that work can begin on detailed design.
+
+PDR occurs near the completion of the preliminary design phase (Phase B) as the last review in the Formulation Phase.
+
+The entrance and success criteria for the PDR are defined in Table G-6 of NPR 7123.1.
+
+As a result of successful completion of the PDR, the design-to baseline is approved. A successful review result also authorizes the project to proceed into the Implementation Phase and toward final design.
+
+Name of Review Purpose Timing Entrance/Success Criteria Results of Review Critical Design Review (CDR) The CDR demonstrates that the maturity of the design is appropriate to support proceeding with full scale fabrication, assembly, integration, and test. CDR determines if the technical effort is on track to complete the system development, meeting mission performance requirements within the identified cost and schedule constraints.
+
+CDR occurs during the final design phase (Phase C).
+
+The entrance and success criteria for the CDR are defined in Table G-7 of NPR 7123.1.
+
+As a result of successful completion of the CDR, the build-to baseline, production, and verification plans are approved. A successful review result also authorizes coding of deliverable software (according to the build-to baseline and coding standards presented in the review) and system qualification testing and integration. All open issues should be resolved with closure actions and schedules.
+
+Production Readiness Review (PRR) A PRR is held for projects developing or acquiring multiple or similar systems greater than three or as determined by the project. The PRR determines the readiness of the system developers to efficiently produce the required number of systems. It ensures that the production plans; fabrication, assembly, and integration-enabling products; and personnel are in place and ready to begin production.
+
+PRR occurs during the final design phase (Phase C).
+
+The entrance and success criteria for the PRR are defined in Table G-8 of NPR 7123.1.
+
+As a result of successful completion of the PRR, the final production build-to baseline, production, and verification plans are approved. Approved drawings are released and authorized for production. A successful review result also authorizes coding of deliverable software (according to the build-to baseline and coding standards presented in the review) and system qualification testing and integration. All open issues should be resolved with closure actions and schedules.
+
+System Integration Review (SIR) An SIR ensures segments, components, and subsystems are on schedule to be integrated into the system. Integration facilities, support personnel, and integration plans and procedures are on schedule to support integration.
+
+SIR occurs at the end of the final design phase (Phase C) and before the systems assembly, integration, and test phase (Phase D) begins.
+
+The entrance and success criteria for the SIR are defined in Table G-9 of NPR 7123.1.
+
+As a result of successful completion of the SIR, the final as-built baseline and verification plans are approved. Approved drawings are released and authorized to support integration. All open issues should be resolved with closure actions and schedules. The subsystems/systems integration procedures, ground support equipment, facilities, logistical needs, and support personnel are planned for and are ready to support integration.
+
+System Acceptance Review (SAR) The SAR verifies the completeness of the specific end products in relation to their expected maturity level and assesses compliance to stakeholder expectations. It also ensures that the system has sufficient technical maturity to authorize its shipment to the designated operational facility or launch site.
+
+The entrance and success criteria for the SAR are defined in Table G-11 of NPR 7123.1.
+
+As a result of successful completion of the SAR, the system is accepted by the buyer, and authorization is given to ship the hardware to the launch site or operational facility and to install software and hardware for operational use.
+
+Name of Review Purpose Timing Entrance/Success Criteria Results of Review Operational Readiness Review (ORR) The ORR examines the actual system characteristics and procedures used in the system or end product’s operation. It ensures that all system and support (flight and ground) hardware, software, personnel, procedures, and user documentation accurately reflect the deployed state of the system.
+
+The entrance and success criteria for the ORR are defined in Table G-12 of NPR 7123.1.
+
+As a result of successful ORR completion, the system is ready to assume normal operations.
+
+Flight Readiness Review (FRR) The FRR examines tests, demonstrations, analyses, and audits that determine the system’s readiness for a safe and successful flight or launch and for subsequent flight operations. It also ensures that all flight and ground hardware, software, personnel, and procedures are operationally ready.
+
+The entrance and success criteria for the FRR are defined in Table G-13 of NPR 7123.1.
+
+As a result of successful FRR completion, technical and procedural maturity exists for system launch and flight authorization and, in some cases, initiation of system operations.
+
+Post-Launch Assessment Review (PLAR) A PLAR is a post-deployment evaluation of the readiness of the spacecraft systems to proceed with full, routine operations. The review evaluates the status, performance, and capabilities of the project evident from the flight operations experience since launch. This can also mean assessing readiness to transfer responsibility from the development organization to the operations organization. The review also evaluates the status of the project plans and the capability to conduct the mission with emphasis on near-term operations and mission-critical events.
+
+This review is typically held after the early flight operations and initial checkout.
+
+The entrance and success criteria for the PLAR are defined in Table G-14 of NPR 7123.1.
+
+As a result of successful PLAR completion, the system is ready to assume in-space operations.
+
+Critical Event Readiness Review (CERR) A CERR confirms the project’s readiness to execute the mission’s critical activities during flight operation. These include orbital insertion, rendezvous and docking, re-entry, scientific observations/encounters, etc.
+
+The CERR entrance and success criteria for a program are defined in Table G-15 of NPR 7123.1.
+
+As a result of successful CER completion, the system is ready to assume (or resume) in-space operations.
+
+Post-Flight Assessment Review (PFAR) The PFAR evaluates the activities from the flight after recovery. The review identifies all anomalies that occurred during the flight and mission and determines the actions necessary to mitigate or resolve the anomalies for future flights.
+
+The entrance and success criteria for the PFAR are defined in Table G-16 of NPR 7123.1.
+
+As a result of successful PFAR completion, the report documenting flight performance and recommendations for future missions is complete and all anomalies have been documented and dispositioned.
+
+Name of Review Purpose Timing Entrance/Success Criteria Results of Review Decommissioning Review (DR) The DR confirms the decision to terminate or decommission the system and assesses the readiness of the system for the safe decommissioning and disposal of system assets.
+
+The DR is normally held near the end of routine mission operations upon accomplishment of planned mission objectives. It may be advanced if some unplanned event gives rise to a need to prematurely terminate the mission, or delayed if operational life is extended to permit additional investigations.
+
+The entrance and success criteria for the DR are defined in Table G-17 of NPR 7123.1.
+
+A successful DR completion ensures that the decommissioning and disposal of system items and processes are appropriate and effective.
+
+Disposal Readiness Review (DRR) A DRR confirms the readiness for the final disposal of the system assets.
+
+The DRR is held as major assets are ready for final disposal.
+
+The DRR entrance and success criteria for a program are defined in Table G-18 of NPR 7123.1.
+
+A successful DRR completion ensures that the disposal of system items and processes are appropriate and effective.
+
+The Decision Analysis Process is used in support of decision making bodies to help evaluate technical, cost, and schedule issues, alternatives, and their uncertain  ties. Decision models have the capacity for accepting and quantifying human subjective inputs: judgments of experts and preferences of decision makers.
+
+The outputs from this process support the decision authority’s difficult task of deciding among compet  ing alternatives without complete knowledge; there  fore, it is critical to understand and document the assumptions and limitation of any tool or method  ology and integrate them with other factors when deciding among viable options.
+
+6.8.1 Process Description A typical process flow diagram is provided in
+
+FIGURE 6.8-1
+
+, including inputs, activities, and outputs. The first step in the process is understanding the deci  sion to be made in the context of the system/mission.
+
+Understanding the decision needed requires knowl  edge of the intended outcome in terms of technical performance, cost, and schedule. For an issue that follows the decision analysis process, the definition of the decision criteria or the measures that are import  ant to characterize the options for making a decision should be the next step in the process. With this defined, a set of alternative solutions can be defined for evaluation. These solutions should cover the full decision space as defined by the understanding of the decision and definition of the decision criteria.
+
+The need for specific decision analysis tools (defined in Section 6.8.3 in the NASA Expanded Guidance for Systems Engineering at
+
+*https://nen.nasa.gov/ web/se/doc-repository*
+
+) can then be determined and employed to support the formulation of a solution.
+
+Following completion of the analysis, a description of how each alternative compares with the decision criteria can be captured for submission to the deci  sion-making body or authority. A recommendation is typically provided from the decision analysis, but is not always required depending on the discretion of the decision-making body. A decision analysis report should be generated including: decision to be made,
+
+decision criteria, alternatives, evaluation methods, evaluation process and results, recommendation, and final decision.
+
+*From all technicalprocesses Work Products FromDecision AnalysisTo Technical DataManagement Process Decision Need,Alternatives, Issues, or Problems andSupporting Data To TechnicalAssessment ProcessDecision Support Recommendations andImpactsTo all technical processesAlternative SelectionRecommendations andImpactsFrom TechnicalAssessment Process Analysis SupportRequestsEstablish guidelines to determinewhich technical issues are subject to aformal analysis/evaluation processIdentify alternative solutions to address decision issuesSelect evaluation methods and toolsfor evaluatingalternative solutionsEvaluate alternative solutions with the established criteria andselected methodsSelect recommended solutions from the alternatives based on theevaluation criteriaReport analysis results with recommendations, impacts, andcorrective actions Capture work products from decision analysis activities* FIGURE 6.8‑1 Decision Analysis Process
+
+     
+
+
+
+FIGURE 6.8-2 FIGURE 6.8-2
+
+  
+
+Decision Alternatives for AnalysisExamples of Decisions• Architecture A vs. Architecture V vs. Archicture C• Extending the life of existing systems• Contingency Plan A vs. Contingency Plan B• Changing requirements• Launch or no launch• Making changes to existing systems• Responding to operational occurrences in real time• Technology A vs. Technology B• PrioritizationPreliminary Risk & Performance Measurement ResultsNoYesYesNoIterationAdditional Uncertainty Reduction Necessary per StakeholdersRisk Analysis Techniques Spectrum of Available TechniquesQualitative TechniquesQuantitative TechniquesRisk & Performance Measurement ResultsIdentifyAnalyzeDeliberation and Recommending a Decision AlternativeIs the ranking/comparison robust?Scoping & Determination of Methods to Be UsedNet beneficial to reduce uncertainty?AnalyzeIdentify
+
+FIGURE 6.8-2 Risk Analysis of Decision Alternatives 6.8.1.1 Inputs FIGURE 6.8-2
+
+   •
+
+Complexity:
+
+ •
+
+Uncertainty:
+
+ •
+
+Multiple Attributes:
+
+•
+
+Diversity of Stakeholders:
+
+
+
+when the set of stakeholders reflects a diversity of values, preferences, and perspectives.
+
+ •
+
+Decision need, identified alternatives, issues, or problems and supporting data:
+
+ •
+
+Analysis support requests:
+
+6.8.1.2 Process Activities For the Decision Analysis Process, the following activities are typically performed.
+
+         6.8.1.2.1 This step includes identifying the following:
+
+•  • The acceptable range and scale of the criteria; and • The rank of each criterion by its importance.
+
+  
+
+not meet mandatory criteria should be disregarded. For complex decisions, criteria can be grouped into categories or objectives.
+
+6.8.1.2.2          6.8.1.2.3     *Section 6.8.2* 6.8.1.2.4  
+
+Regardless of the methods or tools used, results should include the following:
+
+• Evaluation of assumptions related to evaluation criteria and of the evidence that supports the assumptions; and • Evaluation of whether uncertainty in the values for alternative solutions affects the evaluation.
+
+     
+
+## NOTE:
+
+6.8.1.2.5        
+
+ 6.8.1.2.6   6.8.1.2.7   6.8.1.3 Outputs 6.8.1.3.1    This report includes the following:
+
+• mission and system context for the decision • decision needed and intended outcomes • decision criteria • identified alternative solutions • decision evaluation methods and tools employed • assumptions, uncertainties, and sensitivities in the evaluations and recommendations • results of all alternative evaluations • alternative recommendations • final decision made with rationale • lessons learned
+
+TABLE 6.8-1
+
+6.8.2 Decision Analysis Guidance
+
+*https://nen.*
+
+*nasa.gov/web/se/doc-repository*
+
+ • trade studies, • cost-benefit analysis, • influence diagrams, • decision trees, • analytic hierarchy process, • Borda counting, and • utility analysis,
+
+*https://nen.nasa.gov/web/se/ doc-repository*
+
+TABLE 6.8‑1 Typical Information to Capture in a Decision Report # Section Section Description 1 Executive Summary Provide a short half-page executive summary of the report:
+
+• Recommendation (short summary—1 sentence) • Problem/issue requiring a decision (short summary—1 sentence) 2 Problem/Issue Description Describe the problem/issue that requires a decision. Provide background, history, the decision maker(s) (e.g., board, panel, forum, council), and decision recommendation team, etc.
+
+3 Decision Matrix Setup Rationale Provide the rationale for setting up the decision matrix:
+
+• Criteria selected • Options selected • Weights selected • Evaluation methods selected Provide a copy of the setup decision matrix.
+
+4 Decision Matrix Scoring Rationale Provide the rationale for the scoring of the decision matrix. Provide the results of populating the scores of the matrix using the evaluation methods selected.
+
+5 Final Decision Matrix Cut and paste the final spreadsheet into the document. Also include any important snapshots of the decision matrix.
+
+6 Risk/Benefits For the final options being considered, document the risks and benefits of each option.
+
+7 Recommendation and/or Final Decision Describe the recommendation that is being made to the decision maker(s) and the rationale for why the option was selected. Can also document the final decision in this section.
+
+8 Dissent If applicable, document any dissent with the recommendation. Document how dissent was addressed (e.g., decision matrix, risk).
+
+9 References Provide any references.
+
+A Appendices Provide the results of the literature search, including lessons learned, previous related decisions, and previous related dissent. Also document any detailed data analysis and risk analysis used for the decision. Can also document any decision metrics.
+
+6.0 Crosscutting Technical M anagem ent
+
+N ASA SYSTEM S EN G IN EERIN G H AN D BO O K 172
+
+# Appendix A: Acronyms
+
+AADL
+
+Architecture Analysis and Design Language
+
+2
+
+Advancement Degree of Difficulty Assessment
+
+AIAA
+
+American Institute of Aeronautics and Astronautics
+
+AO
+
+Announcement of Opportunity
+
+AS9100
+
+Aerospace Quality Management Standard
+
+ASME
+
+American Society of Mechanical Engineers
+
+ASQ
+
+American Society for Quality
+
+CAIB
+
+Columbia Accident Investigation Board
+
+CCB
+
+Configuration Control Board
+
+CDR
+
+Critical Design Review
+
+CE
+
+Concurrent Engineering or Chief Engineer
+
+CEQ
+
+Council on Environmental Quality
+
+CERR
+
+Critical Event Readiness Review
+
+CHSIP
+
+Commercial Human Systems Integration Processes
+
+CI
+
+Configuration Item
+
+CM
+
+Configuration Management
+
+CMO
+
+Configuration Management Organization
+
+ConOps
+
+Concept of Operations
+
+COSPAR
+
+Committee on Space Research
+
+COTS
+
+Commercial Off-The-Shelf
+
+CPI
+
+Critical Program Information
+
+CR
+
+Change Request
+
+CRM
+
+Continuous Risk Management
+
+CSA
+
+Configuration Status Accounting
+
+D&C
+
+Design and Construction
+
+DDT&E
+
+Design, Development, Test, and Evaluation
+
+DM
+
+Data Management
+
+DOD
+
+(U.S.) Department of Defense
+
+DODAF
+
+DOD Architecture Framework
+
+DR
+
+Decommissioning Review
+
+DRM
+
+Design Reference Mission
+
+DRR
+
+Disposal Readiness Review
+
+EDL
+
+Entry, Descent, and Landing
+
+EEE
+
+Electrical, Electronic, and Electromechanical
+
+EFFBD
+
+Enhanced Functional Flow Block Diagram
+
+EIA
+
+Electronic Industries Alliance
+
+EMC
+
+Electromagnetic Compatibility
+
+EMI
+
+Electromagnetic Interference
+
+EO
+
+(U.S.) Executive Order
+
+EOM
+
+End of Mission
+
+EVM
+
+Earned Value Management
+
+FA
+
+Formulation Agreement
+
+FAD
+
+Formulation Authorization Document
+
+FAR
+
+Federal Acquisition Regulation
+
+FCA
+
+Functional Configuration Audit
+
+FFBD
+
+Functional Flow Block Diagram
+
+FIPS
+
+Federal Information Processing Standard
+
+FM
+
+Fault Management
+
+FMEA
+
+Failure Modes and Effects Analysis
+
+FMR
+
+Financial Management Requirements
+
+FRR
+
+Flight Readiness Review
+
+FTE
+
+Full Time Equivalent
+
+GEO
+
+Geostationary
+
+GOTS
+
+Government Off-The-Shelf
+
+GSE
+
+Government-Supplied Equipment or Ground Support Equipment
+
+GSFC
+
+Goddard Space Flight Center
+
+HCD
+
+Human-Centered Design
+
+HF
+
+Human Factors
+
+HITL
+
+Human-In-The-Loop
+
+HQ
+
+Headquarters
+
+HSI
+
+Human Systems Integration
+
+HSIP
+
+Human System Integration Plan
+
+HWIL
+
+HardWare-In-the-Loop
+
+I&T
+
+Integration and Test
+
+ICD
+
+Interface Control Document/Drawing
+
+ICP
+
+Interface Control Plan
+
+IDD
+
+Interface Definition Document
+
+IDEF0
+
+Integration Definition (for functional modeling)
+
+IEEE
+
+Institute of Electrical and Electronics Engineers
+
+ILS
+
+Integrated Logistics Support
+
+INCOSE
+
+International Council on Systems Engineering
+
+IPT
+
+Integrated Product Team
+
+IRD
+
+Interface Requirements Document
+
+ISO
+
+International Organization for Standardization
+
+IT
+
+Information Technology
+
+ITA
+
+Internal Task Agreement
+
+ITAR
+
+International Traffic in Arms Regulation
+
+IV&V
+
+Independent Verification and Validation
+
+IVHM
+
+Integrated Vehicle Health Management
+
+IWG
+
+Interface Working Group
+
+JCL
+
+Joint (cost and schedule) Confidence Level
+
+JPL
+
+Jet Propulsion Laboratory
+
+KBSI
+
+Knowledge Based Systems, Inc.
+
+KDP
+
+Key Decision Point
+
+KDR
+
+Key Driving Requirement
+
+KPP
+
+Key Performance Parameter
+
+KSC
+
+Kennedy Space Center
+
+LCC
+
+Life Cycle Cost
+
+LEO
+
+Low Earth Orbit or Low Earth Orbiting
+
+M&S
+
+Modeling and Simulation or Models and Simulations
+
+MBSE
+
+Model-Based Systems Engineering
+
+MCR
+
+Mission Concept Review
+
+MDAA
+
+Mission Directorate Associate Administrator
+
+MDR
+
+Mission Definition Review
+
+MEL
+
+Master Equipment List
+
+MODAF
+
+(U.K.) Ministry of Defense Architecture Framework
+
+MOE
+
+Measure of Effectiveness
+
+MOP
+
+Measure of Performance
+
+MOTS
+
+Modified Off-The-Shelf
+
+MOU
+
+Memorandum of Understanding
+
+MRB
+
+Material Review Board
+
+MRR
+
+Mission Readiness Review
+
+MSFC
+
+Marshall Space Flight Center
+
+NASA
+
+(U.S.) National Aeronautics and Space Administration
+
+NEN
+
+NASA Engineering Network
+
+NEPA
+
+National Environmental Policy Act
+
+NFS
+
+NASA FAR Supplement
+
+NGO
+
+Needs, Goals, and Objectives
+
+NIAT
+
+NASA Integrated Action Team
+
+NID
+
+NASA Interim Directive
+
+NOA
+
+New Obligation Authority
+
+NOAA
+
+(U.S.) National Oceanic and Atmospheric Administration
+
+NODIS
+
+NASA Online Directives Information System
+
+NPD
+
+NASA Policy Directive
+
+NPR
+
+NASA Procedural Requirements
+
+NRC
+
+(U.S.) Nuclear Regulatory Commission
+
+NSTS
+
+National Space Transportation System
+
+OCE
+
+(NASA) Office of the Chief Engineer
+
+OCIO
+
+(NASA) Office of the Chief Information Officer
+
+OCL
+
+Object Constraint Language
+
+OMB
+
+(U.S.) Office of Management and Budget
+
+ORR
+
+Operational Readiness Review
+
+OTS
+
+Off-the-Shelf
+
+OWL
+
+Web Ontology Language
+
+PBS
+
+Product Breakdown Structure
+
+PCA
+
+Physical Configuration Audit or Program Commitment Agreement
+
+PD/NSC
+
+(U.S.) Presidential Directive/National Security Council
+
+PDR
+
+Preliminary Design Review
+
+PFAR
+
+Post-Flight Assessment Review
+
+PI
+
+Performance Index or Principal Investigator
+
+PIR
+
+Program Implementation Review
+
+PKI
+
+Public Key Infrastructure
+
+PLAR
+
+Post-Launch Assessment Review
+
+PM
+
+Program Manager or Project Manager
+
+PMC
+
+Program Management Council
+
+PPD
+
+(U.S.) Presidential Policy Directive
+
+PRA
+
+Probabilistic Risk Assessment
+
+PRD
+
+Project Requirements Document
+
+PRR
+
+Production Readiness Review
+
+QA
+
+Quality Assurance
+
+QVT
+
+Query View Transformations
+
+R&M
+
+Reliability and Maintainability
+
+R&T
+
+Research and Technology
+
+RACI
+
+Responsible, Accountable, Consulted, Informed
+
+REC
+
+Record of Environmental Consideration
+
+RF
+
+Radio Frequency
+
+RFA
+
+Requests for Action
+
+RFP
+
+Request for Proposal
+
+RID
+
+Review Item Discrepancy or Review Item Disposition
+
+RIDM
+
+Risk-Informed Decision-Making
+
+RM
+
+Risk Management
+
+RMA
+
+Rapid Mission Architecture
+
+RUL
+
+Remaining Useful Life
+
+SAR
+
+System Acceptance Review or Safety Analysis Report (DOE)
+
+SBU
+
+Sensitive But Unclassified
+
+SDR
+
+Program/System Definition Review
+
+SE
+
+Systems Engineering
+
+SECoP
+
+Systems Engineering Community of Practice
+
+SEMP
+
+Systems Engineering Management Plan
+
+SI
+
+International System of Units (French: Système international d’unités)
+
+SIR
+
+System Integration Review
+
+SMA
+
+Safety and Mission Assurance
+
+SME
+
+Subject Matter Expert
+
+SOW
+
+Statement Of Work
+
+SP
+
+Special Publication
+
+SRD
+
+System Requirements Document
+
+SRR
+
+Program/System Requirements Review
+
+SRS
+
+Software Requirements Specification
+
+STI
+
+Scientific and Technical Information
+
+STS
+
+Space Transportation System
+
+SysML
+
+System Modeling Language
+
+T&E
+
+Test and Evaluation
+
+TA
+
+Technical Authority
+
+TBD
+
+To Be Determined
+
+TBR
+
+To Be Resolved
+
+ToR
+
+Terms of Reference
+
+TPM
+
+Technical Performance Measure
+
+TRL
+
+Technology Readiness Level
+
+TRR
+
+Test Readiness Review
+
+TVC
+
+Thrust Vector Controller
+
+UFE
+
+Unallocated Future Expenses
+
+UML
+
+Unified Modeling Language
+
+V&V
+
+Verification and Validation
+
+WBS
+
+Work Breakdown Structure
+
+WYE
+
+Work Year Equivalent
+
+XMI
+
+XML Metadata Interchange
+
+XML
+
+Extensible Markup Language
+
+# Appendix B: Glossary
+
+Acceptable Risk:
+
+
+
+Acquisition:
+
+
+
+
+
+Activity:
+
+Advancement Degree of Difficulty Assessment
+
+(AD
+
+2
+
+):
+
+Allocated Baseline (Phase C):
+
+
+
+
+
+
+
+
+
+Analysis:
+
+Analysis of Alternatives:
+
+
+
+Analytic Hierarchy Process:
+
+
+
+
+
+Anomaly:
+
+Approval:
+
+Approval (for Implementation):
+
+ 
+
+Architecture (System):
+
+
+
+Architecture (ISO Definition):
+
+
+
+As-Deployed Baseline:
+
+
+
+Automated:
+
+Autonomous:
+
+ 
+
+Baseline :
+
+Bidirectional Traceability :
+
+
+
+Brassboard:
+
+
+
+Breadboard:
+
+Component Facilities:
+
+
+
+Concept of Operations (ConOps) (Concept Documentation):
+
+
+
+Concurrence:
+
+
+
+Concurrent Engineering:
+
+
+
+Configuration Items (CI):
+
+
+
+Configuration Management Process:
+
+ 
+
+Context Diagram:
+
+
+
+Continuous Risk Management:
+
+
+
+Contract:
+
+  
+
+Contractor:
+
+ 
+
+Control Account Manager:
+
+
+
+Control Gate (or milestone):
+
+Cost-Benefit Analysis:
+
+ 
+
+Cost-Effectiveness Analysis:
+
+
+
+Critical Design Review:
+
+ 
+
+Critical Event (or key event):
+
+ 
+
+Critical Event Readiness Review:
+
+ 
+
+Customer:
+
+Data Management:
+
+Decision Analysis Process:
+
+
+
+Decision Authority:
+
+Decision Matrix:
+
+Decision Support Package:
+
+Decision Tree:
+
+
+
+Decommissioning Review:
+
+
+
+Deliverable Data Item:
+
+
+
+Demonstration:
+
+Derived Requirements:
+
+Descope:
+
+Design Solution Definition Process:
+
+
+
+Designated Governing Authority:
+
+ 
+
+Detection:
+
+
+
+Diagnosis:
+
+Discrepancy:
+
+Earned Value:
+
+
+
+Earned Value Management:
+
+
+
+
+
+Emergent Behavior:
+
+End Product:
+
+
+
+Enabling Products:
+
+ 
+
+Engineering Unit:
+
+   
+
+Enhanced Functional Flow Block Diagram:
+
+Entrance Criteria:
+
+
+
+Environmental Impact:
+
+Environmental Management:
+
+ 
+
+Establish (with respect to processes):
+
+Evaluation:
+
+ 
+
+Extensibility:
+
+Failure:
+
+
+
+Failure Tolerance:
+
+
+
+Fault:
+
+Fault Identification:
+
+
+
+Fault Isolation:
+
+Fault Management:
+
+ 
+
+Fault Tolerance:
+
+Feasible:
+
+Flexibility:
+
+Flight Readiness Review:
+
+Float:
+
+
+
+Formulation Phase:
+
+  
+
+Functional Analysis:
+
+Functional Baseline (Phase B):
+
+ 
+
+Functional Configuration Audit (FCA):
+
+
+
+Functional Decomposition:
+
+
+
+Functional Flow Block Diagram:
+
+Gantt Chart:
+
+Goal:
+
+ 
+
+Government Mandatory Inspection Points:
+
+
+
+Health Assessment:
+
+ 
+
+Health Monitoring:
+
+
+
+Heritage (or legacy):
+
+
+
+Human-Centered Design:
+
+ 
+
+Human Factors Engineering:
+
+Human Systems Integration:
+
+ 
+
+Implementation Phase:
+
+ 
+
+Incommensurable Costs:
+
+Influence Diagram:
+
+
+
+Inspection:
+
+ 
+
+Integrated Logistics Support:
+
+Interface Management Process:
+
+ 
+
+Iterative:
+
+Key Decision Point:
+
+
+
+Key Event (or Critical Event):
+
+Key Performance Parameter:
+
+ 
+
+Knowledge Management:
+
+
+
+Least-Cost Analysis:
+
+
+
+Liens:
+
+Life Cycle Cost (LCC):
+
+ 
+
+Logical Decomposition Models:
+
+Logical Decomposition Process:
+
+ 
+
+Logistics (or Integrated Logistics Support):
+
+Loosely Coupled Program:
+
+ 
+
+Maintain (with respect to establishment of pro  cesses):
+
+resources, assigning responsibilities, training people, managing configurations, identifying and involving stakeholders, and monitoring process effectiveness.
+
+Maintainability:
+
+Margin:
+
+
+
+Master Equipment List (MEL):
+
+Measure of Effectiveness (MOE):
+
+ 
+
+Measure of Performance (MOP):
+
+Metric:
+
+Mission:
+
+
+
+Mission Concept Review:
+
+Mission Definition Review:
+
+
+
+Mitigation:
+
+Model:
+
+
+
+Need:
+
+
+
+Nonconforming product:
+
+
+
+Objective:
+
+
+
+particular goal. Generally, objectives should meet four criteria:
+
+1.
+
+Specific:
+
+2.
+
+Measurable:
+
+3.
+
+Aggressive, but attainable:
+
+4.
+
+Results-oriented:
+
+
+
+Objective Function (sometimes Cost Function):
+
+
+
+Operational Environment:
+
+Operational Readiness Review:
+
+ 
+
+Operations Concept:
+
+Optimal Solution:
+
+Other Interested Parties (Stakeholders):
+
+ 
+
+Peer Review:
+
+Performance Standards:
+
+Physical Configuration Audits (PCA) or configura  tion inspection:
+
+
+
+
+
+Post-Flight Assessment Review:
+
+Post-Launch Assessment Review:
+
+
+
+Precedence Diagram:
+
+Preliminary Design Review:
+
+
+
+Process:
+
+Producibility:
+
+Product:
+
+
+
+Product Baseline (Phase D/E):
+
+  
+
+Product Breakdown Structure:
+
+
+
+Product Implementation Process:
+
+Product Integration Process:
+
+
+
+Product Realization:
+
+product satisfies its appropriate set of requirements and the transition of the product to its customer.
+
+Product Transition Process:
+
+ 
+
+Product Validation Process:
+
+  
+
+Product Verification Process:
+
+ 
+
+Production Readiness Review (PRR):
+
+Prognosis:
+
+Program:
+
+  
+
+Program/System Definition Review:
+
+
+
+Program Requirements:
+
+Program System Requirements Review:
+
+
+
+Programmatic Requirements:
+
+
+
+Project:
+
+
+
+Project Plan:
+
+
+
+Project Requirements:
+
+   
+
+Phase Product:
+
+Product Form:
+
+
+
+Product Realization:
+
+
+
+Prototype:
+
+   
+
+Quality Assurance:
+
+
+
+Realized Product:
+
+Recovery:
+
+Recursive:
+
+ 
+
+Relevant Stakeholder:
+
+   
+
+Relevant Environment:
+
+
+
+
+
+Reliability:
+
+ 
+
+Repeatable:
+
+
+
+Requirement:
+
+  
+
+Requirements Allocation Sheet:
+
+Requirements Management Process:
+
+ 
+
+Risk:
+
+
+
+Risk Assessment:
+
+Risk-Informed Decision Analysis Process:
+
+Risk Management:
+
+ 
+
+  
+
+Safety:
+
+Search Space (or Alternative Space):
+
+Single-Project Programs:
+
+
+
+Software:
+
+ 
+
+Note 1:
+
+Note 2:
+
+Solicitation:
+
+ 
+
+Specification:
+
+
+
+Stakeholder:
+
+
+
+Stakeholder Expectations:
+
+
+
+Stakeholder Expectations Definition Process:
+
+
+
+Standing Review Board:
+
+
+
+State Diagram:
+
+
+
+Success Criteria:
+
+
+
+Surveillance :
+
+  
+
+System:
+
+ 
+
+System Acceptance Review:
+
+System Definition Review:
+
+ 
+
+System Integration Review:
+
+
+
+System Requirements Review:
+
+ 
+
+System Safety Engineering:
+
+ 
+
+System Structure:
+
+
+
+Systems Approach:
+
+ 
+
+Systems Engineering (SE) Engine:
+
+
+
+Systems Engineering Management Plan (SEMP):
+
+ 
+
+Tailoring:
+
+ OR The process used to seek relief from NPR 7123.1 requirements consistent with program or project objectives, allowable risk, and constraints.
+
+Technical Assessment Process:
+
+ 
+
+Technical Cost Estimate:
+
+
+
+Technical Data Management Process:
+
+
+
+Technical Data Package:
+
+Technical Measures:
+
+ 
+
+Technical Performance Measures:
+
+ 
+
+Technical Planning Process:
+
+
+
+Technical Requirements:
+
+Technical Requirements Definition Process:
+
+ 
+
+Technical Risk:
+
+
+
+Technical Risk Management Process:
+
+Technical Team:
+
+ 
+
+Technology Readiness Assessment Report:
+
+
+
+Technology Assessment:
+
+   
+
+2
+
+Technology Development Plan:
+
+Technology Maturity Assessment:
+
+Technology Readiness Level:
+
+
+
+Test:
+
+Test Readiness Review:
+
+ 
+
+Threshold Requirements:
+
+Tightly Coupled Programs:
+
+  
+
+Traceability:
+
+
+
+Trade Study:
+
+
+
+Trade Study Report:
+
+ 
+
+Trade Tree:
+
+
+
+Transition:
+
+Uncoupled Programs:
+
+Utility:
+
+Validated Requirements:
+
+ 
+
+Validation (of a product):
+
+Variance:
+
+
+
+Verification (of a product):
+
+
+
+Waiver:
+
+
+
+Work Breakdown Structure (WBS):
+
+
+
+WBS Model:
+
+
+
+Workflow Diagram:
+
+# Appendix C: How to Write a Good Requirement—
+
+# Checklist
+
+## C.1 Use of Correct Terms
+
+
+
+Shall = requirement
+
+
+
+Will = facts or declaration of purpose
+
+
+
+Should = goal
+
+## C.2 Editorial Checklist
+
+Personnel Requirement
+
+
+
+
+
+Product Requirement
+
+
+
+The requirement is in the form “product ABC shall XYZ.” A requirement should state “The product shall” (do, perform, provide, weigh, or other verb) followed by a description of what should be done.
+
+
+
+The requirement uses consistent terminology to refer to the product and its lower-level entities.
+
+
+
+
+
+
+
+Is the requirement free of implementation? (Requirements should state WHAT is needed, NOT HOW to provide it; i.e., state the problem not the solution. Ask, “Why do you need the requirement?” The answer may point to the real requirement.)
+
+
+
+
+
+Example Product Requirements
+
+
+
+The system shall operate at a power level of…
+
+
+
+The software shall acquire data from the…
+
+
+
+The structure shall withstand loads of…
+
+
+
+The hardware shall have a mass of…
+
+## C.3 General Goodness Checklist
+
+
+
+The requirement is grammatically correct.
+
+
+
+The requirement is free of typos, misspellings, and punctuation errors.
+
+
+
+
+
+
+
+The requirement is stated positively (as opposed to negatively, i.e., “shall not”).
+
+
+
+The use of “To Be Determined” (TBD) values should be minimized. It is better to use a best Appendix C: How to Write a Good Requirement—
+
+
+
+
+
+
+
+
+
+
+
+The requirement is located in the proper section of the document (e.g., not in an appendix).
+
+## C.4 Requirements Validation Checklist
+
+Clarity
+
+
+
+
+
+
+
+
+
+Are the requirements concise and simple?
+
+
+
+
+
+
+
+
+
+Does the requirement statement have one subject and one predicate?
+
+Completeness
+
+
+
+Are requirements stated as completely as possible? Have all incomplete requirements been captured as TBDs or TBRs and a complete listing of them maintained with the requirements?
+
+
+
+
+
+
+
+
+
+
+
+Have all assumptions been explicitly stated?
+
+Compliance
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Consistency
+
+
+
+Are the requirements stated consistently without contradicting themselves or the requirements of related systems?
+
+
+
+Is the terminology consistent with the user and sponsor’s terminology? With the project glossary?
+
+
+
+Is the terminology consistently used throughout the document? Are the key terms included in the project’s glossary?
+
+Traceability
+
+
+
+Are all requirements needed? Is each requirement necessary to meet the parent requirement? Is each requirement a needed function or characteristic? Distinguish between needs and wants. If it is not necessary, it is not a requirement. Ask, “What is the worst that could happen if the requirement was not included?”
+
+
+
+
+
+
+
+
+
+Is each requirement stated in such a manner that it can be uniquely referenced (e.g., each requirement is uniquely numbered) in subordinate documents?
+
+Correctness
+
+
+
+Is each requirement correct?
+
+
+
+Is each stated assumption correct? Assumptions should be confirmed before the document can be baselined.
+
+
+
+Are the requirements technically feasible?
+
+Functionality
+
+
+
+Are all described functions necessary and together sufficient to meet mission and system goals and objectives?
+
+Performance
+
+
+
+Are all required performance specifications and margins listed (e.g., consider timing, throughput, storage size, latency, accuracy and precision)?
+
+
+
+Is each performance requirement realistic?
+
+
+
+Are the tolerances overly tight? Are the tolerances defendable and cost-effective? Ask, “What is the worst thing that could happen if the tolerance was doubled or tripled?”
+
+Interfaces
+
+
+
+Are all external interfaces clearly defined?
+
+
+
+Are all internal interfaces clearly defined?
+
+
+
+
+
+Maintainability
+
+
+
+Have the requirements for maintainability of the system been specified in a measurable, verifiable manner?
+
+
+
+Are requirements written so that ripple effects from changes are minimized (i.e., requirements are as weakly coupled as possible)?
+
+Reliability
+
+
+
+Are clearly defined, measurable, and verifiable reliability requirements specified?
+
+
+
+Are there error detection, reporting, handling, and recovery requirements?
+
+
+
+Are undesired events (e.g., single-event upset, data loss or scrambling, operator error) considered and their required responses specified?
+
+
+
+Have assumptions about the intended sequence of functions been stated? Are these sequences required?
+
+
+
+Do these requirements adequately address the survivability after a software or hardware fault of
+
+the system from the point of view of hardware, software, operations, personnel and procedures?
+
+Verifiability/Testability
+
+
+
+Can the system be tested, demonstrated, inspected, or analyzed to show that it satisfies requirements? Can this be done at the level of the system at which the requirement is stated? Does a means exist to measure the accomplishment of the requirement and verify compliance? Can the criteria for verification be stated?
+
+
+
+Are the requirements stated precisely to facilitate specification of system test success criteria and requirements?
+
+
+
+
+
+Data Usage
+
+
+
+
+
+# Appendix D: Requirements Verification Matrix
+
+
+
+**NOTE:**
+
+*Appendix I*
+
+TABLE D-1
+
+*Appendix C*
+
+TABLE D-1 Requirements Verification Matrix
+
+
+
+Document
+
+-
+
+
+
+-
+
+
+
+Facility or Lab
+
+a
+
+
+
+
+
+
+
+
+
+
+
+Results
+
+**
+
+*Document number the requirement is contained within*
+
+*Paragraph number of the requirement*
+
+*Text (within reason) of the requirement, i.e., the “shall”*
+
+*Success criteria for the requirement*
+
+*Verification method for the requirement (analysis, inspection, demonstration, test)*
+
+**
+
+**
+
+**
+
+**
+
+**
+
+**
+
+**
+
+*Indicate documents that contain the objective evidence that requirement was satisfied*
+
+P-1
+
+xxx
+
+3.2.1.1 Capability: Support Uplinked Data (LDR)
+
+System X shall provide a max. ground-tostation uplink of…
+
+1. System X locks to forward link at the min and max data rate tolerances
+
+2. System X locks to the forward link at the min and max operating frequency tolerances
+
+Test
+
+xxx
+
+5
+
+Yes
+
+No
+
+xxx
+
+P-i
+
+xxx
+
+Other paragraphs
+
+Other “shalls” in PTRS
+
+Other criteria
+
+xxx
+
+xxx
+
+xxx
+
+Yes/No
+
+Yes/No
+
+xxx
+
+Memo xxx
+
+S-i or other unique designator
+
+xxxxx (other specs, ICDs, etc.)
+
+Other paragraphs
+
+Other “shalls” in specs, ICDs, etc.
+
+Other criteria
+
+xxx
+
+xxx
+
+xxx
+
+Yes/No
+
+Yes/No
+
+xxx
+
+Report xxx
+
+a
+
+# Appendix E: Creating the Validation Plan with a Validation Requirements Matrix
+
+**NOTE:**
+
+*Appendix I*
+
+TABLE E-1
+
+*Appendix D*
+
+
+
+
+
+
+
+•
+
+ConOps
+
+•
+
+Stakeholder/customer needs, goals, and objectives documentation
+
+•
+
+
+
+•
+
+Lessons learned database
+
+•
+
+System architecture modeling
+
+•
+
+Test-as-you-fly design goals and constraints
+
+•
+
+SEMP, HSIP, V&V plans
+
+Validation products can take the form of a wide range of deliverables, including:
+
+•
+
+Stakeholder evaluation and feedback
+
+•
+
+Peer reviews
+
+•
+
+Physical models of all fidelities
+
+•
+
+Simulations
+
+•
+
+Virtual modeling
+
+•
+
+Tests
+
+•
+
+Fit-checks
+
+•
+
+Procedure dry-runs
+
+•
+
+
+
+•
+
+Phase-level review solicitation and feedback
+
+Particular attention should be paid to the planning for life cycle phase since early validation can have a profound impact on the design and cost in the later life cycle phases.
+
+TABLE E-1
+
+Validation Product # Activity Objective Validation Method Facility or Lab Phase Performing Organization Results *Unique identifier for validation product Describe evaluation by the customer/sponsor that will be performed What is to be accomplished by the customer/sponsor evaluation  Facility or laboratory used to perform the validation*
+
+*a*
+
+*Organization responsible for coordinating the validation activity Indicate the objective evidence that validation activity occurred* 1 Customer/sponsor will evaluate the candidate displays 1. Ensure legibility is acceptable 2. Ensure overall appearance is acceptable Test xxx Phase A xxx TPS 123456 a. Example: (1) during product selection process, (2) prior to final product selection (if COTS) or prior to PDR, (3) prior to CDR, (4) during box-level functional, (5) during system-level functional, (6) during end-to-end functional, (7) during integrated vehicle functional, (8) during on-orbit functional.
+
+Appendix F: Functional, Timing, and State Analysis
+
+
+
+*https://nen.nasa.gov/web/se/doc-repository*
+
+# Appendix G: Technology Assessment/Insertion
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2
+
+2
+
+TABLE G.1-1
+
+2
+
+FIGURE G.1-1
+
+TABLE G.1-1 Products Provided by the TA as a Function of Program/Project Phase
+
+Gate
+
+Product
+
+KDP A: Transition from
+
+Requires an assessment of potential technology needs versus current and planned
+
+Pre-Phase A to Phase A
+
+technology readiness levels, as well as potential opportunities to use commercial,
+
+academic, and other government agency sources of technology. Included as part of
+
+the draft integrated baseline. Technology Development Plan is baselined that identifies
+
+technologies to be developed, heritage systems to be modified, alternative paths to be
+
+pursued, fallback positions and corresponding performance descopes, milestones, metrics,
+
+and key decision points. Initial Technology Readiness Assessment (TRA) is available.
+
+KDP B: Transition from
+
+Technology Development Plan and Technology Readiness Assessment (TRA) are updated.
+
+Phase A to Phase B
+
+Incorporated in the preliminary project plan.
+
+KDP C: Transition from
+
+Requires a TRAR demonstrating that all systems, subsystems, and components have
+
+Phase B to Phase C/D
+
+achieved a level of technological maturity with demonstrated evidence of qualification in a
+
+relevant environment.
+
+Source: NPR 7120.5.
+
+## G.2 Inputs/Entry Criteria
+
+
+
+technological advancements required. Therefore, at the beginning of Pre-Phase A, the following should be provided:
+
+•
+
+Refinement of TRL definitions.
+
+•
+
+2
+
+•
+
+Definition of terms to be used in the assessment process.
+
+•
+
+Establishment of meaningful evaluation criteria and metrics that will allow for clear identification of gaps and shortfalls in performance.
+
+•
+
+Establishment of the TA team.
+
+•
+
+Establishment of an independent TA review team.
+
+.1: Integ MPS.2: LH System.3: O2 Fluid Sys..4: Pressure &Pneumatic Sys..5: Umbilicals & Disconnect Crew LaunchVehicle1.3LaunchVehicle1.3.8First Stage1.3.8.1Upper Stage1.3.8.2Upper StageEngine1.3.8.3...MPS1.3.8.2.4...US RCS1.3.8.2.5FS RCS1.3.8.2.6TVCS1.3.8.2.7Avionics1.3.8.2.8Software1.3.8.2.9...IntegratedTest H/W1.3.8.2.10....1: Integ RCS.2: Integ EnergySupport.1: Integ RCS .1: Integ TVCS.2: Actuator.3: HydraulicPower.4: APU.1: Integ Avionics.2: C&DH System.3: GN&C H/W.4: Radio FrequencySystem.5: EPS.6: Electrical Integration.7: Develop Flight Instrument.8: Sensor & Instrument System.9: EGSE.10: Integ CLV Avionics SystemElement Testing.11: Flight Safety System.1: Integ S/WSystem.2: Flight S/W.1: MPTA.2: GVT.3: STA.4: US for DTF-1.5: US for VTF-2.6: US for RRF-3.7: Struc. ThermalComponent Test
+
+FIGURE G.1-1 PBS Example
+
+## G.3 How to Do Technology Assessment
+
+
+
+
+
+2
+
+Conceptual Level Activities  
+
+FIGURE G.3-1 Identify systems, subsystems, and componentsper hierarchical productbreakdown of the WBS Assign TRL to subsystemsbased on lowest TRL ofcomponents and TRL state of integration Assign TRL to allcomponents based onassessment of maturityAssign TRL to systemsbased on lowest TRL ofsubsystems and TRL state of integration Identify all components,subsystems, and systemsthat are at lower TRLsthan required by programBaseline technologymaturity assessmentPerform AD2 on allcomponents, subsystems,and systems that are belowrequisite maturity levelTechnology Development PlanCost PlanSchedule PlanRisk Assessment FIGURE G.3-1 Technology Assessment Process
+
+Even at the conceptual level, it is important to use the formalism of a PBS to avoid allowing important technologies to slip through the cracks. Because of the preliminary nature of the concept, the systems, subsystems, and components will be defined at a level that will not permit detailed assessments to be made. The process of performing the assessment, however, is the same as that used for subsequent, more detailed steps that occur later in the program/project where systems are defined in greater detail.
+
+Architectural Studies 
+
+FIGURE G.3-2.
+
+RequirementsTRL/AD2 AssessmentArchitecturalStudiesTechnology Maturation Concepts SystemDesign
+
+FIGURE G.3-2 Architectural Studies and Technology Development
+
+
+
+
+
+
+
+
+
+## G.4 Establishing TRLs
+
+FIGURE G.4-1
+
+
+
+Terminology
+
+FIGURE G.4-1
+
+
+
+
+
+
+
+
+
+FIGURE G.4-2 TRL 1 Basic principles observed and reportedTRL 2 Technology concept and/or application formulated __TRL 3 Analytical and experimental critical function and/or __ characteristic proof-of-conceptTRL 4 Component and/or breadboard validation in laboratory __ environment TRL 5 Component and/or breadboard validation in relevant __ environmentTRL 6 System/subsystem model or prototype demonstration __ in a relevant environment (ground or space)TRL 7 System prototype demonstration in a target/space environment __TRL 8 Actual system completed and “flight qualified” throughtest and demonstration (ground or flight)” __ TRL 9 Actual system “flight proven” through successful __ mission operationsSystem test, launch, and operationsSystem/subsystemdevelopmentTechnologydemonstrationTechnologydevelopmentResearch to provefeasibilityBasic technologyresearch FIGURE G.4-1 Technology Readiness Levels
+
+Judgment Calls 
+
+Assessment Team     
+
+FIGURE G.4-2 Has an identical unit been successfullyoperated/launched in identicalconfiguration/environment?Has an identical unit in a different configuration/system architecture been successfully operatedin space or the target environment or launched?If so, then this initially drops to TRL 5 untildifferences are evaulated.Has an identical unit been flight qualified butnot yet operated in space or the targetenvironment or launched?Has a prototype unit (or one similar enough to beconsidered a prototype) been successfully operatedin space or the target environment or launched?Has a prototype unit (or one similar enough to be considered a prototype) been demonstrated in a relevant environment?Has a breadboard unit been demonstrated in a relevant environment?Has a breadboard unit been demonstrated in a laboratory environment?Has analytical and experimentalproof-of-concept been demonstrated?Has concept or applicationbeen formulated?Have basic principles been observedand reported?RETHINK POSITION REGARDINGTHIS TECHNOLOGYfiNONONONONONONONONONOTRL 9 YESTRL 5 YESTRL 2 YESTRL 1 YESTRL 3 YESTRL 4 YESTRL 5 YESTRL 6 YESTRL 7 YESTRL 8 YES FIGURE G.4-2 TMA Thought Process
+
+Heritage Systems 
+
+2
+
+Formal Process for Determining TRLs
+
+FIGURE G.4-3
+
+
+
+2
+
+ red box yellow box green box white box
+
+X = Exists
+
+## Concept
+
+## Demonstration Units
+
+## Environment
+
+## Unit Description
+
+## Overall TRL
+
+## Breadboard
+
+## Brassboard
+
+## Developmental Model
+
+## Protogype
+
+## Flight Qualified
+
+## Laboratory Environment
+
+## Relevant Environment
+
+## Space Environment
+
+## Space Launch Operation
+
+## Form
+
+## Fit
+
+## Function
+
+## Appropriatae Scale
+
+1.0 System 1.1 Subsystem X 1.1.1 Mechanical Components 1.1.2 Mechanical Systems 1.1.3 Electrical Components X X X X X 1.1.4 Electrical Systems 1.1.5 Control Systems 1.1.6 Thermal Systems X X X 1.1.7 Fluid Systems X 1.1.8 Optical Systems 1.1.9 Electro-Optical Systems 1.1.10 Software Systems 1.1.11 Mechanisms X 1.1.12 Integration 1.2 Subsystem Y 1.2.1 Mechanical Components FIGURE G.4-3 TRL Assessment Matrix
+
+# Appendix H: Integration Plan Outline
+
+## H.1 Purpose
+
+
+
+1
+
+
+
+## H.2 Questions/Checklist
+
+•
+
+
+
+•
+
+
+
+
+
+
+
+•
+
+
+
+1 The material in this appendix is adapted from Federal Highway Administration and CalTrans, Systems Engineering Guidebook for ITS, Version 2.0.
+
+•
+
+
+
+•
+
+For each integration step, does the integration plan define what components and subsystems are to be integrated?
+
+•
+
+For each integration step, does the integration plan identify all the needed participants and define what their roles and responsibilities are?
+
+•
+
+Does the integration plan establish the sequence and schedule for every integration step?
+
+•
+
+
+
+## H.3 Integration Plan Contents
+
+Title Page
+
+**
+
+•
+
+INTEGRATION PLAN FOR THE [insert name of project] AND [insert name of organization]
+
+•
+
+*Contract number*
+
+•
+
+*Date that the document was formally approved*
+
+•
+
+*The organization responsible for preparing the document*
+
+• *Internal document control number, if available* • *Revision version and date issued* 1.0 Purpose of Document *This section gives a brief statement of the purpose of this document. It is the plan for integrating the components and subsystems of the project prior to verification.*
+
+2.0 Scope of Project * * 3.0 Integration Strategy *    * 4.0 Phase 1 Integration ** • *The location of the activities.*
+
+• * * • ** • *All integration activities that need to be performed after installation, including integration with onsite systems and external systems at other sites.*
+
+• *A description of the verification activities, as defined in the applicable verification plan, that occur after this integration step.*
+
+• ** • *The schedule for each activity.*
+
+*This and any needed additional sections follow the format for Section 3.0. Each covers each step in a multiple-step integration effort.*
+
+# Appendix I: Verification and Validation Plan Outline
+
+## Sample Outline
+
+The Verification and Validation (V&V) Plan needs to be baselined after the comments from PDR are incorporated. In this annotated outline, the use of the term “system” is indicative of the entire scope for which this plan is developed. This may be an entire spacecraft, just the avionics system, or a card within the avionics system. Likewise, the terms “end item,” “subsystem,” or “element” are meant to imply the lower-level products that, when integrated together, will produce the “system.” The general term “end item” is used to encompass activities regardless of whether the end item is a hardware or software element.
+
+
+
+## 1.0 Introduction
+
+1.1 Purpose and Scope
+
+**
+
+1.2 Responsibility and Change Authority
+
+*This section will identify who has responsibility for the maintenance of this plan and who or what board has the authority to approve any changes to it.*
+
+1.3 Definitions
+
+*appendix B*
+
+## 2.0 Applicable and Reference Documents
+
+2.1 Applicable Documents
+
+*These are the documents that may impose additional requirements or from which some of the requirements have been taken.*
+
+2.2 Reference Documents
+
+*These are the documents that are referred to within the V&V Plan that do not impose requirements, but which may have additional useful information.*
+
+2.3 Order of Precedence
+
+*This section identifies which documents take precedence whenever there are conflicting requirements.*
+
+## 3.0 System Description
+
+3.1 System Requirements Flowdown
+
+**
+
+3.2 System Architecture
+
+*This section describes the system that is within the scope of this V&V Plan. The description should be enough so that the V&V activities will have the proper context and be understandable.*
+
+3.3 End Item Architectures
+
+**
+
+**
+
+3.3.1 System End Item A
+
+*This section describes the first major end item/subsystem in more detail so that the V&V activities have context and are understandable.*
+
+3.3.n System End Item n
+
+**
+
+3.4 Ground Support Equipment
+
+**
+
+3.5 Other Architecture Descriptions
+
+
+
+## 4.0 Verification and Validation Process
+
+**
+
+4.1 Verification and Validation Management Responsibilities
+
+*This section describes the responsibilities of key players in the V&V activities. It may include identification and duty description for test directors/conductors, managers, facility owners, boards, and other key stakeholders.*
+
+4.2 Verification Methods
+
+*This section defines and describes the methods that will be used during the verification activities.*
+
+4.2.1 Analysis
+
+*Appendix B*
+
+4.2.2 Inspection
+
+*Appendix B*
+
+4.2.3 Demonstration
+
+*Appendix B*
+
+4.2.4 Test
+
+*Appendix B*
+
+4.2.4.1
+
+**
+
+**
+
+**
+
+4.2.4.2
+
+*This section describes any other testing that will be used as part of the verification activities that are not part of the qualification testing. It includes any testing of requirements within the normal operating range of the end item. It may include some engineering tests that will form the foundation or provide dry runs for the official verification testing.*
+
+4.3 Validation Methods
+
+*This section defines and describes the methods to be used during the validation activities.*
+
+4.2.1 Analysis
+
+*Appendix B*
+
+4.2.2 Inspection
+
+*Appendix B*
+
+4.2.3 Demonstration
+
+*Appendix B*
+
+4.2.4 Test
+
+*Appendix B*
+
+4.4 Certification Process
+
+**
+
+**
+
+4.5 Acceptance Testing
+
+*Describes the philosophy of how/which of the verification/validation activities will be performed on each of the operational units as they are manufactured/coded and are readied for flight/use. Includes how/if data packages will be developed and provided as part of the delivery.*
+
+## 5.0 Verification and Validation Implementation
+
+5.1 System Design and Verification and Validation Flow
+
+**
+
+5.2 Test Articles
+
+*This section describes the pedigree of test articles that will be involved in the verification/validation activities. This*
+
+*may include descriptions of breadboards, prototypes, engineering units, qualification units, protoflight units, flight units, or other specially named units. A definition of what is meant by these terms needs to be included to ensure clear understanding of the expected pedigree of each type of test article. Descriptions of what kind of test/analysis activities will be performed on each type of test article is included.*
+
+5.3 Support Equipment
+
+*This section describes any special support equipment that will be needed to perform the verification/validation activities. This will be a more detailed description than is stated in Section 3.4 of this outline.*
+
+5.4 Facilities
+
+**
+
+**
+
+## 6.0 End Item Verification and Validation
+
+**
+
+6.1 End Item A
+
+**
+
+6.1.1 Developmental/Engineering Unit Evaluations
+
+**
+
+6.1.2 Verification Activities
+
+*This section describes in detail the verification activities that will be performed on this end item.*
+
+6.1.2.1
+
+*This section describes all verification testing that will be performed on this end item.*
+
+6.1.2.1.1 Qualification Testing
+
+**
+
+6.1.2.1.2 Other Testing
+
+*This section describes all other verification tests that are not performed as part of the qualification testing. These will include verification of requirements in the normal operating ranges.*
+
+6.1.2.2
+
+**
+
+**
+
+6.1.2.3
+
+**
+
+6.1.2.4
+
+**
+
+6.1.3 Validation Activities
+
+6.1.3.1
+
+**
+
+6.1.3.2
+
+**
+
+6.1.3.3
+
+**
+
+6.1.3.4
+
+**
+
+6.1.4 Acceptance Testing
+
+**
+
+**
+
+6.n End Item n
+
+*In a similar manner as above, a description of how each end item that makes up the system will be verified and validated is made.*
+
+## 7.0 System Verification and Validation
+
+7.1 End-Item Integration
+
+*This section describes how the various end items will be assembled/integrated together, verified and validated. For example, the avionics and power systems may be integrated and tested together to ensure their interfaces and performance is as required and expected prior to integration with a larger element. This section describes the verification and validation that will be performed on these major assemblies. Complete system integration will be described in later sections.*
+
+7.1.1 Developmental/Engineering Unit Evaluations
+
+**
+
+**
+
+7.1.2 Verification Activities
+
+*This section describes the verification activities that will be performed on the various assemblies.*
+
+7.1.2.1
+
+*This section describes all verification testing that will be performed on the various assemblies. The section may be broken up to describe qualification testing performed on the various assemblies and other types of testing.*
+
+7.1.2.2
+
+*This section describes all verification analysis that will be performed on the various assemblies.*
+
+7.1.2.3
+
+*This section describes all verification inspections that will be performed on the various assemblies.*
+
+7.1.2.4 *This section describes all verification demonstrations that will be performed on the various assemblies.*
+
+7.1.3 Validation Activities 7.1.3.1 *This section describes all validation testing that will be performed on the various assemblies.*
+
+7.1.3.2 *This section describes all validation analysis that will be performed on the various assemblies.*
+
+7.1.3.3 *This section describes all validation inspections that will be performed on the various assemblies.*
+
+7.1.3.4 *This section describes all validation demonstrations that will be performed on the various assemblies.*
+
+7.2 Complete System Integration *This section describes the verification and validation activities that will be performed on the systems after all its assemblies are integrated together to form the complete integrated system. In some cases this will not be practical. Rationale for what cannot be done should be captured.*
+
+7.2.1 Developmental/Engineering Unit Evaluations ** 7.2.2 Verification Activities *This section describes the verification activities that will be performed on the completely integrated system* 7.2.2.1 *This section describes all verification testing that will be performed on the integrated system. The section may be broken up to describe qualification testing performed at the integrated system level and other types of testing.*
+
+7.2.2.2 *This section describes all verification analysis that will be performed on the integrated system.*
+
+7.2.2.3 *This section describes all verification inspections that will be performed on the integrated system.*
+
+7.2.2.4 *This section describes all verification demonstrations that will be performed on the integrated system.*
+
+7.2.3 Validation Activities *This section describes the validation activities that will be performed on the completely integrated system.*
+
+7.2.3.1 *This section describes all validation testing that will be performed on the integrated system.*
+
+7.2.3.2 *This section describes all validation analysis that will be performed on the integrated system.*
+
+7.2.3.3 *This section describes the validation inspections that will be performed on the integrated system.*
+
+7.2.3.4 *This section describes the validation demonstrations that will be performed on the integrated system.*
+
+## 8.0 Program Verification and Validation
+
+**
+
+8.1 Vehicle Integration
+
+**
+
+**
+
+8.2 End-to-End Integration
+
+*This section describes any end-to-end testing that the system may undergo. For example, this configuration would include data being sent from a ground control center through one or more relay satellites to the system and back.*
+
+8.3 On-Orbit V&V Activities
+
+**
+
+## 9.0 System Certification Products
+
+**
+
+Appendix A: Acronyms and Abbreviations
+
+*This is a list of all the acronyms and abbreviations used in the V&V Plan and their spelled-out meaning.*
+
+Appendix B: Definition of Terms
+
+*This section is a definition of the key terms that are used in the V&V Plan.*
+
+Appendix C: Requirement Verification Matrix
+
+**
+
+**
+
+*Appendix D*
+
+Appendix D: Validation Matrix
+
+*Appendix E*
+
+# Appendix J: SEMP Content Outline
+
+## J.1 SEMP Content
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1.
+
+
+
+2.
+
+
+
+
+
+3.
+
+
+
+The SEMP outline in this appendix is guidance to be used in preparing a stand-alone project SEMP. The level of detail in the project SEMP should be adapted based on the size of the project. For a small project, the material in the SEMP can be placed in the project plan’s technical summary, and this annotated outline should be used as a topic guide.
+
+Some additional important points on the SEMP:
+
+•
+
+
+
+
+
+•
+
+Project requirements that have been tailored or significant customization of SE processes should be described in the SEMP.
+
+•
+
+
+
+•
+
+For a technical effort that is contracted, the SEMP should include details on developing requirements for source selection, monitoring performance, and transferring and integrating externally produced products to NASA.
+
+## J.2 Terms Used
+
+
+
+## J.3 Annotated Outline
+
+Title Page
+
+**Systems Engineering Management Plan**
+
+.
+
+.
+
+.
+
+Designated Governing Authority/Technical Authority
+
+Date
+
+Program/Project Manager
+
+Date
+
+Chief Engineer
+
+Date
+
+Date
+
+Date
+
+By signing this document, signatories are certifying that the content herein is acceptable as direction for engineering and technical management of this program/project and that they will ensure its implementation by those over whom they have authority.
+
+### 1.0 Purpose and Scope
+
+*This section provides a brief description of the purpose, scope, and content of the SEMP.*
+
+•
+
+*Purpose:*
+
+•
+
+*Scope:*
+
+**
+
+•
+
+*Content:*
+
+**
+
+### 2.0 Applicable Documents
+
+**
+
+### 3.0 Technical Summary
+
+**
+
+Key Questions
+
+1.
+
+*What is the problem we’re trying to solve?*
+
+2.
+
+*What are the influencing factors?*
+
+3.
+
+*What are the critical questions?*
+
+4.
+
+*What are the overall project constraints in terms of cost, schedule, and technical performance*
+
+5.
+
+*How will we know when we have adequately defined the problem?*
+
+6.
+
+*Who are the customers?*
+
+7.
+
+*Who are the users?*
+
+8.
+
+*What are the customer and user priorities?*
+
+9.
+
+*What is the relationship to other projects?*
+
+3.1 System Description
+
+**
+
+3.2 System Structure
+
+**
+
+**
+
+**
+
+**
+
+3.3 Product Integration
+
+*This section contains an explanation of how the products will be integrated and describes clear organizational*
+
+* * 3.4 Planning Context *   * 3.5 Boundary of Technical Effort *  A description of the boundary of the system can include the following:*
+
+• ** • *Identification of what initiates the transitions of the system to operational status and what initiates its disposal is important. General and functional descriptions of the subsystems inside the boundary.*
+
+• *Current and established subsystem performance characteristics.*
+
+• *Interfaces and interface characteristics.*
+
+• *Functional interface descriptions and functional flow diagrams.*
+
+• *Key performance interface characteristics.*
+
+• *Current integration strategies and architecture.*
+
+• *Documented Human System Integration Plan (HSIP)* 3.6 Cross References ** 4.0 Technical Effort Integration **
+
+** • *Concurrent engineering* • *The activity phasing of specialty engineering* • *The participation of specialty disciplines* • *The involvement of specialty disciplines,* • *The role and responsibility of specialty disciplines,* • *The participation of specialty disciplines in system decomposition and definition* • *The role of specialty disciplines in verification and validation* • *Reliability* • *Maintainability* • *Quality assurance* • *Integrated logistics* • *Human engineering* • *Safety* • *Producibility* • *Survivability/vulnerability* • *National Environmental Policy Act (NEPA) compliance* • *Launch approval/flight readiness  * 4.1 Responsibility and Authority *This section describes the organizing structure for the technical teams assigned to this technical effort and includes how the teams will be staffed and managed.*
+
+Key Questions 1.
+
+** 2.
+
+*How will multidisciplinary teamwork be achieved?*
+
+3.
+
+*What are the roles, responsibilities, and authorities required to perform the activities of each planned common technical process?*
+
+4.
+
+** 5.
+
+*What is required for technical staff training?*
+
+6.
+
+** 7.
+
+** 8.
+
+**
+
+* The systems engineering roles and responsibilities need to be addressed for the following: project office, user, Contracting Officer’s Representative (COR), systems engineering, design engineering, specialty engineering, and contractor.*
+
+4.2 Contractor Integration *      * 4.3 Analytical Tools that Support Integration **
+
+5.0 Common Technical Processes Implementation ** • *Identifying and obtaining adequate human and nonhuman resources for performing the planned process, developing the work products, and providing the services of the process.*
+
+• **
+
+*http:// en.wikipedia.org/wiki/Responsibility_assignment_ matrix*
+
+** • *Training the technical staff performing or supporting the process, where training is identified as needed.*
+
+• ** • *Identifying and involving stakeholders of the process.*
+
+• *Monitoring and controlling the systems engineering processes.*
+
+• *Identifying, defining, and tracking metrics and success.*
+
+• *Objectively evaluating adherence of the process and the work products and services of the process to the applicable requirements, objectives, and standards and addressing noncompliance.*
+
+• *Reviewing activities, status, and results of the process with appropriate levels of management and resolving issues.*
+
+*This section should also include the project-specific description of each of the 17 processes to be used, including*
+
+**
+
+Key Questions
+
+1.
+
+*What are the systems engineering processes for this project?*
+
+2.
+
+*What are the methods that we will apply for each systems engineering task?*
+
+3.
+
+*What are the tools we will use to support these methods? How will the tools be integrated?*
+
+4.
+
+*How will we control configuration development?*
+
+5.
+
+*How and when will we conduct technical reviews?*
+
+6.
+
+**
+
+7.
+
+*Who has authorization for technical change control?*
+
+8.
+
+**
+
+### 6.0 Technology Insertion
+
+**
+
+Key Questions
+
+1.
+
+*How and when will we insert new of special technology into the project?*
+
+2.
+
+**
+
+3.
+
+*How will we incorporate system elements provided by others? How will these items be certified for adequacy?*
+
+4.
+
+*What facilities are required?*
+
+5.
+
+**
+
+### 7.0 Additional SE Functions and Activities
+
+**
+
+7.1 System Safety
+
+**
+
+7.2 Engineering Methods and Tools
+
+*This section describes the methods and tools that are not included in the technology insertion sections but are needed to support the overall technical effort. It identifies those tools to be acquired and tool training requirements.*
+
+**
+
+**
+
+*broad range of tools used on the project. It defines the requirements for information management systems and for using existing elements. It defines and plans for the training required to use the tools and technology across the project.*
+
+7.3 Specialty Engineering *  * 7.4 Technical Performance Measures a .
+
+**
+
+1.
+
+*[SE-62]* 2.
+
+*[SE-63]* 3.
+
+*[SE-64]* b .
+
+
+
+»
+
+*Requirement trends (percent growth, TBD/TBR closures, number of requirement changes);*
+
+»
+
+**
+
+»
+
+*Verification trends (closure burndown, number of deviations/waivers approved/open);*
+
+»
+
+**
+
+»
+
+**
+
+»
+
+*Cost trends (plan, actual, UFE, EVM, NOA);*
+
+»
+
+*Schedule trends (critical path slack/float, critical milestone dates); and*
+
+»
+
+*Staffing trends (FTE, WYE).*
+
+Key Questions 1.
+
+** 2.
+
+*What metrics will be used to identify process improvement opportunities?*
+
+3.
+
+*How will we measure progress against the plans and schedules?*
+
+4.
+
+*How often will progress be reported? By whom? To whom?*
+
+7.5 Heritage *This section describes the heritage or legacy products that will be used in the project. It should include a discussion of which products are planned to be used, the rationale for their use, and the analysis or testing needed to assure they will perform as intended in the stated use.*
+
+7.6 Other **
+
+8.0 Integration with the Project Plan and Technical Resource Allocation **
+
+Key Questions 1.
+
+** 2.
+
+** 3.
+
+*How will we record decisions?*
+
+4.
+
+*How do we incorporate lessons learned from other projects?*
+
+*  * 9.0 Compliance Matrices * * Appendices ** Templates ** References *This section contains all documents referenced in the text of the SEMP.*
+
+TABLE J-1 Guidance on SEMP Content per Life-Cycle Phase
+
+**SEMP Section**
+
+****
+
+**Pre-Phase A**
+
+**KDP A**
+
+**Phase A**
+
+**KDP B**
+
+**Phase B**
+
+**KDP C**
+
+**Phase C**
+
+**KDP D**
+
+**Phase D**
+
+**KDP E**
+
+**Phase E**
+
+**KDP F**
+
+**Phase F**
+
+**MCR**
+
+**SRR**
+
+**SDR/MDR**
+
+**PDR**
+
+**CDR**
+
+**SIR**
+
+**ORR**
+
+**MRR/FRR**
+
+**DR**
+
+**DRR**
+
+Purpose and Scope
+
+Final
+
+Final
+
+Final
+
+Final
+
+Final
+
+Final
+
+Final
+
+Final
+
+Final
+
+Final
+
+Applicable Documents
+
+Initial
+
+Initial
+
+Initial
+
+Final
+
+Final
+
+Final
+
+Final
+
+Final
+
+Final
+
+Final
+
+Technical Summary
+
+Final
+
+Final
+
+Final
+
+Final
+
+Final
+
+Final
+
+Final
+
+Final
+
+Final
+
+Final
+
+System Description
+
+Initial
+
+Initial
+
+Initial
+
+Final
+
+Final
+
+Final
+
+Final
+
+Final
+
+Final
+
+Final
+
+System Structure
+
+Product Integration
+
+Define thru SDR timeframe
+
+Define thru SDR timeframe
+
+Define thru SDR timeframe
+
+Define thru SIR
+
+Define thru SIR
+
+Define thru SIR
+
+Define sustaining thru end of program
+
+Define sustaining thru end of program
+
+Define sustaining thru end of program
+
+Define sustaining thru end of program
+
+Planning Context
+
+Define thru SDR timeframe
+
+Define thru SDR timeframe
+
+Define thru SDR timeframe
+
+Define thru SIR
+
+Define thru SIR
+
+Define thru SIR
+
+Define sustaining thru end of program
+
+Define sustaining thru end of program
+
+Define sustaining thru end of program
+
+Define sustaining thru end of program
+
+Boundary of Technical Effort
+
+Initial
+
+Initial
+
+Initial
+
+Final
+
+Final
+
+Final
+
+Final
+
+Final
+
+Final
+
+Final
+
+Cross References
+
+Initial
+
+Initial
+
+Initial
+
+Final
+
+Final
+
+Final
+
+Final
+
+Final
+
+Final
+
+Final
+
+Technical Effort Integration
+
+
+
+Define thru SDR timeframe
+
+Define thru SDR timeframe
+
+Define thru SDR timeframe
+
+Define thru SIR timeframe
+
+Define thru SIR timeframe
+
+Define thru SIR timeframe
+
+
+
+
+
+
+
+
+
+
+
+Contractor Integration
+
+Define acquisitions needed
+
+Define insight/oversight through SIR timeframe
+
+Define sustaining insight/oversight through end of program
+
+Support Integration
+
+Define acquisitions needed
+
+Define insight/oversight through SIR timeframe
+
+
+
+**SEMP Section**
+
+****
+
+**Pre-Phase A**
+
+**KDP A**
+
+**Phase A**
+
+**KDP B**
+
+**Phase B**
+
+**KDP C**
+
+**Phase C**
+
+**KDP D**
+
+**Phase D**
+
+**KDP E**
+
+**Phase E**
+
+**KDP F**
+
+**Phase F**
+
+**MCR**
+
+**SRR**
+
+**SDR/MDR**
+
+**PDR**
+
+**CDR**
+
+**SIR**
+
+**ORR**
+
+**MRR/FRR**
+
+**DR**
+
+**DRR**
+
+
+
+
+
+
+
+Processes defined for the Design Phase
+
+Processes added for the integration and Operations Phase
+
+Update Operations processes. Define close out processes and sustaining engineering processes
+
+Technology Insertion
+
+Define technologies to be developed
+
+
+
+
+
+Additional SE Functions and Activities
+
+System Safety
+
+Define process through CDR
+
+
+
+Engineering Methods and tools
+
+Define process through CDR
+
+
+
+Specialty Engineering
+
+Define process through CDR
+
+
+
+Integration with the Project Plan and Technical Resource Allocation
+
+Define through SDR timeframe
+
+Define through SIR
+
+Define through SIR
+
+Define through SIR
+
+Define sustaining through end of program
+
+Define sustaining through end of program
+
+Define sustaining through end of program
+
+Define sustaining through end of program
+
+Compliance Matrix (Appendix H.2 of SE NPR)
+
+Initial
+
+Initial
+
+Initial
+
+Final
+
+Final
+
+Final
+
+Final
+
+Final
+
+Final
+
+Final
+
+Appendices
+
+As required
+
+As required
+
+As required
+
+As required
+
+As required
+
+As required
+
+As required
+
+As required
+
+As required
+
+As required
+
+Templates
+
+As required
+
+As required
+
+As required
+
+As required
+
+As required
+
+As required
+
+As required
+
+As required
+
+As required
+
+As required
+
+References
+
+As required
+
+As required
+
+As required
+
+As required
+
+As required
+
+As required
+
+As required
+
+As required
+
+As required
+
+As required
+
+# Appendix K: Technical Plans
+
+The following table represents a typical expectation of maturity of some of the key technical plans developed during the SE processes. This example is for a space flight project. Requirements for work product maturity can be found in the governing PM document (i.e., NPR 7120.5) for the associated type of project.
+
+TABLE K-1 Example of Expected Maturity of Key Technical Plans
+
+Plan
+
+**Pre**
+
+**Phase A**
+
+**Phase A**
+
+**Phase B**
+
+**Phase C**
+
+**Phase D**
+
+**Phase E**
+
+**Phase F**
+
+**Ref. Page**
+
+**MCR**
+
+**SRR**
+
+**SDR/**
+
+**MDR**
+
+**PDR**
+
+**CDR**
+
+**SIR**
+
+**ORR**
+
+**MRR/ FRR**
+
+**DR**
+
+**DRR**
+
+Systems Engineering Management Plan
+
+P
+
+B
+
+U
+
+U
+
+U
+
+U
+
+U
+
+U
+
+U
+
+U
+
+Risk Management Plan
+
+A
+
+B
+
+U
+
+U
+
+U
+
+Integrated Logistics Support Plan
+
+A
+
+P
+
+P
+
+B
+
+U
+
+Technology Development Plan
+
+B
+
+U
+
+U
+
+U
+
+Review Plan
+
+P
+
+B
+
+U
+
+U
+
+U
+
+U
+
+U
+
+U
+
+U
+
+U
+
+Verification and Validation Plan
+
+A
+
+A
+
+P
+
+B
+
+U
+
+Integration Plan
+
+P
+
+B
+
+U
+
+Configuration Management Plan
+
+B
+
+U
+
+U
+
+Data Management Plan
+
+B
+
+U
+
+U
+
+Human Systems Integration Plan
+
+B
+
+U
+
+U
+
+U
+
+Software Management Plan
+
+P
+
+B
+
+U
+
+Reliability and Maintainability Plan
+
+P
+
+B
+
+U
+
+Mission Operations Plan
+
+P
+
+B
+
+U
+
+Project Protection Plan
+
+P
+
+B
+
+U
+
+U
+
+U
+
+U
+
+U
+
+U
+
+Decommissioning Plan
+
+A
+
+B
+
+U
+
+Disposal Plan
+
+A
+
+B
+
+U
+
+U
+
+A = Approach B = Baseline P = Preliminary U = Update
+
+# Appendix L: Interface Requirements
+
+# Document Outline
+
+## 1.0 Introduction
+
+1.1 Purpose and Scope
+
+**
+
+1.2 Precedence
+
+**
+
+1.3 Responsibility and Change Authority
+
+**
+
+## 2.0 Documents
+
+2.1 Applicable Documents
+
+**
+
+2.2 Reference Documents
+
+*List any document that is referenced in the text in this subsection.*
+
+## 3.0 Interfaces
+
+3.1 General
+
+**
+
+3.1.1 Interface Description
+
+**
+
+3.1.2 Interface Responsibilities
+
+*Define interface hardware and interface boundary responsibilities to depict the interface plane. Use tables, figures, or drawings as appropriate.*
+
+3.1.3 Coordinate Systems
+
+**
+
+**
+
+3.2 Interface Requirements
+
+*In the subsections that follow, define structural limiting values at the interface, such as interface loads, forcing functions, and dynamic conditions. Define the interface requirements on each side of the interface plane.*
+
+3.2.1 Mass Properties * * 3.2.2 Structural/Mechanical ** 3.2.3 Fluid
+
+*2 2*
+
+3.2.4 Electrical (Power) *Define the derived interface requirements based on the allocated requirements contained in the applicable specification pertaining to that side of the interface. For example, this subsection should cover various electric current, voltage, wattage, and resistance levels.*
+
+3.2.5 Electronic (Signal) *Define the derived interface requirements based on the allocated requirements contained in the applicable specification pertaining to that side of the interface. For example, this subsection should cover various signal types such as audio, video, command data handling, and navigation.*
+
+3.2.6 Software and Data * * 3.2.7 Environments ** 3.2.7.1 3.2.7.1.a Electromagnetic Compatibility *Define the appropriate electromagnetic compatibility requirements. For example, the end-item-1-to-end-item-2 interface shall meet the requirements [to be determined] of systems requirements for electromagnetic compatibility.*
+
+3.2.7.1.b Electromagnetic Interference
+
+**
+
+3.2.7.1.c Grounding
+
+**
+
+3.2.7.1.d Bonding
+
+*Define the appropriate bonding requirements. For example, the end-item-1-to-end-item-2 structural/mechanical interface shall meet the requirements [to be determined] of electrical bonding requirements.*
+
+3.2.7.1.e Cable and Wire Design
+
+**
+
+** 3.2.7.2 *Define the appropriate acoustics requirements. Define the acoustic noise levels on each side of the interface in accordance with program or project requirements.*
+
+3.2.7.3 *Define the appropriate structural loads requirements. Define the mated loads that each end item should accommodate.*
+
+3.2.7.4 *Define the appropriate vibroacoustics requirements. Define the vibroacoustic loads that each end item should accommodate.*
+
+3.2.7.5 ** 3.2.8 Other Types of Interface Requirements *Define other types of unique interface requirements that may be applicable.*
+
+# Appendix M: CM Plan Outline
+
+
+
+
+
+•
+
+General product definition and scope
+
+•
+
+Description of CM activities and procedures for each major CM function
+
+•
+
+Organization, roles, responsibilities, and resources
+
+•
+
+Definitions of terms
+
+•
+
+Programmatic and organizational interfaces
+
+•
+
+Deliverables, milestones, and schedules
+
+•
+
+Subcontract flow down requirements
+
+
+
+For additional information regarding a CM Plan, refer to SAE EIA-649, Rev. B.
+
+# Appendix N: Guidance on Technical Peer Reviews/Inspections
+
+
+
+*https://nen.nasa.gov/web/se/*
+
+*doc-repository*
+
+Appendix O: Reserved
+
+Appendix P: SOW Review Checklist
+
+*https://nen.nasa.gov/web/se/doc-repository*
+
+Appendix Q: Reserved
+
+# Appendix R: HSI Plan Content Outline
+
+## R.1 HSI Plan Overview
+
+
+
+•
+
+
+
+•
+
+To ensure all human capital required to develop and operate the system is accounted for in life cycle costing, and
+
+•
+
+To ensure that the system is built to accommodate the characteristics of the user population that will operate, maintain, and support the system.
+
+The HSI Plan is specific to a program or project and applies to NASA systems engineering per NPR 7123.1, NASA Systems Engineering Processes and Requirements. The HSI Plan should address the following:
+
+•
+
+Roles and responsibilities for integration across HSI domains;
+
+•
+
+
+
+•
+
+HSI goals and deliverables for each phase of the life cycle;
+
+•
+
+Entry and exit criteria with defined metrics for each phase, review, and milestone;
+
+•
+
+Planned methods, tools, requirements, processes, and standards for conducting HSI;
+
+•
+
+Strategies for identifying and resolving HSI risks; and
+
+•
+
+Alignment strategy with the SEMP.
+
+
+
+
+
+## R.2 HSI Plan Content Outline
+
+Each program/project-specific HSI Plan should be tailored to fit the program/project’s size, scope, and purpose. The following is an example outline for a major program; e.g., space flight or aeronautics.
+
+1.0 Introduction
+
+1.1 Purpose
+
+*This section briefly identifies the ultimate objectives for this program/project’s HSI Plan. This section also introduces the intended implementers and users of this HSI Plan.*
+
+1.2 Scope
+
+**
+
+•
+
+*Is a dynamic document that will be updated at key life cycle milestones.*
+
+•
+
+*Is a planning and management guide that describes how HSI will be relevant to the program/project’s goals.*
+
+•
+
+**
+
+•
+
+*Identifies known program/project HSI issues and concerns and how their resolutions will be addressed.*
+
+•
+
+**
+
+•
+
+*May serve as an audit trail that documents HSI data sources, analyses, activities, trade studies, and decisions not captured in other program/project documentation.*
+
+1.3 Definitions
+
+**
+
+2.0 Applicable Documents
+
+*This section lists all documents, references, and data sources that are invoked by HSI’s implementation on the program/project, that have a direct impact on HSI outcomes, and/or are impacted by the HSI effort.*
+
+3.0 HSI Objectives
+
+3.1 System Description
+
+**
+
+**
+
+*Note that this information is likely captured in other program/project documentation and can be referenced in the HSI Plan rather than repeated.*
+
+3.2 HSI Relevance
+
+**
+
+4.0 HSI Strategy
+
+4.1 HSI Strategy Summary
+
+*This section summarizes the HSI approaches, planning, management, and strategies for the program/project. It should describe how HSI products will be integrated across all HSI domains and how HSI inputs to program/project systems engineering and management processes*
+
+*Section 6*
+
+HSI RELEVANCE
+
+Key Points
+
+•
+
+*Describe performance characteristics of the human elements known to be key drivers to a desired total system performance outcome.*
+
+•
+
+*Describe the total system performance goals that require HSI support.*
+
+•
+
+*Identify HSI concerns with legacy systems; e.g., if operations and logistics, manpower, skill selection, required training, logistics support, operators’ time, maintenance, and/or risks to safety and success exceeded expectations.*
+
+•
+
+*Identify potential cost, schedule, risk, and trade-off concerns with the integration of human elements; e.g., quantity and skills of operators, maintainers, ground controllers, etc.*
+
+HSI STRATEGY
+
+Key Points
+
+•
+
+*Identify critical program/project-specific HSI key decision points that will be used to track HSI implementation and success.*
+
+•
+
+*Identify key enabling (and particularly, emerging) technologies and methodologies that may be overlooked in hardware/software systems trade studies but that may positively contribute to HSI implementation; e.g., in the areas of human performance, workload, personnel management, training, safety, and survivability.*
+
+•
+
+*Describe HSI products that will be integrated with program/project systems engineering products, analyses, risks, trade studies, and activities.*
+
+•
+
+*Describe efforts to ensure HSI will contribute in critically important Phase A and Pre-Phase A costeffective design concept studies.*
+
+•
+
+*Describe the plan and schedule for updating the HSI Plan through the program/project life cycle.*
+
+4.2
+
+*HSI Domains*
+
+*This section identifies the HSI domains applicable to the*
+
+*program/project including rationale for their relevance.*
+
+### 5.0
+
+### HSI Requirements, Organization,
+
+### and Risk Management
+
+5.1
+
+*HSI Requirements*
+
+*This section references HSI requirements and stan*
+
+**
+
+*dards applicable to the program/project and identi*
+
+**
+
+*fies the authority that invokes them; e.g., the NASA*
+
+*Procedural Requirements (NPR) document(s) that*
+
+*invoke applicability.*
+
+HSI DOMAINS
+
+Key Points • *Identify any domain(s) associated with human performance capabilities and limitations whose integration into the program/project is likely to directly affect the probability of successful program/project outcome.*
+
+• *An overview of processes to apply, document, validate, evaluate, and mitigate HSI domain knowledge and to integrate domain knowledge into integrated HSI inputs to program/project and systems engineering processes.*
+
+HSI REQUIREMENTS
+
+Key Points • *Describe how HSI requirements that are invoked on the program/project contribute to mission success, affordability, operational effectiveness, and safety.*
+
+• *HSI should include requirements that influence the system design to moderate manpower (operators, maintainers, system administrative, and support personnel), required skill sets (occupational specialties with high aptitude or skill requirements), and training requirements.*
+
+• *Define the program/project-specific HSI strategy derived from NASA-STD-3001, NASA Space Flight Human-System Standard, Volume 2: Human Factors, Habitability, and Environmental Health, Standard 3.5 [V2 3005], “Human-Centered Design Process”, if applicable.*
+
+• *Capture the development process and rationale for any program/project-specific requirements not derived from existing NASA standards. In particular, manpower, skill set, and training HSI requirements/goals may be so program/project-specific as to not have NASA parent standards or requirements.*
+
+• *Identify functional connections between HSI measures of effectiveness used to verify requirements and key performance measures used throughout the life cycle as indicators of overall HSI effectiveness.*
+
+5.2 *HSI Organization, Roles, and Responsibilities In this section, roles and responsibilities for program/ project personnel assigned to facilitate and/or manage HSI tasks are defined; e.g., the HSI integrator (and/or team if required by NPR 8705.2). HSI integrator/team functional responsibilities to the program are described in addition to identification of organizational elements with HSI responsibilities. Describe the relationships between HSI integrator/team, stakeholders, engineering technical teams, and governing bodies (control boards).*
+
+5.2.1
+
+## HSI Organization
+
+• *Describe the HSI management structure for the program/project and identify its leaders and membership.*
+
+• *Reference the organizational structure of the pro  gram (including industry partners) and describe the roles and responsibilities of the HSI integrator/team within that structure. Describe the HSI responsible party’s relationship to other teams, including those*
+
+*for systems engineering, logistics, risk management, test and evaluation, and requirements verification.*
+
+• ** • *Identify if the program/project requires NASA- (Government) and/or contractor-issued HSI Plans, and identify the responsible author(s). Describe how NASA’s HSI personnel will monitor and assess contractor HSI activities. For contractor-issued HSI Plans, identify requirements and processes for NASA oversight and evaluation of HSI efforts by subcontractors.*
+
+5.2.2 • » *developing HSI program documentation;*
+
+»
+
+*validating human performance requirements;*
+
+»
+
+*conducting HSI analyses;*
+
+»
+
+**
+
+»
+
+** • ** • *Define how the HSI Plan and the SEMP will be kept aligned with each other.*
+
+• *Define responsibility for maintaining and updating the HSI Plan through the program/project’s life cycle.*
+
+5.3 HSI Issue and Risk Processing *  * • *Ensure that potential cost, schedule, risk, and tradeoff concerns with the integration of human elements (operators, maintainers, ground controllers, etc.) with the total system are identified and mitigated.*
+
+• *Ensure that safety, health, or survivability concerns that arise as the system design and implementation emerge are identified, tracked, and managed.*
+
+• *Identify and describe any risks created by limitations on the overall program/project HSI effort (time, funding, insufficient availability of information, availability of expertise, etc.).*
+
+• *Describe any unique attributes of the process by which the HSI integrator/team elevates HSI risks to program/project risks.*
+
+• **
+
+### 6.0 HSI Implementation
+
+6.1 HSI Implementation Summary
+
+*This section summarizes the HSI implementation approach by program/project phase. This section shows how an HSI strategy for the particular program/project is planned to be tactically enabled; i.e., establishment of HSI priorities; description of specific activities, tools, and products planned to ensure HSI objectives are met; application of technology in the achievement of HSI objectives; and an HSI risk processing strategy that identifies and mitigates technical and schedule concerns when they first arise.*
+
+6.2 HSI Activities and Products
+
+**
+
+**
+
+TABLE R.2-1
+
+6.3 HSI Plan Update
+
+**
+
+**
+
+HSI IMPLEMENTATION
+
+Key Points
+
+•
+
+*Relate HSI strategic objectives to the technical approaches planned for accomplishing these objectives.*
+
+•
+
+*Overlay HSI milestones—e.g., requirements definition, verification, known trade studies, etc.—on the program/project schedule and highlight any inconsistencies, conflicts, or other expected schedule challenges.*
+
+•
+
+*Describe how critical HSI key decision points will be dealt with as the program/project progresses through its life cycle. Indicate the plan to trace HSI key performance measures through the life cycle; i.e., from requirements to human/system functional performance allocations, through design, test, and operational readiness assessment.*
+
+•
+
+*Identify HSI-unique systems engineering processes—e.g., verification using human-in-the-loop evaluations—that may require special coordination with program/project processes.*
+
+•
+
+*As the system emerges, indicate plans to identify HSI lessons learned from the application of HSI on the program/project.*
+
+•
+
+*Include a high-level summary of the resources required.*
+
+TABLE R.2-1 HSI Activity, Product, or Risk Mitigation by Program/Project Phase Life-Cycle Phase Phase Description Activity, Product, or Risk Mitigation *Pre-Phase A Concept Studies ConOps (Preliminary—to include training, maintenance, logistics, etc.) Phase A Concept & Technology Development HSI Plan (baseline) ConOps (initial) HSI responsible party(ies) and/or team identified before SRR Develop mockup(s) for HSI evaluations Crew Workload Evaluation Plan Functional allocation, crew task lists Validation of ConOps (planning) Phase B Preliminary Design & Technology Completion HSI Plan (update) ConOps (baseline) Develop engineering-level mockup(s) for HSI evaluations Define crew environmental and crew health support needs (e.g., aircraft flight decks, human space flight missions) Assess operator interfaces through task analyses (for, e.g., aircraft cockpit operations, air traffic management, spacecraft environments, mission control for human space flight missions) Human-in-the-loop usability plan Human-rating report for PDR Phase C Final Design & Fabrication HSI Plan (update) First Article HSI Tests Human-rating report for CDR Phase D System Assembly, Integ. & Test, Launch & Checkout Human-rating report for ORR Validation of human-centered design activities Validation of ConOps Phase E Operations & Sustainment Monitoring of human-centered design performance Phase F Closeout Lessons learned report*
+
+HSI PLAN UPDATES
+
+Key points to be addressed in each update • *Identify the current program/project phase, the publication date of the last iteration of the HSI Plan, and the HSI Plan version number. Update the HSI Plan revision history.*
+
+• *Describe the HSI entrance criteria for the current phase and describe any unfinished work prior to the current phase.*
+
+• *Describe the HSI exit criteria for the current program/project phase and the work that must be accomplished to successfully complete the current program/project phase.*
+
+# Appendix S: Concept of Operations
+
+# Annotated Outline
+
+
+
+## Cover Page
+
+## Table of Contents
+
+## 1.0 Introduction
+
+1.1 Project Description
+
+**
+
+1.1.1 Background
+
+*Summarize the conditions that created the need for the new system. Provide the high-level mission goals and objective of the system operation. Provide the rationale for the development of the system.*
+
+1.1.2 Assumptions and Constraints
+
+**
+
+**
+
+1.2 Overview of the Envisioned System
+
+*This section provides an executive summary overview of the envisioned system. A more detailed description will be provided in Section 3.0*
+
+1.2.1 Overview
+
+**
+
+**
+
+1.2.2 System Scope
+
+**
+
+**
+
+## 2.0 Documents
+
+2.1 Applicable Documents
+
+*This section lists all the documents, models, standards or other material that are applicable and some or all of which will form part of the requirements of the project.*
+
+2.2 Reference Documents
+
+*This section provides supplemental information that might be useful in understanding the system or its scenarios.*
+
+## 3.0 Description of Envisioned System
+
+*This section provides a more detailed description of the envisioned system and its operation as contained in the following subsections.*
+
+3.1 Needs, Goals and Objectives of Envisioned System
+
+**
+
+3.2 Overview of System and Key Elements
+
+**
+
+**
+
+3.3 Interfaces
+
+*This section describes the interfaces of the system with any other systems that are external to the project. It may also include high-level interfaces between the major envisioned elements of the system. Interfaces may include mechanical, electrical, human user/operator, fluid, radio frequency, data, or other types of interactions.*
+
+3.4 Modes of Operations
+
+**
+
+**
+
+3.5 Proposed Capabilities
+
+**
+
+## 4.0 Physical Environment
+
+**
+
+**
+
+## 5.0 Support Environment
+
+**
+
+**
+
+**
+
+## 6.0 Operational Scenarios, Use Cases and/or Design Reference Missions
+
+*This section takes key scenarios, use cases, or DRM and discusses what the envisioned system provides or how it functions throughout that single-thread timeline.*
+
+*The number of scenarios, use cases, or DRMs discussed should cover both nominal and off-nominal conditions and cover all expected functions and capabilities. A good practice is to label each of these scenarios to facilitate requirements traceability; e.g., [DRM-0100], [DRM0200], etc.*
+
+6.1 Nominal Conditions
+
+**
+
+6.2 Off-Nominal Conditions
+
+*These scenarios cover cases where some condition has occurred that will need the system to perform in a way that is different from normal. This would cover failures, low performance, unexpected environmental conditions, or operator errors. These scenarios should reveal any additional capabilities or safeguards that are needed in the system.*
+
+## 7.0 Impact Considerations
+
+*This section describes the potential impacts, both positive and negative, on the environment and other areas.*
+
+7.1 Environmental Impacts
+
+**
+
+**
+
+**
+
+7.2 Organizational Impacts
+
+*Describes how the envisioned system could impact existing or future organizational aspects. This would include the need for hiring specialists or operators, specialized or widespread training or retraining, and use of multiple organizations.*
+
+7.3 Scientific/Technical Impacts
+
+**
+
+**
+
+**
+
+## 8.0 Risks and Potential Issues
+
+**
+
+Appendix A: Acronyms
+
+*This part lists each acronym used in the ConOps and spells it out.*
+
+Appendix B: Glossary of Terms
+
+*The part lists key terms used in the ConOps and provides a description of their meaning.*
+
+# Appendix T: Systems Engineering in Phase E
+
+## T.1 Overview
+
+
+
+
+
+
+
+
+
+
+
+•
+
+Increased resource constraints:
+
+
+
+
+
+
+
+•
+
+Unforgiving schedule:
+
+
+
+
+
+**NOTE:**
+
+
+
+
+
+## T.2 Transition from Development to Operations
+
+
+
+
+
+
+
+Development phase activities need to clearly and concisely document system knowledge in the form
+
+
+
+
+
+
+
+
+
+
+
+
+
+## T.3 System Engineering Processes in Phase E
+
+T.3.1 System Design Processes
+
+
+
+T.3.1.1 Stakeholder Expectations Definition
+
+
+
+
+
+
+
+
+
+
+
+
+
+T.3.1.2 Technical Requirements Definition
+
+New technical requirements and changes to existing requirements may be identified during operations as a result of:
+
+•
+
+New understanding of system characteristics through flight experience;
+
+•
+
+The occurrence of in-flight anomalies; or
+
+• Changing mission goals or parameters (such as mission extension).
+
+  T.3.1.3 Logical Decomposition   T.3.1.4 Design Solution Definition   T.3.1.5 Product Implementation   T.3.2 Product Realization Processes Product realization processes in Phase E are typically executed by Configuration Management (CM) and test personnel. It is common for these people to be “shared resources;” i.e., personnel who fulfil other roles in addition to CM and test roles.
+
+T.3.2.1 Product Integration    
+
+some method needs to be established to ensure that the product realization processes identify and assess all potential impacts of system changes.
+
+T.3.2.2 Product Verification Product verification in Phase E generally takes the form of unit tests of tools, data sets, procedures, and other items under simulated conditions. Such “thread tests” may exercise single specific tasks or functions. The fidelity of simulation required for verification varies with the nature and criticality of the product. Key characteristics to consider include:
+
+•
+
+Runtime:
+
+•
+
+Level of detail:
+
+ •
+
+Level of integration:
+
+•
+
+Environmental effects:
+
+  T.3.2.3 Product Validation     T.3.2.4 Product Transition Transition of new operational capabilities in Phase E is generally overseen by the mission operations manager or a Configuration Control Board (CCB) chaired by the mission operations manager or the project manager.
+
+   T.3.3 Technical Management Processes Technical management processes are generally a shared responsibility of the project manager and
+
+the mission operations manager. Clear agreement between these two parties is essential in ensuring that Phase E efforts are managed effectively.
+
+T.3.3.1 Technical Planning  T.3.3.2 Requirements Management    T.3.3.3 Interface Management  T.3.3.4 Technical Risk Management     T.3.3.5 Configuration Management     T.3.3.6 Technical Data Management 
+
+  T.3.3.7 Technical Assessment     T.3.3.8 Decision Analysis  
+
+# References Cited
+
+This appendix contains references that were cited in the sections of the handbook.
+
+Preface
+
+NPR 7123.1, Systems Engineering Processes and Requirements
+
+NASA Chief Engineer and the NASA Integrated Action Team (NIAT) report, Enhancing Mission Success – A Framework for the Future, December 21, 2000. Authors: McBrayer, Robert O and Thomas, Dale, NASA Marshall Space Flight Center, Huntsville, AL United States.
+
+*Columbia Accident Investigation Board (CAIB) Report*
+
+*http://www.nasa.gov/columbia/caib/html/report.*
+
+*html*
+
+*A Renewed Commitment to Excellence*
+
+**
+
+Section 1.1 Purpose
+
+NPR 7123.1. Systems Engineering Processes and Requirements
+
+Section 1.2 Scope and Depth
+
+NASA Office of Chief Information Officer (OCIO), Information Technology Systems Engineering Handbook Version 2.0
+
+NASA-HDBK-2203, NASA Software Engineering Handbook (February 28, 2013)
+
+Section 2.0 Fundamentals of Systems Engineering
+
+NPR 7120.5, NASA Space Flight Program and Project Management Requirements
+
+NPR 7120.7, NASA Information Technology and Institutional Infrastructure Program and Project Management Requirements
+
+NPR 7120.8, NASA Research and Technology Program and Project Management Requirements
+
+NPR 7123.1, NASA Systems Engineering Processes and Requirements
+
+*https://nen.nasa.gov/web/se*
+
+Griffin, Michael D., NASA Administrator. “System Engineering and the Two Cultures
+
+of Engineering.” Boeing Lecture, Purdue University, March 28, 2007.
+
+Rechtin, Eberhardt. Systems Architecting of Organizations: Why Eagles Can’t Swim. Boca Raton: CRC Press, 2000.
+
+Section 2.1 The Common Technical Processes and the SE Engine
+
+NPR 7123.1, NASA Systems Engineering Processes and Requirements
+
+Society of Automotive Engineers (SAE) and the European Association of Aerospace Industries (EAAI). AS9100C Quality Management Systems (QMS) – Requirements for Aviation, Space, and Defense Organizations Revision C: January 15, 2009.
+
+Section 2.3 Example of Using the SE Engine
+
+NPD 1001.0, 2006 NASA Strategic Plan
+
+NPR 7120.5, NASA Space Flight Program and Project Management Requirements
+
+Section 2.5 Cost Effectiveness Considerations
+
+Department of Defense (DOD) Defense Acquisition University (DAU). Systems Engineering Fundamentals Guide. Fort Belvoir, VA, 2001.
+
+INCOSE-TP-2003-002-04, Systems Engineering Handbook: A Guide for System Life Cycle Processes and Activities, Version 4, edited by Walden, David D., et al., 2015
+
+Section 2.6 Human Systems Integration (HSI) in the SE Process
+
+NPR 7120.5, NASA Space Flight Program and Project Management Requirements
+
+NPR 7123.1, NASA Systems Engineering Processes and Requirements
+
+Section 3.0 NASA Program/Project Life Cycle
+
+NPR 7120.5, NASA Space Flight Program and Project Management Requirements
+
+NPR 7120.8, NASA Research and Technology Program and Project Management Requirements
+
+NASA Office of the Chief Information Officer (OCIO), Information Technology Systems Engineering Handbook Version 2.0
+
+NASA/SP-2014-3705, NASA Space Flight Program and Project Management Handbook
+
+Section 3.1 Program Formulation
+
+NPR 7120.5, NASA Space Flight Program and Project Management Requirements
+
+NPR 7120.7, NASA Information Technology and Institutional Infrastructure Program and Project Management Requirements
+
+NPR 7120.8, NASA Research and Technology Program and Project Management Requirements
+
+NPR 7123.1, NASA Systems Engineering Processes and Requirements
+
+Section 3.2 Program Implementation
+
+NPR 7120.5, NASA Space Flight Program and Project Management Requirements
+
+NPR 7123.1, NASA Systems Engineering Processes and Requirements
+
+Section 3.3 Project Pre-Phase A: Concept Studies
+
+NPR 7120.5, NASA Space Flight Program and Project Management Requirements
+
+NPR 7123.1, NASA Systems Engineering Processes and Requirements
+
+Section 3.4 Project Phase A: Concept and Technology Development
+
+NPD 1001.0, 2014 NASA Strategic Plan
+
+NPR 2810.1, Security of Information Technology
+
+NPR 7120.5, NASA Space Flight Program and Project Management Requirements
+
+NPR 7123.1, NASA Systems Engineering Processes and Requirements
+
+NPR 7150.2, NASA Software Engineering Requirements
+
+NASA-STD-8719.14, Handbook for Limiting Orbital Debris. Rev A with Change 1. December 8, 2011.
+
+National Institute of Standards and Technology (NIST), Federal Information Processing Standard Publication (FIPS PUB) 199, Standards for Security Categorization of Federal Information and Information Systems, February 2004.
+
+Section 3.5 Project Phase B: Preliminary Design and Technology Completion
+
+NPR 7120.5, NASA Space Flight Program and Project Management Requirements
+
+NPR 7123.1, NASA Systems Engineering Processes and Requirements
+
+Section 3.6 Project Phase C: Final Design and Fabrication
+
+NPR 7120.5, NASA Space Flight Program and Project Management Requirements
+
+NPR 7123.1, NASA Systems Engineering Processes and Requirements
+
+Section 3.7 Project Phase D: System Assembly, Integration and Test, Launch
+
+NPR 7120.5, NASA Space Flight Program and Project Management Requirements
+
+NPR 7123.1, NASA Systems Engineering Processes and Requirements
+
+NASA Office of the Chief Information Officer (OCIO), Information Technology Systems Engineering Handbook Version 2.0
+
+Section 3.8 Project Phase E: Operations and Sustainment
+
+NPR 7120.5, NASA Space Flight Program and Project Management Requirements
+
+NPR 7123.1, NASA Systems Engineering Processes and Requirements
+
+Section 3.9 Project Phase F: Closeout
+
+NPR 7120.5, NASA Space Flight Program and Project Management Requirements
+
+NPR 7123.1, NASA Systems Engineering Processes and Requirements
+
+NPD 8010.3, Notification of Intent to Decommission or Terminate Operating Space Systems and Terminate Missions
+
+NPR 8715.6, NASA Procedural Requirements for Limiting Orbital Debris
+
+Section 3.10 Funding: The Budget Cycle NASA’s Financial Management Requirements (FMR)Volume 4 Section 3.11 Tailoring and Customization of NPR 7123.1 Requirements NPD 1001.0, 2014 NASA Strategic Plan NPR 7120.5, NASA Space Flight Program and Project Management Requirements NPR 7120.7, NASA Information Technology and Institutional Infrastructure Program and Project Management Requirements NPR 7120.8, NASA Research and Technology Program and Project Management Requirements NPR 7123.1, NASA Systems Engineering Processes and Requirements NPR 7150.2, NASA Software Engineering Requirements NPR 8705.4, Risk Classification for NASA Payloads NASA-HDBK-2203, NASA Software Engineering Handbook (February 28, 2013)
+
+*https://nen.nasa.gov/web/se*
+
+Section 4.1 Stakeholder Expectations Definition NPR 7120.5, NASA Space Flight Program and Project Management Requirements NASA Science Mission Directorate strategic plans Presidential Policy Directive PPD-4 (2010), National Space Policy Presidential Policy Directive PPD-21 (2013), Critical Infrastructure Security and Resilience Ball, Robert E. (Naval Postgraduate School), The Fundamentals of Aircraft Combat Survivability Analysis and Design, 2nd Edition, AIAA Education Series, 2003 Larson (Wiley J.), Kirkpatrick, Sellers, Thomas, and Verma. Applied Space Systems Engineering: A Practical Approach to Achieving Technical Baselines. 2nd Edition, Boston, MA: McGrawHill Learning Solutions, CEI Publications, 2009.
+
+Section 4.2 Technical Requirements Definition NPR 7120.10, Technical Standards for NASA Programs and Projects NPR 8705.2, Human-Rating Requirements for Space Systems NPR 8715.3, NASA General Safety Program Requirements NASA-STD-3001, NASA Space Flight Human System Standard – 2 volumes NASA-STD-8719.13, Software Safety Standard, Rev C. Washington, DC, May 7, 2013.
+
+NASA/SP-2010-3407, Human Integration Design Handbook (HIDH)
+
+Section 4.3 Logical Decomposition *Department of Defense (DOD) Architecture Framework (DODAF) Version 2.02 Change 1, January 2015* Institute of Electrical and Electronics Engineers (IEEE) STD 610.12-1990, IEEE Standard Glossary of Software Engineering Terminology. Reaffirmed 2002. Superseded by ISO/IEC/IEEE 24765:2010, Systems and Software Engineering – Vocabulary Section 4.4 Design Solution Definition NPD 8730.5, NASA Quality Assurance Program Policy NPR 8735.2, Management of Government Quality Assurance Functions for NASA Contracts NASA-HDBK-1002, Fault Management (FM) Handbook, Draft 2, April 2012.
+
+NASA-STD-3001, NASA Space Flight Human System Standard – 2 volumes NASA-STD-8729.1, Planning, Developing, and Maintaining an Effective Reliability and Maintainability (R&M) Program. Washington, DC, December 1, 1998.
+
+Code of Federal Regulations (CFR), Title 48 – Federal Acquisition Regulation (FAR) System, Part 46.4 Government Contract Quality Assurance (48 CFR 46.4) International Organization for Standardization, ISO 9001:2015 Quality Management Systems (QMS) Society of Automotive Engineers and the European Association of Aerospace Industries. AS9100C Quality Management Systems (QMS)—Requirements for Aviation, Space, and Defense Organizations Revision C: 2009-01-15 Blanchard, Benjamin S., System Engineering Management. 4th Edition, Hoboken, NJ: John Wiley & Sons, Inc., 2008 Section 5.1 Product Implementation NPR 7150.2, NASA Software Engineering Requirements
+
+*https://nen.nasa.gov/web/se https://nen.*
+
+*nasa.gov/web/se*
+
+American Institute of Aeronautics and Astronautics (AIAA) G-118-2006e. AIAA Guide for Managing the Use of Commercial Off the Shelf (COTS) Software Components for MissionCritical Systems. Reston, VA, 2006 Section 5.2 Product Integration NASA Lyndon B. Johnson Space Center (JSC60576), National Space Transportation System (NSTS), Space Shuttle Program, Transition Management Plan, May 9, 2007 Section 5.3 Product Verification NPR 7120.5, NASA Space Flight Program and Project Management Requirements NPR 7120.8, NASA Research and Technology Program and Project Management Requirements NPR 7123.1, NASA Systems Engineering Processes and Requirements
+
+NPR 8705.4, Risk Classification for NASA Payloads NASA-STD-7009, Standard for Models and Simulations. Washington, DC, October 18, 2013 NASA GSFC-STD-7000, Goddard Technical Standard: General Environmental Verification Standard (GEVS) for GSFC Flight Programs and Projects. Goddard Space Flight Center. April 2005 Department of Defense (DOD). MIL-STD-1540D, Product Verification Requirements for Launch, Upper Stage, and Space Vehicles. January 15, 1999 Section 5.4 Product Validation NPD 7120.4, NASA Engineering and Program/Project Management Policy NPR 7150.2, NASA Software Engineering Requirements Section 5.5 Product Transition
+
+*https://ceq.*
+
+*doe.gov/welcome.html*
+
+Section 6.1 Technical Planning NPR 7120.5, NASA Space Flight Program and Project Management Requirements NPD 7120.6, Knowledge Policy on Programs and Projects NPR 7123.1, NASA Systems Engineering Processes and Requirements NASA-SP-2010-3403, NASA Schedule Management Handbook NASA-SP-2010-3404, NASA Work Breakdown Structure Handbook *NASA Cost Estimating Handbook (CEH), Version 4, February 2015.*
+
+DOD. MIL-STD-881C, Work Breakdown Structure (WBS) for Defense Materiel Items. Washington, DC, October 3, 2011.
+
+Institute of Electrical and Electronics Engineers (IEEE) STD 1220-2005. IEEE Standard for Application and Management of the Systems Engineering Process, Washington, DC, 2005.
+
+Office of Management and Budget (OMB) Circular A-94, “Guidelines and Discount Rates for Benefit-Cost Analysis of Federal Programs” (10/29/1992)
+
+*http://www.nasa.gov/pdf/394931main_JCL_ FAQ_10_12_09.pdf http://www.csb.gov/*
+
+Section 6.3 Interface Management NPR 7120.5, NASA Space Flight Program and Project Management Requirements Section 6.4 Technical Risk Management NPR 8000.4, Agency Risk Management Procedural Requirements NASA/SP-2010-576, NASA Risk-Informed Decision Making Handbook
+
+NASA/SP-2011-3421, Probabilistic Risk Assessment Procedures Guide for NASA Managers and Practitioners NASA/SP-2011-3422, NASA Risk Management Handbook Code of Federal Regulations (CFR) Title 22 – Foreign Relations, Parts 120-130 Department of State: International Traffic in Arms Regulations (ITAR) (22 CFR 120-130). Implements 22 U.S.C. 2778 of the Arms Export Control Act (AECA) of 1976 and Executive Order 13637, “Administration of Reformed Export Controls,” March 8, 2013 Section 6.5 Configuration Management NPR 7120.5, NASA Space Flight Program and Project Management Requirements *Columbia Accident Investigation Board (CAIB) Report*
+
+*http://www.nasa.gov/columbia/caib/html/report.html http://www.nasa.gov/pdf/ 65776main_noaa_np_mishap.pdf*
+
+SAE International (SAE)/Electronic Industries Alliance (EIA) 649B-2011, Configuration Management Standard (Aerospace Sector) April 1, 2011 American National Standards Institute (ANSI)/Electronic Industries Alliance (EIA). ANSI/EIA-649, National Consensus Standard for Configuration Management, 1998–1999 Section 6.6 Technical Data Management NPR 1441.1, NASA Records Retention Schedules NPR 1600.1, NASA Security Program Procedural Requirements NID 1600.55, Sensitive But Unclassified (SBU) Controlled Information NPR 7120.5, NASA Space Flight Program and Project Management Requirements NPR 7123.1, NASA Systems Engineering Processes and Requirements NASA Form (NF) 1686, NASA Scientific and Technical Document Availability Authorization (DAA) for Administratively Controlled Information.
+
+Code of Federal Regulations (CFR) Title 22 – Foreign Relations, Parts 120-130 Department of State: International Traffic in Arms Regulations (ITAR) (22 CFR 120-130). Implements 22 U.S.C. 2778 of the Arms Export Control Act (AECA) of 1976 and Executive Order 13637, “Administration of Reformed Export Controls,” March 8, 2013 The Invention Secrecy Act of 1951, 35 U.S.C. §181–§188. Secrecy of Certain Inventions and Filing Applications in Foreign Country; §181 – Secrecy of Certain Inventions and Withholding of Patent.
+
+Code of Federal Regulations (CFR) Title 37 – Patents, Trademarks, and Copyrights; Part 5 Secrecy of Certain Inventions and Licenses to Export and File Applications in Foreign Countries; Part 5.2 Secrecy Order. (37 CFR 5.2) Section 6.7 Technical Assessment NPR 1080.1, Requirements for the Conduct of NASA Research and Technology (R&T)
+
+NPR 7120.5, NASA Space Flight Program and Project Management Requirements NPR 7120.7, NASA Information Technology and Institutional Infrastructure Program and Project Management Requirements NPR 7120.8, NASA Research and Technology Program and Project Management Requirements NPR 7123.1, NASA Systems Engineering Processes and Requirements NPR 8705.4, Risk Classification for NASA Payloads NPR 8705.6, Safety and Mission Assurance (SMA) Audits, Reviews, and Assessments NPR 8715.3, NASA General Safety Program Requirements NASA-HDBK-2203, NASA Software Engineering Handbook. February 28, 2013 NASA/SP-2012-599, NASA’s Earned Value Management (EVM) Implementation Handbook NASA Federal Acquisition Regulation (FAR) Supplement (NFS) 1834.201, Earned Value Management System Policy.
+
+*http://evm.nasa.gov/index.html https://nen.*
+
+*nasa.gov/web/pm/evm https://nen.nasa.*
+
+*gov/web/se/tools/*
+
+American National Standards Institute/Electronic Industries Alliance (ANSI-EIA), Standard 748-C Earned Value Management Systems. March, 2013.
+
+International Council on Systems Engineering (INCOSE). INCOSE-TP-2003-020-01, Technical Measurement, Version 1.0, 27 December 2005. Prepared by Garry J. Roedler (Lockheed Martin) and Cheryl Jones (U.S. Army).
+
+Section 6.8 Decision Analysis NPR 7120.5, NASA Space Flight Program and Project Management Requirements NPR 7123.1, NASA Systems Engineering Processes and Requirements Brughelli, Kevin (Lockheed Martin), Deborah Carstens (Florida Institute of Technology), and Tim Barth (Kennedy Space Center), “Simulation Model Analysis Techniques,” Lockheed Martin presentation to KSC, November 2003 Saaty, Thomas L. The Analytic Hierarchy Process. New York: McGraw-Hill, 1980 Appendix B: Glossary NPR 2210.1, Release of NASA Software NPD 7120.4, NASA Engineering and Program/Project Management Policy NPR 7120.5, NASA Space Flight Program and Project Management Requirements
+
+NPR 7123.1, NASA Systems Engineering Processes and Requirements NPR 7150.2, NASA Software Engineering Requirements NPR 8000.4, Agency Risk Management Procedural Requirements NPR 8705.2, Human-Rating Requirements for Space Systems NPR 8715.3, NASA General Safety Program Requirements
+
+*http://www.iso-architec  ture.org/ieee-1471/index.html*
+
+Avizienis, A., J.C. Laprie, B. Randell, C. Landwehr, “Basic concepts and taxonomy of dependable and secure computing,” IEEE Transactions on Dependable and Secure Computing 1 (1), 11–33, 2004 Appendix F: Functional, Timing, and State Analysis NASA Reference Publication 1370, Training Manual for Elements of Interface Definition and Control. 1997 Defense Acquisition University. Systems Engineering Fundamentals Guide. Fort Belvoir, VA, 2001 Buede, Dennis. The Engineering Design of Systems: Models and Methods. New York: Wiley & Sons, 2000 Long, James E. Relationships Between Common Graphical Representations in Systems Engineering.Vienna, VA: Vitech Corporation, 2002 Sage, Andrew, and William Rouse. The Handbook of Systems Engineering and Management. New York: Wiley & Sons, 1999 Appendix G: Technology Assessment/Insertion NPR 7120.5, NASA Space Flight Program and Project Management Requirements NPR 7123.1, NASA Systems Engineering Processes and Requirements Appendix H: Integration Plan Outline Federal Highway Administration and CalTrans, Systems Engineering Guidebook for ITS, Version 2.0. Washington, DC: U.S. Department of Transportation, 2007 Appendix J: SEMP Content Outline NPR 7120.5, NASA Space Flight Program and Project Management Requirements NPR 7123.1, Systems Engineering Processes and Requirements Appendix K: Technical Plans NPR 7120.5, NASA Space Flight Program and Project Management Requirements Appendix M: CM Plan Outline SAE International (SAE)/Electronic Industries Alliance (EIA) 649B-2011, Configuration Management Standard (Aerospace Sector) April 1, 2011
+
+Appendix N: Guidance on Technical Peer Reviews/Inspections NPR 7123.1, Systems Engineering Processes and Requirements NPR 7150.2, NASA Software Engineering Requirements
+
+*http://sw-eng.larc.nasa.gov/files/2013/05/ Instructional-Handbook-for-Formal-Inspections.*
+
+*pdf*
+
+Appendix P: SOW Review Checklist NASA Langley Research Center (LaRC) Procedural Requirements (LPR) 5000.2 Procurement Initiator’s Guide
+
+*sites-e.larc.nasa.gov/sweng/ files/2013/05/Guidance_on_Metrics_for_PBC_ R1V01.doc*
+
+Appendix R: HSI Plan Content Outline NPR 7123.1, NASA Systems Engineering Processes and Requirements NPR 8705.2, Human-Rating Requirements for Space Systems NASA-STD-3001, Space Flight Human-System Standard, Volume 2: Human Factors, Habitability, and Environmental Health, Section 3.5 [V2 3005], “Human-Centered Design Process.” February 10, 2015
+
+# Bibliography
+
+The bibliography contains sources cited in sections of the document and additional sources for developing the material in the document.
+
+AIAA
+
+American Institute of Aeronautics and Astronautics
+
+ANSI
+
+American National Standards Institute
+
+ASME
+
+American Society of Mechanical Engineers
+
+ASQ
+
+American Society for Quality
+
+CCSDS
+
+Consultative Committee for Space Data Systems
+
+CFR
+
+(U.S.) Code of Federal Regulations
+
+COSPAR
+
+The Committee on Space Research
+
+DOD
+
+(U.S.) Department of Defense
+
+EIA
+
+Electronic Industries Alliance
+
+GEIA
+
+Government Electronics Information Technology Association
+
+IEEE
+
+Institute of Electrical and Electronics Engineers
+
+INCOSE
+
+International Council on Systems Engineering
+
+ISO
+
+International Organization for Standardization
+
+NIST
+
+National Institute of Standards and Technology
+
+SAE
+
+Society of Automotive Engineers
+
+TOR
+
+Technical Operating Report
+
+U.S.C.
+
+United States Code
+
+## A
+
+Adams, R. J., et al. Software Development Standard for Space Systems, Aerospace Corporation ReportNo. TOR-2004(3909)3537, Revision B. March 11, 2005. Prepared for the U.S. Air Force.
+
+AIAA G-118-2006e, AIAA Guide for Managing the Use of Commercial Off the Shelf (COTS) Software Components for Mission-Critical Systems, Reston, VA, 2006
+
+AIAA S-120-2006, Mass Properties Control for Space Systems. Reston, VA, 2006
+
+AIAA S-122-2007, Electrical Power Systems for Unmanned Spacecraft, Reston, VA, 2007
+
+ANSI/AIAA G-043-1992, Guide for the Preparation of Operational Concept Documents, Washington, DC, 1992
+
+ANSI/EIA-632, Processes for Engineering a System, Arlington, VA, 1999
+
+ANSI/EIA-649, National Consensus Standard for Configuration Management, 1998-1999
+
+ANSI/GEIA-649, National Consensus Standard for Configuration Management, National Defense Industrial Association (NDIA), Arlington, VA 1998
+
+ANSI/EIA-748-C Standard: Earned Value Management Systems, March, 2013
+
+ANSI/GEIA GEIA-859, Data Management, National Defense Industrial Association (NDIA), Arlington, VA 2004 ANSI/IEEE STD 1042. IEEE Guide to Software Configuration Management. Washington, DC, 1987
+
+*https://wiki.sei.cmu.edu/aadl/index.php/Main_Page*
+
+(The) Arms Export Control Act (AECA) of 1976, see 22 U.S.C. 2778 ASME Y14.24, Types and Applications of Engineering Drawings, New York, 1999 ASME Y14.100, Engineering Drawing Practices, New York, 2004
+
+*http://asq.org/statistics/quality-information/ statistical-engineering*
+
+Avizienis, A., J.C. Laprie, B. Randell, C. Landwehr, “Basic concepts and taxonomy of dependable and secure computing,” IEEE Transactions on Dependable and Secure Computing 1 (1), 11–33, 2004 B Ball, Robert E. The Fundamentals of Aircraft Combat Survivability Analysis and Design. 2nd Edition, AIAA Education Series, 2003 Bayer, T.J., M. Bennett, C. L. Delp, D. Dvorak, J. S. Jenkins, and S. Mandutianu. “Update: Concept of Operations for Integrated ModelCentric Engineering at JPL,” paper #1122, IEEE Aerospace Conference 2011 Blanchard, Benjamin S., System Engineering Management. 4th Edition, Hoboken, NJ: John Wiley & Sons, Inc., 2008 Blanchard, Benjamin S., and Wolter J. Fabrycky. Systems Engineering and Analysis, 5th Edition Prentice Hall International Series in Industrial & Systems Engineering; February 6, 2010  Brughelli, Kevin (Lockheed Martin), Deborah Carstens (Florida Institute of Technology), and Tim Barth (Kennedy Space Center), “Simulation Model Analysis Techniques,” Lockheed Martin presentation to KSC, November 2003 Buede, Dennis. The Engineering Design of Systems: Models and Methods. New York: Wiley & Sons, 2000.
+
+*http:// www.bpmn.org/*
+
+C
+
+*http://public.ccsds.org/ publications/MagentaBooks.aspx http:// public.ccsds.org/publications/GreenBooks.aspx*
+
+Chapanis, A. “The Error-Provocative Situation: A Central Measurement Problem in Human
+
+Factors Engineering.” In The Measurement of Safety Performance. Edited by W. E. Tarrants. New York: Garland STPM Press, 1980 
+
+*seari.mit.edu*
+
+Chung, Seung H., Todd J. Bayer, Bjorn Cole, Brian Cooke, Frank Dekens, Christopher Delp, Doris Lam. “Model-Based Systems Engineering Approach to Managing Mass Margin,” in Proceedings of the 5th International Workshop on Systems & Concurrent Engineering for Space Applications (SECESA), Lisbon, Portugal, October, 2012 Clark, J.O. “System of Systems Engineering and Family of Systems Engineering From a Standards, V-Model, and Dual-V Model Perspective,” 3rd Annual IEEE International Systems Conference, Vancouver, Canada, March 23–26, 2009 Clemen, R., and T. Reilly. Making Hard Decisions with DecisionTools Suite. Pacific Grove, CA: Duxbury Resource Center, 2002 CFR, Title 14 – Aeronautics and Space, Part 1214 NASA Space Flight (14 CFR 1214) CFR, Title 14 – Aeronautics and Space, Part 1216.3 NASA Environmental Quality: Procedures for Implementing the National Environmental Policy Act (NEPA) (14 CFR 1216.3) CFR Title 22 – Foreign Relations, Parts 120-130 Department of State: International Traffic in Arms Regulations (ITAR) (22 CFR 120-130). Implements 22 U.S.C. 2778 of the Arms Export Control Act (AECA) of 1976 and Executive Order 13637, “Administration of Reformed Export Controls,” March 8, 2013 CFR Title 37 – Patents, Trademarks, and Copyrights; Part 5 Secrecy of Certain Inventions and Licenses to Export and File Applications in Foreign Countries; Part 5.2 Secrecy Order. (37 CFR 5.2) CFR Title 40 – Protection of Environment, Part 1508.27 Council on Environmental Quality: Terminology “significantly.” (40 CFR 1508.27) CFR Title 48 – Federal Acquisition Regulation (FAR) System, Part 1214 NASA Acquisition Planning: Acquisition of Commercial Items: Space Flight. (48 CFR 1214) CFR Title 48 – Federal Acquisition Regulation (FAR) System, Part 46.103 Government Contract Quality Assurance: Contracting office responsibilities. (48 CFR 46.103) CFR Title 48 – Federal Acquisition Regulation (FAR) System, Part 46.4 Government Contract Quality Assurance (48 CFR 46.4) CFR Title 48 – Federal Acquisition Regulation (FAR) System, Part 46.407 Government Contract Quality Assurance: Nonconforming Supplies or Services (48 CFR 46.407)
+
+*http://w.astro.berkeley.edu/~kalas/ ethics/documents/environment/COSPAR%20 Planetary%20Protection%20Policy.pdf*
+
+D
+
+*https://www.deming.org/*
+
+Dezfuli, H. “Role of System Safety in Risk-informed Decisionmaking.” In Proceedings, the NASA Risk Management Conference 2005. Orlando, December 7, 2005
+
+*http://dodcio.*
+
+*defense.gov/Library/DoDArchitectureFramework.*
+
+*aspx*
+
+DOD. Defense Acquisition Guidebook (DAG). 2014 DOD Defense Acquisition University (DAU). Systems Engineering Fundamentals Guide. Fort Belvoir, VA, 2001 DOD Defense Logistics Agency (DLA). Cataloging Handbook, H4/H8 Series. Washington, DC, February 2003
+
+*http://www.dtic.mil/dtic/tr/fulltext/ u2/a437106.pdf*
+
+DOD MIL-HDBK-727 (Validation Notice 1). Military Handbook: Design Guidance for Producibility, U.S. Army Research Laboratory, Weapons and Materials Research Directorate: Adelphi,MD, 1990 DOD. MIL-HDBK-965. Acquisition Practices for Parts Management. Washington, DC, September 26, 1996. Notice 1: October 2000 DOD. MIL-STD-881C. Work Breakdown Structure (WBS) for Defense Materiel Items. Washington, DC, October 3, 2011 DOD. MIL-STD-1472G, DOD Design Criteria Standard: Human Engineering. Washington, DC, January 11, 2012 DOD. MIL-STD-1540D, Product Verification Requirements for Launch, Upper Stage, and Space Vehicles. January 15, 1999 DOD. MIL-STD-46855A, Human Engineering Requirements for Military Systems, Equipment, and Facilities. May 24, 2011. Replacement for DOD HDBK 763 and DOD MIL-HDBK46855A, which have been cancelled.
+
+DOD Office of the Under Secretary of Defense, Acquisition, Technology, & Logistics. SD-10. Defense Standardization Program: Guide for Identification and Development of Metric Standards. Washington, DC, April, 2010
+
+*http://ocw.mit.edu/courses/ aeronautics-and-astronautics/16-885j-air  craft-systems-engineering-fall-2005/readings/sef  guide_01_01.pdf*
+
+Duren, R. et al., “Systems Engineering for the Kepler Mission: A Search for Terrestrial Planets,” IEEE Aerospace Conference, 2006 E Eggemeier, F. T., and G. F. Wilson. “Performance and Subjective Measures of Workload in Multitask Environments.” In Multiple-Task Performance. Edited by D. Damos. London: Taylor and Francis, 1991 Endsley, M. R., and M. D. Rogers. “Situation Awareness Information Requirements
+
+Analysis for En Route Air Traffic Control.” In Proceedings of the Human Factors and Ergonomics Society 38th Annual Meeting. Santa Monica: Human Factors and Ergonomics Society, 1994 Eslinger, Suellen. Software Acquisition Best Practices for the Early Acquisition Phases. El Segundo, CA: The Aerospace Corporation, 2004  Executive Order (EO) 12114, Environmental Effects Abroad of Major Federal Actions. January 4, 1979.
+
+Executive Order (EO) 12770, Metric Usage in Federal Government Programs, July 25, 1991.
+
+Executive Order (EO) 13637, Administration of Reformed Export Controls, March 8, 2013.
+
+*http://www.*
+
+*w3.org/TR/REC-xml/ http://www.omg.org/spec/XMI/*
+
+F Federal Acquisition Regulation (FAR). See: Code of Federal Regulations (CFR), Title 48.
+
+*hf.tc.faa.gov/hfds*
+
+Federal Highway Administration, and CalTrans. Systems Engineering Guidebook for ITS, Version 2.0. Washington, DC: U.S. Department of Transportation, 2007 Friedenthal, Sanford, Alan Moore, and Rick Steiner. A Practical Guide to SysML: Systems Modeling Language, Morgan Kaufmann Publishers, Inc., July 2008 Fuld, R. B. “The Fiction of Function Allocation.” Ergonomics in Design (January 1993): 20–24 G Garlan, D., W. Reinholtz, B. Schmerl, N. Sherman, T. Tseng. “Bridging the Gap between Systems Design and Space Systems Software,” Proceedings of the 29th IEEE/NASA Software Engineering Workshop, 6-7 April 2005, Greenbelt, MD, USA Glass, J. T., V. Zaloom, and D. Gates. “A MicroComputer-Aided Link Analysis Tool.” Computers in Industry 16, (1991): 179–87 Gopher, D., and E. Donchin. “Workload: An Examination of the Concept.” In Handbook of Perception and Human Performance: Vol. II. Cognitive Processes and Performance. Edited by K. R. Boff, L. Kaufman, and J. P. Thomas. New York: John Wiley & Sons, 1986 Griffin, Michael D., NASA Administrator. “System Engineering and the Two Cultures of Engineering.” Boeing Lecture, Purdue University, March 28, 2007
+
+H Hart, S. G., and C. D. Wickens. “Workload Assessment and Prediction.” In MANPRINT: An Approach to Systems Integration. Edited by H. R. Booher. New York: Van Nostrand Reinhold, 1990 Hoerl, R.W. and R.S. Snee, Statistical Thinking – Improving Business Performance, John Wiley & Sons. 2012 Hoffmann, Hans-Peter, “Harmony-SE/SysML Deskbook: Model-Based Systems Engineering with Rhapsody,” Rev. 1.51, Telelogic/I-Logix white paper, Telelogic AB, May 24, 2006 Hofmann, Hubert F., Kathryn M. Dodson, Gowri S. Ramani, and Deborah K. Yedlin. Adapting CMMI® for Acquisition Organizations: A Preliminary Report, CMU/SEI-2006-SR-005. Pittsburgh: Software Engineering Institute, Carnegie Mellon University, 2006, pp. 338–40 Huey, B. M., and C. D. Wickens, eds. Workload Transition. Washington, DC: National Academy Press, 1993 I IEEE STD 610.12-1990. IEEE Standard Glossary of Software Engineering Terminology. 1999, superceded by ISO/IEC/IEEE 24765:2010, Systems and Software Engineering – Vocabulary. Washington, DC, 2010 IEEE STD 828. IEEE Standard for Software Configuration Management Plans. Washington, DC, 1998 IEEE STD 1076-2008 IEEE Standard VHDL Language Reference Manual, 03 February 2009 IEEE STD 1220-2005. IEEE Standard for Application and Management of the Systems Engineering Process, Washington, DC, 2005 IEEE Standard12207.1, EIA Guide for Information Technology Software Life Cycle Processes—Life Cycle Data, Washington, DC, 1997 INCOSE. Systems Engineering Handbook, Version 3.2.2. Seattle, 2011 INCOSE-TP-2003-002-04, Systems Engineering Handbook: A Guide for System Life Cycle Processes and Activities, Version 4, Edited by Walden, David D., et al., 2015 INCOSE-TP-2003-020-01, Technical Measurement, Version 1.0, 27 December 2005. Prepared by Garry J. Roedler (Lockheed Martin) and Cheryl Jones (U.S. Army).
+
+*http://www.incose.org/ProductsPubs/pdf/ SEVision2020_20071003_v2_03.pdf http://seari.mit.edu/docu  ments/SELI-Guide-Rev2.pdf*
+
+ISO 9000:2015, Quality management systems – Fundamentals and vocabulary. Geneva: International Organization for Standardization, 2015
+
+ISO 9001:2015 Quality Management Systems (QMS). Geneva: International Organization for Standardization, September 2015 ISO 9100/AS9100, Quality Systems Aerospace—Model for Quality Assurance in Design, Development, Production, Installation, and Servicing. Geneva: International Organization for Standardization, 1999 ISO 10007: 1995(E). Quality Management—Guidelines for Configuration Management, Geneva: International Organization for Standardization, 1995 ISO 10303-AP233, Application Protocol (AP) for Systems Engineering Data Exchange (AP-233)Working Draft 2 published July 2006 * *
+
+*http:// www.rm-odp.net*
+
+ISO 13374-1, Condition monitoring and diagnostics of machines—Data processing, communication and presentation – Part 1: General guidelines. Geneva: International Organization for Standardization, 2002 ISO/IEC 15288:2002. Systems Engineering—System Life Cycle Processes. Geneva: International Organization for Standardization, 2002 ISO/TR 15846. Information Technology—Software Life Cycle Processes Configuration Management, Geneva: International Organization for Standardization, 1998 ISO/IEC TR 19760:2003. Systems Engineering—A Guide for the Application of ISO/IEC 15288. Geneva: International Organization for Standardization, 2003 ISO/IEC/IEEE 24765:2010, Systems and Software Engineering – Vocabulary. Geneva: International Organization for Standardization, 2010
+
+*http://www.iso-architec  ture.org/ieee-1471/index.html*
+
+(The) Invention Secrecy Act of 1951, see 35 U.S.C. §181–§188. Secrecy of Certain Inventions and Filing Applications in Foreign Country; §181 – Secrecy of Certain Inventions and Withholding of Patent J
+
+*http://www.nasa.gov/pdf/394931main_JCL_ FAQ_10_12_09.pdf*
+
+Jennions, Ian K. editor. Integrated Vehicle Health Management (IVHM): Perspectives on an Emerging Field. SAE International, Warrendale PA (IVHM Book) September 27, 2011 Jennions, Ian K. editor. Integrated Vehicle Health Management (IVHM): Business Case Theory and
+
+*Practice. SAE International, Warrendale PA (IVHM Book) November 12, 2012* Jennions, Ian K. editor. Integrated Vehicle Health Management (IVHM): The Technology. SAE International, Warrendale PA (IVHM Book) September 5, 2013 Johnson, Stephen B. et al., editors. System Health Management with Aerospace Applications. John Wiley & Sons, Ltd, West Sussex, UK, 2011 Jones, E. R., R. T. Hennessy, and S. Deutsch, eds. Human Factors Aspects of Simulation. Washington, DC: National Academy Press, 1985 K Kaplan, S., and B. John Garrick. “On the Quantitative Definition of Risk.” Risk Analysis1(1). 1981 Karpati, G., Martin, J., Steiner, M., Reinhardt, K., “The Integrated Mission Design Center (IMDC) at NASA Goddard Space Flight Center,” IEEE Aerospace Conference 2003 Proceedings, Volume 8, Page(s): 8_3657–8_3667, 2003 Keeney, Ralph L. Value-Focused Thinking: A Path to Creative Decisionmaking. Cambridge, MA: Harvard University Press, 1992 Keeney, Ralph L., and Timothy L. McDaniels. “A Framework to Guide Thinking and Analysis Regarding Climate Change Policies.” Risk Analysis 21(6): 989–1000. 2001 Keeney, Ralph L., and Howard Raiffa. Decisions with Multiple Objectives: Preferences and Value Tradeoffs. Cambridge, UK: Cambridge University Press, 1993 Kirwin, B., and L. K. Ainsworth. A Guide to Task Analysis. London: Taylor and Francis, 1992 Kluger, Jeffrey with Dan Cray, “Management Tips from the Real Rocket Scientists,” Time Magazine, November 2005
+
+*http://www.*
+
+*idef.com/idef0.htm*
+
+Kruchten, Philippe B. The Rational Unified Process: An Introduction, Third Edition, Addison-Wesley Professional: Reading, MA, 2003  Kurke, M. I. “Operational Sequence Diagrams in System Design.” Human Factors 3: 66–73. 1961 L Larson, Wiley J.et al.. Applied Space Systems Engineering: A Practical Approach to Achieving Technical Baselines. 2nd Edition, Boston, MA: McGraw-Hill Learning Solutions, CEI Publications, 2009 Long, James E., Relationships Between Common Graphical Representations in Systems Engineering. Vienna, VA: Vitech Corporation, 2002 Long, James E., “Systems Engineering (SE) 101,” CORE®: Product & Process Engineering Solutions, Vitech training materials. Vienna, VA: Vitech Corporation, 2000
+
+M Maier, M.W. “Architecting Principles for Systems-ofSystems,” Systems Engineering 1(1998), 267-284, John Wiley & Sons, Inc.
+
+*http:// www.interscience.wiley.com http:// www.inter  science.wiley.com*
+
+Maier, M.W., and E. Rechtin, The Art of Systems Architecting, 3rd Edition, CRC Press, Boca Raton, FL, 2009 Martin, James N., Processes for Engineering a System: An Overview of the ANSI/GEIA EIA-632 Standard and Its Heritage. New York: Wiley & Sons, 2000 Martin, James N., Systems Engineering Guidebook: A Process for Developing Systems and Products. Boca Raton: CRC Press, 1996.
+
+*http://www.mathworks.com/*
+
+McGuire, M., Oleson, S., Babula, M., and SarverVerhey, T., “Concurrent Mission and Systems Design at NASA Glenn Research Center: The origins of the COMPASS Team,” AIAA Space 2011 Proceedings, September 27-29, 2011, Long Beach, CA Meister, David, Behavioral Analysis and Measurement Methods. New York: John Wiley & Sons, 1985 Meister, David, Human Factors: Theory and Practice. New York: John Wiley & Sons, 1971 (The) Metric Conversion Act of 1975 (Public Law 94-168) amended by the Omnibus Trade and Competitiveness Act of 1988 (Public Law 100-418), the Savings in Construction Act of 1996 (Public Law 104-289), and the Department of Energy High-End Computing Revitalization Act of 2004 (Public Law 108-423). See 15 U.S.C. §205a et seq.
+
+Miao, Y., and J. M. Haake. “Supporting Concurrent Design by Integrating Information Sharing and Activity Synchronization.” In Proceedings of the 5th ISPE International Conference on Concurrent Engineering Research and Applications (CE98). Tokyo, 1998, pp. 165–74
+
+*http://www2.mitre.org/…/files/ CommonRisksCOTS.doc http://www.modaf.com/*
+
+Moeller, Robert C., Chester Borden, Thomas Spilker, William Smythe, Robert Lock , “Space Missions Trade Space Generation and Assessment using the JPL Rapid Mission Architecture (RMA) Team Approach,” IEEE Aerospace Conference, Big Sky, Montana, March 2011 Morgan, M. Granger, and M. Henrion, Uncertainty: A Guide to Dealing with Uncertainty in Quantitative Risk and Policy Analysis. Cambridge, UK: Cambridge University Press, 1990
+
+
+
+*http://ntrs.nasa.gov/archive/nasa/ casi.ntrs.nasa.gov/20120001572.pdf*
+
+NASA Publications NASA Federal Acquisition Regulation (FAR) Supplement (NFS) 1834.201, Earned Value Management System Policy NASA Form (NF) 1686, NASA Scientific and Technical Document Availability Authorization (DAA) for Administratively Controlled Information
+
+Reports
+
+NASA Chief Engineer and the NASA Integrated Action Team (NIAT) report, “Enhancing Mission Success—A Framework for the Future,” December 21, 2000. Authors: McBrayer, Robert O and Thomas, Dale, NASA Marshall Space Flight Center, Huntsville, AL United States
+
+*http://www.nasa.gov/columbia/caib/html/report.*
+
+*html http://www.nasa.gov/pdf/ 65776main_noaa_np_mishap.pdf*
+
+NASA. Diaz Report, A Renewed Commitment to Excellence: An Assessment of the NASA Agencywide Applicability of the Columbia Accident Investigation Board Report, January 30, 2004. Mr. Al Diaz, Director, Goddard Space Flight Center, and team
+
+*http:// solarsystem.nasa.gov/europa/2012study.cfm*
+
+NASA Office of Inspector General. Final Memorandum on NASA’s Acquisition Approach Regarding Requirements for Certain Software Engineering Tools to Support NASA Programs, Assignment No. S06012. Washington, DC, 2006
+
+*https://oig.nasa.gov/august/ report/FY06/s06012* Specialty Web Sites *https://nen.nasa.gov/web/se https://nen.nasa.*
+
+*gov/web/se/tools/ https://nen.*
+
+*nasa.gov/web/se https://nen.nasa.gov/ web/pm/evm http://evm.nasa.gov/index.html*
+
+*http://www.*
+
+*hq.nasa.gov/office/procurement/* Conference Publications *http://engineering.larc.nasa.gov/2011_ NASA_Statistical_Engineering_Symposium.html*
+
+*Aerospace Conference, 2007 IEEE Big Sky, MT 3–10 March 2007. NASA/Aerospace Corp. paper: “Using Historical NASA Cost and Schedule Growth to Set Future Program and Project Reserve Guidelines,” by Emmons, D. L., R.E. Bitten, and C.W. Freaner. IEEE Conference Publication pages: 1–16, 2008. Also presented at the NASA Cost Symposium, Denver CO, July 17–19, 2007 NASA Cost Symposium 2014, NASA “Mass Growth Analysis: Spacecraft & Subsystems.” LaRC, August 14th, 2014. Presenter: Vincent Larouche – Tecolote Research, also James K. Johnson, NASA HQ Study Point of Contact* Planetary Science Subcommittee, NASA Advisory Council, 23 June, 2008, NASA GSFC. NASA/Aerospace Corp. presentation; “An Assessment of the Inherent Optimism in Early Conceptual Designs and its Effect on Cost and Schedule Growth,” by Freaner, Claude, Bob Bitten, Dave Bearden, and Debra Emmons
+
+Technical Documents
+
+NASA Office of Chief Information Officer (OCIO). Information Technology Systems Engineering Handbook Version 2.0 NASA Science Mission Directorate, Risk Communication Plan for Planetary and Deep Space Missions, 1999 NASA PD-EC-1243, Preferred Reliability Practices for Fault Protection, October 1995 NASA-CR-192656, Contractor Report: Research and technology goals and objectives for Integrated Vehicle Health Management (IVHM). October 10, 1992 NASA Jet Propulsion Laboratory (JPL), JPLD-17868 (REV.1), JPL Guideline: Design, Verification/Validation and Operations Principles for Flight Systems. February 16, 2001 NASA Lyndon B. Johnson Space Center (JSC65995), Commercial Human Systems Integration Processes (CHSIP), May 2011
+
+*http:// ston.jsc.nasa.gov/collections/TRS/_techrep/ TP-2014-218556.pdf*
+
+NASA Lyndon B. Johnson Space Center (JSC60576), National Space Transportation System (NSTS), Space Shuttle Program, Transition Management Plan, May 9, 2007
+
+*sites-e.larc.nasa.gov/ sweng/files/2013/05/Guidance_on_Metrics_for_ PBC_R1V01.doc http://sw-eng.larc.nasa.gov/files/2013/05/ Instructional-Handbook-for-Formal-Inspections.*
+
+*pdf*
+
+NASA/TM-2008-215126/Volume II (NESCRP-06-108/05-173-E/Part 2), Technical Memorandum: Design Development Test and Evaluation (DDT&E) Considerations for Safe and Reliable Human-Rated Spacecraft Systems. April 2008.Volume II: Technical Consultation Report. James Miller, Jay Leggett, and Julie KramerWhite, NASA Langley Research Center, Hampton VA, June 14, 2007 NASA Reference Publication 1370. Training Manual for Elements of Interface Definition and Control. Vincent R. Lalli, Robert E. Kastner, and Henry N. Hartt. NASA Lewis Research Center, Cleveland OH, January 1997
+
+*http://seari.mit.edu/*
+
+NASA Cost Estimating Handbook (CEH), Version 4, February 2015 NASA Financial Management Requirements (FMR)Volume 4
+
+Special Publications
+
+NASA/SP-2010-576 NASA Risk-Informed Decision Making Handbook NASA/SP-2012-599, NASA’s Earned Value Management (EVM) Implementation Handbook NASA/SP-2010-3403, NASA Schedule Management Handbook NASA/SP-2010-3404, NASA Work Breakdown Structure Handbook NASA/SP-2010-3406, Integrated Baseline Review (IBR) Handbook NASA/SP-2010-3407, Human Integration Design Handbook (HIDH) NASA/SP-2011-3421, Probabilistic Risk Assessment Procedures Guide for NASA Managers and Practitioners NASA/SP-2011-3422, NASA Risk Management Handbook NASA/SP-2013-3704, Earned Value Management (EVM) System Description NASA/SP-2014-3705, NASA Space Flight Program and Project Management Handbook NASA/SP-2015-3709, Human Systems Integration Practitioners Guide
+
+Handbooks and Standards
+
+NASA-HDBK-1002, Fault Management (FM) Handbook, Draft 2, April 2012 NASA-HDBK-2203, NASA Software Engineering Handbook, February 28, 2013
+
+*http://www.*
+
+*hq.nasa.gov/office/codeq/doctree/174014.htm*
+
+NPR 8715.6 NASA GSFC-STD-1000, Rules for the Design, Development, Verification, and Operation of Flight Systems. NASA Goddard Space Flight Center, February 8, 2013
+
+NASA-STD-3001, Space Flight Human System Standard. Volume 1: Crew Health. Rev. A, July 30, 2014 NASA-STD-3001, Space Flight Human System Standard. Volume 2: Human Factors, Habitability, and Environmental Health. Rev. A, February 10, 2015 NASA GSFC-STD-7000, Goddard Technical Standard: General Environmental Verification Standard (GEVS) for GSFC Flight Programs and Projects. Goddard Space Flight Center, April 2005 NASA KSC-NE-9439 Kennedy Space Center Design Engineering Handbook, Best Practices for Design and Development of Ground Systems. Kennedy Space Center, November 20 2009 NASA-STD-7009, Standard for Models and Simulations. Washington, DC, October 18, 2013 NASA-STD-8719.13, Software Safety Standard, Rev C. Washington, DC, May 7, 2013 NASA-STD-8719.14, Handbook for Limiting Orbital Debris. Rev A with Change 1. December 8, 2011 NASA-STD-8729.1, Planning, Developing, and Maintaining an Effective Reliability and Maintainability (R&M) Program. Washington, DC, December 1, 1998
+
+Policy Directives
+
+NPD 1001.0, 2014 NASA Strategic Plan NID 1600.55, Sensitive But Unclassified (SBU) Controlled Information NPD 2820.1, NASA Software Policy NPD 7120.4, NASA Engineering and Program/Project Management Policy NPD 7120.6, Knowledge Policy on Programs and Projects NPD 8010.2, Use of the SI (Metric) System of Measurement in NASA Programs NPD 8010.3, Notification of Intent to Decommission or Terminate Operating Space Systems and Terminate Missions NPD 8020.7, Biological Contamination Control for Outbound and Inbound Planetary Spacecraft NPD 8730.5, NASA Quality Assurance Program Policy
+
+Procedural Requirements
+
+NPR 1080.1, Requirements for the Conduct of NASA Research and Technology (R&T) NPR 1441.1, NASA Records Retention Schedules NPR 1600.1, NASA Security Program Procedural Requirements NPR 2210.1, Release of NASA Software NPR 2810.1, Security of Information Technology LPR 5000.2, Procurement Initiator’s Guide. NASA Langley Research Center (LARC) JPR 7120.3, Project Management: Systems Engineering & Project Control Processes and Requirements. NASA Lyndon B. Johnson Space Center (JSC)
+
+NPR 7120.5, NASA Space Flight Program and Project Management Processes and Requirements NPR 7120.7, NASA Information Technology and Institutional Infrastructure Program and Project Management Requirements NPR 7120.8, NASA Research and Technology Program and Project Management Requirements NPR 7120.10, Technical Standards for NASA Programs and Projects NPR 7120.11, NASA Health and Medical Technical Authority (HMTA) Implementation NPR 7123.1, Systems Engineering Processes and Requirements NPR 7150.2, NASA Software Engineering Requirements NPR 8000.4, Risk Management Procedural Requirements NPI 8020.7, NASA Policy on Planetary Protection Requirements for Human Extraterrestrial Missions NPR 8020.12, Planetary Protection Provisions for Robotic Extraterrestrial Missions APR 8070.2, EMI/EMC Class D Design and Environmental Test Requirements. NASA Ames Research Center (ARC) NPR 8580.1, Implementing the National Environmental Policy Act and Executive Order 12114 NPR 8705.2, Human-Rating Requirements for Space Systems NPR 8705.3, Probabilistic Risk Assessment Procedures Guide for NASA Managers and Practitioners NPR 8705.4, Risk Classification for NASA Payloads NPR 8705.5, Probabilistic Risk Assessment (PRA) Procedures for NASA Programs and Projects NPR 8705.6, Safety and Mission Assurance (SMA) Audits, Reviews, and Assessments NPR 8710.1, Emergency Preparedness Program NPR 8715.2, NASA Emergency Preparedness Plan Procedural Requirements NPR 8715.3, NASA General Safety Program Requirements NPR 8715.6, NASA Procedural Requirements for Limiting Orbital Debris NPR 8735.2, Management of Government Quality Assurance Functions for NASA Contracts NPR 8900.1, NASA Health and Medical Requirements for Human Space Exploration
+
+Work Instructions
+
+  JSC Work Instruction EA-WI-016, Off-the-Shelf Hardware Utilization in Flight Hardware Development. NASA Lyndon B. Johnson Space Center.
+
+Acquisition Documents
+
+NASA. The SEB Source Evaluation Process. Washington, DC, 2001 NASA. Solicitation to Contract Award. Washington, DC, NASA Procurement Library, 2007
+
+*Appendix P*
+
+N
+
+*https://ceq.*
+
+*doe.gov/welcome.html http://www.nap.edu*
+
+NIST Special Publication 330: The International System of Units (SI) Barry N. Taylor and Ambler Thompson, Editors, March 2008. The United States version of the English text of the eighth edition (2006) of the International Bureau of Weights and Measures publication Le Système International d’ Unités (SI) NIST Special Publication 811: NIST Guide for the Use of the International System of Units (SI) A. Thompson and B. N. Taylor, Editors. Created July 2, 2009; Last updated January 28, 2016 NIST, Federal Information Processing Standard Publication (FIPS PUB) 199, Standards for Security Categorization of Federal Information and Information Systems, February 2004 O Oberto, R.E., Nilsen, E., Cohen, R., Wheeler, R., DeFlorio, P., and Borden, C., “The NASA Exploration Design Team; Blueprint for a New Design Paradigm”, 2005 IEEE Aerospace Conference, Big Sky, Montana, March 2005
+
+*http://www.omg.*
+
+*org/spec/OCL/*
+
+Office of Management and Budget (OMB) Circular A-94, Guidelines and Discount Rates for BenefitCost Analysis of Federal Programs, October 29, 1992 Oliver, D., T. Kelliher, and J. Keegan, Engineering Complex Systems with Models and Objects, New York, NY, USA: McGraw-Hill 1997 OOSEM Working Group, Object-Oriented Systems Engineering Method (OOSEM) Tutorial, Version 03.00, Lockheed Martin Corporation and INCOSE, October 2008
+
+*http://www.*
+
+*w3.org/2001/sw/wiki/OWL*
+
+P Paredis, C., Y. Bernard, R. Burkhart, H.P. Koning, S. Friedenthal, P. Fritzon, N.F. Rouquette, W. Schamai. “Systems Modeling Language (SysML)-Modelica Transformation.” INCOSE 2010 Pennell, J. and Winner, R., “Concurrent Engineering: Practices and Prospects,” Global Telecommunications Conference, GLOBECOM ‘89, 1989 Presidential Directive/National Security Council Memorandum No. 25 (PD/NSC-25), “Scientific
+
+or Technological Experiments with Possible Large-Scale Adverse Environmental Effects and Launch of Nuclear Systems into Space,” as amended May 8, 1996 Presidential Policy Directive PPD-4 (2010), National Space Policy Presidential Policy Directive PPD-21 (2013), Critical Infrastructure Security and Resilience Price, H. E. “The Allocation of Functions in Systems.” Human Factors 27: 33–45. 1985 The Project Management Institute® (PMI). Practice Standards for Work Breakdown Structures. Newtown Square, PA, 2001 Q
+
+*http://www.omg.*
+
+*org/spec/QVT/1.0/*
+
+R Rasmussen, Robert. “Session 1: Overview of State Analysis,” (internal document), State Analysis Lite Course, Jet Propulsion Laboratory, California Institute of Technology, Pasadena, CA, 2005 Rechtin, Eberhardt. Systems Architecting of Organizations: Why Eagles Can’t Swim. Boca Raton: CRC Press, 2000 S Saaty, Thomas L. The Analytic Hierarchy Process. New York: McGraw-Hill, 1980 SAE Standard AS5506B, Architecture Analysis & Design Language (AADL), SAE International, September 10, 2012 SAE International and the European Association of Aerospace Industries (EAAI) AS9100C, Quality Management Systems (QMS): Requirements for Aviation, Space, and Defense Organizations Revision C, January 15, 2009 SAE International/Electronic Industries Alliance (EIA) 649B-2011, Configuration Management Standard (Aerospace Sector), April 1, 2011 Sage, Andrew, and William Rouse. The Handbook of Systems Engineering and Management, New York: Wiley & Sons, 1999 Shafer, J. B. “Practical Workload Assessment in the Development Process.” In Proceedings of the Human Factors Society 31st Annual Meeting, Santa Monica: Human Factors Society, 1987 Shames, P., and J. Skipper. “Toward a Framework for Modeling Space Systems Architectures,” SpaceOps 2006 Conference, AIAA 2006-5581, 2006
+
+*http://ieeexplore.ieee.org/ iel3/6/7047/00284787.pdf?arnumber=284787 http:// www.sei.cmu.*
+
+*edu/productlines/frame_report/arch_def.htm*
+
+Stamelatos, M., H. Dezfuli, and G. Apostolakis. “A Proposed Risk-Informed Decision making Framework for NASA.” In Proceedings of the 8th International Conference on Probabilistic Safety
+
+*Assessment and Management. New Orleans, LA, May 14–18, 2006* Stern, Paul C., and Harvey V. Fineberg, eds. Understanding Risk: Informing Decisions in a Democratic Society. Washington, DC: National Academies Press, 1996
+
+*http://www.*
+
+*omgsysml.org/*
+
+T Taylor, Barry. Guide for the Use of the International System of Units (SI), Special Publication 811. Gaithersburg, MD: NIST, Physics Laboratory, 2007 U
+
+*http://www.uml.*
+
+*org/ http://www.omg.org/spec/ UPDM/*
+
+U.S. Air Force. SMC Systems Engineering Primer and Handbook, 3rd ed. Los Angeles: Space and Missile Systems Center, 2005
+
+*http://www.csb.gov/*
+
+ U.S. Nuclear Regulatory Commission. SECY98-144, White Paper on Risk-Informed and Performance-Based Regulation,Washington, DC, 1998 U.S. Nuclear Regulatory Commission. NUREG0700, Human-System Interface Design Review Guidelines, Rev.2. Washington, DC, Office of Nuclear Regulatory Research, 2002 United Nations, Office for Outer Space Affairs. Treaty of Principles Governing the Activities of States in the Exploration and Use of Outer Space, Including the Moon and Other Celestial Bodies. Known as the “Outer Space Treaty of 1967” W Wall, S., “Use of Concurrent Engineering in Space Mission Design,” Proceedings of EuSEC 2000, Munich, Germany, September 2000 Warfield, K., “Addressing Concept Maturity in the Early Formulation of Unmanned Spacecraft,” Proceedings of the 4th International Workshop on System and Concurrent Engineering for Space Applications, October 13–15, 2010, Lausanne, Switzerland
+
+*http://www.*
+
+*w3.org/2001/sw/wiki/OWL*
+
+Wessen, Randii R., Chester Borden, John Ziemer, and Johnny Kwok. “Space Mission Concept Development Using Concept Maturity Levels,” Conference paper presented at the American Institute of Aeronautics and Astronautics (AIAA) Space 2013 Conference and Exposition; September 10–12, 2013; San Diego, CA. Published in the AIAA Space 2013 Proceedings Winner, R., Pennell, J., Bertrand, H., and Slusarczuk, M., The Role Of Concurrent Engineering In Weapons System Acquisition,
+
+Institute of Defense Analyses (IDA) Report R-338, Dec 1988
+
+*http://www.wolfram.com/*
+
+*mathematica/*
+
+### X
+
+*http://www.omg.*
+
+*org/spec/XMI/*
+
+*http://*
+
+*www.w3.org/TR/REC-xml/*
+
+### Z
+
+Ziemer, J., Ervin, J., Lang, J., “Exploring Mission Concepts with the JPL Innovation Foundry A-Team,” AIAA Space 2013 Proceedings, September 10–12, 2013, San Diego, CA
+
+![Image 0 (page 1)](embedded:p1_i0)
+
+![Image 1 (page 1)](embedded:p1_i1)
+
+![Image 2 (page 1)](embedded:p1_i2)
+
+![Image 3 (page 1)](embedded:p1_i3)
+
+![Image 4 (page 1)](embedded:p1_i4)
+
+![Image 5 (page 61)](embedded:p61_i5)
+
+![Image 6 (page 61)](embedded:p61_i6)
+
+![Image 7 (page 61)](embedded:p61_i7)
+
+![Image 8 (page 61)](embedded:p61_i8)
+
+![Image 9 (page 61)](embedded:p61_i9)
+
+![Image 10 (page 61)](embedded:p61_i10)
+
+![Image 11 (page 61)](embedded:p61_i11)
+
+![Image 12 (page 61)](embedded:p61_i12)
+
+![Image 13 (page 61)](embedded:p61_i13)
+
+![Image 14 (page 61)](embedded:p61_i14)
+
+![Image 15 (page 61)](embedded:p61_i15)
+
+![Image 16 (page 61)](embedded:p61_i16)
+
+![Image 17 (page 61)](embedded:p61_i17)
+
+![Image 18 (page 61)](embedded:p61_i18)
+
+![Image 19 (page 61)](embedded:p61_i19)
+
+![Image 20 (page 61)](embedded:p61_i20)
+
+![Image 21 (page 61)](embedded:p61_i21)
+
+![Image 22 (page 61)](embedded:p61_i22)
+
+![Image 23 (page 61)](embedded:p61_i23)
+
+![Image 24 (page 61)](embedded:p61_i24)
+
+![Image 25 (page 61)](embedded:p61_i25)
+
+![Image 26 (page 61)](embedded:p61_i26)
+
+![Image 27 (page 61)](embedded:p61_i27)
+
+![Image 28 (page 61)](embedded:p61_i28)
+
+![Image 29 (page 152)](embedded:p152_i29)

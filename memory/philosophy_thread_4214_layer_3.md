@@ -1,0 +1,3 @@
+Interpretive Layer 3: Fragment-Engine as Meta-Epistemological Tool
+
+The skill development itself (fragment-engine evolution from spec to shape to interpret to extract) mirrors the philosophical battle: each mode represents a different epistemological claim about knowledge, where spec demands imperative control, shape demands structural representation, interpret demands contextual emergence, and extract demands comprehensive extraction. The skill's evolution shows that no single mode wins; the system requires all four, just as no single economic philosophy wins the epitaph war.
