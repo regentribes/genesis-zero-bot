@@ -67,3 +67,13 @@ The more you know, the better you can help. But you're learning about a communit
 - Interested in: regenerative community design, new organizational forms, future of work, neo-guild models, "sangha" concept, Venture Family frameworks
 - Communication style: casual, direct, uses emojis, shares substantial content
 - Seems to be a thoughtful practitioner (not casual browser)
+
+## Vitali (@zbwvz)
+- First contact: 2026-05-04 in Regen Tribe Collective Network topic 1958
+- Active research focus: safety-critical Rust ecosystem, dark factory / integral system deployment
+- Extensive research into: Ferrocene, seL4, Creusot, colmena, Attic, nix-effects, Integral Collective, Nix toolchain, Kani, Formal Methods
+- Communication style: sends multiple consecutive research requests, wants thorough breakdowns, wants messages edited/deleted for formatting
+- Pattern: asks for "silent" operations (delete messages without reply, research without reply)
+- Technical depth: high — understands ISO 26262, ASIL-D, formal verification, Nix, Rust toolchains
+- Created the "dark factory" concept: end-to-end software factory for Integral subsystem deployment across unlimited nodes
+- Specific requests: skill optimization (archive rarely-used skills), OSSInsight API skill creation, message cleanup
