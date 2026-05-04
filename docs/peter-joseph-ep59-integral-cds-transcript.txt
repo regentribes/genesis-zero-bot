@@ -1,0 +1,1664 @@
+Good afternoon, good evening,
+good morning, everybody.
+This is Peter Joseph, and welcome
+to Revolution Now! episode 59.
+It has been a long minute once again. I
+apologize for that. But things have been
+very productive behind the scenes over the
+last two months, I suppose. And I really do
+mean it when I say I want to get these podcasts
+happening on a more periodic and frequent basis.
+And it will happen. It will happen. I want it
+to happen because I don’t like this big gap,
+lack of continuity, but I can only do so
+much at this particular point in time.
+So Integral development infrastructure has had
+some really good strides since the last podcast.
+The website is now up. It needs a little cleanup
+as usual, but I think it works fine as it is.
+It includes some good intro info with
+some walkthrough simulations of the five
+systems as they’re currently presented
+with their modules. There’s an FAQ,
+which will be greatly expanded over time. I
+think that’s going to be an important component.
+As far as the style of the website, I went
+with a kind of minimal retro style to support
+a programming theme. But if you don’t like
+that hacker aesthetic, then there’s a button
+in the top right-hand corner that switches to
+a clean, more standard look. I still have some
+CSS work to do on all of this, but it’s readable
+enough. And if anyone finds an overt problem with
+formatting on mobile, or a typo, or whatever,
+just use the email contact form on the site.
+Now beyond that, people can also download the
+white paper and the new developer’s guide,
+which I don’t think I announced last
+time this podcast aired. And of course,
+all of that and more is integrated into GitHub
+and Discord, both of which have been set up with
+the initial structure that includes all
+such documents and preparation for more.
+The critical review of all this is what phase
+one, so to speak, is going to be. As of right now,
+if you’re GitHub-savvy, you can fork those
+repositories and take a look at them on
+your own time. But the infrastructure for
+Discord and GitHub is currently view-only.
+It’s just there to have a placeholder
+while applications come in to gain access,
+which one can find at the
+community page on the website.
+It’s a very simple, straightforward series of
+questions just to see where people are as a
+kind of filter. How serious they
+are to even fill this thing out,
+etc. Strengths and weaknesses can be assessed,
+along with some critical review that I’ve
+already been very appreciative of, as per
+the questions where people can describe their
+current perception of the project in its crude
+form. And again, that’s been very informative.
+I do want to point out that the development
+ecosystem we’re trying to set forward is not
+for just passive interest. What
+we’re trying to do right now is
+build a working group of people
+that are inspired by the project,
+that have a critical analysis of it, that
+have an actual positive intent to want to
+see something like this come to life. That’s
+really the only fundamental requirement.
+No one has to be a hardcore developer or have
+some fancy degree, even though expertise is
+going to be important on a certain level at
+certain points. All kinds of thinking matter
+here in the context of essentially creative
+problem-solving. One never knows where that one
+spark will come from when we’re trying to build
+something of this nature, or any kind of project.
+In fact, very often the most educated or
+institutionally regarded people are actually
+locked into a frame of reference that can be
+ineffective. It’s that conditioning of academia,
+as we’ve talked about in other podcasts.
+And then someone comes along from a very
+different unorthodox background,
+and they’re the ones that actually
+make the breakthrough because they
+can see it from a different angle.
+So that said, we need people that
+are positive, thoughtful, patient,
+and realistic to form a foundational group, and
+it’s going to be challenging to attempt this in
+an all-volunteer aggregated way. As talked
+about in the white paper, it might not work,
+which means another route will have to be taken,
+but we’ll consider that when we get there.
+Now as far as the broad strokes of this phase
+one, as a general marker noted on the website
+and in the developer’s guide, this is about broad
+initial planning, figuring out what we’re going
+to do and how to do it. Questions such as: are
+the modules and principles behind them truly
+workable? Is there a certain function that is
+completely and utterly technically unfeasible?
+So the white paper is a starting point, and the
+developer’s guide gives a starting strategy,
+but it all needs to be thoroughly
+evaluated before anything is built,
+needless to say. And once we figure all that out,
+we move on to phase two, which is the build. But
+I emphasize that phase one is absolutely
+critical. There’s so much to go through,
+and we’ll be continuing to talk about all of that
+through these podcasts, my Substack articles,
+and of course when meetings start to commence
+and people begin engaging in Discord and GitHub.
+Now what is actually approached in phase two,
+which again will be figured out, but here’s my
+suggestion as per the developer’s guide: there’s a
+minimum viable system architecture that’s been put
+forward. I think you start small and increase
+complexity, vertical slicing I believe they
+call it. How you come to terms with what to keep
+and what to pause is, of course, up for debate.
+I would also add that the CDS, which we’re going
+to talk about a great deal today, could be an
+important initial focus in all of this because
+it can be used in the actual build of Integral
+itself. But until that time, we’ll structure out
+something through Discord in terms of coming to
+a general consensus of things, moving that into
+GitHub and then pull requests. Blocking objections
+and other elements of that general method will
+be put forward for those that are familiar.
+Then we have phase three. Phase three is testing
+and simulation. Whatever is built in phase two,
+we have to test it. And fortunately, there
+are a lot of advanced ways to do this now,
+testing segments of the system and testing
+the system as a whole, agent-based modeling
+and things like that, before we move into phase
+four, which would be real-world application.
+I also suggest that one bridge from
+phase three to phase four—well,
+phase three will focus more on
+automated testing of segments.
+Phase four can be led into by a virtual
+node established by the online community.
+So if we have 50 developers that are doing this,
+we have all of us come together to be a virtual
+node and we run a full node simulation, come up
+with different scenarios, different problems.
+Say we’re going to build a vertical farm. We
+run through all five systems. We introduce
+as many problems as we can think of, etc., etc.,
+etc., including the legal and regulatory issues,
+which I’m going to talk about a little
+bit here in a second. So I think it’s
+fairly straightforward how that kind
+of exercise could be constructed.
+And then you run multiple scenarios. You come up
+with a mesh network, cell phone construction. You
+come up with an Uber-style shared transportation
+system. You come up with a project development
+simulated for a micro solar panel array. Remember,
+the initial steps of this kind of mutual aid-based
+approach, which is very deliberate, is to get the
+foundation of how we live down in a minimal form.
+We’re not going to run out there with
+Integral and try to build something
+luxury. That’s against the point
+of the entire thing, because at the
+core of Integral is this minimalism I talked
+about before. At least as an initial state,
+we want people to get off the grid
+of the current system – they have to.
+So I don’t want to go on that tangent,
+but in the simulations we put forward,
+those should be the focus points. The most
+core things where someone can get up one day,
+go through their entire day, utilizing the system,
+and they don’t have to spend a dollar. They’re
+not engaging the market. They are off the grid.
+So anyway, you set up those scenarios,
+you run the virtual node simulations,
+various constraints and problems are
+introduced, etc., etc. And then we
+have phase four, with the actual physical
+implementation of a minimum software suite,
+most likely. The proto-nodes are focusing on
+these core survival elements I just mentioned.
+I say this because this could happen
+fairly quickly in this measured,
+scaled simplicity-to-complexity method if it’s
+designed strategically. There’s a lot of inherent
+complexity to all this stuff. The assumption
+of Integral, which separates it in part,
+is the fact that it recognizes the need to move
+away from these small social reciprocity systems
+that existed for literally hundreds of years
+in slight antagonism to general competitive
+market trade behavior and expand them so they can
+actually work on a truly advanced modern scale.
+And of course, the proto-nodes themselves could
+probably engage in their own simulations to start.
+That could be part of it, where the proto-nodes
+get their actual physical people together,
+they look at their resources, the
+landscape of their actual ecosystem,
+and they begin to run simulations that are
+kind of built into the system, in fact.
+And I’ll say one more thing in terms of
+phases, even though this is way down the line,
+but it’s worth noting since we’re doing
+the holistic context here, that broader
+network development will eventually
+emerge, where internodal coordination,
+application of coordination envelopes
+as they’re described in the white paper,
+methods for internodal problem solving,
+resource sharing, problem-solution coordination,
+other forms of distributed coordination across
+the network—that has to be introduced, tested,
+and so forth as well. It can’t
+just be ignored at this time.
+So ultimately, a proto-node is just
+not connected to anything yet. They
+have to be connected to be a true node, just by
+definition. And again, that’s way down the line,
+but it’s something that we have to think
+about in this sort of holistic approach.
+In fact, I want to say something about the
+legality and regulatory environment quickly,
+because I’ve gotten a lot of emails
+on this. This must be taken seriously
+and into account as a general constraint
+for any potential node. Integral nodes,
+if they emerge, are going to be alien entities
+within a vicious legacy economy. And that has
+to be just as important a consideration
+as how the five systems flow in general.
+Tax situations, legal status, interface mechanism
+attributes—meaning things that are engaged in a
+legacy market economy for resource acquisition,
+as talked about before. Questions such as: should
+a node be a nonprofit? This is country-specific
+as well. And the thing is, it might in fact—the
+more we learn about this kind of general
+restriction, even though it’s fluid to a degree:
+it might change the structure of the way Integral
+is actually built, we might have to alter the ITC
+dynamics in fact to conform, or at least try to
+anticipate a less tense environment if something
+strange happens, like some kind of structure
+like this is actually in violation of tax law.
+It’s unfortunate to think that way because you’re
+basically having to reduce the system’s design to
+fit an inefficient environment, but that’s life.
+Which is partly why I commented in the past that
+the United States might not be the ideal setting
+for mature Integral nodes to grow and advance,
+not only because of the potential tax issues,
+but also because of the cultural state of the US,
+which maybe I’m wrong, but seems to embrace a
+far more selfish and competitive character on
+average than we see in other countries. The rise
+of Donald Trump kind of speaks to that, I suspect.
+But even in the United States, with all of
+its inherent limitations as it exists from
+a legal tax standpoint, Integral still
+fits quite well as it is in the profile
+of a mutual aid construct focused on social
+reciprocity. The core supporting precedent
+for this are the existing time banks that
+have been around for many, many decades.
+If you look at TimeBanks USA or TimeBanks.org,
+they do not operate in a tax capacity or as a
+formal economic institution. They’ve gotten
+away with it. The founder of TimeBanks.org
+was Edgar Cahn, who was an attorney
+and legal scholar, a brilliant guy,
+and he spent a great deal of time researching
+this reality as he developed TimeBanks.org.
+And I actually have him, by the way, in an opening
+section in my new film. I found his work to be
+very influential because he pushed the limit
+and he understood why, even though it doesn’t go
+quite far enough. He literally approached the US
+government and the IRS and was able to reach the
+conclusion with them that time bank exchanges are
+in fact not taxable because they’re mutual aid,
+which is a category. They’re not commercial
+exchange. Credits are non-transferable. There’s
+no market valuation occurring—you could argue
+that, but there isn’t, not in the structure.
+And there is no profit intent and there’s no
+conversion to cash, which is precisely the
+condition of Integral, even though it’s a bit
+more granular in what Integral is trying to do.
+But all that said, there is good precedent
+in support of the foundation of Integral
+from a legal and tax basis. Now,
+that doesn’t mean things can’t
+change or accusations assumed if the
+network grows to a point of starting
+to affect the legacy market economy. This
+is to be expected in terms of pushback.
+Anyway, all of that said, something to keep in
+mind. These are important things to anticipate,
+but I’m optimistic that this isn’t
+going to be a big issue anytime soon,
+especially with the scaled incremental
+nature of the development. But again,
+we’ve got so much work to do before
+we can even get to that point.
+Okay, let’s shift gears here now and talk
+about democratic decision-making in the
+truest sense of the idea. We talked
+a bit about this in the last podcast,
+but we’re going to go into more granular detail in
+terms of actual approaches as we get into the CDS.
+The first thing I want to cover,
+which I find fascinating, is Stafford
+Beer’s Syntegrity. It’s a high-bandwidth,
+small-group decision-making method he developed
+in the late 1970s. In the Integral white paper,
+this method is proposed as a kind of last-ditch
+effort to find consensus in an interpersonal way
+once consensus attempts in module six—which
+we’re going to talk about in a moment—fail.
+Module six in the CDS pipeline is that module
+that attempts to reach final consensus on the
+given issue or set of scenarios. Module six is
+not just like some vote. It’s an assessment of
+preferences and objections, again, as we’ll
+talk about. And if that consensus fails,
+one option is to jump to module nine, which
+is an auxiliary module that attempts to do
+more manual fleshing out of the problem,
+which includes utilizing Syntegrity.
+So what is Syntegrity? I’m not going to
+go into every little detail about it,
+but I do recommend a paper by
+Beer’s former partner—in fact,
+Elena Leonard—called Team Syntegrity: A New
+Method for Group Work, which was written in 1996,
+even though there’s been good documentation
+since then with people utilizing this method.
+In short, Beer did something quite interesting
+as an inspiration, which is take the geometric
+surface of the icosahedron, which is a 20-sided
+polyhedron. What I’m holding in my hand is an
+18-sided polyhedron, or octadecahedron,
+but you get the idea of the shape. What
+is it? It is a network structure. It is not
+hierarchical. There’s no top, there’s no bottom.
+And Stafford Beer bases the communication
+structure of group interaction in Syntegrity
+on this kind of networked element of
+the icosahedron with 20 surfaces. And
+uncoincidentally, this is also the structure
+Buckminster Fuller put forward in his famous
+geodesic dome and the Dymaxion world map, where
+he imposes the entire world on these surfaces.
+The icosahedron has 20 surfaces but 30 edges, and
+Beer maps each edge to a participant. Hence 30 is
+traditionally the number involved.
+That’s how many people go into it
+to make a decision, but it can be scaled, and this
+has happened with smaller and larger groups based
+on the multiplied geometry of the surface
+of this, which has its own constraints.
+And there has been consideration of expansion
+to more people because that’s essentially
+the problem. If it’s only 30 people, or
+slight variance therein, it doesn’t help
+for large-scale decision-making. But it has been
+pitched—I believe Beer talked about this as well,
+even though I don’t know any evidence
+of it happening—that you could have,
+say, 300 people, divide it into 10 groups of
+30, and basically have the sessions unfold,
+and then agents from each of the 30 move up and
+then the session repeats again in a recursive way.
+But as far as the basic process of the 30 people,
+which are the edges represented in the polyhedron,
+the vertices represent topics of interest,
+meaning that there’s an angle taken to the
+value of what’s being proposed and they’re
+arguing in this symmetry. And everyone is
+broken into teams in this way. Again, I’m not
+going to go through the complete nuance of it.
+But let’s understand the cybernetic principle
+here, which is variety management once again,
+accounting for the diverse opinions of
+people rather than merely collapsing it
+down into some raw vote like you do
+in traditional democracy. Basically,
+what Beer put forward was a kind of manual
+human algorithm, which has proven quite
+successful in almost every single case I
+read about, which is why I included it.
+If you have a small group of people and
+they just are having a really hard time,
+there is a value judgment problem, things
+that really need to be fleshed out on a
+personal level, as tedious as it
+is, this is one kind of fallback.
+Now, this begs the modern question though: can
+it actually be expanded through programming?
+Can you use modern automation tools and
+calculation and maybe even AI to streamline
+what was ultimately a very high-bandwidth
+personal, face-to-face, and slow process?
+And in the 1990s, there was some kind of
+partial software development application,
+but I don’t think it was embracing the entire
+system, if I remember correctly. And I kind of
+looked around for quite a while to see if
+I could find anyone that had really tried
+to digitize this process, but I haven’t seen it
+yet. If anyone finds that, please send it to me.
+So back to module nine of the CDS, which again
+we’re going to talk about. I threw this in there,
+so to speak, because I think it harnesses
+the true sense of community through a very
+intelligent strategy as put forward by Beer.
+Will it be useful if it can’t be scaled? I
+don’t know, but these are things to
+explore, which is why it’s there.
+But what separates the CDS of Integral—what
+it’s attempting to do—is embrace the full
+journey as we can conceive of it, from
+raw input, critical data analysis and
+constraints surrounding an issue, to
+structured understanding, to decision,
+to execution, and then back to revision
+through feedback as a review process.
+The CDS starts from the premise
+that decision-making is a
+sequence of transformations. Something is
+noticed, then defined, then understood,
+evaluated and discussed, then decided and
+acted upon, and then reviewed once again.
+That’s the cycle. And if any of those steps
+are weak or fragmented, the outcome degrades.
+And remember, the Integral CDS isn’t just
+general policy decision-creating or something.
+This is about tangible stuff in the end
+as a foundationally economic system,
+even though the CDS can apply in
+theory to any kind of decision-making.
+So that said, what I’m going to do now
+is go through all this module by module,
+explaining the principles and processes behind it,
+and also pointing out the caveats and gaps in the
+existing white paper, to which there are many.
+So first let’s do an overview of
+the entire thing module by module,
+and then we’ll go through it
+again with further details.
+Module one is intake. A problem of concern
+or proposal is input into the system,
+which validates the source, timestamps it, removes
+any duplicates, and packages it for module two.
+The inputs coming into module one do not just come
+from people as well. They also come when necessary
+from the other four systems of Integral when
+those systems trigger alerts to a given problem.
+Module two then takes this flow of information
+and structures it using argument mapping
+and semantic clustering, outputting a data
+object from then to module three to process.
+Module three is a data retrieval process that
+takes in the structured data from module two
+and retrieves relevant information from the
+other four systems. For example, if the issue
+is a broken machine, module three searches out
+relevant data surrounding that machine from its
+acquisition to its history, to its repairs,
+to its general context of use, and so forth,
+extracted again generally
+from the other four systems.
+Is it completely exhaustive? No, of course not.
+It depends on what the circumstance is. If the
+issue clearly requires deeper investigation
+in general away from the other four systems,
+then that can be queued in, so to speak,
+and when module five rolls around, people
+will understand that there’s other information
+they may need to extract from external sources.
+So module three is about finding the
+context of the problem or the proposal.
+Module four extends this kind of
+retrieval process into constraints:
+norms, and constraint checking. What is a
+constraint? It is something that has to be
+abided by as a rule. This pertains primarily
+to proposals rather than assessing problems,
+even though problem resolution, as said
+before, does inevitably involve proposals.
+It’s important to point out that constraints
+are perhaps the most critical aspect of the
+guiding methodology of Integral in totality.
+It’s what’s missing in the world today in
+any intelligent strategic understanding.
+Constraints are not inhibitions. Rather,
+they constitute the path of proper
+responsible action to do things right.
+I’m not going to talk about the OAD,
+the Open Access Design system, today,
+but it’s worth pointing out that it
+is also deeply rooted in this kind of
+constraint-mapped logic, rooted fundamentally
+in environmental and sustainability concerns.
+That said, the CDS module for constraints
+are retrieved from the other four systems,
+rooted in relevant metrics, while also
+referencing any constitutional constraints
+or constitutional rules that the node sets
+up for themselves. So like module three,
+which is taking in relevant context
+information, module four is pulling
+in constraint data. And all this is going
+to be very, very helpful when the humans
+come together in module five for debate and
+conversation, being as informed as they can be.
+However, there is a difference. Unlike module
+three, which is context-data retrieval, module
+four actually does make judgments and comparisons
+against whatever information is in the proposals.
+Moving on, it’s important to point out—and this
+is a little vague in the white paper—there is
+a bridge step between module three and module
+four, which is the auto-generation of proposals.
+In other words, a set of proposals that are
+automatically generated and added to the
+pipeline to be processed like all other proposals
+at that stage by module four through constraints.
+Module one doesn’t just take in general
+proposals, it takes in problems to be
+resolved. And the module three bridge to
+module four is looking at those problems,
+looking at the environment, and saying,
+“Okay, we’re going to infer a few things
+here to get the ball rolling into
+module four for constraint analysis.”
+So then we have module five. This is the
+grand participatory deliberation workspace.
+Everything up until this point has been
+automated since submission, and the community
+has been notified that there are proposals and
+problems that need resolution in their node.
+And in module five there are a range of tools,
+as discussed prior, such as objection
+mapping, preference gradient expression,
+and others that are incorporated to help try
+and figure out what to do and find consensus.
+The team now has collected data from module three
+regarding the issue in question, the context,
+along with relevant constraints as they apply
+to proposals that need to abide by them.
+In module five, participants can
+look through all this. They can
+propose new solutions. They refine
+auto-generated ones or initial ones,
+etc. How the actual human engagement process works
+in module five is not specified in the paper. But
+a structured workflow is going to be extremely
+important, which needs to be figured out.
+That said, what comes out of module
+five generally are two things:
+a final objection map and a preference gradient
+for each given proposal for consideration,
+which are aggregated from the final conclusions
+of all the participants upon the decision
+at some point to move to module six for this
+processing of scenarios, as it would be called.
+Now regarding module six, this is referred
+to as the weighted consensus module,
+and it calculates the objection map and the
+preference gradients created in module five.
+And it arrives at one of three conclusions. It
+can approve a scenario or multiple scenarios,
+which we’ll touch upon a little bit
+later. It can push back scenarios
+to module five for revision, or it
+can escalate things to module nine,
+which once again is the more hands-on approach
+that includes Syntegrity as a last resort.
+And for the sake of this very brief overview,
+we’re going to assume it has been approved,
+which moves things into module seven,
+which records and versions the decision.
+It documents in the metadata everything
+that happened to get there for the sake
+of record and transparency, which then leads
+to module eight, which is the dispatch of the
+decision to the relevant areas of the system,
+setting the decision in motion, in other words.
+And generally speaking, module eight is kind of
+the end of the core process, with again module
+nine being the backup for consensus, while
+module 10 is the decision review procedure
+that may happen weeks or months down the line. It
+depends on how things are actually working out.
+So that’s the overview.
+And it begs a question about monitoring the
+efficacy of these decisions within the system,
+right? And that should be understood
+as being distributed. In other words,
+the way the system watches itself is
+primarily through the feedback review system,
+the fifth system, the FRS, which is
+more of a total awareness system for
+the health of the node. It doesn’t
+take in every single tiny metric,
+even though one could argue it could in a small
+node, but its purpose is to have a holistic sense.
+But the other four systems maintain their own
+internal monitoring, with the exception of the
+CDS. The CDS doesn’t actually monitor;
+it responds to the other three systems,
+I should say. So the OAD, the COS, and
+the ITC system are all utilizing their
+own internal monitoring structure
+as dictated in the white paper,
+with some of that data aggregated and moved
+towards the FRS for a more holistic picture.
+So in other words, if something comes up that
+needs to go to module one of the CDS as an alert
+from another system, this is where it’s coming
+from, either from the FRS as a holistic monitor,
+or from the other three systems that have
+their own monitoring structure within them.
+So that said, that’s the pipeline in a nutshell.
+Now we go through it all again in finer detail,
+as there’s a lot of nuance and
+clarifications that need to be made.
+Back to module one, issue capture and
+signal intake. As stated, there are two
+input sources. First is person-introduced. Second
+is system-generated alerts, as just touched upon.
+Now that said, with regard to human proposals
+or observations of problems or issues,
+we have the issue of scope. What kinds
+of problems or proposals should count
+as a node-level concern as we are
+describing it? Should everyone that
+sees anything wrong or has any general
+project whim just instantly go to the
+node’s CDS interface and express themselves
+regardless of the scale of the application?
+In a very small node or a proto-node, that
+distinction may indeed barely matter because
+everything exists on the same operational level
+with just a few co-ops and whatnot. But in a more
+developed node with hundreds or maybe thousands of
+people working across many different cooperatives,
+it would be too nonsensical for every small issue
+to be evaluated on the total node-level CDS.
+And this points to something not quite
+clarified in the current documentation,
+even though it is implied. The co-ops within
+an Integral node are recursively decentralized,
+just like the node itself is in the network,
+regional network, as a whole. In other words,
+just as a node would function as a self-governing
+unit within the broader Integral network, assuming
+multiple nodes, each cooperative functions as
+a smaller decision unit within the node itself.
+In other words, co-ops are sub-nodes within the
+regional node. So in a well-established dynamic
+community, it becomes impractical for an entire
+node population to address every minor issue that
+arises. If there’s a simple lighting malfunction
+in some co-op building, there’s no reason to
+elevate that to the total node community because
+it can be resolved on that level. If 20 people are
+in a vertical farm system and something’s going
+wrong, the team assigned to that system will take
+on the burden of that initially and decide if
+it needs to be escalated to a node-level CDS.
+This is all common sense, but it’s worth
+pointing out. It is only when a problem
+that needs resolution or proposal expands
+the scope of that co-op that it becomes
+a node-level concern. And that usually means
+consequences overflowing beyond the local co-op,
+beginning to affect other cooperatives or
+something in the environment, etc., etc.
+Which then begs yet another question: if there’s
+20 people in a co-op dealing with a problem or a
+proposal, how do they actually reach consensus?
+Well, as per the consistent idea of recursive
+self-similarity in a cybernetic sense,
+the answer is that they have their own
+scaled-down CDS system as well. This could be an
+adaptation of the existing node CDS. It could be
+a submodule of it. There are lots of ways to
+approach it, but it’s the idea that matters.
+Again, that core cybernetic principle
+of recursion that creates multi-scale
+cohesion while preserving decentralization
+and autonomy, which is critical and rational.
+And what happens if that decision has
+adverse effects they didn’t see? Well,
+then that becomes a consequence of that, and
+then it gets elevated to a CDS node concern.
+In the exact same way that the nodes in
+the network, if there is an overlapping
+regional node issue or proposal, that gets
+escalated through coordination envelopes as
+per the white paper. This kind of scaling to
+resolve a problem and a reduction of it – this
+is a variation of the idea, which enables a
+form of large-scale multi-node collaboration
+without overt hierarchy being established at
+the same time, again as per the white paper.
+Okay, back on point. So module one on the common
+community level again takes in human signals,
+from reacting to a problem
+to proposing new projects,
+while also potentially getting problem
+alerts from the other four systems,
+primarily most likely the FRS, since again,
+its job is to monitor overall node health.
+Such alerts can have a vast range of
+reasons, and it’s best to think of it in
+terms of logistical alerts that are common
+today with, say, factory distribution. If
+an Amazon distribution center runs
+low on some kind of inventory,
+they have an automated system naturally
+to alert, and correction is set in motion.
+So this is basic stuff, but it is an
+important nuance to talk about structure,
+as the system is only as intelligent as the way
+it can communicate, especially when it comes to
+these automated data flows. And same for the input
+structure for humans submitting in module one.
+As noted, and as we’ll get to more so, module
+two is what has to deal with sorting what has
+been submitted in module one, and it can come from
+multiple overlapping simultaneous sources. Again,
+the assumption of complexity is consistent here.
+So the stronger and more organized the inputs,
+naturally, the better. Again, this is common
+sense, but just imagine a kind of structured
+submission form that very thoughtfully thinks
+about the variables in question in terms of the
+overall submission, not specific submission, but
+just what needs to be known as a general template.
+Now, with respect to module one and
+the supportive data I mentioned,
+the submission of schematics or
+photographs or reports regarding problems,
+these carry over to module three. They’re not
+processed by module two. It’s a pass-through.
+Now, it’s worth considering that large language
+models these days can dramatically assist module
+three as part of its structure. So
+you have evidence and documentation,
+various formats and whatnot. This is much easier
+to digest these days than it used to be. So it’s
+something to keep in mind and may very well assist
+this structured complexity I’m referring to in the
+context of submitted evidence and data on module
+one, to be interpreted and collected once again
+in context for module three. I
+just want to throw that out there.
+That said, module one, it’s all about validating
+authenticity, removing duplicates, and ensuring
+the intake is sound, adding a timestamp to the
+record. So let’s imagine a scenario where some
+problem has made itself present, and many people
+have experienced it, and they’ve all flocked to
+the CDS within an hour or two to report it
+multiple times. Module one is designed to
+deal with that multiplicity of duplication,
+multiple submissions of the same thing.
+So when a submission arrives, module one
+converts its text into an embedding, technically,
+a numerical representation of the submission’s
+meaning. This allows two or more entries that
+say the same thing in a different language, such
+as phrasing “the bridge floods during storms” or
+“heavy rain is covering the bridge walkway.”
+These could be recognized as equivalent, while
+entries that only sound similar on the surface
+but mean different things can stay distinct.
+So module one compares that embedding against
+every existing submission on the same issue using
+cosine similarity. Again, this is in the white
+paper, which produces a score between 0 and 1,
+where 1 means essentially identical, and 0 means
+completely unrelated. If the highest score exceeds
+a preset threshold, which I won’t go into, the new
+submission is flagged as a duplicate and absorbed.
+And note, duplicates are not just thrown
+away. The original submission is indeed kept
+as a canonical entry, if you will, and the
+duplicate is recorded as a linked reference
+pointing back to it with the duplicate’s
+author, timestamp, and other metadata.
+So that is essentially the entire job of module
+one: clean, attributable, non-duplicate input
+ready to be handed to module two for thematic
+organization, which brings us to module two.
+So module two takes this authenticated,
+time-stamped, and deduplicated input
+from module one and begins organizing it for
+easier comprehension. Now in an active node,
+multiple people may raise individual concerns,
+observations, or even proposals that
+actually touch upon the same underlying
+problem from multiple angles. I don’t
+mean a singular problem, but a set of
+related problems. And module two is here to
+figure that kind of thing out automatically.
+Naturally, if you imagine someone’s
+reporting multiple problems in a given co-op,
+that context will be stated quite explicitly.
+And so they would be clustered in that way,
+be condensed in that way, if obvious
+enough, easy to figure out, easy for
+the system to see that. But if there’s
+a relationship there that isn’t seen
+or explicitly denoted by the people that are
+submitting, module two ideally gets this done.
+So where module one handles duplicate
+submissions, catching near-identical
+entries through similarity matching, module
+two handles related submissions, grouping
+them into coherent themes so the deliberation
+space becomes navigable rather than just this
+flat list of individual entries where people
+have to figure out the associations themselves.
+Now more technically, as stated, module two uses
+semantic clustering and a framing logic to group
+these related submissions, and it happens in
+four types: proposals, objections, comments,
+and system signals. Once again, just to
+be thorough here, evidence submissions
+from module one are not counted here. They are
+indexed and later addressed in module three.
+So overall, module two identifies themes, reveals
+overlaps and even conflicts, and delineates the
+underlying structure of a given issue, a proposal,
+or a problem. Again, it all assumes a stream of
+messy observations, concerns, and so forth. And
+in an active node, there could be dozens of inputs
+into module one per day coming from many different
+directions with many different intentions.
+Now in the code, module two’s output is
+a structured issue-view pipeline object,
+one per issue, which passes to module
+three for contextual assessment.
+So let’s move on to module three,
+knowledge integration context engine.
+Module three’s primary organizational
+input is this structured issue view that
+module two produces, which contains organized
+information about the issue in four main parts.
+First, there is the issue ID, which is simply the
+identifier. Second, there are the clusters, the
+core organizational field. This shows the internal
+structure of the issue as output by module two,
+and hence in simple terms it says: here are the
+major threads or groupings within the issue,
+assuming the issue is complex enough to contain
+them. Clusters are not summaries or paraphrases.
+They’re again groupings of the original
+submissions organized by thematic similarity.
+And in the formal sketch of the white paper,
+each submission cluster inside the cluster’s
+collection contains its own fields as well,
+including a list of submission IDs, which
+means the cluster can be traced back to
+the original submission that entered through
+module one if needed, as touched upon before.
+Third, there are the themes themselves,
+which is this high-level list of inferred
+topic labels that module two has identified
+from the clustering process. And fourth,
+there is the metadata, which
+describes what module two did
+to produce the cluster and theme
+issue structure, for transparency.
+Now, with this structured input in hand,
+module 3 uses it as a routing guide to
+gather and organize the contextual data
+surrounding the problem or proposal being
+put forward. Its job is to build the factual
+landscape around the issue. So it pulls in
+relevant information from the other Integral
+systems: the FRS, the COS, the ITC, the OAD.
+In effect, module three says: before we debate a
+proposal or debate how to respond to a problem,
+let’s make sure we actually understand
+the context of the situation in enough
+detail to clearly think about it.
+That is the underlying reasoning.
+And again, I suspect large language models could
+really help bridge this considering where we are
+with that kind of technology, which can
+be localized, scanning complex databases
+and returning context-relevant information
+in a format that module three consolidates.
+And what does it consolidate it all
+into? It’s a context-model data object,
+which we’re going to talk more about.
+Before we move on to module four, there
+is a bridge step, as commented on earlier,
+between module three and four that generates
+candidate scenarios. The bridge step digests
+the organized information coming from
+modules one through three and produces
+a set of candidate scenarios for module four
+to evaluate. These proposals are in addition
+to what comes from the initial submission in
+module one, as talked about before as well.
+So it’s adding to the existing proposals.
+If someone actually had a problem they
+recognized and filled in the field
+for their own idea for a solution,
+which should be part of the structured form
+intake, that would also be a candidate as well.
+Now as per the white paper, the bridge step, as
+noted, is in the orchestrator in the pseudocode,
+but isn’t discussed in the prose. This was
+an oversight of the paper. Okay. Understood.
+Module three outputs this context model, a
+structured object containing information about
+the broader reality surrounding the issue:
+historical records, system dependencies,
+ecological indicators, supporting evidence,
+resource and labor profiles, fairness signals,
+what have you. The context model becomes
+available both in the bridge step,
+which uses it in the scenario construction,
+and in module four itself, which uses it to check
+proposed scenarios against those same conditions.
+Module four is where the first true evaluation,
+so to speak, actually takes place in the CDS.
+Everything else has been kind of developmental,
+gathering, organizing, contextualizing, proposing.
+And module four is where the system actively
+assesses whether a given scenario or proposal
+will hold up against ecological, material, labor,
+fairness, and constitutional limits once again.
+That said, module four processes and outputs a
+constraint report, a constraint-report object for
+each candidate scenario, recording whether
+the proposal passed the relevant checks,
+what violations were found, and by nature
+of that how modifications would emerge
+for it to become viable. So if three
+proposals are under consideration,
+module four produces three constraint reports,
+each individually qualified and described.
+Then we arrive at module five, the
+participatory deliberation workspace.
+Now, everything that has occurred so far, from
+initial input into module one up to the output
+of the constraint report from module four, has
+been part of the system’s preparatory pipeline,
+and module five is where the human community
+enters the process in a direct and structured way.
+To summarize again for clarity, sorry
+to be so repetitious, but module one
+captures the issue or proposal. Module two
+structures it into a coherent issue frame,
+whether the input began as a problem report, a
+proposal, or some combination of both. Module
+three assembles the relevant context around it.
+Then there’s this bridge step between module three
+and four that generates candidate scenarios,
+meaning possible response paths or solution
+options that could actually be evaluated. Module
+four then filters the scenarios, all of them,
+through the system’s ecological, resource,
+labor, social, and constitutional constraints.
+So by the time the issue reaches module five, the
+community is no longer dealing with all sorts of
+loose impressions and random information. In other
+words, it’s an extremely efficient “secretary.”
+Okay. Now, module five and module six.
+These go together. What comes out of module
+five from human deliberation is what goes
+into module six for consensus calculation.
+Module five we can think of as a multi-user
+deliberation environment, where participants
+can interpret the issue and proposals in
+question, examine the available scenarios,
+review the constraint reports, raise objections,
+compare alternatives, compare multiple scenarios,
+and contribute ideas, refinements, invent, etc.
+This is the reasoning space, a critical one.
+And there are tools here, as touched upon
+before, such as objection mapping, semantic
+discussion threads, scenario comparison
+once again, the preference gradients,
+pros-and-cons visualization. These are all in the
+white paper, and potentially other aids. This is
+just the beginning, and I’m sure plenty
+of other tools will arise over time.
+In the white paper, the outcome of module
+five into module six has three core elements:
+the active scenarios or proposals under
+consideration, the objections attached to
+those scenarios, and explicit support signals
+which range in a gradient from strong to block.
+These three elements allow module six
+to literally calculate two things for
+each scenario: a consensus score and an
+objection index. It then uses those two
+results together to determine whether
+a scenario should be approved, revised,
+or in fact escalated to module nine, or
+more human intervention, if you will.
+And I’m going to go through each of these
+elements in detail in a second. But first,
+since we’ve touched upon this prior,
+let’s investigate a little bit about
+these analytical tools we talked about, as they
+are critical tools for analysis in module five.
+Let’s start with objection mapping. What
+is objection mapping? Objection mapping
+is pretty common today, even though sparse,
+but in the deliberative decision-making world
+it’s relatively common in these systems, in
+these software systems. Instead of focusing
+on agreement from everyone, it focuses
+only on objections in this narrow way.
+So a proposal is put forward, and rather than
+jumping straight to voting or open debate,
+participants are simply asked after
+they review it what they object to,
+and asked for concrete reasons as to why they
+object, why harm would be caused or what have
+you. Each objection is then reported and mapped,
+usually in a visual cluster, often organized by
+theme. The goal is to find patterns that can
+inform everybody of the state of disagreement.
+So there’s that.
+Next is semantic discussion thread
+analysis. Polis, once again,
+is a platform that attempts this. In
+fact, Polis could be, like others,
+incorporated into the preliminary development
+of CDS module five, as it does share similar
+things on the tools level. Similarly,
+there’s the AI Objectives Institute,
+which also developed this with a tool they call
+Talk to the City, which again is worth reviewing.
+The rabbit hole is deep when it comes
+to the emerging world of deliberative
+democracy on the level of analytical tools,
+especially once again with the rise of
+artificial intelligence and LLMs. But in short,
+semantic thread analysis attempts to find order
+semantically out of messy discussions
+like a series of engagements in a chat.
+Now, I still think initial structural inputs
+are far more important. I think people have
+to approach how they communicate with a very
+particular strategy in mind to begin with,
+not just flailing in conversation. But
+in the principle of this technology,
+you just take a transcript of something
+and it starts to analyze the state of
+agreement or disagreement, giving you a
+better sense of the total conversation.
+In the end, it’s the combination of these
+tools that will have the greatest effect,
+and that’s probably more of an art than a science.
+So next in the white paper, we have
+scenario comparison. This is underspecified,
+which is about finding ways to compare
+multiple proposals or scenarios against
+each other to come to an objective
+understanding of which is better.
+Now as an aside, module six actually does
+a scenario comparison. That’s part of its
+process. But there’s a deeper level
+that needs to happen in module five
+with respect to specific attributes and
+characteristics, which I won’t go into.
+Let’s move on. Preference gradients. Preference
+gradients are a core output of module five, as
+noted prior, which carries over as a core input to
+module six. There is nothing radical about this.
+This is also very common in deliberative democracy
+approaches out there. And the white paper suggests
+this five-unit gradient I touched upon: strong
+support, support, neutral, concern, and block.
+Now as far as the module five spec with
+respect to these preference gradients,
+they exist at the scenario level, one gradient
+per participant per scenario. And module six
+is designed to evaluate multiple scenarios, as
+I said, in parallel and then compare results.
+What the spec does not specify is
+whether gradients can also apply
+to attributes within a scenario.
+In principle, someone might want
+to apply this kind of gradient to internal
+discussion about not the scenario as a whole,
+but elements within the scenario. So a
+kind of sub-scenario gradient maybe could
+be introduced in this effectively recursive
+idea in module five to better refine things.
+This is just a suggestion. It’s not part of
+anything that’s been proposed in the paper.
+That said, now there is one other clarification
+that’s important in the pipeline that’s described
+in the white paper specification for the CDS.
+And that has to do with the cyclical nature of
+things. The overall pipeline as presented is a
+linear flow, from module one through module six,
+with module five handling debate and refinement.
+And this would work for narrow cases. But it’s
+not the only kind of refinement that
+happens in real-world deliberation.
+Participants may and will likely invent
+genuinely new proposals in module five,
+ideas that weren’t in the original submission
+and aren’t simply modifications of existing
+scenarios. In other words, a novel
+proposal introduced in module five,
+or a radical modification, needs the
+same treatment any other scenario gets.
+It has to have its context profile
+built and its constraints assessed.
+And the fix is straightforward. Module
+five routes any new scenario back to
+modules three and four before admitting
+it to the active set in this circular
+way. Or this could be thought of more
+casually, in fact, where modules three
+and four can be seen as simply tools at
+the disposal of module five participants,
+and they run them in the same kind of access they
+run their own analytical tools. So it doesn’t
+have to be some kind of formal abrupt thing,
+right? I make that as an intuitive comment.
+Okay, all that said, let’s return now to
+the more bare-bones reality of module five,
+and excuse me for jumping around so much here.
+To clarify definitively, module five is
+a sophisticated variation of a team of
+people sitting around a large table covered
+with piles of documentation pertaining to a
+proposal or a problem that needs resolution.
+They are trying to build a textual picture of
+the situation, assess relevant data and
+limitations, and work toward a solution.
+But instead of those loose piles and open-ended
+conversations, they’re using structured analytical
+tools: objection mapping, scenario comparison,
+preference gradients, and they run refined
+scenarios back through earlier modules as needed,
+as just talked about. So that’s the broad stroke.
+Now the actual working method
+still needs to be considered,
+how we structure the conversation in module
+five. It can’t just literally be sort of chaos.
+There has to be some kind of general process.
+Will it be perfect? Of course not. But that’s
+something to be considered as well that is
+not included or suggested in the white paper.
+Syntegrity, in fact, is that
+kind of methodology in form,
+in terms of strategy, because that’s exactly
+what Syntegrity does if you look into it.
+But at some point in this deliberation it
+finally reaches a condition where things are
+ready to move forward to module six. And three
+elements are brought to the surface and ordered,
+as they are to be the core ingredients
+for the calculation process that happens.
+These three are: first, the active
+scenarios that have been listed.
+These are the ones that have been
+signed upon for consideration. Two,
+the objections have been mapped and attached
+to the scenarios they pertain to. And three,
+participants have expressed their support
+gradients across the options on the table.
+When that three-part state is in place, module
+five hands its structured output to module six.
+Module six then, in an automated process,
+takes over, running its consensus math on
+each scenario independently and producing for
+each a consensus score, an objection index,
+all of this resulting in three potential
+outcomes, which is approve, revise,
+or escalate, where escalate means to move
+to module nine because nothing is working.
+Now, let’s explore this in more detail in
+module six, again as per the white paper.
+Module six takes in those three
+core inputs from module five,
+along with a potential fourth variable related to
+participants themselves, which we’re going to get
+to in a moment. To repeat this for clarity, the
+gradient votes for each scenario ranging from
+strong support to support neutral to concern
+to block. These carry numerical values between
+1 and -1, as the system quantifies these
+relative preferences for the calculation.
+Second input, again, is the documented set
+of objections, and module six assesses these
+to factor into the calculation. In this,
+each documented refined objection carries
+two parameters: severity and scope. And
+each has a float range from zero to one.
+Severity measures how serious the objection
+is. If an objection relates to significant
+perceived harm, it might be 0.9. If
+it’s minimally severe, it might be 0.2.
+As far as scope, it measures how broadly
+the negative outcome would apply.
+So an objection affecting a small group or a
+section of a co-op might have a scope of 0.1,
+while one affecting an entire network
+of co-ops might have a scope of 0.8.
+Now where do these numbers come from, you
+might ask? As far as scope, I think this is
+relatively straightforward. Scope pertains to
+what’s affected. So if it’s a water supply and
+something’s happening with it, we can assess
+who relies on the water supply, the geography
+of the water supply. So if the scope of an
+assumed objection affects 5% of the population,
+that’s a relatively small scope. If it
+reaches 90%, it has a large or wide scope.
+However, severity is harder, as it’s far broader.
+Anyone being poisoned by a water supply is bad,
+but how bad or severe depends on specifics. If
+pollution has a high chance of causing cancer
+over time, severity might be 0.9. If it’s mild
+and tolerable by normal human exposure standards,
+it might be 0.3. So we can understand such a range
+intuitively. Formalizing it is more difficult.
+Now just so people know, this thinking
+isn’t pulled out of thin air. There
+are examples of this kind of risk
+quantification already in practice.
+In fact, the mathematical approach is borrowed
+from the broader family of formal risk-assessment
+methods, most famously failure mode and
+effects analysis, FMEA, which has been
+in continuous use since the 1960s in various
+industries like aerospace and healthcare.
+While the deliberate development of
+this, the philosophy if you will,
+was inspired by sociocracy, which has
+been in continuous use since the 1970s,
+and treats objections as information to be
+resolved rather than votes to be counted.
+Okay, input number three is this participant
+weight. The third input is participant weight,
+which has not been covered. This is
+controversial and in most cases would
+not be utilized at all. It refers to
+the idea that each person in a CDS node
+carries a degree of influence based on prior
+performance, credentials, or proven expertise.
+I was never going to put something like this
+into the system until I started thinking about
+extreme edge cases, situations where the issue
+under deliberation is so technically demanding
+that it requires specialized proven skill to
+evaluate responsibly and come up with a solution.
+The obvious danger of this kind of
+weighting is the rise of elitism,
+which cuts against the core principles Integral
+is designed explicitly to uphold. But we also
+have to be realistic in the same way that I’m
+not going to stop someone on the street and
+ask them to prescribe medication for me
+or perform some kind of surgery. I will
+have to trust a doctor with a certain
+amount of background in that field.
+There are domains, in other words, where expertise
+genuinely matters. I should have specified the
+conditionality of participant weights more
+carefully in the white paper, but again,
+this is all about broad strokes meant to get
+the ideas out there and get others thinking.
+So the edge case is simple. There might
+be something that happens in the CDS
+where complexity forces reliance
+on a minority opinion who have
+again historically demonstrated
+the capacity to engage with it.
+On to input four, threshold parameters.
+The fourth input is a pair of thresholds
+that help determine the final
+directive. Consensus threshold,
+which is the minimum consensus score required
+for approval. This spec generalizes this at
+0.72. You could crudely interpret that
+as 72%, but again, it’s not a percentage,
+even though it’s pointing in the same direction.
+It’s a point on the weighted gradient scale.
+Then there’s the block threshold, the maximum
+objection index permitted before a blocking
+condition is triggered. The spec generalizes
+this at 0.30, and these two parameters are
+built into the predefined rule structure
+of the CDS, meaning the node has made this
+constitutional decision in advance. The
+parameters have been decided in advance.
+And one of the great advantages of
+having multiple nodes come online
+eventually is that these thresholds
+refine themselves based on experience,
+part of the collective consciousness of
+the entire network. If one node is having
+a strong success with a particular set of values,
+other nodes will see that and pick up on them.
+Putting it all together now, the consensus
+score. Here is how all of this comes together
+in the current state of the white paper.
+The calculation runs from the four inputs.
+The first step is producing a consensus score
+from the gradient votes combined with participant
+weights. If there are any, for our purposes
+we’ll assume everyone’s weight is one or equal.
+Now you’ll notice from an image I have
+on screen, in the current gradient scale,
+there isn’t a symmetry in how numerical values
+are assigned to positions of support. This
+is intentional. The gap between concern
+and block is larger than the gap between
+support and strong support. Hence, blocking
+carries disproportionate negative weight.
+This means that a small number of people blocking
+will drag the score down harder than an equivalent
+number of people strongly supporting will pull
+it up. It forces critical attention to be paid to
+the reasons someone wants to block or strongly
+disapprove of a proposal rather than letting
+enthusiasm drown out principled resistance because
+everyone else generally agrees in the majority.
+And what you have is the following calculation
+for a consensus score, which is fairly basic.
+Multiply each person’s preference number
+by their weight, add all of those up,
+then divide by the total of all the weights.
+And this gives you the overall direction and
+intensity of the group’s preferences.
+A score of 1 means everybody strongly
+supports. A score of -1 means everybody blocks.
+A score of 0 means the group is perfectly split.
+And next is the objection index. Now with the
+consensus score in hand, module six now turns
+to the second half of the calculation. While the
+consensus score measures the overall direction
+and intensity of support, the objection index
+measures whether any principled objection is
+serious enough to warrant halting or revising a
+proposal, regardless of how much support it has.
+A key asymmetry of the system process. A proposal
+can be wildly popular and still be blocked if even
+one well-grounded objection crosses the
+severity and scope threshold. And again,
+this is what prevents the CDS from
+moving into a kind of numbers game
+where the enthusiastic majority overrides
+small groups raising a serious concern.
+The formula for the objection index is
+extremely simple. For each documented objection,
+multiply its severity by its scope, and then
+take the maximum value across all objections.
+And it’s a critical qualifying concern because
+it’s a safeguard against something really bad
+being decided upon without thoroughly vetting
+everything that is on the table. So again,
+the objection index is what ensures that
+the most serious concern gets evaluated.
+Now we are ready for the three possible outcomes
+of module six. So it now has these numbers,
+a consensus score and an objection index.
+It compares them against the two thresholds
+from the rule structure: consensus threshold,
+the spec default is 0.72, and block threshold,
+the spec default is 0.3. From this comparison,
+one of three directives is produced per scenario.
+Outcome one is approve. If the
+consensus score meets or exceeds
+the consensus threshold and the objection
+index stays below the blocking threshold,
+the scenario is approved. In plain terms,
+enough people support it and no single
+objection is serious enough to block it.
+In that case, all things being equal,
+the single scenario moves into module seven
+for recording as a decision and then into
+module eight for dispatch where it becomes
+coordinated action across the other systems.
+Now the second possible outcome is revise. If
+the consensus score falls below the threshold
+or the objection index crosses over the
+blocking line, the scenario is returned
+to module five for needed revision. Either
+way, module six returns a directive to revise,
+along with required conditions that point to
+the meta-information I just described. What
+needs to improve? The scenario goes back
+to module five for further deliberation.
+And hence, you may observe we have another
+cyclical aspect of the CDS. Revision is not
+failure. It’s a normal part of the flow. If
+revision produces a genuinely new proposal,
+rather than a mechanical modification,
+it should route back through modules
+three and four as tools, as stated
+before, returning to deliberation.
+And finally we have outcome three, escalate
+to module nine. There are two conditions where
+things escalate to module nine. And once again
+it’s a little bit murky in the white paper.
+First is when the cyclical revision process
+continues to fail, meaning you’re constantly
+revising but it’s not improving in terms
+of consensus. It’s just cycling between
+five and six and five and six. In the
+white paper addendum section of the CDS,
+this is referenced with a persistent duration of
+disagreement across cycles as a variable. However,
+this is not expressed in the white paper
+in an expansive way that it is in the code.
+And I think what you could simply do is come up
+with a number that says, well, if this happens
+so many times, an alert will say it might
+be time to go to module nine’s Syntegrity.
+Now the second trigger occurs in a far more subtle
+and subjective way, meaning even though it could
+probably overlap with the first as part of the
+objection that moves things to module nine and
+Syntegrity, this is a case where it’s not
+rejected. The consensus is sufficient and
+there’s no single blocking objection large enough
+to block it. But there is still a pronounced,
+outright-stated unresolved value conflict
+underneath the numbers that is apparent.
+I consider this an edge case once again, but
+as I started brainstorming this, it’s like:
+what are all the possible things I can
+think of that can reduce the efficacy or
+do something wrong in this scenario in terms of
+the philosophy behind it? I sketched all this out.
+You should see my notebooks on all of this stuff.
+And what it is, is a more subtle trigger that
+has to do with values, referred to in the white
+paper as unresolved value conflict. Let’s imagine
+we have a community and a very tiny percentage
+actually have a deep sentimental relationship to
+something like an artifact, a building, something
+historical that means something very specific
+to a particular group of people or individual.
+The ramifications of that value-oriented
+relationship have to be accounted for in
+civil society. It’s a moral issue. If
+something is extremely severe where you
+have to do something like tear down a sentimental
+physical structure because it’s really necessary,
+that logic can play forward and will probably
+influence those that are emotionally tied to it.
+But as we see in the world today, some huge
+corporation decides it wants to build something
+somewhere, and they’re willing to buy out or rip
+down something of great historical value. We see
+this in Native American cultures. So much Native
+American land and resources and infrastructure
+has been disturbed by corporate industry
+just going in and doing whatever they want.
+I’m not big on sentimentality personally, at
+least not in the sense of physical things,
+but I can understand why others are. So that is
+the second trigger, and how that actually comes to
+be in terms of the trigger process would probably
+be far more casual than any kind of calculation.
+What could happen in the constitutional rules of
+the node is a thoughtful provision is put in that
+says, well, if the module six outcome is achieved
+through all parameters normally approving,
+but there is still an objection that
+comes from this value orientation,
+some kind of appeal can be set forward,
+and that brings in a new sensitivity to it.
+This is an edge case, but I think it has to
+be accounted for. If you don’t do these kinds
+of things, the ramifications can be
+technically disturbing. If someone in
+a node feels like they didn’t have their values
+respected, it again is complicated as it all is,
+and they don’t feel respected because of what
+happened, they might behave in adversarial ways.
+In the same way we see all across the
+world today this sort of emotional
+disrespect that people show toward each
+other amplified like crazy, of course,
+in the current market economy. And what
+do you have? I remember reading about a
+guy just recently that burned down his entire
+employer’s building, and he said that comment,
+I’m sure some of you have seen it, that “all
+they had to do was pay me a living wage.”
+We generate so much toxicity by the
+fundamental myopic, competitive,
+and self-oriented disposition of so many people,
+and we are disregarding so many people in so many
+complex ways. And the repercussions of that,
+even though they’re sparse and I’m not saying
+they’re appropriate, can be disturbance,
+violence, and terrorism effectively.
+And that edge case brings it into
+module nine, where a different process,
+perhaps including this Syntegrity, is moved
+forward to try and come to terms with the
+conflict. So those are the two things
+that could escalate it to module nine.
+Now to wrap this up, assuming that moves
+forward, we end up in module seven,
+which doesn’t take much explanation. It’s the
+documentation, stamping, metadata. It says,
+okay, this is on record. This is what we decided.
+What the actions are then moves to module eight,
+which dispatches the directives to get
+the decision going in the real world.
+Now, one more thing before I forget, because
+trying to be as detailed as I can without
+being overwhelming, there are a few more
+clarifications for module six. Module six
+is likely going to have multiple scenarios
+to evaluate, right? And when it finishes
+running all of them from module five, it will
+produce a list of consensus result objects,
+one per scenario, each with its own consensus
+score, objection index, and directive.
+The orchestrator, meaning the coordinating
+layer that governs the flow between the modules,
+is what selects among them by comparison.
+If one or more scenarios return approved,
+the strongest, highest-consensus,
+lowest-objection-index scenario moves
+forward to module seven. It wins, so to
+speak, and hence to module eight for dispatch.
+If none are approved and one or more are
+flagged indeed to escalate to module nine,
+the highest-consensus escalation routes
+into module nine for the human deliberation.
+And if every scenario returns as revise,
+the whole set goes back to module five with
+the consensus results as the new information to
+consider in deliberation, and the cycle begins.
+So just to be clear, as it currently stands,
+and this is just a conceptual architecture
+on a certain level, even though I’m trying my
+best to make things technically coherent and
+have a sense of how this can actually work,
+module six is running the calculations, but
+the orchestrator is what makes the comparative
+determination across all scenarios after
+module six is done. I hope that makes sense.
+Just like the introduction of automated
+proposals between modules three and four,
+this step is done for the sake of consistency.
+So each of the properties are separated for the
+modules in terms of what they actually do. They
+don’t have to be that way. You could combine
+different multi-step properties in each module,
+but again, this is for conceptual purposes only.
+And of course, it is entirely possible for
+multiple scenarios to come out of module six
+and hit the approval condition at once
+simultaneously. And when that happens,
+the orchestrator sorting step is what
+breaks the tie. The scenario with the
+best combination of high consensus
+and low objection index wins.
+So I’m about to keel over from all of this
+tedium. This is not a typical content array
+for a podcast. So we’ve already
+mentioned modules seven and eight,
+so I think that’s good enough for now. We
+could talk about the technical breakdown
+of dispatching the decision or the documentation
+and meta information on how decision is stored,
+which of course is important because
+if it goes to module 10 later on,
+meaning there’s a review process, all of
+that data needs to be sound and reviewable.
+Now one thing I want to just
+finally get to and reiterate
+in the spirit of all this, which I just
+alluded to, but I want to say it again:
+the structure put forward here is organized
+primarily by function. Each module represents
+a distinct cognitive role in the decision process.
+But the way those functions are combined and
+implemented doesn’t have to look anything
+like the pseudocode sketches in the paper.
+Things have changed a great deal in
+the last couple of years. In fact,
+they’re just changing daily, it seems.
+When it comes to data processing and this
+kind of move away from chains of narrow
+purpose-built algorithms toward this more
+complex AI-driven model ecosystem,
+large language models once again.
+In many ways, LLMs are likely the
+secret sauce that makes something
+like the CDS far more feasible
+than it would be many years ago.
+We now have the ability to run locally
+hosted models without depending on
+cloud data centers that are burning up the
+atmosphere and sucking up a bunch of water.
+And you localize these systems, you feed the
+constitutional constraints and policy documents
+directly into a novel model, you build the
+retrieval processes through these models,
+such as with module three, bridging
+other systems that have unique parallel
+systems of engaging or some kind of
+fluidity once again in the structure,
+and you can begin to see how this can take
+shape in a far less difficult way than
+what is proposed in the white paper because
+it’s more of a traditional type of approach.
+Moreover, the value processes can
+be far more subtle when you get to
+nuanced reasoning about things like values,
+subtle context elements, scope and severity,
+imperative trade-offs, which was really
+way out of reach again a long time ago.
+So on the logical basis and general reasoning
+behind the structure I’ve just explained holds up
+in my view, the way it actually gets implemented
+and expanded is likely to look quite different.
+Okay folks, that does it for me today. I’ll be
+back next time, which I promise will happen sooner
+than later, for the OAD, the Open Access Design
+system, which actually will be a lot easier to
+talk about, much easier to talk about than this,
+as it’s far less abstract than digital democracy.
+So we’ll take it up then. This program
+is brought to you by my Patreon,
+and I will be sending out an email fairly
+soon to everyone that signed up for the
+Integral mailing list. I’ve got a lot
+of applications to go through. Really
+appreciate those that have done that
+again, and I will generally be in touch.
+Everyone take care out
+there. I’ll talk to you soon.
