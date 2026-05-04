@@ -51,3 +51,4 @@ mv skills-archive/<skill-name> skills/<skill-name>
 | fragment-engine | Fragment engine | 2026-05-04 |
 | artifacts | Artifact reference | 2026-05-04 |
 | cargo-toml-validator | Cargo.toml validation | 2026-05-04 |
+ossinsight-api
