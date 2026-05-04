@@ -1,11 +1,22 @@
 ---
 name: dreamcatcher
-version: 2.0.0
-emoji: 🌠
 description: |
   Capture and develop member ideas into actionable development specifications. Guides individuals or groups through structured ideation, then compiles a full .md specification ready for a coding agent to execute. Triggers on: "capture my idea", "dreamcatcher", "I have an idea for...", "flesh out my idea", "create a spec", "build something", or any request to turn an idea into a development plan.
-metadata: {"openclaw":{"requires":{"bins":["git","bash","date","jq"],"env":[],"os":["linux","darwin"]},"primaryEnv":"","network":["github.com"]}}
-user-invocable: true
+metadata:
+    openclaw:
+      requires:
+        bins:
+          - "git"
+          - "bash"
+          - "date"
+          - "jq"
+        env:
+        os:
+          - "linux"
+          - "darwin"
+      primaryEnv: ""
+      network:
+        - "github.com"
 ---
 
 # Dreamcatcher

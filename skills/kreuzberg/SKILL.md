@@ -9,7 +9,6 @@ description: >-
 license: MIT
 metadata:
   author: kreuzberg-dev
-  version: "1.0"
   repository: https://github.com/kreuzberg-dev/kreuzberg
 ---
 

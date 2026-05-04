@@ -1,7 +1,15 @@
 ---
 name: nix-mode
 description: Handle Clawdbot operations in Nix mode (configuration management, environment detection).
-metadata: {"clawdbot":{"emoji":"❄️","requires":{"bins":["nix","bash"],"envs":["CLAWDBOT_NIX_MODE"]},"install":[]}}
+metadata:
+    clawdbot:
+      requires:
+        bins:
+          - "nix"
+          - "bash"
+        envs:
+          - "CLAWDBOT_NIX_MODE"
+      install:
 ---
 
 # Clawdbot Nix Mode Skill

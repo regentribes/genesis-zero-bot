@@ -1,8 +1,6 @@
 ---
 name: rust-patterns
 description: Production Rust patterns covering ownership, async Tokio, Axum web framework, SQLx, error handling, CLI tools, WASM, and PyO3 Python bindings
-version: 1.0.0
-tags:
   - rust
   - systems-programming
   - tokio

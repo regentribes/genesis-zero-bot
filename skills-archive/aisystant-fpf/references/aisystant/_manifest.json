@@ -1,0 +1,947 @@
+[
+  {
+    "file": "01_https___vitepress.dev_reference_default-theme-home-page.md",
+    "title": "https://vitepress.dev/reference/default-theme-home-page",
+    "chunk": 1
+  },
+  {
+    "file": "02_untitled_2.md",
+    "title": "untitled_2",
+    "chunk": 2
+  },
+  {
+    "file": "03_Personal_Development.md",
+    "title": "Personal Development",
+    "chunk": 3
+  },
+  {
+    "file": "04_Personal_Development.md",
+    "title": "Personal Development",
+    "chunk": 4
+  },
+  {
+    "file": "05_Complete_the_Modeling_Exercise__7.10._Changes_in_the_Enterprise.md",
+    "title": "Complete the Modeling Exercise: 7.10. Changes in the Enterprise",
+    "chunk": 5
+  },
+  {
+    "file": "06_Complete_the_Modeling_Exercise__7.11._Assigning_Organizational_Units_to_Organiza.md",
+    "title": "Complete the Modeling Exercise: 7.11. Assigning Organizational Units to Organizational Roles Executing Methods",
+    "chunk": 6
+  },
+  {
+    "file": "07_Complete_the_Modeling_Exercise__7.12._Examples_of_Brief_Project_Descriptions_(Pr.md",
+    "title": "Complete the Modeling Exercise: 7.12. Examples of Brief Project Descriptions (Project Summary)",
+    "chunk": 7
+  },
+  {
+    "file": "08_Complete_the_Modeling_Exercise__7.13._My_Roles,_Methods,_and_Priority_Projects.md",
+    "title": "Complete the Modeling Exercise: 7.13. My Roles, Methods, and Priority Projects",
+    "chunk": 8
+  },
+  {
+    "file": "09_Complete_the_Modeling_Exercise__7.14._Degree_of_Thinking_Mastery.md",
+    "title": "Complete the Modeling Exercise: 7.14. Degree of Thinking Mastery",
+    "chunk": 9
+  },
+  {
+    "file": "10_Complete_the_Modeling_Exercise__7.15._My_Aisystant_Qualification.md",
+    "title": "Complete the Modeling Exercise: 7.15. My Aisystant Qualification",
+    "chunk": 10
+  },
+  {
+    "file": "11_Complete_the_Modeling_Exercise__7.1_Concepts.md",
+    "title": "Complete the Modeling Exercise: 7.1 Concepts",
+    "chunk": 11
+  },
+  {
+    "file": "12_Complete_the_Modeling_Exercise__7.2._Method__Discipline_and_Tools.md",
+    "title": "Complete the Modeling Exercise: 7.2. Method: Discipline and Tools",
+    "chunk": 12
+  },
+  {
+    "file": "13_Complete_the_Modeling_Exercise__7.3._Role_Performer_Qualification.md",
+    "title": "Complete the Modeling Exercise: 7.3. Role Performer Qualification",
+    "chunk": 13
+  },
+  {
+    "file": "14_Complete_the_Modeling_Exercise__7.4._Professional_Communities_on_SOTA_Methods.md",
+    "title": "Complete the Modeling Exercise: 7.4. Professional Communities on SOTA Methods",
+    "chunk": 14
+  },
+  {
+    "file": "15_Complete_the_Modeling_Exercise__7.5._Methods_and_System_Levels.md",
+    "title": "Complete the Modeling Exercise: 7.5. Methods and System Levels",
+    "chunk": 15
+  },
+  {
+    "file": "16_Complete_the_Modeling_Exercise__7.6._Role,_Method,_and_Work_Artifact.md",
+    "title": "Complete the Modeling Exercise: 7.6. Role, Method, and Work Artifact",
+    "chunk": 16
+  },
+  {
+    "file": "17_Complete_the_Modeling_Exercise__7.7._Stages_and_Methods.md",
+    "title": "Complete the Modeling Exercise: 7.7. Stages and Methods",
+    "chunk": 17
+  },
+  {
+    "file": "18_Complete_the_Modeling_Exercise__7.8._System_and_Process.md",
+    "title": "Complete the Modeling Exercise: 7.8. System and Process",
+    "chunk": 18
+  },
+  {
+    "file": "19_Complete_the_Modeling_Exercise__7.9._Formulating_the_Work.md",
+    "title": "Complete the Modeling Exercise: 7.9. Formulating the Work",
+    "chunk": 19
+  },
+  {
+    "file": "20_Conclusions_of_the_Section_and_Main_Concepts.md",
+    "title": "Conclusions of the Section and Main Concepts",
+    "chunk": 20
+  },
+  {
+    "file": "21_Homework_Assignment.md",
+    "title": "Homework Assignment",
+    "chunk": 21
+  },
+  {
+    "file": "22_How_Systems_Thinking_Helps_in_Work_Activities.md",
+    "title": "How Systems Thinking Helps in Work Activities",
+    "chunk": 22
+  },
+  {
+    "file": "23_Increment_and_Iteration.md",
+    "title": "Increment and Iteration",
+    "chunk": 23
+  },
+  {
+    "file": "24_Creation_and_Development.md",
+    "title": "Creation and Development",
+    "chunk": 24
+  },
+  {
+    "file": "25_Creation_and_Development.md",
+    "title": "Creation and Development",
+    "chunk": 25
+  },
+  {
+    "file": "26_Method_(Practice)_\u2013_Discipline_and_Tools.md",
+    "title": "Method (Practice) \u2013 Discipline and Tools",
+    "chunk": 26
+  },
+  {
+    "file": "27_Organizational_Units,_Services.md",
+    "title": "Organizational Units, Services",
+    "chunk": 27
+  },
+  {
+    "file": "28_Organization_as_a_System.md",
+    "title": "Organization as a System",
+    "chunk": 28
+  },
+  {
+    "file": "29_Practice_Management.md",
+    "title": "Practice Management",
+    "chunk": 29
+  },
+  {
+    "file": "30_Questions_for_Review,_Discussion,_and_Reflective_Writing.md",
+    "title": "Questions for Review, Discussion, and Reflective Writing",
+    "chunk": 30
+  },
+  {
+    "file": "31_Roles,_Stages,_Methods.md",
+    "title": "Roles, Stages, Methods",
+    "chunk": 31
+  },
+  {
+    "file": "32_Stages_and_Phases.md",
+    "title": "Stages and Phases",
+    "chunk": 32
+  },
+  {
+    "file": "33_Systems_Thinking_as_a_Way_to_Build_a_Successful_System.md",
+    "title": "Systems Thinking as a Way to Build a Successful System",
+    "chunk": 33
+  },
+  {
+    "file": "34_Tips_for_a_Young_Manager__Key_Focus_Areas.md",
+    "title": "Tips for a Young Manager: Key Focus Areas",
+    "chunk": 34
+  },
+  {
+    "file": "35_What.md",
+    "title": "What",
+    "chunk": 35
+  },
+  {
+    "file": "36_Why_and_How_to_Explain_Systems_Thinking.md",
+    "title": "Why and How to Explain Systems Thinking",
+    "chunk": 36
+  },
+  {
+    "file": "37_Work_and_Task.md",
+    "title": "Work and Task",
+    "chunk": 37
+  },
+  {
+    "file": "38_Work_Management.md",
+    "title": "Work Management",
+    "chunk": 38
+  },
+  {
+    "file": "39_Systems_Thinking_Introduction.md",
+    "title": "Systems Thinking Introduction",
+    "chunk": 39
+  },
+  {
+    "file": "40_Systems_Thinking_Introduction.md",
+    "title": "Systems Thinking Introduction",
+    "chunk": 40
+  },
+  {
+    "file": "41_Preface.md",
+    "title": "Preface",
+    "chunk": 41
+  },
+  {
+    "file": "42_Preparation_for_Learning.md",
+    "title": "Preparation for Learning",
+    "chunk": 42
+  },
+  {
+    "file": "43_Complete_the_Modeling_Exercise__3.10._Who_Attended_the_Last_Meeting.md",
+    "title": "Complete the Modeling Exercise: 3.10. Who Attended the Last Meeting",
+    "chunk": 43
+  },
+  {
+    "file": "44_Complete_the_Modeling_Exercise__3.11._External_Project_Roles_and_System_Success.md",
+    "title": "Complete the Modeling Exercise: 3.11. External Project Roles and System Success",
+    "chunk": 44
+  },
+  {
+    "file": "45_Complete_the_Modeling_Exercise__3.1._Concepts.md",
+    "title": "Complete the Modeling Exercise: 3.1. Concepts",
+    "chunk": 45
+  },
+  {
+    "file": "46_Complete_the_Modeling_Exercise__3.2._Role_and_Role_Performer.md",
+    "title": "Complete the Modeling Exercise: 3.2. Role and Role Performer",
+    "chunk": 46
+  },
+  {
+    "file": "47_Complete_the_Modeling_Exercise__3.3._Role,_Role_Performer,_Title,_and_Position.md",
+    "title": "Complete the Modeling Exercise: 3.3. Role, Role Performer, Title, and Position",
+    "chunk": 47
+  },
+  {
+    "file": "48_Complete_the_Modeling_Exercise__3.4._External_and_Internal_Roles_in_the_Project.md",
+    "title": "Complete the Modeling Exercise: 3.4. External and Internal Roles in the Project",
+    "chunk": 48
+  },
+  {
+    "file": "49_Complete_the_Modeling_Exercise__3.5._Roles_Performed_by_a_Manager.md",
+    "title": "Complete the Modeling Exercise: 3.5. Roles Performed by a Manager",
+    "chunk": 49
+  },
+  {
+    "file": "50_Complete_the_Modeling_Exercise__3.6._Subjects_of_Interest_to_the_System.md",
+    "title": "Complete the Modeling Exercise: 3.6. Subjects of Interest to the System",
+    "chunk": 50
+  },
+  {
+    "file": "51_Complete_the_Modeling_Exercise__3.7._Intention,_Preference,_and_Subject_of_Inter.md",
+    "title": "Complete the Modeling Exercise: 3.7. Intention, Preference, and Subject of Interest",
+    "chunk": 51
+  },
+  {
+    "file": "52_Complete_the_Modeling_Exercise__3.8._Identifying_Roles_and_Role_Expectations.md",
+    "title": "Complete the Modeling Exercise: 3.8. Identifying Roles and Role Expectations",
+    "chunk": 52
+  },
+  {
+    "file": "53_Complete_the_Modeling_Exercise__3.9._The_Work_of_an_Analyst.md",
+    "title": "Complete the Modeling Exercise: 3.9. The Work of an Analyst",
+    "chunk": 53
+  },
+  {
+    "file": "54_Conclusions_of_the_Section_and_Main_Concepts.md",
+    "title": "Conclusions of the Section and Main Concepts",
+    "chunk": 54
+  },
+  {
+    "file": "55_Homework_Assignment.md",
+    "title": "Homework Assignment",
+    "chunk": 55
+  },
+  {
+    "file": "56_Roles_and_a_Successful_System.md",
+    "title": "Roles and a Successful System",
+    "chunk": 56
+  },
+  {
+    "file": "57_Roles_and_a_Successful_System.md",
+    "title": "Roles and a Successful System",
+    "chunk": 57
+  },
+  {
+    "file": "58_Physical_and_Functional_Objects.md",
+    "title": "Physical and Functional Objects",
+    "chunk": 58
+  },
+  {
+    "file": "59_Position,_Successful_System,_and_Intelligence.md",
+    "title": "Position, Successful System, and Intelligence",
+    "chunk": 59
+  },
+  {
+    "file": "60_Project_Roles,_Their_Methods,_and_Work_Artifacts.md",
+    "title": "Project Roles, Their Methods, and Work Artifacts",
+    "chunk": 60
+  },
+  {
+    "file": "61_Questions_for_Review,_Discussion,_and_Reflective_Writing.md",
+    "title": "Questions for Review, Discussion, and Reflective Writing",
+    "chunk": 61
+  },
+  {
+    "file": "62_Role_and_Method.md",
+    "title": "Role and Method",
+    "chunk": 62
+  },
+  {
+    "file": "63_Role_as_a_Model_of_Thinking.md",
+    "title": "Role as a Model of Thinking",
+    "chunk": 63
+  },
+  {
+    "file": "64_Role_as_Part_of_a_System_or_Activity.md",
+    "title": "Role as Part of a System or Activity",
+    "chunk": 64
+  },
+  {
+    "file": "65_Role_Performer,_Role,_Function,_and_System_Names.md",
+    "title": "Role Performer, Role, Function, and System Names",
+    "chunk": 65
+  },
+  {
+    "file": "66_Role_Performers__Agent_and_Their_Intent,_Strategy,_and_Plans.md",
+    "title": "Role Performers: Agent and Their Intent, Strategy, and Plans",
+    "chunk": 66
+  },
+  {
+    "file": "67_Roles_and_Role_Performers.md",
+    "title": "Roles and Role Performers",
+    "chunk": 67
+  },
+  {
+    "file": "68_Subject_of_Interest,_Role_Interest,_or_Preference.md",
+    "title": "Subject of Interest, Role Interest, or Preference",
+    "chunk": 68
+  },
+  {
+    "file": "69_Successful_System.md",
+    "title": "Successful System",
+    "chunk": 69
+  },
+  {
+    "file": "70_Theatrical_Metaphor.md",
+    "title": "Theatrical Metaphor",
+    "chunk": 70
+  },
+  {
+    "file": "71_Complete_the_Modeling_Exercise__2.1_Concepts.md",
+    "title": "Complete the Modeling Exercise: 2.1 Concepts",
+    "chunk": 71
+  },
+  {
+    "file": "72_Complete_the_Modeling_Exercise__2.2._Physical_World_and_Mental_Space.md",
+    "title": "Complete the Modeling Exercise: 2.2. Physical World and Mental Space",
+    "chunk": 72
+  },
+  {
+    "file": "73_Complete_the_Modeling_Exercise__2.3._The_System_and_Its_Description.md",
+    "title": "Complete the Modeling Exercise: 2.3. The System and Its Description",
+    "chunk": 73
+  },
+  {
+    "file": "74_Complete_the_Modeling_Exercise__2.4._Implementation,_Description,_and_System_Doc.md",
+    "title": "Complete the Modeling Exercise: 2.4. Implementation, Description, and System Documentation",
+    "chunk": 74
+  },
+  {
+    "file": "75_Complete_the_Modeling_Exercise__2.5._Description_and_Method_of_Description_(Prac.md",
+    "title": "Complete the Modeling Exercise: 2.5. Description and Method of Description (Practice)",
+    "chunk": 75
+  },
+  {
+    "file": "76_Complete_the_Modeling_Exercise__2.6._Functional_Object,_Constructive_Object.md",
+    "title": "Complete the Modeling Exercise: 2.6. Functional Object, Constructive Object",
+    "chunk": 76
+  },
+  {
+    "file": "77_Complete_the_Modeling_Exercise__2.7._Complex_Systems.md",
+    "title": "Complete the Modeling Exercise: 2.7. Complex Systems",
+    "chunk": 77
+  },
+  {
+    "file": "78_Complex_Systems.md",
+    "title": "Complex Systems",
+    "chunk": 78
+  },
+  {
+    "file": "79_Composition_Relationship.md",
+    "title": "Composition Relationship",
+    "chunk": 79
+  },
+  {
+    "file": "80_Conclusions_of_the_Section_and_Main_Concepts.md",
+    "title": "Conclusions of the Section and Main Concepts",
+    "chunk": 80
+  },
+  {
+    "file": "81_Description_and_Implementation_of_the_System.md",
+    "title": "Description and Implementation of the System",
+    "chunk": 81
+  },
+  {
+    "file": "82_Example__How_to_Prepare_for_a_Trip_Using_a_Systems_Approach.md",
+    "title": "Example: How to Prepare for a Trip Using a Systems Approach",
+    "chunk": 82
+  },
+  {
+    "file": "83_Homework_Assignment.md",
+    "title": "Homework Assignment",
+    "chunk": 83
+  },
+  {
+    "file": "84_System_Implementation_and_Description.md",
+    "title": "System Implementation and Description",
+    "chunk": 84
+  },
+  {
+    "file": "85_System_Implementation_and_Description.md",
+    "title": "System Implementation and Description",
+    "chunk": 85
+  },
+  {
+    "file": "86_Is_Documentation_a_System__Is_a_Work_Artifact_a_System.md",
+    "title": "Is Documentation a System? Is a Work Artifact a System?",
+    "chunk": 86
+  },
+  {
+    "file": "87_Physical_World_and_Mental_Space.md",
+    "title": "Physical World and Mental Space",
+    "chunk": 87
+  },
+  {
+    "file": "88_Questions_for_Review,_Discussion,_and_Reflective_Writing.md",
+    "title": "Questions for Review, Discussion, and Reflective Writing",
+    "chunk": 88
+  },
+  {
+    "file": "89_System_and_Its_Role-Based_Behavior.md",
+    "title": "System and Its Role-Based Behavior",
+    "chunk": 89
+  },
+  {
+    "file": "90_System_Documentation.md",
+    "title": "System Documentation",
+    "chunk": 90
+  },
+  {
+    "file": "91_Systems_and_Functions__Names_Matter.md",
+    "title": "Systems and Functions: Names Matter",
+    "chunk": 91
+  },
+  {
+    "file": "92_Word,_Object,_System.md",
+    "title": "Word, Object, System",
+    "chunk": 92
+  },
+  {
+    "file": "93_Areas_of_Interest.md",
+    "title": "Areas of Interest",
+    "chunk": 93
+  },
+  {
+    "file": "94_Complete_the_Modeling_Exercise__5.1._Concepts.md",
+    "title": "Complete the Modeling Exercise: 5.1. Concepts",
+    "chunk": 94
+  },
+  {
+    "file": "95_Complete_the_Modeling_Exercise__5.2._Type_Annotation_Using_Notation.md",
+    "title": "Complete the Modeling Exercise: 5.2. Type Annotation Using Notation ::",
+    "chunk": 95
+  },
+  {
+    "file": "96_Complete_the_Modeling_Exercise__5.3._Areas_of_Interest_of_the_Supersystem.md",
+    "title": "Complete the Modeling Exercise: 5.3. Areas of Interest of the Supersystem",
+    "chunk": 96
+  },
+  {
+    "file": "97_Complete_the_Modeling_Exercise__5.4._Identify_System_Levels.md",
+    "title": "Complete the Modeling Exercise: 5.4. Identify System Levels",
+    "chunk": 97
+  },
+  {
+    "file": "98_Complete_the_Modeling_Exercise__5.5._Creation_Chains.md",
+    "title": "Complete the Modeling Exercise: 5.5. Creation Chains",
+    "chunk": 98
+  },
+  {
+    "file": "99_Complete_the_Modeling_Exercise__5.6._Time_Allocation_for_Three_Areas_of_Interest.md",
+    "title": "Complete the Modeling Exercise: 5.6. Time Allocation for Three Areas of Interest",
+    "chunk": 99
+  },
+  {
+    "file": "100_Complete_the_Modeling_Exercise__5.7._3x3_Table.md",
+    "title": "Complete the Modeling Exercise: 5.7. 3x3 Table",
+    "chunk": 100
+  },
+  {
+    "file": "101_Conclusions_of_the_Section_and_Main_Concepts.md",
+    "title": "Conclusions of the Section and Main Concepts",
+    "chunk": 101
+  },
+  {
+    "file": "102_Creation_Chain_Diagram.md",
+    "title": "Creation Chain Diagram",
+    "chunk": 102
+  },
+  {
+    "file": "103_Creation_Chain.md",
+    "title": "Creation Chain",
+    "chunk": 103
+  },
+  {
+    "file": "104_Homework_Assignment.md",
+    "title": "Homework Assignment",
+    "chunk": 104
+  },
+  {
+    "file": "105_System_Levels,_Creation_Chains,_Areas_of_Interest.md",
+    "title": "System Levels, Creation Chains, Areas of Interest",
+    "chunk": 105
+  },
+  {
+    "file": "106_System_Levels,_Creation_Chains,_Areas_of_Interest.md",
+    "title": "System Levels, Creation Chains, Areas of Interest",
+    "chunk": 106
+  },
+  {
+    "file": "107_Meta-System_Transition_and_Emergence.md",
+    "title": "Meta-System Transition and Emergence",
+    "chunk": 107
+  },
+  {
+    "file": "108_Project_Activities_and_Three_Main_Roles.md",
+    "title": "Project Activities and Three Main Roles",
+    "chunk": 108
+  },
+  {
+    "file": "109_Questions_for_Review,_Discussion,_and_Reflective_Writing.md",
+    "title": "Questions for Review, Discussion, and Reflective Writing",
+    "chunk": 109
+  },
+  {
+    "file": "110_Stages_of_Immersion_in_Systems_Methodology_Using_the_\\.md",
+    "title": "Stages of Immersion in Systems Methodology Using the \\",
+    "chunk": 110
+  },
+  {
+    "file": "111_Subject_Areas_of_Interest_for_Entrepreneurs,_Engineers,_and_Managers.md",
+    "title": "Subject Areas of Interest for Entrepreneurs, Engineers, and Managers",
+    "chunk": 111
+  },
+  {
+    "file": "112_System_Breakdown.md",
+    "title": "System Breakdown",
+    "chunk": 112
+  },
+  {
+    "file": "113_Systems_Approach_3.0.md",
+    "title": "Systems Approach 3.0",
+    "chunk": 113
+  },
+  {
+    "file": "114_Complete_the_Modeling_Exercise__6.1._Concepts.md",
+    "title": "Complete the Modeling Exercise: 6.1. Concepts",
+    "chunk": 114
+  },
+  {
+    "file": "115_Complete_the_Modeling_Exercise__6.2._Role,_System,_Subject_of_Interest,_Descript.md",
+    "title": "Complete the Modeling Exercise: 6.2. Role, System, Subject of Interest, Description Method, and Work Artifact",
+    "chunk": 115
+  },
+  {
+    "file": "116_Complete_the_Modeling_Exercise__6.3._Project_(Enterprise)_Documents.md",
+    "title": "Complete the Modeling Exercise: 6.3. Project (Enterprise) Documents",
+    "chunk": 116
+  },
+  {
+    "file": "117_Complete_the_Modeling_Exercise__6.4._My_Roles_and_My_Description_Methods.md",
+    "title": "Complete the Modeling Exercise: 6.4. My Roles and My Description Methods",
+    "chunk": 117
+  },
+  {
+    "file": "118_Complete_the_Modeling_Exercise__6.5._Models,_Meta-Models,_Multi-Models,_Mega-Mod.md",
+    "title": "Complete the Modeling Exercise: 6.5. Models, Meta-Models, Multi-Models, Mega-Models",
+    "chunk": 118
+  },
+  {
+    "file": "119_Complete_the_Modeling_Exercise__6.6._Operational_Model,_Meta-Model_Types,_Meta-M.md",
+    "title": "Complete the Modeling Exercise: 6.6. Operational Model, Meta-Model Types, Meta-Meta-Model Types",
+    "chunk": 119
+  },
+  {
+    "file": "120_Complete_the_Modeling_Exercise__6.7._Functional_and_Constructive_Descriptions.md",
+    "title": "Complete the Modeling Exercise: 6.7. Functional and Constructive Descriptions",
+    "chunk": 120
+  },
+  {
+    "file": "121_Complete_the_Modeling_Exercise__6.8._Describing_the_System_as_a_Black_Box.md",
+    "title": "Complete the Modeling Exercise: 6.8. Describing the System as a Black Box",
+    "chunk": 121
+  },
+  {
+    "file": "122_Conclusions_of_the_Section_and_Main_Concepts.md",
+    "title": "Conclusions of the Section and Main Concepts",
+    "chunk": 122
+  },
+  {
+    "file": "123_Connection_of_the_Description_Method_to_the_Subject_of_Interest,_Project_Roles,_.md",
+    "title": "Connection of the Description Method to the Subject of Interest, Project Roles, and the System",
+    "chunk": 123
+  },
+  {
+    "file": "124_Describing_the_System_as_a_\\.md",
+    "title": "Describing the System as a \\",
+    "chunk": 124
+  },
+  {
+    "file": "125_Description_Method.md",
+    "title": "Description Method",
+    "chunk": 125
+  },
+  {
+    "file": "126_Descriptions_and_Documentation_of_Various_Areas_of_Interest.md",
+    "title": "Descriptions and Documentation of Various Areas of Interest",
+    "chunk": 126
+  },
+  {
+    "file": "127_Example_of_Describing_the_Connection_Between_the_Interests_of_the_Supersystem_an.md",
+    "title": "Example of Describing the Connection Between the Interests of the Supersystem and the System of Interest",
+    "chunk": 127
+  },
+  {
+    "file": "128_Example_of_Describing_the_Supersystem.md",
+    "title": "Example of Describing the Supersystem",
+    "chunk": 128
+  },
+  {
+    "file": "129_Examples_of_Describing_a_System_as_a_Transparent_Box.md",
+    "title": "Examples of Describing a System as a Transparent Box",
+    "chunk": 129
+  },
+  {
+    "file": "130_Homework_Assignment.md",
+    "title": "Homework Assignment",
+    "chunk": 130
+  },
+  {
+    "file": "131_How_to_Think_About_Systems.md",
+    "title": "How to Think About Systems",
+    "chunk": 131
+  },
+  {
+    "file": "132_Systems_Modeling.md",
+    "title": "Systems Modeling",
+    "chunk": 132
+  },
+  {
+    "file": "133_Systems_Modeling.md",
+    "title": "Systems Modeling",
+    "chunk": 133
+  },
+  {
+    "file": "134_Main_Descriptions_of_the_System_as_a_\\.md",
+    "title": "Main Descriptions of the System as a \\",
+    "chunk": 134
+  },
+  {
+    "file": "135_Meta-Modeling_and_Modeling.md",
+    "title": "Meta-Modeling and Modeling",
+    "chunk": 135
+  },
+  {
+    "file": "136_Models,_Meta-Models,_Multi-Models,_Mega-Models.md",
+    "title": "Models, Meta-Models, Multi-Models, Mega-Models",
+    "chunk": 136
+  },
+  {
+    "file": "137_Questions_for_Review,_Discussion,_and_Reflective_Writing.md",
+    "title": "Questions for Review, Discussion, and Reflective Writing",
+    "chunk": 137
+  },
+  {
+    "file": "138_Role_Descriptions_and_Models.md",
+    "title": "Role Descriptions and Models",
+    "chunk": 138
+  },
+  {
+    "file": "139_System_Characteristics,_System_States,_Characteristic_Indicator.md",
+    "title": "System Characteristics, System States, Characteristic Indicator",
+    "chunk": 139
+  },
+  {
+    "file": "140_System_Descriptions_and_Systems_Language.md",
+    "title": "System Descriptions and Systems Language",
+    "chunk": 140
+  },
+  {
+    "file": "141_System_Documentation.md",
+    "title": "System Documentation",
+    "chunk": 141
+  },
+  {
+    "file": "142_What_Is_a_System_Interface.md",
+    "title": "What Is a System Interface?",
+    "chunk": 142
+  },
+  {
+    "file": "143_Complete_the_Modeling_Exercise__4.1._Concepts.md",
+    "title": "Complete the Modeling Exercise: 4.1. Concepts",
+    "chunk": 143
+  },
+  {
+    "file": "144_Complete_the_Modeling_Exercise__4.2._Five_Main_Types_of_Systems.md",
+    "title": "Complete the Modeling Exercise: 4.2. Five Main Types of Systems",
+    "chunk": 144
+  },
+  {
+    "file": "145_Complete_the_Modeling_Exercise__4.3._Identifying_the_Type_of_System_of_Interest_.md",
+    "title": "Complete the Modeling Exercise: 4.3. Identifying the Type of System of Interest from Descriptions",
+    "chunk": 145
+  },
+  {
+    "file": "146_Complete_the_Modeling_Exercise__4.4._System_of_Interest_and_Its_Supersystem.md",
+    "title": "Complete the Modeling Exercise: 4.4. System of Interest and Its Supersystem",
+    "chunk": 146
+  },
+  {
+    "file": "147_Complete_the_Modeling_Exercise__4.5._System_of_Interest_and_\\.md",
+    "title": "Complete the Modeling Exercise: 4.5. System of Interest and \\",
+    "chunk": 147
+  },
+  {
+    "file": "148_Complete_the_Modeling_Exercise__4.6._Services.md",
+    "title": "Complete the Modeling Exercise: 4.6. Services",
+    "chunk": 148
+  },
+  {
+    "file": "149_Conclusions_of_the_Section_and_Main_Concepts.md",
+    "title": "Conclusions of the Section and Main Concepts",
+    "chunk": 149
+  },
+  {
+    "file": "150_Creation_Systems.md",
+    "title": "Creation Systems",
+    "chunk": 150
+  },
+  {
+    "file": "151_Essence_of_Systems_Thinking.md",
+    "title": "Essence of Systems Thinking",
+    "chunk": 151
+  },
+  {
+    "file": "152_Example__Supersystem_for_Men_and_Women.md",
+    "title": "Example: Supersystem for Men and Women",
+    "chunk": 152
+  },
+  {
+    "file": "153_Function_and_Service.md",
+    "title": "Function and Service",
+    "chunk": 153
+  },
+  {
+    "file": "154_Homework_Assignment.md",
+    "title": "Homework Assignment",
+    "chunk": 154
+  },
+  {
+    "file": "155_Types_of_Systems__System_of_Interest,_Supersystem,_Creation_Systems,_and_Others.md",
+    "title": "Types of Systems: System of Interest, Supersystem, Creation Systems, and Others",
+    "chunk": 155
+  },
+  {
+    "file": "156_Types_of_Systems__System_of_Interest,_Supersystem,_Creation_Systems,_and_Others.md",
+    "title": "Types of Systems: System of Interest, Supersystem, Creation Systems, and Others",
+    "chunk": 156
+  },
+  {
+    "file": "157_Our_System.md",
+    "title": "Our System",
+    "chunk": 157
+  },
+  {
+    "file": "158_Process,_System,_and_System_Behavior.md",
+    "title": "Process, System, and System Behavior",
+    "chunk": 158
+  },
+  {
+    "file": "159_Questions_for_Review,_Discussion,_and_Reflective_Writing.md",
+    "title": "Questions for Review, Discussion, and Reflective Writing",
+    "chunk": 159
+  },
+  {
+    "file": "160_Service_Example_-_\\.md",
+    "title": "Service Example - \\",
+    "chunk": 160
+  },
+  {
+    "file": "161_Supersystem,_System_Levels,_and_Recursion.md",
+    "title": "Supersystem, System Levels, and Recursion",
+    "chunk": 161
+  },
+  {
+    "file": "162_System_of_Interest_and_Collective_Systems_Thinking.md",
+    "title": "System of Interest and Collective Systems Thinking",
+    "chunk": 162
+  },
+  {
+    "file": "163_Three_Systems.md",
+    "title": "Three Systems",
+    "chunk": 163
+  },
+  {
+    "file": "164_Types_of_Systems.md",
+    "title": "Types of Systems",
+    "chunk": 164
+  },
+  {
+    "file": "165_About_Communication__Form_vs._Content.md",
+    "title": "About Communication: Form vs. Content",
+    "chunk": 165
+  },
+  {
+    "file": "166_Classic_Systems_Approach_1.0.md",
+    "title": "Classic Systems Approach 1.0",
+    "chunk": 166
+  },
+  {
+    "file": "167_Complete_the_Modeling_Exercise__1.1_Concepts.md",
+    "title": "Complete the Modeling Exercise: 1.1 Concepts",
+    "chunk": 167
+  },
+  {
+    "file": "168_Complete_the_Modeling_Exercise__1.2._Discipline_(Theory,_Model).md",
+    "title": "Complete the Modeling Exercise: 1.2. Discipline (Theory, Model)",
+    "chunk": 168
+  },
+  {
+    "file": "169_Complete_the_Modeling_Exercise__1.3._Mastery.md",
+    "title": "Complete the Modeling Exercise: 1.3. Mastery",
+    "chunk": 169
+  },
+  {
+    "file": "170_Complete_the_Modeling_Exercise__1.4._System_Characteristics.md",
+    "title": "Complete the Modeling Exercise: 1.4. System Characteristics",
+    "chunk": 170
+  },
+  {
+    "file": "171_Complete_the_Modeling_Exercise__1.5._System_Function.md",
+    "title": "Complete the Modeling Exercise: 1.5. System Function",
+    "chunk": 171
+  },
+  {
+    "file": "172_Complete_the_Modeling_Exercise__1.6._Classic_System_Properties.md",
+    "title": "Complete the Modeling Exercise: 1.6. Classic System Properties",
+    "chunk": 172
+  },
+  {
+    "file": "173_Complete_the_Modeling_Exercise__1.7._Form_and_Content.md",
+    "title": "Complete the Modeling Exercise: 1.7. Form and Content",
+    "chunk": 173
+  },
+  {
+    "file": "174_Complete_the_Modeling_Exercise__1.8._Grounding_Abstract_Texts.md",
+    "title": "Complete the Modeling Exercise: 1.8. Grounding Abstract Texts",
+    "chunk": 174
+  },
+  {
+    "file": "175_Complexity.md",
+    "title": "Complexity",
+    "chunk": 175
+  },
+  {
+    "file": "176_Conclusions_of_the_Section_and_Main_Concepts.md",
+    "title": "Conclusions of the Section and Main Concepts",
+    "chunk": 176
+  },
+  {
+    "file": "177_Homework_Assignment.md",
+    "title": "Homework Assignment",
+    "chunk": 177
+  },
+  {
+    "file": "178_What_Is_Systems_Thinking,_and_Why_Does_It_Matter_in_the_Modern_World.md",
+    "title": "What Is Systems Thinking, and Why Does It Matter in the Modern World?",
+    "chunk": 178
+  },
+  {
+    "file": "179_What_Is_Systems_Thinking,_and_Why_Does_It_Matter_in_the_Modern_World_.md",
+    "title": "What Is Systems Thinking, and Why Does It Matter in the Modern World?",
+    "chunk": 179
+  },
+  {
+    "file": "180_Intellect_Stack_and_Self-Development_Stack.md",
+    "title": "Intellect Stack and Self-Development Stack",
+    "chunk": 180
+  },
+  {
+    "file": "181_Key_Concepts_of_Systems_Thinking.md",
+    "title": "Key Concepts of Systems Thinking",
+    "chunk": 181
+  },
+  {
+    "file": "182_Questions_for_Review,_Discussion,_and_Reflective_Writing.md",
+    "title": "Questions for Review, Discussion, and Reflective Writing",
+    "chunk": 182
+  },
+  {
+    "file": "183_System_Function.md",
+    "title": "System Function",
+    "chunk": 183
+  },
+  {
+    "file": "184_Systems_Approach_2.0.md",
+    "title": "Systems Approach 2.0",
+    "chunk": 184
+  },
+  {
+    "file": "185_Systems_Thinking_vs._Being_Systematic.md",
+    "title": "Systems Thinking vs. Being Systematic",
+    "chunk": 185
+  },
+  {
+    "file": "186_What_Does_It_Mean_to_Apply_Systems_Thinking.md",
+    "title": "What Does It Mean to Apply Systems Thinking?",
+    "chunk": 186
+  },
+  {
+    "file": "187_What_Is_Systems_Thinking.md",
+    "title": "What Is Systems Thinking?",
+    "chunk": 187
+  },
+  {
+    "file": "188_What_to_Learn_and_Why_in_the_Modern_World.md",
+    "title": "What to Learn and Why in the Modern World",
+    "chunk": 188
+  },
+  {
+    "file": "189_What_to_Learn_and_Why_in_the_Modern_World.md",
+    "title": "What to Learn and Why in the Modern World",
+    "chunk": 189
+  }
+]

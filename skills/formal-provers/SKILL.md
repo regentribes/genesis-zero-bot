@@ -1,16 +1,17 @@
 ---
-name: formal-methods
+name: formal-provers
 description: Formal verification with Lean 4, Coq, and Z3 SMT solver
 metadata:
   openclaw:
-    emoji: 🔬
-    tags: [formal-verification, lean4, coq, z3, proofs]
-    source: https://github.com/Prismer-AI/Prismer
-    homepage: https://github.com/Prismer-AI/Prismer
+    source: "https://github.com/drmonroy/formal-provers"
     requires:
-      bins: [lean, coqc, z3]
-      os: [darwin, linux]
-      runtime: node
+      bins:
+        - "lean"
+        - "coq"
+        - "z3"
+      os:
+        - "linux"
+        - "darwin"
 ---
 
 # formal-methods

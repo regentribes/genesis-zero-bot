@@ -1,11 +1,28 @@
 ---
-name: community-alchemy
-version: 1.0.0
-emoji: 🔺
+name: alchemy
 description: |
   Guide a RegenTribes community vision holder through the complete Community Alchemy Playbook — all 11 areas — helping them articulate and document their regenerative neighborhood vision section by section. Persists progress per user so sessions can span days, weeks, or months. Resumes where the user left off. Sends a weekly nudge to users with incomplete guides. Triggers on: "community alchemy", "help me plan my community", "guide me through the playbook", "community vision", "regenerative neighborhood", "/alchemy", "resume my guide", "continue alchemy", or any request to start or continue a community planning session.
-metadata: {"openclaw":{"requires":{"bins":["curl","jq","bash","date","openssl"],"env":["TELEGRAM_BOT_TOKEN","GOOGLE_SERVICE_ACCOUNT_KEY","GENESIS_DRIVE_FOLDER_ID"],"os":["linux","darwin"]},"primaryEnv":"TELEGRAM_BOT_TOKEN","network":["api.telegram.org","www.googleapis.com","oauth2.googleapis.com"]}}
-user-invocable: true
+metadata:
+    openclaw:
+      requires:
+        bins:
+          - "curl"
+          - "jq"
+          - "bash"
+          - "date"
+          - "openssl"
+        env:
+          - "TELEGRAM_BOT_TOKEN"
+          - "GOOGLE_SERVICE_ACCOUNT_KEY"
+          - "GENESIS_DRIVE_FOLDER_ID"
+        os:
+          - "linux"
+          - "darwin"
+      primaryEnv: "TELEGRAM_BOT_TOKEN"
+      network:
+        - "api.telegram.org"
+        - "www.googleapis.com"
+        - "oauth2.googleapis.com"
 ---
 
 # Community Alchemy

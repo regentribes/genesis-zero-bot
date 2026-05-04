@@ -1,3 +1,8 @@
+---
+name: semantic-graph
+description: Backend pipeline for transforming documents into a typed knowledge graph in SurrealDB. Uses Kreuzberg for text extraction and Grammar Triangle for semantic annotation. For knowledge graph interactions, use genesis-brain instead.
+---
+
 # SKILL: Semantic Knowledge Graph — Backend Pipeline
 
 **⚠️ This is a backend pipeline, not a user-facing skill. Do NOT invoke directly.**

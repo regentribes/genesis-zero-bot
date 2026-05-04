@@ -16,8 +16,6 @@ metadata: |
     "credentials": "Reads Telegram bot token from OpenClaw config at channels.telegram.botToken.",
     "network": ["api.telegram.org"]
   }}
-model-preference: MiniMax-M2.1
-subagent: true
 allowed-tools: exec, Read
 ---
 

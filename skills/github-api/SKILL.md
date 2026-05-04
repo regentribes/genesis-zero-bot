@@ -1,5 +1,5 @@
 ---
-name: github
+name: github-api
 description: |
   GitHub API integration with managed OAuth. Access repositories, issues, pull requests, commits, branches, and users.
   Use this skill when users want to interact with GitHub repositories, manage issues and PRs, search code, or automate workflows.
@@ -7,9 +7,7 @@ description: |
 compatibility: Requires network access and valid Maton API key
 metadata:
   author: maton
-  version: "1.0"
   clawdbot:
-    emoji: 🧠
     requires:
       env:
         - MATON_API_KEY

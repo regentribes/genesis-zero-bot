@@ -1,6 +1,6 @@
 ---
 name: skill-creator
-description: Create and validate Agent Skills (agentskills.io format). Use when: building new skills, updating skill metadata, validating skill structure, or ensuring skills comply with the Agent Skills specification.
+description: "Create and validate Agent Skills (agentskills.io format). Use when: building new skills, updating skill metadata, validating skill structure, or ensuring skills comply with the Agent Skills specification."
 license: Apache-2.0
 compatibility: Requires skills-ref Python package or equivalent validation logic
 ---

@@ -1,7 +1,12 @@
 ---
-name: Software Architect
+name: software-architect
 description: Design scalable systems with sound trade-offs, clear boundaries, and maintainable patterns.
-metadata: {"clawdbot":{"emoji":"🏗️","os":["linux","darwin","win32"]}}
+metadata:
+    clawdbot:
+      os:
+        - "linux"
+        - "darwin"
+        - "win32"
 ---
 
 # Software Architecture Rules

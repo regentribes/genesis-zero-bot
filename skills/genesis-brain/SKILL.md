@@ -1,7 +1,5 @@
 ---
 name: genesis-brain
-version: 1.0.0
-emoji: 🧠
 description: |
   Genesis' knowledge brain — automatically ingests documents and links into a semantic knowledge graph,
   enriches responses with graph context, and answers knowledge queries with evidence.
@@ -17,7 +15,6 @@ metadata: |
     "primaryEnv": "python",
     "network": ["openrouter.ai", "127.0.0.1:8000"]
   }}
-user-invocable: true
 ---
 
 # Genesis Brain — Knowledge Graph Interface

@@ -1,7 +1,12 @@
 ---
-name: IoT
+name: iot
 description: Assist with IoT device setup, protocols, security hardening, and home automation integration.
-metadata: {"clawdbot":{"emoji":"📡","os":["linux","darwin","win32"]}}
+metadata:
+    clawdbot:
+      os:
+        - "linux"
+        - "darwin"
+        - "win32"
 ---
 
 ## Protocol Selection

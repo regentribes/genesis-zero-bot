@@ -1,11 +1,11 @@
 ---
 name: telegram-history
 description: Versioned Telegram conversation history manager with JSON query capabilities
-homepage: https://github.com/regentribes/genesis-zero-bot
 metadata:
-  emoji: 📜
   requires:
-    bins: [jq, python3]
+    bins:
+      - jq
+      - python3
   media_dir: ./media/inbound
 ---
 

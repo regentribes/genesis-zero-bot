@@ -1,18 +1,27 @@
 ---
 name: ossinsight-api
-slug: ossinsight-api
-version: 1.0.0
 description: Query the OSSInsight Public API for GitHub repository analytics, trends, rankings, stargazers, issue creators, and pull request metrics. Use when analyzing open source project health, comparing repositories, tracking trends, or researching the OSS ecosystem.
 metadata:
   openclaw:
-    emoji: 🔍
-    tags: [github, oss, analytics, trends, repositories, stars, issues, prs, open-source]
-    source: https://github.com/pingcap/ossinsight
-    homepage: https://ossinsight.io
-    license: Apache-2.0
+    tags:
+      - "github"
+      - "oss"
+      - "analytics"
+      - "trends"
+      - "repositories"
+      - "stars"
+      - "issues"
+      - "prs"
+      - "open-source"
+    source: "https://github.com/pingcap/ossinsight"
+    license: "Apache-2.0"
     requires:
-      bins: [curl, jq]
-      os: [linux, darwin]
+      bins:
+        - "curl"
+        - "jq"
+      os:
+        - "linux"
+        - "darwin"
 ---
 
 # OSSInsight API Skill

@@ -1,11 +1,13 @@
 ---
 name: regen-viz
 description: 3D Force Graph visualization generator with validation and testing
-homepage: https://github.com/genesis-zero-bot/regen-viz
 metadata:
-  emoji: 🌐
   requires:
-    bins: [git, curl, jq, python3]
+    bins:
+      - git
+      - curl
+      - jq
+      - python3
   env:
     - REGEN_VIZ_REPO (GitHub repo URL)
     - REGEN_VIZ_BRANCH (default: gh-pages)

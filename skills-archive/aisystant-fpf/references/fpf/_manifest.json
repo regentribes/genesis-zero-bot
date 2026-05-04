@@ -1,0 +1,1077 @@
+[
+  {
+    "file": "01_section_1.md",
+    "title": "section_1",
+    "chunk": 1
+  },
+  {
+    "file": "02_What_this_specification_is_(and_how_to_use_it).md",
+    "title": "What this specification is (and how to use it)",
+    "chunk": 2
+  },
+  {
+    "file": "03_Creativity_in_Open-Ended_Evolution_and_Assurance_.md",
+    "title": "Creativity in Open-Ended Evolution and Assurance*",
+    "chunk": 3
+  },
+  {
+    "file": "04_Navigating_Uncertainty__Building_Closed_Worlds_within_an_Open_World__(non-normat.md",
+    "title": "Navigating Uncertainty: Building Closed Worlds within an Open World *(non-normative)*",
+    "chunk": 4
+  },
+  {
+    "file": "05_FPF_as_an_Evolutionary_Architecture_for_Thought.md",
+    "title": "FPF as an Evolutionary Architecture for Thought",
+    "chunk": 5
+  },
+  {
+    "file": "06_Architectural_Characteristic_of_Thought.md",
+    "title": "Architectural Characteristic of Thought",
+    "chunk": 6
+  },
+  {
+    "file": "07_Beyond_Cognitive_Biases__FPF_as_a_Generative_Architecture_for_Thought.md",
+    "title": "Beyond Cognitive Biases: FPF as a Generative Architecture for Thought",
+    "chunk": 7
+  },
+  {
+    "file": "08_Thinking_Through_Writing__The_FPF_Discipline_of_Conceptual_Work.md",
+    "title": "Thinking Through Writing: The FPF Discipline of Conceptual Work",
+    "chunk": 8
+  },
+  {
+    "file": "09_Descriptive_Ontologies_vs._A_Thinking-Oriented_Architecture.md",
+    "title": "Descriptive Ontologies vs. A Thinking-Oriented Architecture",
+    "chunk": 9
+  },
+  {
+    "file": "10_The__Bitter_Lesson__trajectory_\u2014_compute,_data,_and_freedom_over_hand\u2011tuned_rule.md",
+    "title": "The \"Bitter Lesson\" trajectory \u2014 compute, data, and freedom over hand\u2011tuned rules (FPF stance)",
+    "chunk": 10
+  },
+  {
+    "file": "11_From_Flat_Documents_to_High-Dimensional_Truth__The_Multi-View_Architecture.md",
+    "title": "From Flat Documents to High-Dimensional Truth: The Multi-View Architecture",
+    "chunk": 11
+  },
+  {
+    "file": "12_Boundary_Statements__Where_Language_Becomes_a_System_Boundary.md",
+    "title": "Boundary Statements: Where Language Becomes a System Boundary",
+    "chunk": 12
+  },
+  {
+    "file": "13_Raising_Semantic_Precision__From_Triggers_to_Math\u2011Backed_Ontics.md",
+    "title": "Raising Semantic Precision: From Triggers to Math\u2011Backed Ontics",
+    "chunk": 13
+  },
+  {
+    "file": "14_The_\u201cbig_storylines\u201d_unique_to_FPF_(load\u2011bearing_commitments).md",
+    "title": "The \u201cbig storylines\u201d unique to FPF (load\u2011bearing commitments)",
+    "chunk": 14
+  },
+  {
+    "file": "15_Transdisciplinarity_as_a_Meta\u2011Theory_of_Thinking.md",
+    "title": "Transdisciplinarity as a Meta\u2011Theory of Thinking",
+    "chunk": 15
+  },
+  {
+    "file": "16_FPF_as_a_Culinary_Architecture_for_Collective_Thought__Why_We_Formalize_\u201cObvious.md",
+    "title": "FPF as a Culinary Architecture for Collective Thought: Why We Formalize \u201cObvious\u201d Ideas",
+    "chunk": 16
+  },
+  {
+    "file": "17_Intellect_Stack.md",
+    "title": "Intellect Stack",
+    "chunk": 17
+  },
+  {
+    "file": "18_Purpose,_Scope,_and_Explicit_Non\u2011Goals.md",
+    "title": "Purpose, Scope, and Explicit Non\u2011Goals",
+    "chunk": 18
+  },
+  {
+    "file": "19_A.0_-_Onboarding_Glossary_(NQD_&_E_E\u2011LOG).md",
+    "title": "A.0 - Onboarding Glossary (NQD & E/E\u2011LOG)",
+    "chunk": 19
+  },
+  {
+    "file": "20_A.1_-_Holonic_Foundation__Entity_\u2192_Holon.md",
+    "title": "A.1 - Holonic Foundation: Entity \u2192 Holon",
+    "chunk": 20
+  },
+  {
+    "file": "21_A.1.1_-_`U.BoundedContext`__The_Semantic_Frame.md",
+    "title": "A.1.1 - `U.BoundedContext`: The Semantic Frame",
+    "chunk": 21
+  },
+  {
+    "file": "22_A.2_-_Role_Taxonomy.md",
+    "title": "A.2 - Role Taxonomy",
+    "chunk": 22
+  },
+  {
+    "file": "23_A.2.1_-_U.RoleAssignment__Contextual_Role_Assignment.md",
+    "title": "A.2.1 - U.RoleAssignment: Contextual Role Assignment",
+    "chunk": 23
+  },
+  {
+    "file": "24_A.2.2_\u2014_U.Capability.md",
+    "title": "A.2.2 \u2014 U.Capability",
+    "chunk": 24
+  },
+  {
+    "file": "25_A.2.3_-_`U.PromiseContent`_(Promise_Content).md",
+    "title": "A.2.3 - `U.PromiseContent` (Promise Content)",
+    "chunk": 25
+  },
+  {
+    "file": "26_A.2.4_-_`U.EvidenceRole`.md",
+    "title": "A.2.4 - `U.EvidenceRole`",
+    "chunk": 26
+  },
+  {
+    "file": "27_A.2.5_-_U.RoleStateGraph__The_Named_State_Space_of_a_Role.md",
+    "title": "A.2.5 - U.RoleStateGraph: The Named State Space of a Role",
+    "chunk": 27
+  },
+  {
+    "file": "28_A.2.6_-_Unified_Scope_Mechanism_(USM)__Context_Slices_&_Scopes.md",
+    "title": "A.2.6 - Unified Scope Mechanism (USM): Context Slices & Scopes",
+    "chunk": 28
+  },
+  {
+    "file": "29_A.2.7_-_U.RoleAlgebra__In\u2011Context_Role_Relations.md",
+    "title": "A.2.7 - U.RoleAlgebra: In\u2011Context Role Relations",
+    "chunk": 29
+  },
+  {
+    "file": "30_A.2.8_-_`U.Commitment`_(Deontic_Commitment_Object).md",
+    "title": "A.2.8 - `U.Commitment` (Deontic Commitment Object)",
+    "chunk": 30
+  },
+  {
+    "file": "31_A.2.9_\u2014_`U.SpeechAct`_(Communicative_Work_Object).md",
+    "title": "A.2.9 \u2014 `U.SpeechAct` (Communicative Work Object)",
+    "chunk": 31
+  },
+  {
+    "file": "32_A.3_-_Transformer_Constitution_(Quartet).md",
+    "title": "A.3 - Transformer Constitution (Quartet)",
+    "chunk": 32
+  },
+  {
+    "file": "33_A.3.1_-_U.Method.md",
+    "title": "A.3.1 - U.Method",
+    "chunk": 33
+  },
+  {
+    "file": "34_A.3.2_-_U.MethodDescription.md",
+    "title": "A.3.2 - U.MethodDescription",
+    "chunk": 34
+  },
+  {
+    "file": "35_A.3.3_-_`U.Dynamics`.md",
+    "title": "A.3.3 - `U.Dynamics`",
+    "chunk": 35
+  },
+  {
+    "file": "36_A.4_-_Temporal_Duality_&_Open\u2011Ended_Evolution_Principle.md",
+    "title": "A.4 - Temporal Duality & Open\u2011Ended Evolution Principle",
+    "chunk": 36
+  },
+  {
+    "file": "37_A.5_-_Open\u2011Ended_Kernel_&_Extension_Layering.md",
+    "title": "A.5 - Open\u2011Ended Kernel & Extension Layering",
+    "chunk": 37
+  },
+  {
+    "file": "38_A.6_-_Signature_Stack_&_Boundary_Discipline.md",
+    "title": "A.6 - Signature Stack & Boundary Discipline",
+    "chunk": 38
+  },
+  {
+    "file": "39_A.6.B_\u2014_Boundary_Norm_Square_(Laws___Admissibility___Deontics___Work\u2011Effects).md",
+    "title": "A.6.B \u2014 Boundary Norm Square (Laws / Admissibility / Deontics / Work\u2011Effects)",
+    "chunk": 39
+  },
+  {
+    "file": "40_A.6.C_\u2014_Contract_Unpacking_for_Boundaries.md",
+    "title": "A.6.C \u2014 Contract Unpacking for Boundaries",
+    "chunk": 40
+  },
+  {
+    "file": "41_A.6.0_-_U.Signature_-_Universal,_law\u2011governed_declaration_for_a_SubjectKind_on_a.md",
+    "title": "A.6.0 - U.Signature - Universal, law\u2011governed declaration for a SubjectKind on a BaseType",
+    "chunk": 41
+  },
+  {
+    "file": "42_A.6.1_-_U.Mechanism_-_Law\u2011governed_application_to_a_SubjectKind_over_a_BaseType.md",
+    "title": "A.6.1 - U.Mechanism - Law\u2011governed application to a SubjectKind over a BaseType",
+    "chunk": 42
+  },
+  {
+    "file": "43_A.6.2_-_`U.EffectFreeEpistemicMorphing`_\u2014_Effect\u2011free_morphisms_of_epistemes.md",
+    "title": "A.6.2 - `U.EffectFreeEpistemicMorphing` \u2014 Effect\u2011free morphisms of epistemes",
+    "chunk": 43
+  },
+  {
+    "file": "44_A.6.3_-_`U.EpistemicViewing`_\u2014_describedEntity\u2011preserving_morphism.md",
+    "title": "A.6.3 - `U.EpistemicViewing` \u2014 describedEntity\u2011preserving morphism",
+    "chunk": 44
+  },
+  {
+    "file": "45_A.6.3.CR_-_ConservativeRetextualization_\u2014_same-described-entity_textual_re-expre.md",
+    "title": "A.6.3.CR - ConservativeRetextualization \u2014 same-described-entity textual re-expression",
+    "chunk": 45
+  },
+  {
+    "file": "46_A.6.3.RT_-_RepresentationTransduction_\u2014_same-described-entity_representation-sch.md",
+    "title": "A.6.3.RT - RepresentationTransduction \u2014 same-described-entity representation-scheme transition",
+    "chunk": 46
+  },
+  {
+    "file": "47_A.6.4_-_`U.EpistemicRetargeting`_\u2014_describedEntity\u2011retargeting_morphism.md",
+    "title": "A.6.4 - `U.EpistemicRetargeting` \u2014 describedEntity\u2011retargeting morphism",
+    "chunk": 47
+  },
+  {
+    "file": "48_A.6.P_\u2014_U.RelationalPrecisionRestorationSuite_\u2014_Relational_Precision_Restoration.md",
+    "title": "A.6.P \u2014 U.RelationalPrecisionRestorationSuite \u2014 Relational Precision Restoration (RPR) \u2014 Kind\u2011Explicit Qualified Relation Discipline",
+    "chunk": 48
+  },
+  {
+    "file": "49_A.6.Q_-_`U.QualityTermPrecisionRestoration`_\u2014_Quality_Term_Precision_Restoration.md",
+    "title": "A.6.Q - `U.QualityTermPrecisionRestoration` \u2014 Quality Term Precision Restoration (Q-TERM)",
+    "chunk": 49
+  },
+  {
+    "file": "50_A.6.A_-_`U.ActionInvitationPrecisionRestoration`_-_Affordance___Action-Invitatio.md",
+    "title": "A.6.A - `U.ActionInvitationPrecisionRestoration` - Affordance / Action-Invitation Precision Restoration (ACT-INV)",
+    "chunk": 50
+  },
+  {
+    "file": "51_A.6.5_-_U.RelationSlotDiscipline_-_SlotKind___ValueKind___RefKind_discipline_for.md",
+    "title": "A.6.5 -  U.RelationSlotDiscipline - SlotKind / ValueKind / RefKind discipline for n\u2011ary relations (with slot\u2011operation lexicon)",
+    "chunk": 51
+  },
+  {
+    "file": "52_A.6.6_-_U.BaseDeclarationDiscipline_-_Kind-explicit,_scoped,_witnessed_base_decl.md",
+    "title": "A.6.6 - U.BaseDeclarationDiscipline - Kind-explicit, scoped, witnessed base declaration discipline (with base-change lexicon)",
+    "chunk": 52
+  },
+  {
+    "file": "53_A.6.7_-_`MechSuiteDescription`_\u2014_Description_of_a_set_of_distinct_mechanisms.md",
+    "title": "A.6.7 - `MechSuiteDescription` \u2014 Description of a set of distinct mechanisms",
+    "chunk": 53
+  },
+  {
+    "file": "54_A.6.8_-_Service_Polysemy_Unpacking_(RPR\u2011SERV).md",
+    "title": "A.6.8 - Service Polysemy Unpacking (RPR\u2011SERV)",
+    "chunk": 54
+  },
+  {
+    "file": "55_A.6.9_-_U.CrossContextSamenessDisambiguation_-_Repairing_cross-context_\u201csame___e.md",
+    "title": "A.6.9 - U.CrossContextSamenessDisambiguation - Repairing cross-context \u201csame / equivalent / align\u201d via explicit Bridges (RPR\u2011XCTX)",
+    "chunk": 55
+  },
+  {
+    "file": "56_A.6.S_-_U.SignatureEngineeringPair_-_Signature_engineering_via_a_ConstructorSign.md",
+    "title": "A.6.S - U.SignatureEngineeringPair - Signature engineering via a ConstructorSignature and a TargetSignature",
+    "chunk": 56
+  },
+  {
+    "file": "57_A.6.H_-_Wholeness_Language_Unpacking_\u2014_RPR-WHOLE.md",
+    "title": "A.6.H - Wholeness Language Unpacking \u2014 RPR-WHOLE",
+    "chunk": 57
+  },
+  {
+    "file": "58_A.7_-_Strict_Distinction_(Clarity_Lattice).md",
+    "title": "A.7 - Strict Distinction (Clarity Lattice)",
+    "chunk": 58
+  },
+  {
+    "file": "59_A.8_-_Universal_Core_Principle_(C\u20111).md",
+    "title": "A.8 - Universal Core Principle (C\u20111)",
+    "chunk": 59
+  },
+  {
+    "file": "60_A.9_-_Cross\u2011Scale_Consistency_(C\u20113).md",
+    "title": "A.9 - Cross\u2011Scale Consistency (C\u20113)",
+    "chunk": 60
+  },
+  {
+    "file": "61_A.10_-_Evidence_Graph_Referring_(C\u20114).md",
+    "title": "A.10 - Evidence Graph Referring (C\u20114)",
+    "chunk": 61
+  },
+  {
+    "file": "62_A.11_-_Ontological_Parsimony_(C\u20115).md",
+    "title": "A.11 - Ontological Parsimony (C\u20115)",
+    "chunk": 62
+  },
+  {
+    "file": "63_A.12_-_External_Transformer_&_Reflexive_Split.md",
+    "title": "A.12 - External Transformer & Reflexive Split",
+    "chunk": 63
+  },
+  {
+    "file": "64_A.13_-_The_Agential_Role_&_Agency_Spectrum.md",
+    "title": "A.13 - The Agential Role & Agency Spectrum",
+    "chunk": 64
+  },
+  {
+    "file": "65_A.14_-_Advanced_Mereology__Components,_Portions,_Aspects_&_Phases.md",
+    "title": "A.14 - Advanced Mereology: Components, Portions, Aspects & Phases",
+    "chunk": 65
+  },
+  {
+    "file": "66_A.15_-_Role\u2013Method\u2013Work_Alignment_(Contextual_Enactment).md",
+    "title": "A.15 - Role\u2013Method\u2013Work Alignment (Contextual Enactment)",
+    "chunk": 66
+  },
+  {
+    "file": "67_A.15.1_-_U.Work.md",
+    "title": "A.15.1 - U.Work",
+    "chunk": 67
+  },
+  {
+    "file": "68_A.15.2_-_U.WorkPlan.md",
+    "title": "A.15.2 - U.WorkPlan",
+    "chunk": 68
+  },
+  {
+    "file": "69_A.15.3_-_SlotFillingsPlanItem.md",
+    "title": "A.15.3 - SlotFillingsPlanItem",
+    "chunk": 69
+  },
+  {
+    "file": "70_A.16_-_Language-State_Transduction_Coordination.md",
+    "title": "A.16 - Language-State Transduction Coordination",
+    "chunk": 70
+  },
+  {
+    "file": "71_A.16.0_-_`U.LanguageStateTransductionTrajectory`_-_Optional_trajectory-account_n.md",
+    "title": "A.16.0 - `U.LanguageStateTransductionTrajectory` - Optional trajectory-account normal form over the language-state `U.CharacteristicSpace`",
+    "chunk": 71
+  },
+  {
+    "file": "72_A.16.1_-_`U.PreArticulationCuePack`.md",
+    "title": "A.16.1 - `U.PreArticulationCuePack`",
+    "chunk": 72
+  },
+  {
+    "file": "73_A.16.2_-_Reopen___SketchBackoff___Respecify.md",
+    "title": "A.16.2 - Reopen / SketchBackoff / Respecify",
+    "chunk": 73
+  },
+  {
+    "file": "74_A.17_-_Canonical_\u201cCharacteristic\u201d_(A.CHR\u2011NORM).md",
+    "title": "A.17 - Canonical \u201cCharacteristic\u201d (A.CHR\u2011NORM)",
+    "chunk": 74
+  },
+  {
+    "file": "75_A.18_-_Minimal_CSLC_in_Kernel_(Characteristic_\u27f7_Scale_\u27f7_Level_\u27f7_Coordinate)_(A.C.md",
+    "title": "A.18 - Minimal CSLC in Kernel (Characteristic \u27f7 Scale \u27f7 Level \u27f7 Coordinate) (A.CSLC\u2011KERNEL)",
+    "chunk": 75
+  },
+  {
+    "file": "76_A.19_-_CharacteristicSpace_&_Dynamics_Hook_(A.CHR\u2011SPACE).md",
+    "title": "A.19 - CharacteristicSpace & Dynamics Hook (A.CHR\u2011SPACE)",
+    "chunk": 76
+  },
+  {
+    "file": "77_A.19.CN_-_CN\u2011frame_(comparability_&_normalization).md",
+    "title": "A.19.CN - CN\u2011frame (comparability & normalization)",
+    "chunk": 77
+  },
+  {
+    "file": "78_A.19.CHR_-_CHRMechanismSuite.md",
+    "title": "A.19.CHR - CHRMechanismSuite",
+    "chunk": 78
+  },
+  {
+    "file": "79_A.19.UNM_-_Unified_Normalization_Mechanism_(UNM).md",
+    "title": "A.19.UNM - Unified Normalization Mechanism (UNM)",
+    "chunk": 79
+  },
+  {
+    "file": "80_A.19.UINDM_-_Unified_Indicatorization_Mechanism_(UINDM).md",
+    "title": "A.19.UINDM - Unified Indicatorization Mechanism (UINDM)",
+    "chunk": 80
+  },
+  {
+    "file": "81_A.19.USCM_-_Unified_Scoring_Mechanism,_USCM.md",
+    "title": "A.19.USCM - Unified Scoring Mechanism, USCM",
+    "chunk": 81
+  },
+  {
+    "file": "82_A.19.ULSAM_-_Unified_Lawful_Scale_Aggregation_Mechanism_(ULSAM).md",
+    "title": "A.19.ULSAM - Unified Lawful Scale Aggregation Mechanism (ULSAM)",
+    "chunk": 82
+  },
+  {
+    "file": "83_A.19.CPM_-_Unified_Comparison_Mechanism_(CPM).md",
+    "title": "A.19.CPM - Unified Comparison Mechanism (CPM)",
+    "chunk": 83
+  },
+  {
+    "file": "84_A.19.SelectorMechanism_-_Unified_Selection_Kernel,_SelectorMechanism.md",
+    "title": "A.19.SelectorMechanism - Unified Selection Kernel, SelectorMechanism",
+    "chunk": 84
+  },
+  {
+    "file": "85_A.20_-_U.Flow.ConstraintValidity_\u2014_Eulerian.md",
+    "title": "A.20 - U.Flow.ConstraintValidity \u2014 Eulerian",
+    "chunk": 85
+  },
+  {
+    "file": "86_A.21_\u2014_GateProfilization__`OperationalGate(profile)`_(GateFit_core).md",
+    "title": "A.21 \u2014 GateProfilization: `OperationalGate(profile)` (GateFit core)",
+    "chunk": 86
+  },
+  {
+    "file": "87_B.1_-_Universal_Algebra_of_Aggregation_(\u0393).md",
+    "title": "B.1 - Universal Algebra of Aggregation (\u0393)",
+    "chunk": 87
+  },
+  {
+    "file": "88_B.1.1_-_Dependency_Graph_&_Proofs.md",
+    "title": "B.1.1 - Dependency Graph & Proofs",
+    "chunk": 88
+  },
+  {
+    "file": "89_B.1.2_-_System\u2011specific_Aggregation_\u0393\\_sys.md",
+    "title": "B.1.2 - System\u2011specific Aggregation \u0393\\_sys",
+    "chunk": 89
+  },
+  {
+    "file": "90_B.1.3_-_\u0393_epist_-_Knowledge\u2011Specific_Aggregation.md",
+    "title": "B.1.3 - \u0393_epist - Knowledge\u2011Specific Aggregation",
+    "chunk": 90
+  },
+  {
+    "file": "91_B.1.4_-_Contextual_&_Temporal_Aggregation_(\u0393\\_ctx_&_\u0393\\_time).md",
+    "title": "B.1.4 - Contextual & Temporal Aggregation (\u0393\\_ctx & \u0393\\_time)",
+    "chunk": 91
+  },
+  {
+    "file": "92_B.1.5_-_\u0393_method_\u2014_Order\u2011Sensitive_Method_Composition_&_Work_Enactment.md",
+    "title": "B.1.5 - \u0393_method \u2014 Order\u2011Sensitive Method Composition & Work Enactment",
+    "chunk": 92
+  },
+  {
+    "file": "93_B.1.6_-_\u0393\\_work_\u2014_Work_as_Spent_Resource.md",
+    "title": "B.1.6 - \u0393\\_work \u2014 Work as Spent Resource",
+    "chunk": 93
+  },
+  {
+    "file": "94_B.2_-_Meta\u2011Holon_Transition_(MHT)__Recognizing_Emergence_and_Re\u2011identifying_Whol.md",
+    "title": "B.2 - Meta\u2011Holon Transition (MHT): Recognizing Emergence and Re\u2011identifying Wholes",
+    "chunk": 94
+  },
+  {
+    "file": "95_B.2.2_-_Meta-System_Transition_(MST).md",
+    "title": "B.2.2 - Meta-System Transition (MST)",
+    "chunk": 95
+  },
+  {
+    "file": "96_B.2.3_-_Meta-Epistemic_Transition_(MET).md",
+    "title": "B.2.3 - Meta-Epistemic Transition (MET)",
+    "chunk": 96
+  },
+  {
+    "file": "97_B.2.4_-_Meta-Functional_Transition_(MFT).md",
+    "title": "B.2.4 - Meta-Functional Transition (MFT)",
+    "chunk": 97
+  },
+  {
+    "file": "98_B.2.5_\u2014_Supervisor\u2013Subholon_Feedback_Loop.md",
+    "title": "B.2.5 \u2014 Supervisor\u2013Subholon Feedback Loop",
+    "chunk": 98
+  },
+  {
+    "file": "99_B.3_-_Trust_&_Assurance_Calculus_(F\u2013G\u2013R_with_Congruence).md",
+    "title": "B.3 - Trust & Assurance Calculus (F\u2013G\u2013R with Congruence)",
+    "chunk": 99
+  },
+  {
+    "file": "100_B.3.3_\u2014_Assurance_Subtypes_&_Levels.md",
+    "title": "B.3.3 \u2014 Assurance Subtypes & Levels",
+    "chunk": 100
+  },
+  {
+    "file": "101_B.3.4_-_Evidence_Decay_&_Epistemic_Debt.md",
+    "title": "B.3.4 - Evidence Decay & Epistemic Debt",
+    "chunk": 101
+  },
+  {
+    "file": "102_B.3.5_-_Working-Model_Relations_&_Grounding_(CT2R-LOG).md",
+    "title": "B.3.5 - Working-Model Relations & Grounding (CT2R-LOG)",
+    "chunk": 102
+  },
+  {
+    "file": "103_B.4_-_Canonical_Evolution_Loop.md",
+    "title": "B.4 - Canonical Evolution Loop",
+    "chunk": 103
+  },
+  {
+    "file": "104_B.4.1_-_Observe_-__Notice_-__Stabilize_-__Route.md",
+    "title": "B.4.1 - Observe -> Notice -> Stabilize -> Route",
+    "chunk": 104
+  },
+  {
+    "file": "105_B.5_-_Canonical_Reasoning_Cycle.md",
+    "title": "B.5 - Canonical Reasoning Cycle",
+    "chunk": 105
+  },
+  {
+    "file": "106_B.5.1_-_Explore_\u2192_Shape_\u2192_Evidence_\u2192_Operate.md",
+    "title": "B.5.1 - Explore \u2192 Shape \u2192 Evidence \u2192 Operate",
+    "chunk": 106
+  },
+  {
+    "file": "107_B.5.2_-_Abductive_Loop.md",
+    "title": "B.5.2 - Abductive Loop",
+    "chunk": 107
+  },
+  {
+    "file": "108_B.5.2.0_-_`U.AbductivePrompt`.md",
+    "title": "B.5.2.0 - `U.AbductivePrompt`",
+    "chunk": 108
+  },
+  {
+    "file": "109_B.5.2.1_-_Creative_Abduction_with_NQD.md",
+    "title": "B.5.2.1 - Creative Abduction with NQD",
+    "chunk": 109
+  },
+  {
+    "file": "110_B.5.3_-_Role-Projection_Bridge.md",
+    "title": "B.5.3 - Role-Projection Bridge",
+    "chunk": 110
+  },
+  {
+    "file": "111_C.2_-_Epistemic_holon_composition_(KD-CAL).md",
+    "title": "C.2 - Epistemic holon composition (KD-CAL)",
+    "chunk": 111
+  },
+  {
+    "file": "112_C.2.1_-_U.Episteme_\u2014_Epistemes_and_their_slot_graph.md",
+    "title": "C.2.1 - U.Episteme \u2014 Epistemes and their slot graph",
+    "chunk": 112
+  },
+  {
+    "file": "113_C.2.2_-_Reliability_R_in_the_F\u2013G\u2013R_triad.md",
+    "title": "C.2.2 - Reliability R in the F\u2013G\u2013R triad",
+    "chunk": 113
+  },
+  {
+    "file": "114_C.2.2a_-_`U.LanguageStateSpace`_-_Language-state_chart_over_`U.CharacteristicSpa.md",
+    "title": "C.2.2a - `U.LanguageStateSpace` - Language-state chart over `U.CharacteristicSpace`",
+    "chunk": 114
+  },
+  {
+    "file": "115_C.2.3_-_Unified_Formality_Characteristic_F.md",
+    "title": "C.2.3 - Unified Formality Characteristic F",
+    "chunk": 115
+  },
+  {
+    "file": "116_C.2.LS_-_U.LanguageStateFacetProfile_-_Thin_owner_for_language-state_facets.md",
+    "title": "C.2.LS - U.LanguageStateFacetProfile - Thin owner for language-state facets",
+    "chunk": 116
+  },
+  {
+    "file": "117_C.2.4_-_`U.ArticulationExplicitness`.md",
+    "title": "C.2.4 - `U.ArticulationExplicitness`",
+    "chunk": 117
+  },
+  {
+    "file": "118_C.2.5_-_`U.LanguageStateClosureDegree`.md",
+    "title": "C.2.5 - `U.LanguageStateClosureDegree`",
+    "chunk": 118
+  },
+  {
+    "file": "119_C.2.6_-_`U.LanguageStateAnchoringMode`.md",
+    "title": "C.2.6 - `U.LanguageStateAnchoringMode`",
+    "chunk": 119
+  },
+  {
+    "file": "120_C.2.7_-_`U.LanguageStateRepresentationFactorBundle`.md",
+    "title": "C.2.7 - `U.LanguageStateRepresentationFactorBundle`",
+    "chunk": 120
+  },
+  {
+    "file": "121_C.3_-_Kinds,_Intent_Extent,_and_Typed_Reasoning_(Kind\u2011CAL).md",
+    "title": "C.3 - Kinds, Intent/Extent, and Typed Reasoning (Kind\u2011CAL)",
+    "chunk": 121
+  },
+  {
+    "file": "122_C.3.1_-_U.Kind_&_SubkindOf_(Core).md",
+    "title": "C.3.1 - U.Kind & SubkindOf (Core)",
+    "chunk": 122
+  },
+  {
+    "file": "123_C.3.2_-_KindSignature_(_F)_&_Extension_MemberOf.md",
+    "title": "C.3.2 - KindSignature (+F) & Extension/MemberOf",
+    "chunk": 123
+  },
+  {
+    "file": "124_C.3.3_-_KindBridge_&_CL^k_\u2014_Cross\u2011context_Mapping_of_Kinds.md",
+    "title": "C.3.3 - KindBridge & CL^k \u2014 Cross\u2011context Mapping of Kinds",
+    "chunk": 124
+  },
+  {
+    "file": "125_C.3.4_-_RoleMask_\u2014_Contextual_Adaptation_of_Kinds_(without_cloning).md",
+    "title": "C.3.4 - RoleMask \u2014 Contextual Adaptation of Kinds (without cloning)",
+    "chunk": 125
+  },
+  {
+    "file": "126_C.3.5_-_KindAT_\u2014_Intentional_Abstraction_Facet_for_Kinds_(K0\u2026K3).md",
+    "title": "C.3.5 - KindAT \u2014 Intentional Abstraction Facet for Kinds (K0\u2026K3)",
+    "chunk": 126
+  },
+  {
+    "file": "127_C.3.A_-_Typed_Guard_Macros_for_Kinds___USM_(Annex).md",
+    "title": "C.3.A - Typed Guard Macros for Kinds + USM (Annex)",
+    "chunk": 127
+  },
+  {
+    "file": "128_C.11_-_Decision_Theory_(Decsn-CAL).md",
+    "title": "C.11 - Decision Theory (Decsn-CAL)",
+    "chunk": 128
+  },
+  {
+    "file": "129_C.13_\u2014_Constructional_Mereology_(Compose\u2011CAL).md",
+    "title": "C.13 \u2014 Constructional Mereology (Compose\u2011CAL)",
+    "chunk": 129
+  },
+  {
+    "file": "130_C.16_-_Measurement_&_Metrics_Characterization_(MM\u2011CHR).md",
+    "title": "C.16 - Measurement & Metrics Characterization (MM\u2011CHR)",
+    "chunk": 130
+  },
+  {
+    "file": "131_C.17_-_Characterising_Generative_Novelty_&_Value_(Creativity\u2011CHR).md",
+    "title": "C.17 - Characterising Generative Novelty & Value (Creativity\u2011CHR)",
+    "chunk": 131
+  },
+  {
+    "file": "132_C.18_-_Open\u2011Ended_Search_Calculus_(NQD\u2011CAL).md",
+    "title": "C.18 - Open\u2011Ended Search Calculus (NQD\u2011CAL)",
+    "chunk": 132
+  },
+  {
+    "file": "133_C.18.1_-_Scaling\u2011Law_Lens_Binding_(SLL).md",
+    "title": "C.18.1 - Scaling\u2011Law Lens Binding (SLL)",
+    "chunk": 133
+  },
+  {
+    "file": "134_C.19_-_Explore\u2013Exploit_Governor_(E_E\u2011LOG).md",
+    "title": "C.19 - Explore\u2013Exploit Governor (E/E\u2011LOG)",
+    "chunk": 134
+  },
+  {
+    "file": "135_C.19.1_-_Bitter\u2011Lesson_Preference_(BLP).md",
+    "title": "C.19.1 - Bitter\u2011Lesson Preference (BLP)",
+    "chunk": 135
+  },
+  {
+    "file": "136_C.20_-_Composition_of_`U.Discipline`_(Discipline\u2011CAL).md",
+    "title": "C.20 - Composition of `U.Discipline` (Discipline\u2011CAL)",
+    "chunk": 136
+  },
+  {
+    "file": "137_C.21_-_Field_Health_&_Structure_(Discipline-CHR).md",
+    "title": "C.21 - Field Health & Structure (Discipline-CHR)",
+    "chunk": 137
+  },
+  {
+    "file": "138_C.22_-_Problem_Typing_&_TaskSignature_Assignment_(Problem-CHR).md",
+    "title": "C.22 - Problem Typing & TaskSignature Assignment (Problem-CHR)",
+    "chunk": 138
+  },
+  {
+    "file": "139_C.22.1_-_Task-family_adaptation_signature.md",
+    "title": "C.22.1 - Task-family adaptation signature",
+    "chunk": 139
+  },
+  {
+    "file": "140_C.23_-_MethodFamily_Evidence_&_Maturity_(Method\u2011SoS\u2011LOG).md",
+    "title": "C.23 - MethodFamily Evidence & Maturity (Method\u2011SoS\u2011LOG)",
+    "chunk": 140
+  },
+  {
+    "file": "141_C.24_-_Agentic_Tool\u2011Use_&_Call\u2011Planning_(C.Agent\u2011Tools\u2011CAL).md",
+    "title": "C.24 - Agentic Tool\u2011Use & Call\u2011Planning (C.Agent\u2011Tools\u2011CAL)",
+    "chunk": 141
+  },
+  {
+    "file": "142_C.25_-_Q-Bundle__Authoring__-ilities__as_Structured_Quality_Bundles.md",
+    "title": "C.25 - Q-Bundle: Authoring \"-ilities\" as Structured Quality Bundles",
+    "chunk": 142
+  },
+  {
+    "file": "143_D.5_-_Bias-Audit_&_Ethical_Assurance.md",
+    "title": "D.5 - Bias-Audit & Ethical Assurance",
+    "chunk": 143
+  },
+  {
+    "file": "144_E.1_-_Vision_&_Mission__\u201cOperating_System_for_Thought\u201d.md",
+    "title": "E.1 - Vision & Mission: \u201cOperating System for Thought\u201d",
+    "chunk": 144
+  },
+  {
+    "file": "145_E.2_-_The_Eleven_Pillars.md",
+    "title": "E.2 - The Eleven Pillars",
+    "chunk": 145
+  },
+  {
+    "file": "146_E.3_-_Principle_Taxonomy_&_Precedence_Model.md",
+    "title": "E.3 - Principle Taxonomy & Precedence Model",
+    "chunk": 146
+  },
+  {
+    "file": "147_E.4_-_FPF_Artefact_Architecture.md",
+    "title": "E.4 - FPF Artefact Architecture",
+    "chunk": 147
+  },
+  {
+    "file": "148_E.5_-_Four_Guard\u2011Rails_of_FPF.md",
+    "title": "E.5 - Four Guard\u2011Rails of FPF",
+    "chunk": 148
+  },
+  {
+    "file": "149_E.5.1_-_DevOps_Lexical_Firewall.md",
+    "title": "E.5.1 - DevOps Lexical Firewall",
+    "chunk": 149
+  },
+  {
+    "file": "150_E.5.2_-_Notational_Independence.md",
+    "title": "E.5.2 - Notational Independence",
+    "chunk": 150
+  },
+  {
+    "file": "151_E.5.3_-_Unidirectional_Dependency.md",
+    "title": "E.5.3 - Unidirectional Dependency",
+    "chunk": 151
+  },
+  {
+    "file": "152_E.5.4_-_Cross\u2011Disciplinary_Bias_Audit.md",
+    "title": "E.5.4 - Cross\u2011Disciplinary Bias Audit",
+    "chunk": 152
+  },
+  {
+    "file": "153_E.6_-_Didactic_Architecture_of_the_Specification.md",
+    "title": "E.6 - Didactic Architecture of the Specification",
+    "chunk": 153
+  },
+  {
+    "file": "154_E.7_-_Archetypal_Grounding_Principle.md",
+    "title": "E.7 - Archetypal Grounding Principle",
+    "chunk": 154
+  },
+  {
+    "file": "155_E.8_-_FPF_Authoring_Conventions_&_Style_Guide.md",
+    "title": "E.8 - FPF Authoring Conventions & Style Guide",
+    "chunk": 155
+  },
+  {
+    "file": "156_E.9_-_Design\u2011Rationale_Record_(DRR)_Method.md",
+    "title": "E.9 - Design\u2011Rationale Record (DRR) Method",
+    "chunk": 156
+  },
+  {
+    "file": "157_E.10_-_Unified_Lexical_Rules_for_FPF_(LEX\u2011BUNDLE).md",
+    "title": "E.10 - Unified Lexical Rules for FPF (LEX\u2011BUNDLE)",
+    "chunk": 157
+  },
+  {
+    "file": "158_E.10.P_-_Conceptual_Prefixes_policy_&_registry.md",
+    "title": "E.10.P - Conceptual Prefixes policy & registry",
+    "chunk": 158
+  },
+  {
+    "file": "159_E.10.D1_-_Lexical_Discipline_for_\u201cContext\u201d_(D.CTX).md",
+    "title": "E.10.D1 - Lexical Discipline for \u201cContext\u201d (D.CTX)",
+    "chunk": 159
+  },
+  {
+    "file": "160_E.10.D2_-_Intension\u2013Description\u2013Specification_Discipline_(I_D_S).md",
+    "title": "E.10.D2 - Intension\u2013Description\u2013Specification Discipline (I/D/S)",
+    "chunk": 160
+  },
+  {
+    "file": "161_E.12_-_Didactic_Primacy_&_Cognitive_Ergonomics.md",
+    "title": "E.12 - Didactic Primacy & Cognitive Ergonomics",
+    "chunk": 161
+  },
+  {
+    "file": "162_E.13_-_Pragmatic_Utility_&_Value_Alignment.md",
+    "title": "E.13 - Pragmatic Utility & Value Alignment",
+    "chunk": 162
+  },
+  {
+    "file": "163_E.14_-_Human\u2011Centric_Working\u2011Model.md",
+    "title": "E.14 - Human\u2011Centric Working\u2011Model",
+    "chunk": 163
+  },
+  {
+    "file": "164_E.15_-_Lexical_Authoring_&_Evolution_Protocol_(LEX\u2011AUTH).md",
+    "title": "E.15 - Lexical Authoring & Evolution Protocol  (LEX\u2011AUTH)",
+    "chunk": 164
+  },
+  {
+    "file": "165_E.16_-_RoC\u2011Autonomy_Budget_&_Enforcement.md",
+    "title": "E.16 - RoC\u2011Autonomy Budget & Enforcement",
+    "chunk": 165
+  },
+  {
+    "file": "166_E.17.0_-_`U.MultiViewDescribing_\u2014_Viewpoints,_Views_&_Correspondences`.md",
+    "title": "E.17.0 - `U.MultiViewDescribing \u2014 Viewpoints, Views & Correspondences`",
+    "chunk": 166
+  },
+  {
+    "file": "167_E.17.1_-_`U.ViewpointBundleLibrary`_-_Reusable_Viewpoint_Bundles.md",
+    "title": "E.17.1 - `U.ViewpointBundleLibrary` - Reusable Viewpoint Bundles",
+    "chunk": 167
+  },
+  {
+    "file": "168_E.17.2_-_`TEVB_\u2014_Typical_Engineering_Viewpoints_Bundle`.md",
+    "title": "E.17.2 - `TEVB \u2014 Typical Engineering Viewpoints Bundle`",
+    "chunk": 168
+  },
+  {
+    "file": "169_E.17_-_Multi\u2011View_Publication_Kit_(for_Morphisms).md",
+    "title": "E.17 - Multi\u2011View Publication Kit (for Morphisms)",
+    "chunk": 169
+  },
+  {
+    "file": "170_E.17.EFP_-_ExplanationFaithfulnessProfile_\u2014_explanation_classification_over_exis.md",
+    "title": "E.17.EFP - ExplanationFaithfulnessProfile \u2014 explanation classification over existing MVPK faces",
+    "chunk": 170
+  },
+  {
+    "file": "171_E.17.ID.CR_-_InterpretationDiscipline___ComparativeReading_\u2014_bounded_comparative.md",
+    "title": "E.17.ID.CR - InterpretationDiscipline / ComparativeReading \u2014 bounded comparative reading over comparative review units",
+    "chunk": 171
+  },
+  {
+    "file": "172_E.17.AUD_-_AuthoredUnitDiscipline_-_keep_one_authored_unit_stable_enough_to_read.md",
+    "title": "E.17.AUD - AuthoredUnitDiscipline - keep one authored unit stable enough to read honestly",
+    "chunk": 172
+  },
+  {
+    "file": "173_E.17.AUD.LHR_-_AuthoredUnitDiscipline___Local_Head_Restoration_-_repair_the_pres.md",
+    "title": "E.17.AUD.LHR - AuthoredUnitDiscipline / Local Head Restoration - repair the pressured local head before the authored unit inherits it",
+    "chunk": 173
+  },
+  {
+    "file": "174_E.17.AUD.OOTD_-_AuthoredUnitDiscipline___AuthoredUnit_Object-of-Talk_Discipline_.md",
+    "title": "E.17.AUD.OOTD - AuthoredUnitDiscipline / AuthoredUnit Object-of-Talk Discipline - authored-unit stability over one primary object of talk",
+    "chunk": 174
+  },
+  {
+    "file": "175_E.18_-_Transduction_Graph_Architecture_(E.TGA).md",
+    "title": "E.18 - Transduction Graph Architecture (E.TGA)",
+    "chunk": 175
+  },
+  {
+    "file": "176_E.19_-_Pattern_Quality_Gates__Review_&_Refresh_Profiles.md",
+    "title": "E.19 - Pattern Quality Gates: Review & Refresh Profiles",
+    "chunk": 176
+  },
+  {
+    "file": "177_E.20_-_Mechanism_Introduction_Protocol.md",
+    "title": "E.20 - Mechanism Introduction Protocol",
+    "chunk": 177
+  },
+  {
+    "file": "178_F.0.1_-_Contextual_Lexicon_Principles.md",
+    "title": "F.0.1 - Contextual Lexicon Principles",
+    "chunk": 178
+  },
+  {
+    "file": "179_F.1_-_Domain\u2011Family_Landscape_Survey.md",
+    "title": "F.1 - Domain\u2011Family Landscape Survey",
+    "chunk": 179
+  },
+  {
+    "file": "180_F.2_\u2014_Term_Harvesting_&_Normalisation.md",
+    "title": "F.2 \u2014 Term Harvesting & Normalisation",
+    "chunk": 180
+  },
+  {
+    "file": "181_F.3_-_Intra\u2011Context_Sense_Clustering.md",
+    "title": "F.3 - Intra\u2011Context Sense Clustering",
+    "chunk": 181
+  },
+  {
+    "file": "182_F.4_-_Role_Description_(RCS___RoleStateGraph___Checklists).md",
+    "title": "F.4 - Role Description (RCS + RoleStateGraph + Checklists)",
+    "chunk": 182
+  },
+  {
+    "file": "183_F.5_-_Naming_Discipline_for_U.Types_&_Roles.md",
+    "title": "F.5 - Naming Discipline for U.Types & Roles",
+    "chunk": 183
+  },
+  {
+    "file": "184_F.6_-_Role_Assignment_&_Enactment_Cycle_(Six-Step).md",
+    "title": "F.6 - Role Assignment & Enactment Cycle (Six-Step)",
+    "chunk": 184
+  },
+  {
+    "file": "185_F.7_-_Concept\u2011Set_Table.md",
+    "title": "F.7 - Concept\u2011Set Table",
+    "chunk": 185
+  },
+  {
+    "file": "186_F.8_-_Mint_or_Reuse__(U.Type_vs_Concept-Set_vs_Role_Description_vs_Alias).md",
+    "title": "F.8 - Mint or Reuse? (U.Type vs Concept-Set vs Role Description vs Alias)",
+    "chunk": 186
+  },
+  {
+    "file": "187_F.9_-_Alignment_&_Bridge_across_Contexts.md",
+    "title": "F.9 - Alignment & Bridge across Contexts",
+    "chunk": 187
+  },
+  {
+    "file": "188_F.9.1_-_Bridge_Stance_Overlay.md",
+    "title": "F.9.1 - Bridge Stance Overlay",
+    "chunk": 188
+  },
+  {
+    "file": "189_F.10_-_Status_Families_Mapping_(Evidence_\u2022_Standard_\u2022_Requirement).md",
+    "title": "F.10 - Status Families Mapping (Evidence \u2022 Standard \u2022 Requirement)",
+    "chunk": 189
+  },
+  {
+    "file": "190_F.11_-_Method_Quartet_Harmonisation.md",
+    "title": "F.11 - Method Quartet Harmonisation",
+    "chunk": 190
+  },
+  {
+    "file": "191_F.12_\u2014_Service_Acceptance\u2013Work_Evidence_Link.md",
+    "title": "F.12 \u2014 Service Acceptance\u2013Work Evidence Link",
+    "chunk": 191
+  },
+  {
+    "file": "192_F.13_-_Lexical_Continuity_&_Deprecation.md",
+    "title": "F.13 - Lexical Continuity & Deprecation",
+    "chunk": 192
+  },
+  {
+    "file": "193_F.14_-_Anti\u2011Explosion_Control_(Roles_&_Statuses).md",
+    "title": "F.14 - Anti\u2011Explosion Control (Roles & Statuses)",
+    "chunk": 193
+  },
+  {
+    "file": "194_F.15_-_SCR_RSCR_Harness_for_Unification.md",
+    "title": "F.15 - SCR/RSCR Harness for Unification",
+    "chunk": 194
+  },
+  {
+    "file": "195_F.16_-_Worked\u2011Example_Template_(Cross\u2011Domain).md",
+    "title": "F.16 - Worked\u2011Example Template (Cross\u2011Domain)",
+    "chunk": 195
+  },
+  {
+    "file": "196_F.17_-_Unified_Term_Sheet_(UTS).md",
+    "title": "F.17 - Unified Term Sheet (UTS)",
+    "chunk": 196
+  },
+  {
+    "file": "197_F.18_-_Local\u2011First_Unification_Naming_Protocol.md",
+    "title": "F.18 - Local\u2011First Unification Naming Protocol",
+    "chunk": 197
+  },
+  {
+    "file": "198_G.Core_-_Part_G_Core_Invariants.md",
+    "title": "G.Core - Part G Core Invariants",
+    "chunk": 198
+  },
+  {
+    "file": "199_G.0_-_Frame_Standard_and_Comparability_Governance_\u2014_CG\u2011Spec.md",
+    "title": "G.0 - Frame Standard and Comparability Governance \u2014 CG\u2011Spec",
+    "chunk": 199
+  },
+  {
+    "file": "200_G.1_-_CG\u2011Frame\u2011Ready_Generator.md",
+    "title": "G.1 - CG\u2011Frame\u2011Ready Generator",
+    "chunk": 200
+  },
+  {
+    "file": "201_G.2_-_SoTA_Harvester_&_Synthesis.md",
+    "title": "G.2 - SoTA Harvester & Synthesis",
+    "chunk": 201
+  },
+  {
+    "file": "202_G.3_-_CHR_Authoring_for_a_CG\u2011Frame__Characteristics,_Scales,_Levels,_Coordinates.md",
+    "title": "G.3 - CHR Authoring for a CG\u2011Frame: Characteristics, Scales, Levels, Coordinates",
+    "chunk": 202
+  },
+  {
+    "file": "203_G.4_-_CAL_Authoring_for_a_CG-Frame__Operators,_Acceptance_Clauses,_Evidence_Wiri.md",
+    "title": "G.4 - CAL Authoring for a CG-Frame: Operators, Acceptance Clauses, Evidence Wiring",
+    "chunk": 203
+  },
+  {
+    "file": "204_G.5_-_Multi\u2011Method_Dispatcher_&_MethodFamily_Registry.md",
+    "title": "G.5 - Multi\u2011Method Dispatcher & MethodFamily Registry",
+    "chunk": 204
+  },
+  {
+    "file": "205_G.6_-_Evidence_Graph_&_Provenance_Ledger.md",
+    "title": "G.6 - Evidence Graph & Provenance Ledger",
+    "chunk": 205
+  },
+  {
+    "file": "206_G.7_-_Cross\u2011Tradition_Bridge_Calibration_Kit_(BridgeMatrix_\u2192_BridgeCards___BCT_S.md",
+    "title": "G.7 - Cross\u2011Tradition Bridge Calibration Kit (BridgeMatrix \u2192 BridgeCards + BCT/Sentinels)",
+    "chunk": 206
+  },
+  {
+    "file": "207_G.8_-_SoS\u2011LOG_Bundles_&_Maturity_Ladders.md",
+    "title": "G.8 - SoS\u2011LOG Bundles & Maturity Ladders",
+    "chunk": 207
+  },
+  {
+    "file": "208_G.9_\u2014_Parity___Benchmark_Harness.md",
+    "title": "G.9 \u2014 Parity / Benchmark Harness",
+    "chunk": 208
+  },
+  {
+    "file": "209_G.10_-_SoTA_Pack_Shipping.md",
+    "title": "G.10 - SoTA Pack Shipping",
+    "chunk": 209
+  },
+  {
+    "file": "210_G.11_-_Telemetry-Driven_Refresh_&_Decay_Orchestrator.md",
+    "title": "G.11 - Telemetry-Driven Refresh & Decay Orchestrator",
+    "chunk": 210
+  },
+  {
+    "file": "211_G.12_\u2014_DHC_Dashboards_(Discipline\u2011Health_time\u2011series;_lawful_telemetry;_generati.md",
+    "title": "G.12 \u2014 DHC Dashboards (Discipline\u2011Health time\u2011series; lawful telemetry; generation\u2011first)",
+    "chunk": 211
+  },
+  {
+    "file": "212_G.13_-_External_Interop_Hooks_for_SoTA_Discipline_Packs_(conceptual).md",
+    "title": "G.13 - External Interop Hooks for SoTA Discipline Packs (conceptual)",
+    "chunk": 212
+  },
+  {
+    "file": "213_J.4_-_First_Practical_Entry_Route_Index.md",
+    "title": "J.4 - First Practical Entry Route Index",
+    "chunk": 213
+  },
+  {
+    "file": "214_Mandatory_replacement_map_for_measurement_terms.md",
+    "title": "Mandatory replacement map for measurement terms",
+    "chunk": 214
+  },
+  {
+    "file": "215_Migration_debt_from_A.2.6_(Scope,_ClaimScope,_WorkScope).md",
+    "title": "Migration debt from A.2.6 (Scope, ClaimScope, WorkScope)",
+    "chunk": 215
+  }
+]

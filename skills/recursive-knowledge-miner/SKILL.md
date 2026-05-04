@@ -1,8 +1,7 @@
 ---
-name: My skill
-description: Professional multi-layered knowledge extraction and recursive knowledge graph construction.
+name: recursive-knowledge-miner
+description: Professional multi-layered knowledge extraction and recursive knowledge graph construction. Use when extracting structured knowledge from documents, building knowledge graphs, or analyzing research papers.
 ---
-
 # Professional Knowledge Extraction Skill
 
 Expertly extract core concepts, entities, and logical relationships from complex professional text to build a multi-layered, interactive knowledge graph.
