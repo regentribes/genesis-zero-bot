@@ -1,63 +1,127 @@
-# Skills Responsibilities
+# Skills Responsibilities — Genesis RegenTribes
 
-## Active Skills
+## Active Skills (32)
 
+### Core — Always Available
 | Skill | Purpose | Trigger |
-|-------|---------|---------|
-| **alien-js-dev** | Alien.js/Three.js MVC demos + AME demos | "alien.js", "mythogen demos" |
-| **deepwiki-repo-analyzer** | Fetch DeepWiki docs (needs dw2md install) | "analyze repo", "deepwiki" |
-| **space-js** | Space.js UI library + integration | "space.js", "sci-fi UI" |
-| **genesis-brain** | Knowledge graph queries | "what do you know about", "query" |
-| **alchemy** | Community Alchemy Playbook | "alchemy", "community vision" |
-| **find-skills** | Discover/install new skills | "find skill", "how do I" |
-| **dreamcatcher** | Capture and develop ideas | "idea", "capture my idea" |
+|---|---|---|
+| **genesis-brain** | Knowledge graph queries, semantic search | "what do you know about", "query brain" |
+| **telegram** | Telegram Bot API design | Telegram workflows, bot commands |
+| **telegram-compose** | Formatted message sending | Structured/long messages |
+| **telegram-history** | Versioned conversation history | Telegram history queries |
+| **web-search** | DuckDuckGo web research | Research, fact-checking |
+| **summarize** | URL/file summarization | "summarize", "what's this about" |
+| **youtube** | YouTube data + transcripts | YouTube queries |
+| **video-transcript-downloader** | Video/audio download | "download", "transcript" |
+| **transcribe** | Whisper audio transcription | Voice messages, audio files |
+| **weather** | Weather forecasts | "weather in X" |
+
+### Community & Vision
+| Skill | Purpose | Trigger |
+|---|---|---|
+| **alchemy** | Community Alchemy Playbook | "alchemy", "community vision", "/alchemy" |
+| **dreamcatcher** | Idea capture + development | "idea", "capture my idea", "build something" |
+| **rnf-planner** | Regenerative Neighborhood Framework | "RNF", "regenerative neighborhood plan" |
+| **regen-viz** | 3D force graph visualization | "visualize", "3D graph" |
+
+### Research & Knowledge
+| Skill | Purpose | Trigger |
+|---|---|---|
+| **deep-research-pro** | Multi-source research agent | "research X", "deep dive" |
+| **knowledge-extraction** | Document → knowledge fragments | File attachments |
+| **knowledge-graph** | Knowledge graph management | Knowledge graph queries |
+| **semantic-graph** | SurrealDB semantic graph pipeline | Graph ingestion/queries |
+| **recursive-knowledge-miner** | Structured knowledge extraction | "extract knowledge" |
+| **kreuzberg** | 75+ document format extraction | PDF, Office, images |
+
+### Technical Stack
+| Skill | Purpose | Trigger |
+|---|---|---|
+| **rust** | Rust idioms, ownership, FFI | Rust code, "write Rust" |
+| **rust-patterns** | Production Rust patterns | Rust architecture, async |
+| **iot** | MQTT, CoAP, Zigbee, embedded | IoT, sensors, hardware |
+| **cicd-pipeline** | GitHub Actions pipelines | "CI", "pipeline", "GitHub Actions" |
+| **sbom-generator** | CycloneDX/SPDX SBOM | "SBOM", "supply chain" |
+| **formal-provers** | Lean 4, Coq, Z3 SMT | Formal verification, proofs |
+| **nix-mode** | Nix operations | NixOS, Nix configuration |
+| **ossinsight-api** | GitHub analytics API | OSS analytics, repo stats |
+| **software-architect** | System design decisions | Architecture, design patterns |
+| **github-api** | GitHub REST API | GitHub operations |
+
+### Meta / Utilities
+| Skill | Purpose | Trigger |
+|---|---|---|
+| **skill-creator** | Build new skills | "create a skill", "build skill" |
+| **find-skills** | Discover ClawHub skills | "find a skill for X" |
 | **gog** | Google Workspace CLI | Gmail, Calendar, Drive |
-| **weather** | Weather forecasts | "weather" |
-| **web-search** | Web research | search queries |
-| **video-transcript-downloader** | YouTube download | "download", "transcript" |
 
-## Skills Invocation Queries
+---
 
-### Development
-- "build something with alien.js" → alien-js-dev skill
-- "show me space.js examples" → space-js skill
-- "analyze this repo" → deepwiki-repo-analyzer
-- "create a skill for X" → skill-creator
+## Archived Skills (31)
 
-### Research
-- "what do you know about X" → genesis-brain query
-- "research X" → deep-research-pro
-- "search the web for X" → web-search
+Moved to `skills-archive/` — not loaded into context. To restore: move directory back to `skills/`.
 
-### Community
-- "guide me through alchemy" → alchemy skill
-- "capture my idea" → dreamcatcher skill
+### Specialized / Archived
+| Archived | Purpose | When to Restore |
+|---|---|---|
+| **kubernetes-devops** | K8s manifest generation | Active k8s cluster work |
+| **kubernetes-encyclopedia** | K8s reference | K8s-heavy projects |
+| **k8s-security-review** | K8s security analysis | Production k8s |
+| **k8s-incident-response-playbook** | K8s incident response | Active incident |
+| **toolweb-kubernetes-hardening** | K8s hardening configs | Production k8s |
+| **kubectl-skill** | kubectl command reference | K8s CLI work |
+| **rust-skill** | Rust skill authoring | Building Rust skills |
+| **secrets-management** | Vault, SOPS, CI secrets | Active secrets project |
+| **cargo-toml-validator** | Cargo.toml validation | Rust crate maintenance |
+| **formal-provers** | Lean/Coq/Z3 | Formal verification work |
+| **deepwiki-repo-analyzer** | DeepWiki repo analysis | Architecture research |
+| **systems-engineering** | INCOSE, GSN, STPA | Safety case writing |
+| **alien-js-dev** | Alien.js/Mythogen demos | Visual demo work |
+| **space-js** | Space.js UI library | Sci-fi HUDs |
+| **mythogen-dev** | Mythogen framework dev | Mythogen work |
+| **mythogen-ref** | Mythogen reference | Mythogen work |
+| **radicle** | Radicle p2p git | Radicle hosting |
+| **ralph-runner** | Ralph agent orchestrator | Ralph automation |
+| **regen-vision** | Regen Vision framework | Vision work |
+| **regen-cas** | Content-addressable storage | CAS deduplication |
+| **regen-tribes-notes** | RegenTribes notes | Notes management |
+| **regen-tribes-skill** | RegenTribes skill | RegenTribes integration |
+| **telegram-export-analyzer** | Telegram export analysis | Telegram data |
+| **tetra-format** | MeTTa/JSON/N3/CSV formats | Format conversion |
+| **surreal-skills** | SurrealDB management | SurrealDB admin |
+| **aisystant-fpf** | AISystant FPF reference | AISystant work |
+| **asd-ste100** | STE100 simplified English | Technical writing |
+| **llm-pareto-analyzer** | LLM Pareto analysis | LLM research |
+| **youtube-transcript-api** | YouTube transcript API | YouTube work |
+| **fragment-engine** | Fragment engine | Fragment processing |
+| **artifacts** | Artifact reference | Documentation |
 
-### Utilities
-- "weather in location" → weather skill
-- "download this video" → video-transcript-downloader
+### Restoration Command
+```bash
+mv skills-archive/<skill-name> skills/<skill-name>
+```
 
-## Scenarios
+### Batch Restore (all)
+```bash
+for d in skills-archive/*/; do
+  mv "$d" skills/
+done
+```
 
-### Scenario 1: Building a 3D Visual
-1. User wants to build something with Three.js
-2. Check alien-js-dev for MVC patterns + demos
-3. Check space-js for UI overlay integration
+---
 
-### Scenario 2: Adding UI to 3D Scene
-1. User wants HUD/panel overlay
-2. Use space-js Panel components + UI class
-3. Combine with alien.js renderer in single canvas
+## Optimization Notes
 
-### Scenario 3: Analyzing a GitHub Repo
-1. User provides GitHub URL
-2. Use deepwiki-repo-analyzer (if dw2md installed)
-3. Or clone repo locally and summarize from README
+- 57 skills → 32 active (44% reduction)
+- Archived skills are fully preserved — not deleted
+- OpenClaw loads skills based on conversation context matching
+- Skills with SKILL.md are discovered automatically
+- No config changes needed — directory-based
 
-### Scenario 4: Community Vision Planning
-1. User mentions "alchemy" or "community vision"
-2. Trigger alchemy skill for guided playthrough
+## Adding New Skills
 
-### Scenario 5: Idea Development
-1. User says "I have an idea for..."
-2. Trigger dreamcatcher to capture + develop spec
+```bash
+clawhub install <skill> --workdir ~/.openclaw/workspace-genesis --dir skills
+```
+
+Or manually: create `skills/<name>/SKILL.md` with proper frontmatter.

@@ -1,2 +1,0 @@
-
-# System Implementation and Description
