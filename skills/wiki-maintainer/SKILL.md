@@ -189,16 +189,27 @@ GitHub Pages builds from the vault on every push via `.github/workflows/pages.ym
 | `openclaw wiki ingest <file>` | Extract content from binary/non-Markdown files |
 | `~/.local/bin/rumdl check .` | Markdown style (MD013/025/032 disabled) |
 | `python3 skills/wiki-maintainer/tools/ste_audit.py` | ASD-STE100 full vault audit |
-| `gh run list --repo genesis-zero-bot/genesis-zero-bot-wiki` | Check GitHub Pages build status |
+| `gh run list --repo regentribes/genesis-zero-bot-wiki` | Check GitHub Pages build status |
 
 ## Wiki Vault URLs
 
 | Service | URL |
 |---------|-----|
-| GitHub repo | https://github.com/genesis-zero-bot/genesis-zero-bot-wiki |
-| GitHub Pages | https://genesis-zero-bot.github.io/genesis-zero-bot-wiki/ |
+| GitHub repo | https://github.com/regentribes/genesis-zero-bot-wiki |
+| GitHub Pages | https://regentribes.github.io/genesis-zero-bot-wiki/ |
 | Radicle RID | `rad:zYhRVEu5Zh85vcwvmxkZHJNQqn6X` |
 | Radicle web | https://app.radicle.xyz/nodes/rosa.radicle.xyz/rad:zYhRVEu5Zh85vcwvmxkZHJNQqn6X |
+
+## ADR Canonical Location
+
+ADR files live in the **genesis-zero-bot-adrs** repo, NOT in the wiki vault.
+
+| Service | URL |
+|---------|-----|
+| GitHub repo | https://github.com/regentribes/genesis-zero-bot-adrs |
+| GitHub Pages | https://regentribes.github.io/genesis-zero-bot-adrs/ |
+
+ADRs are committed to `docs/adr/` in the workspace repo AND mirrored to the wiki vault root as `adr-XXXX-*.md` for rendering.
 
 ## Maintenance Rules
 
